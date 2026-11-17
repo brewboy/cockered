@@ -1,551 +1,551 @@
 _RhydonDexEntry::
-	text "Protected by an"
-	next "armor-like hide,"
-	next "it is capable of"
+	text "A huge cockerel"
+	next "with feathered"
+	next "feet. It can"
 
-	page "living in molten"
-	next "lava of 3,600"
-	next "degrees"
+	page "trample a fence"
+	next "flat, and it often"
+	next "forgets why."
 	dex
 
 _KangaskhanDexEntry::
-	text "The infant rarely"
-	next "ventures out of"
-	next "its mother's"
+	text "It carries its"
+	next "chick under its"
+	next "wing everywhere."
 
-	page "protective pouch"
-	next "until it is 3"
-	next "years old"
+	page "It will fight off"
+	next "any foe who comes"
+	next "near its chick."
 	dex
 
 _NidoranMDexEntry::
-	text "Stiffens its ears"
-	next "to sense danger."
-	next "The larger its"
+	text "It pricks up its"
+	next "comb to listen for"
+	next "danger. Its spurs"
 
-	page "horns, the more"
-	next "powerful its"
-	next "secreted venom"
+	page "are small but"
+	next "carry a mild"
+	next "poison."
 	dex
 
 _ClefairyDexEntry::
-	text "Its magical and"
-	next "cute appeal has"
-	next "many admirers."
+	text "Its feathers feel"
+	next "like soft fur. It"
+	next "is said to dance"
 
-	page "It is rare and"
-	next "found only in"
-	next "certain areas"
+	page "in the moonlight"
+	next "with others of its"
+	next "kind."
 	dex
 
 _SpearowDexEntry::
-	text "Eats bugs in"
-	next "grassy areas. It"
-	next "has to flap its"
+	text "It stands tall on"
+	next "long thin legs and"
+	next "squawks at anyone"
 
-	page "short wings at"
-	next "high speed to"
-	next "stay airborne"
+	page "who comes close."
+	next "It flaps wildly to"
+	next "guard its patch."
 	dex
 
 _VoltorbDexEntry::
-	text "Usually found in"
-	next "power plants."
-	next "Easily mistaken"
+	text "It is so round"
+	next "that it rolls when"
+	next "it tries to run."
 
-	page "for a # BALL,"
-	next "they have zapped"
-	next "many people"
+	page "It crackles with"
+	next "static and may"
+	next "go off if prodded."
 	dex
 
 _NidokingDexEntry::
-	text "It uses its"
-	next "powerful tail in"
-	next "battle to smash,"
+	text "It rules the yard"
+	next "with a booming"
+	next "crow. Its thick"
 
-	page "constrict, then"
-	next "break the prey's"
-	next "bones"
+	page "spurs can crack"
+	next "fence posts. Even"
+	next "dogs keep away."
 	dex
 
 _SlowbroDexEntry::
-	text "The EGGSHELDER"
-	next "latched onto"
-	next "SLOWPECK's tail"
+	text "A giant rooster"
+	next "that never rushes."
+	next "An EGGSHELDER may"
 
-	page "is said to feed"
-	next "on the host's left"
-	next "over scraps"
+	page "cling to its"
+	next "tail, but it does"
+	next "not even notice."
 	dex
 
 _IvysaurDexEntry::
-	text "When the bulb on"
-	next "its back grows"
-	next "large, it appears"
+	text "Its tail feathers"
+	next "curl like vines."
+	next "It struts proudly"
 
-	page "to lose the"
-	next "ability to stand"
-	next "on its hind legs"
+	page "through gardens,"
+	next "pecking at weeds"
+	next "and loose seeds."
 	dex
 
 _ExeggutorDexEntry::
-	text "Legend has it that"
-	next "on rare occasions,"
-	next "one of its heads"
+	text "Its feathers come"
+	next "in every color."
+	next "Its hens lay eggs"
 
-	page "will drop off and"
-	next "continue on as an"
-	next "EXEGGCLUCK"
+	page "of blue, green and"
+	next "pink, and no two"
+	next "are ever alike."
 	dex
 
 _LickitungDexEntry::
-	text "Its tongue can be"
-	next "extended like a"
-	next "chameleon's. It"
+	text "It has a very long"
+	next "tongue that it"
+	next "flicks out to"
 
-	page "leaves a tingling"
-	next "sensation when it"
-	next "licks enemies"
+	page "snatch bugs from"
+	next "the air. Its licks"
+	next "make skin tingle."
 	dex
 
 _ExeggcuteDexEntry::
-	text "Often mistaken"
-	next "for eggs."
-	next "When disturbed,"
+	text "Six eggs in pastel"
+	next "shades of blue and"
+	next "green. They roll"
 
-	page "they quickly"
-	next "gather and attack"
-	next "in swarms"
+	page "toward each other"
+	next "when apart, and"
+	next "seem to chatter."
 	dex
 
 _GrimerDexEntry::
-	text "Appears in filthy"
-	next "areas. Thrives by"
-	next "sucking up"
+	text "It hatched from a"
+	next "dark muddy egg and"
+	next "has loved mud ever"
 
-	page "polluted sludge"
-	next "that is pumped"
-	next "out of factories"
+	page "since. It smells"
+	next "so bad that even"
+	next "flies stay away."
 	dex
 
 _GengarDexEntry::
-	text "Under a full moon,"
-	next "this #MON"
-	next "likes to mimic"
+	text "It hides in the"
+	next "shadow of the barn"
+	next "on moonlit nights."
 
-	page "the shadows of"
-	next "people and laugh"
-	next "at their fright"
+	page "Its long dark tail"
+	next "sweeps along the"
+	next "ground silently."
 	dex
 
 _NidoranFDexEntry::
-	text "Although small,"
-	next "its venomous"
-	next "barbs render this"
+	text "A gentle hen that"
+	next "lays dark speckled"
+	next "eggs. It pecks"
 
-	page "#MON dangerous."
-	next "The female has"
-	next "smaller horns"
+	page "hard if you try to"
+	next "take one. Its beak"
+	next "is mildly toxic."
 	dex
 
 _NidoqueenDexEntry::
-	text "Its hard scales"
-	next "provide strong"
-	next "protection. It"
+	text "It sits on its"
+	next "nest for weeks and"
+	next "will not move for"
 
-	page "uses its hefty"
-	next "bulk to execute"
-	next "powerful moves"
+	page "anything. Its"
+	next "heavy body makes"
+	next "a perfect shield."
 	dex
 
 _CuboneDexEntry::
-	text "Because it never"
-	next "removes its skull"
-	next "helmet, no one"
+	text "It wears the shell"
+	next "of the egg it"
+	next "hatched from as a"
 
-	page "has ever seen"
-	next "this #MON's"
-	next "real face"
+	page "helmet. Nobody has"
+	next "seen what its head"
+	next "looks like."
 	dex
 
 _RhyhornDexEntry::
-	text "Its massive bones"
-	next "are 1000 times"
-	next "harder than human"
+	text "It charges in a"
+	next "straight line and"
+	next "can't turn until"
 
-	page "bones. It can"
-	next "easily knock a"
-	next "trailer flying"
+	page "it bumps into"
+	next "something. It is"
+	next "not very bright."
 	dex
 
 _LaprasDexEntry::
-	text "A #MON that"
-	next "has been over-"
-	next "hunted almost to"
+	text "A gentle hen that"
+	next "lets chicks ride"
+	next "on its back when"
 
-	page "extinction. It"
-	next "can ferry people"
-	next "across the water"
+	page "crossing streams."
+	next "It is very rare"
+	next "to see one now."
 	dex
 
 _ArcanineDexEntry::
-	text "A #MON that"
-	next "has been admired"
-	next "since the past"
+	text "A fearless guard"
+	next "of the farmyard."
+	next "Ancient tales say"
 
-	page "for its beauty."
-	next "It runs agilely"
-	next "as if on wings"
+	page "its crow could be"
+	next "heard across"
+	next "three valleys."
 	dex
 
 _MewDexEntry::
-	text "So rare that it"
-	next "is still said to"
-	next "be a mirage by"
+	text "So rare that many"
+	next "experts doubt it"
+	next "exists. Its pink"
 
-	page "many experts. Only"
-	next "a few people have"
-	next "seen it worldwide"
+	page "down is said to"
+	next "hold the secrets"
+	next "of every breed."
 	dex
 
 _GyaradosDexEntry::
-	text "Rarely seen in"
-	next "the wild. Huge"
-	next "and vicious, it"
+	text "Once a scrawny"
+	next "chick, it grew to"
+	next "be a rooster of"
 
-	page "is capable of"
-	next "destroying entire"
-	next "cities in a rage"
+	page "rage. It has been"
+	next "known to flatten"
+	next "whole henhouses."
 	dex
 
 _ShellderDexEntry::
-	text "Its hard shell"
-	next "repels any kind"
-	next "of attack."
+	text "It wears half an"
+	next "eggshell as a"
+	next "helmet and sticks"
 
-	page "It is vulnerable"
-	next "only when its"
-	next "shell is open"
+	page "out its tongue at"
+	next "foes. It latches"
+	next "onto big tails."
 	dex
 
 _TentacoolDexEntry::
-	text "Drifts in shallow"
-	next "seas. Anglers who"
-	next "hook them by"
+	text "It wades in the"
+	next "surf on its long"
+	next "legs. Its blue"
 
-	page "accident are"
-	next "often punished by"
-	next "its stinging acid"
+	page "laced feathers"
+	next "drip with salty"
+	next "water all day."
 	dex
 
 _GastlyDexEntry::
-	text "Almost invisible,"
-	next "this gaseous"
-	next "#MON cloaks"
+	text "Its black down"
+	next "blends into the"
+	next "night. It peeps"
 
-	page "the target and"
-	next "puts it to sleep"
-	next "without notice"
+	page "from dark corners"
+	next "just to give"
+	next "people a fright."
 	dex
 
 _ScytherDexEntry::
-	text "With ninja-like"
-	next "agility and speed,"
-	next "it can create the"
+	text "Its cup-shaped"
+	next "comb looks like a"
+	next "crown. It slashes"
 
-	page "illusion that"
-	next "there is more"
-	next "than one"
+	page "through tall grass"
+	next "with its wings to"
+	next "flush out bugs."
 	dex
 
 _StaryuDexEntry::
-	text "An enigmatic"
-	next "#MON that can"
-	next "effortlessly"
+	text "Its feathers are"
+	next "spangled with"
+	next "star-like spots."
 
-	page "regenerate any"
-	next "appendage it"
-	next "loses in battle"
+	page "At night, they"
+	next "twinkle as it"
+	next "swims."
 	dex
 
 _BlastoiseDexEntry::
-	text "A brutal #MON"
-	next "with pressurized"
-	next "water jets on its"
+	text "Its blue-laced"
+	next "feathers shed rain"
+	next "easily. It shakes"
 
-	page "shell. They are"
-	next "used for high"
-	next "speed tackles"
+	page "itself dry with"
+	next "enough force to"
+	next "soak a whole coop."
 	dex
 
 _PinsirDexEntry::
-	text "If it fails to"
-	next "crush the victim"
-	next "in its pincers,"
+	text "A small but tough"
+	next "fighter with hard"
+	next "feathers. It"
 
-	page "it will swing it"
-	next "around and toss"
-	next "it hard"
+	page "grips foes in its"
+	next "beak and won't"
+	next "let go."
 	dex
 
 _TangelaDexEntry::
-	text "The whole body is"
-	next "swathed with wide"
-	next "vines that are"
+	text "Its frizzled"
+	next "feathers are a"
+	next "tangled mess that"
 
-	page "similar to sea-"
-	next "weed. Its vines"
-	next "shake as it walks"
+	page "hides its face."
+	next "Burrs and twigs"
+	next "get stuck in it."
 	dex
 
 _GrowlitheDexEntry::
-	text "Very protective"
-	next "of its territory."
-	next "It will bark and"
+	text "It peeps loudly at"
+	next "strangers to warn"
+	next "its keeper. It is"
 
-	page "bite to repel"
-	next "intruders from"
-	next "its space"
+	page "very loyal and"
+	next "follows its owner"
+	next "everywhere."
 	dex
 
 _OnixDexEntry::
-	text "As it grows, the"
-	next "stone portions of"
-	next "its body harden"
+	text "An extremely tall"
+	next "rooster that walks"
+	next "bolt upright. It"
 
-	page "to become similar"
-	next "to a diamond, but"
-	next "colored black"
+	page "can eat seeds off"
+	next "the barn roof"
+	next "without jumping."
 	dex
 
 _FearowDexEntry::
-	text "With its huge and"
-	next "magnificent wings,"
-	next "it can keep aloft"
+	text "Its very long legs"
+	next "let it see over"
+	next "tall grass. It can"
 
-	page "without ever"
-	next "having to land"
-	next "for rest"
+	page "flap up to high"
+	next "roosts and stay"
+	next "there all night."
 	dex
 
 _PidgeyDexEntry::
 	text "A common sight in"
-	next "forests and woods."
-	next "It flaps its"
+	next "farmyards. It is"
+	next "docile and prefers"
 
-	page "wings at ground"
-	next "level to kick up"
-	next "blinding sand"
+	page "to scratch for"
+	next "seeds rather than"
+	next "to fight."
 	dex
 
 _SlowpokeDexEntry::
-	text "Incredibly slow"
-	next "and dopey. It"
-	next "takes 5 seconds"
+	text "It is very slow"
+	next "to react. It takes"
+	next "a whole day to"
 
-	page "for it to feel"
-	next "pain when under"
-	next "attack"
+	page "notice it has"
+	next "been pecked, then"
+	next "forgets about it."
 	dex
 
 _KadabraDexEntry::
-	text "It emits special"
-	next "alpha waves from"
-	next "its body that"
+	text "Its black eyes"
+	next "stare without"
+	next "blinking. Spoons"
 
-	page "induce headaches"
-	next "just by being"
-	next "close by"
+	page "near it bend for"
+	next "no reason, which"
+	next "upsets farmers."
 	dex
 
 _GravelerDexEntry::
-	text "Rolls down slopes"
-	next "to move. It rolls"
-	next "over any obstacle"
+	text "It pecks at grit"
+	next "all day long. The"
+	next "stones it swallows"
 
-	page "without slowing"
-	next "or changing its"
-	next "direction"
+	page "rattle inside it"
+	next "when it runs down"
+	next "a hill."
 	dex
 
 _ChanseyDexEntry::
-	text "A rare and elusive"
-	next "#MON that is"
-	next "said to bring"
+	text "A kind hen that"
+	next "lays more eggs"
+	next "than any other. It"
 
-	page "happiness to those"
-	next "who manage to get"
-	next "it"
+	page "shares them with"
+	next "anyone who is hurt"
+	next "or hungry."
 	dex
 
 _MachokeDexEntry::
-	text "Its muscular body"
-	next "is so powerful, it"
-	next "must wear a power"
+	text "Its legs are so"
+	next "strong it can kick"
+	next "open a feed bin."
 
-	page "save belt to be"
-	next "able to regulate"
-	next "its motions"
+	page "Farmers use it to"
+	next "carry heavy sacks"
+	next "around the barn."
 	dex
 
 _MrMimeDexEntry::
-	text "If interrupted"
-	next "while it is"
-	next "miming, it will"
+	text "It pretends there"
+	next "are walls around"
+	next "it, and pecks at"
 
-	page "slap around the"
-	next "offender with its"
-	next "broad hands"
+	page "them. Somehow, no"
+	next "foe can get past"
+	next "them either."
 	dex
 
 _HitmonleeDexEntry::
-	text "When in a hurry,"
-	next "its legs lengthen"
-	next "progressively."
+	text "Its legs stretch"
+	next "to land long-range"
+	next "kicks. It flies"
 
-	page "It runs smoothly"
-	next "with extra long,"
-	next "loping strides"
+	page "into the air to"
+	next "strike with its"
+	next "spurs."
 	dex
 
 _HitmonchanDexEntry::
-	text "While apparently"
-	next "doing nothing, it"
-	next "fires punches in"
+	text "It pecks faster"
+	next "than the eye can"
+	next "follow. It is said"
 
-	page "lightning fast"
-	next "volleys that are"
-	next "impossible to see"
+	page "to never miss,"
+	next "even with its eyes"
+	next "shut."
 	dex
 
 _ArbokDexEntry::
-	text "It is rumored that"
-	next "the ferocious"
-	next "warning markings"
+	text "It puffs out the"
+	next "bare skin of its"
+	next "neck to scare off"
 
-	page "on its belly"
-	next "differ from area"
-	next "to area"
+	page "foes. The bigger"
+	next "the neck, the more"
+	next "hens follow it."
 	dex
 
 _ParasectDexEntry::
-	text "A host-parasite"
-	next "pair in which the"
-	next "parasite mushroom"
+	text "Its overgrown"
+	next "crest hides its"
+	next "eyes. It follows"
 
-	page "has taken over the"
-	next "host bug. Prefers"
-	next "damp places"
+	page "its nose to damp,"
+	next "shady spots full"
+	next "of tasty grubs."
 	dex
 
 _PsyduckDexEntry::
-	text "While lulling its"
-	next "enemies with its"
-	next "vacant look, this"
+	text "This is a duck. It"
+	next "swims, it waddles"
+	next "and it quacks. It"
 
-	page "wily #MON will"
-	next "use psychokinetic"
-	next "powers"
+	page "is definitely a"
+	next "duck. Please stop"
+	next "saying otherwise."
 	dex
 
 _DrowzeeDexEntry::
-	text "Puts enemies to"
-	next "sleep then eats"
-	next "their dreams."
+	text "It peeps softly"
+	next "until everyone"
+	next "nearby falls"
 
-	page "Occasionally gets"
-	next "sick from eating"
-	next "bad dreams"
+	page "asleep, then it"
+	next "steals the crumbs"
+	next "from their plates."
 	dex
 
 _GolemDexEntry::
-	text "Its boulder-like"
-	next "body is extremely"
-	next "hard. It can"
+	text "Its feathers are"
+	next "hard as slate. It"
+	next "rolls down hills"
 
-	page "easily withstand"
-	next "dynamite blasts"
-	next "without damage"
+	page "to get home fast,"
+	next "then shakes off"
+	next "the dust."
 	dex
 
 _MagmarDexEntry::
-	text "Its body always"
-	next "burns with an"
-	next "orange glow that"
+	text "Its fiery red tail"
+	next "trails behind it"
+	next "like flames. It"
 
-	page "enables it to"
-	next "hide perfectly"
-	next "among flames"
+	page "suns itself on"
+	next "hot rocks near"
+	next "volcanoes."
 	dex
 
 _ElectabuzzDexEntry::
-	text "Normally found"
-	next "near power plants,"
-	next "they can wander"
+	text "Its long golden"
+	next "tail feathers"
+	next "crackle in storms."
 
-	page "away and cause"
-	next "major blackouts"
-	next "in cities"
+	page "It roosts near"
+	next "power plants and"
+	next "loves blackouts."
 	dex
 
 _MagnetonDexEntry::
-	text "Formed by several"
-	next "MAGNECHICKs linked"
-	next "together. They"
+	text "Three chicks stuck"
+	next "together by"
+	next "static. They can't"
 
-	page "frequently appear"
-	next "when sunspots"
-	next "flare up"
+	page "be pulled apart"
+	next "and scramble the"
+	next "radio in the barn."
 	dex
 
 _KoffingDexEntry::
-	text "Because it stores"
-	next "several kinds of"
-	next "toxic gases in"
+	text "Its fluffy grey"
+	next "down traps a foul"
+	next "smell. When upset,"
 
-	page "its body, it is"
-	next "prone to exploding"
-	next "without warning"
+	page "it puffs up and"
+	next "lets the stink"
+	next "out all at once."
 	dex
 
 _MankeyDexEntry::
-	text "Extremely quick to"
-	next "anger. It could"
-	next "be docile one"
+	text "Even as a chick it"
+	next "picks fights with"
+	next "anything that"
 
-	page "moment then"
-	next "thrashing away"
-	next "the next instant"
+	page "moves. It sulks"
+	next "for hours if it"
+	next "loses."
 	dex
 
 _SeelDexEntry::
-	text "The protruding"
-	next "horn on its head"
-	next "is very hard."
+	text "A snow-white bird"
+	next "from royal courts."
+	next "It loves to swim"
 
-	page "It is used for"
-	next "bashing through"
-	next "thick ice"
+	page "in icy water and"
+	next "lies on the bank"
+	next "to dry its crest."
 	dex
 
 _DiglettDexEntry::
-	text "Lives about one"
-	next "yard underground"
-	next "where it feeds on"
+	text "It digs little"
+	next "holes in the dirt"
+	next "and hides in them"
 
-	page "plant roots. It"
-	next "sometimes appears"
-	next "above ground"
+	page "with only its head"
+	next "poking out. It is"
+	next "rarely seen whole."
 	dex
 
 _TaurosDexEntry::
-	text "When it targets"
-	next "an enemy, it"
-	next "charges furiously"
+	text "It charges at"
+	next "anything red. A"
+	next "flock of them"
 
-	page "while whipping its"
-	next "body with its"
-	next "long tails"
+	page "stampedes across"
+	next "the farm at the"
+	next "sight of a cape."
 	dex
 
 _FarfetchdDexEntry::
@@ -559,951 +559,951 @@ _FarfetchdDexEntry::
 	dex
 
 _VenonatDexEntry::
-	text "Lives in the"
-	next "shadows of tall"
-	next "trees where it"
+	text "Its big round eyes"
+	next "spot tiny insects."
+	next "At night it waits"
 
-	page "eats insects. It"
-	next "is attracted by"
-	next "light at night"
+	page "near lamps to"
+	next "snatch the moths"
+	next "that gather there."
 	dex
 
 _DragoniteDexEntry::
-	text "An extremely"
-	next "rarely seen"
-	next "marine #MON."
+	text "A wild rooster"
+	next "that can fly"
+	next "around the world."
 
-	page "Its intelligence"
-	next "is said to match"
-	next "that of humans"
+	page "It is said to lead"
+	next "lost hens home"
+	next "before dark."
 	dex
 
 _DoduoDexEntry::
-	text "A bird that makes"
-	next "up for its poor"
-	next "flying with its"
+	text "Its two heads"
+	next "never agree on"
+	next "which way to go,"
 
-	page "fast foot speed."
-	next "Leaves giant"
-	next "footprints"
+	page "so it often runs"
+	next "in circles until"
+	next "one gives up."
 	dex
 
 _PoliwagDexEntry::
-	text "Its newly grown"
-	next "legs prevent it"
-	next "from running. It"
+	text "Its thin down lets"
+	next "you see a swirl"
+	next "pattern on its"
 
-	page "appears to prefer"
-	next "swimming than"
-	next "trying to stand"
+	page "belly. It paddles"
+	next "clumsily in"
+	next "shallow ponds."
 	dex
 
 _JynxDexEntry::
-	text "It seductively"
-	next "wiggles its hips"
-	next "as it walks. It"
+	text "Its V-shaped comb"
+	next "looks like horns."
+	next "It clucks in a"
 
-	page "can cause people"
-	next "to dance in"
-	next "unison with it"
+	page "strange rhythm"
+	next "that sounds almost"
+	next "like singing."
 	dex
 
 _MoltresDexEntry::
-	text "Known as the"
-	next "legendary bird of"
-	next "fire. Every flap"
+	text "A legendary bird."
+	next "Its tail can grow"
+	next "for years. When it"
 
-	page "of its wings"
-	next "creates a dazzling"
-	next "flash of flames"
+	page "moults, the old"
+	next "feathers burst"
+	next "into flame."
 	dex
 
 _ArticunoDexEntry::
 	text "A legendary bird"
-	next "#MON that is"
-	next "said to appear to"
+	next "with a long white"
+	next "tail. It is said"
 
-	page "doomed people who"
-	next "are lost in icy"
-	next "mountains"
+	page "to appear to those"
+	next "lost in snowy"
+	next "mountains."
 	dex
 
 _ZapdosDexEntry::
 	text "A legendary bird"
-	next "#MON that is"
-	next "said to appear"
+	next "whose crow sounds"
+	next "like thunder. It"
 
-	page "from clouds while"
-	next "dropping enormous"
-	next "lightning bolts"
+	page "is said to appear"
+	next "when lightning"
+	next "strikes."
 	dex
 
 _DittoDexEntry::
-	text "Capable of copying"
-	next "an enemy's genetic"
-	next "code to instantly"
+	text "An egg that never"
+	next "hatches. It can"
+	next "turn into a copy"
 
-	page "transform itself"
-	next "into a duplicate"
-	next "of the enemy"
+	page "of any bird it"
+	next "sees. The copy is"
+	next "a bit egg-shaped."
 	dex
 
 _MeowthDexEntry::
-	text "Adores circular"
-	next "objects. Wanders"
-	next "the streets on a"
+	text "It loves shiny"
+	next "things. It pecks"
+	next "up lost coins and"
 
-	page "nightly basis to"
-	next "look for dropped"
-	next "loose change"
+	page "hoards them under"
+	next "the coop. It only"
+	next "comes out at dusk."
 	dex
 
 _KrabbyDexEntry::
-	text "Its pincers are"
-	next "not only powerful"
-	next "weapons, they are"
+	text "It scuttles about"
+	next "the shore and"
+	next "pecks at the crabs"
 
-	page "used for balance"
-	next "when walking"
-	next "sideways"
+	page "that pinch its"
+	next "feathered feet."
+	next "It always wins."
 	dex
 
 _VulpixDexEntry::
-	text "At the time of"
-	next "birth, it has"
-	next "just one tail."
+	text "Its curly red"
+	next "feathers point"
+	next "every which way."
 
-	page "The tail splits"
-	next "from its tip as"
-	next "it grows older"
+	page "On cold days it"
+	next "puffs them out to"
+	next "keep warm."
 	dex
 
 _NinetalesDexEntry::
-	text "Very smart and"
-	next "very vengeful."
-	next "Grabbing one of"
+	text "Its tail has nine"
+	next "curly plumes."
+	next "Legend says it can"
 
-	page "its many tails"
-	next "could result in a"
-	next "1000-year curse"
+	page "live for a very"
+	next "long time, and it"
+	next "never forgets."
 	dex
 
 _PikachuDexEntry::
-	text "When several of"
-	next "these #MON"
-	next "gather, their"
+	text "Its fluffy golden"
+	next "feathers build up"
+	next "static. Stroking"
 
-	page "electricity could"
-	next "build and cause"
-	next "lightning storms"
+	page "it can give you a"
+	next "small shock, but"
+	next "it likes a cuddle."
 	dex
 
 _RaichuDexEntry::
-	text "Its long tail"
-	next "serves as a"
-	next "ground to protect"
+	text "When it fluffs up"
+	next "its feathers, the"
+	next "static can light"
 
-	page "itself from its"
-	next "own high voltage"
-	next "power"
+	page "a whole coop. It"
+	next "discharges itself"
+	next "by pecking metal."
 	dex
 
 _DratiniDexEntry::
-	text "Long considered a"
-	next "mythical #MON"
-	next "until recently"
+	text "A wild chick from"
+	next "deep jungles. It"
+	next "was thought to be"
 
-	page "when a small"
-	next "colony was found"
-	next "living underwater"
+	page "a myth until one"
+	next "was found in a"
+	next "village coop."
 	dex
 
 _DragonairDexEntry::
-	text "A mystical #MON"
-	next "that exudes a"
-	next "gentle aura."
+	text "Its comb is said"
+	next "to change the"
+	next "weather. Farmers"
 
-	page "Has the ability"
-	next "to change climate"
-	next "conditions"
+	page "keep one nearby to"
+	next "bring rain to"
+	next "their crops."
 	dex
 
 _KabutoDexEntry::
-	text "A #MON that"
-	next "was resurrected"
-	next "from a fossil"
+	text "A prehistoric"
+	next "chick revived from"
+	next "a fossil. It hides"
 
-	page "found in what was"
-	next "once the ocean"
-	next "floor eons ago"
+	page "under its stone-"
+	next "like back feathers"
+	next "when frightened."
 	dex
 
 _KabutopsDexEntry::
-	text "Its sleek shape is"
-	next "perfect for swim-"
-	next "ming. It slashes"
+	text "A rooster from"
+	next "ancient times. Its"
+	next "spurs are sharp as"
 
-	page "prey with its"
-	next "claws and drains"
-	next "the body fluids"
+	page "scythes. It hunted"
+	next "in the shallows"
+	next "for fish."
 	dex
 
 _HorseaDexEntry::
-	text "Known to shoot"
-	next "down flying bugs"
-	next "with precision"
+	text "It bobs on the"
+	next "water like a cork."
+	next "When scared, it"
 
-	page "blasts of ink"
-	next "from the surface"
-	next "of the water"
+	page "squirts water from"
+	next "its beak and"
+	next "paddles away."
 	dex
 
 _SeadraDexEntry::
-	text "Capable of swim-"
-	next "ming backwards by"
-	next "rapidly flapping"
+	text "It roosts on"
+	next "rocks by the sea."
+	next "Its barred"
 
-	page "its wing-like"
-	next "pectoral fins and"
-	next "stout tail"
+	page "feathers help it"
+	next "hide among the"
+	next "waves."
 	dex
 
 _SandshrewDexEntry::
-	text "Burrows deep"
-	next "underground in"
-	next "arid locations"
+	text "It rolls in dry"
+	next "dirt for hours to"
+	next "keep its feathers"
 
-	page "far from water."
-	next "It only emerges"
-	next "to hunt for food"
+	page "clean of mites. It"
+	next "leaves round pits"
+	next "all over the yard."
 	dex
 
 _SandslashDexEntry::
-	text "Curls up into a"
-	next "spiny ball when"
-	next "threatened. It"
+	text "Its frizzled"
+	next "feathers stick out"
+	next "like spines. Dust"
 
-	page "can roll while"
-	next "curled up to"
-	next "attack or escape"
+	page "gets caught in"
+	next "them, so it often"
+	next "sneezes."
 	dex
 
 _OmanyteDexEntry::
-	text "Although long"
-	next "extinct, in rare"
-	next "cases, it can be"
+	text "An egg that turned"
+	next "to stone long ago."
+	next "Scientists brought"
 
-	page "genetically"
-	next "resurrected from"
-	next "fossils"
+	page "it back to life,"
+	next "but it still has"
+	next "not hatched."
 	dex
 
 _OmastarDexEntry::
-	text "A prehistoric"
-	next "#MON that died"
-	next "out when its"
+	text "A chick that broke"
+	next "out of a fossil"
+	next "egg. Its beak is"
 
-	page "heavy shell made"
-	next "it impossible to"
-	next "catch prey"
+	page "tough enough to"
+	next "crack shells, but"
+	next "its feet are slow."
 	dex
 
 _JigglypuffDexEntry::
-	text "When its huge eyes"
-	next "light up, it sings"
-	next "a mysteriously"
+	text "It coos a soft"
+	next "lullaby. Anyone"
+	next "who hears it falls"
 
-	page "soothing melody"
-	next "that lulls its"
-	next "enemies to sleep"
+	page "asleep, and wakes"
+	next "up covered in"
+	next "downy fluff."
 	dex
 
 _WigglytuffDexEntry::
-	text "The body is soft"
-	next "and rubbery. When"
-	next "angered, it will"
+	text "Its fluffy coat"
+	next "wins prizes at"
+	next "every show. It"
 
-	page "suck in air and"
-	next "inflate itself to"
-	next "an enormous size"
+	page "puffs up to twice"
+	next "its size when it"
+	next "is proud."
 	dex
 
 _EeveeDexEntry::
-	text "Its genetic code"
-	next "is irregular."
-	next "It may mutate if"
+	text "A chick of mixed"
+	next "breeds. It could"
+	next "grow into almost"
 
-	page "it is exposed to"
-	next "radiation from"
-	next "element STONEs"
+	page "any kind of bird,"
+	next "depending on how"
+	next "it is raised."
 	dex
 
 _FlareonDexEntry::
-	text "When storing"
-	next "thermal energy in"
-	next "its body, its"
+	text "Its thick red"
+	next "feathers trap so"
+	next "much heat that it"
 
-	page "temperature could"
-	next "soar to over 1600"
-	next "degrees"
+	page "can hatch eggs"
+	next "just by sitting"
+	next "near them."
 	dex
 
 _JolteonDexEntry::
-	text "It accumulates"
-	next "negative ions in"
-	next "the atmosphere to"
+	text "Its golden laced"
+	next "feathers stand up"
+	next "like needles when"
 
-	page "blast out 10000-"
-	next "volt lightning"
-	next "bolts"
+	page "it is cross, and"
+	next "they spark if you"
+	next "touch them."
 	dex
 
 _VaporeonDexEntry::
-	text "Lives close to"
-	next "water. Its long"
-	next "tail is ridged"
+	text "Its soft blue"
+	next "feathers repel"
+	next "water. It loves to"
 
-	page "with a fin which"
-	next "is often mistaken"
-	next "for a mermaid's"
+	page "sit in the rain"
+	next "and is hard to see"
+	next "in a pond."
 	dex
 
 _MachopDexEntry::
-	text "Loves to build"
-	next "its muscles."
-	next "It trains in all"
+	text "A MALAY chick with"
+	next "big muscular legs."
+	next "It trains by"
 
-	page "styles of martial"
-	next "arts to become"
-	next "even stronger"
+	page "kicking pebbles"
+	next "around the yard"
+	next "all day."
 	dex
 
 _ZubatDexEntry::
-	text "Forms colonies in"
-	next "perpetually dark"
-	next "places. Uses"
+	text "It roosts in dark"
+	next "barn rafters and"
+	next "only comes out"
 
-	page "ultrasonic waves"
-	next "to identify and"
-	next "approach targets"
+	page "at night. It finds"
+	next "its way by"
+	next "clucking softly."
 	dex
 
 _EkansDexEntry::
-	text "Moves silently"
-	next "and stealthily."
-	next "Eats the eggs of"
+	text "It hatches with a"
+	next "bare red neck. Its"
+	next "sour smell keeps"
 
-	page "birds, such as"
-	next "PECKGEY and"
-	next "SPURROW, whole"
+	page "foxes away. Its"
+	next "name is CHICK,"
+	next "spelled backwards."
 	dex
 
 _ParasDexEntry::
-	text "Burrows to suck"
-	next "tree roots. The"
-	next "mushrooms on its"
+	text "It has five toes"
+	next "instead of four."
+	next "It scratches up"
 
-	page "back grow by draw-"
-	next "ing nutrients from"
-	next "the bug host"
+	page "mushrooms and"
+	next "bugs from damp"
+	next "forest floors."
 	dex
 
 _PoliwhirlDexEntry::
-	text "Capable of living"
-	next "in or out of"
-	next "water. When out"
+	text "Its wattles stay"
+	next "wet at all times."
+	next "It can swim, but"
 
-	page "of water, it"
-	next "sweats to keep"
-	next "its body slimy"
+	page "prefers to wade"
+	next "along the edges"
+	next "of ponds."
 	dex
 
 _PoliwrathDexEntry::
-	text "An adept swimmer"
-	next "at both the front"
-	next "crawl and breast"
+	text "A strong swimmer"
+	next "with powerful"
+	next "wings. It can"
 
-	page "stroke. Easily"
-	next "overtakes the best"
-	next "human swimmers"
+	page "paddle across a"
+	next "lake without a"
+	next "single rest."
 	dex
 
 _WeedleDexEntry::
-	text "Often found in"
-	next "forests, eating"
-	next "leaves."
+	text "It tweets nonstop"
+	next "from dawn to dusk."
+	next "Its sharp little"
 
-	page "It has a sharp"
-	next "venomous stinger"
-	next "on its head"
+	page "beak can give a"
+	next "nasty nip to"
+	next "careless fingers."
 	dex
 
 _KakunaDexEntry::
-	text "Almost incapable"
-	next "of moving, this"
-	next "#MON can only"
+	text "It hardly moves"
+	next "while moulting,"
+	next "but it cackles"
 
-	page "harden its shell"
-	next "to protect itself"
-	next "from predators"
+	page "angrily if anyone"
+	next "comes near its"
+	next "roosting spot."
 	dex
 
 _BeedrillDexEntry::
-	text "Flies at high"
-	next "speed and attacks"
-	next "using its large"
+	text "It attacks in"
+	next "flocks, jabbing"
+	next "with its beak and"
 
-	page "venomous stingers"
-	next "on its forelegs"
-	next "and tail"
+	page "long spurs. Its"
+	next "pecks sting for"
+	next "hours afterwards."
 	dex
 
 _DodrioDexEntry::
-	text "Uses its three"
-	next "brains to execute"
-	next "complex plans."
+	text "Its three heads"
+	next "take turns to"
+	next "sleep, so one is"
 
-	page "While two heads"
-	next "sleep, one head"
-	next "stays awake"
+	page "always on watch."
+	next "It crows three"
+	next "times at dawn."
 	dex
 
 _PrimeapeDexEntry::
-	text "Always furious"
-	next "and tenacious to"
-	next "boot. It will not"
+	text "An ASIL that is"
+	next "always furious."
+	next "It does not stop"
 
-	page "abandon chasing"
-	next "its quarry until"
-	next "it is caught"
+	page "fighting until it"
+	next "wins, even when no"
+	next "one fights back."
 	dex
 
 _DugtrioDexEntry::
-	text "A team of DIGPEEP"
-	next "triplets."
-	next "It triggers huge"
+	text "Three chicks that"
+	next "never leave each"
+	next "other's side. They"
 
-	page "earthquakes by"
-	next "burrowing 60 miles"
-	next "underground"
+	page "dig as one and can"
+	next "tunnel under any"
+	next "fence."
 	dex
 
 _VenomothDexEntry::
-	text "The dust-like"
-	next "scales covering"
-	next "its wings are"
+	text "Its feathered legs"
+	next "shed a fine dust."
+	next "Bugs that land on"
 
-	page "color coded to"
-	next "indicate the kinds"
-	next "of poison it has"
+	page "them are stunned,"
+	next "and it gobbles"
+	next "them up."
 	dex
 
 _DewgongDexEntry::
-	text "Stores thermal"
-	next "energy in its"
-	next "body. Swims at a"
+	text "Its thick white"
+	next "feathers keep it"
+	next "warm in freezing"
 
-	page "steady 8 knots"
-	next "even in intensely"
-	next "cold waters"
+	page "seas. It sleeps"
+	next "on drifting ice,"
+	next "head tucked in."
 	dex
 
 _CaterpieDexEntry::
-	text "Its short feet"
-	next "are tipped with"
-	next "suction pads that"
+	text "A tiny bantam that"
+	next "eats nothing but"
+	next "caterpillars. Its"
 
-	page "enable it to"
-	next "tirelessly climb"
-	next "slopes and walls"
+	page "laced feathers"
+	next "look like leaves"
+	next "to wary bugs."
 	dex
 
 _MetapodDexEntry::
-	text "This #MON is"
-	next "vulnerable to"
-	next "attack while its"
+	text "It stays very"
+	next "still while its"
+	next "old feathers fall"
 
-	page "shell is soft,"
-	next "exposing its weak"
-	next "and tender body"
+	page "out. It hides in"
+	next "the hay until new"
+	next "ones grow in."
 	dex
 
 _ButterfreeDexEntry::
-	text "In battle, it"
-	next "flaps its wings"
-	next "at high speed to"
+	text "Its new feathers"
+	next "are edged in black"
+	next "lace. It flutters"
 
-	page "release highly"
-	next "toxic dust into"
-	next "the air"
+	page "from flower to"
+	next "flower hunting"
+	next "for beetles."
 	dex
 
 _MachampDexEntry::
-	text "Using its heavy"
-	next "muscles, it throws"
-	next "powerful punches"
+	text "The tallest of"
+	next "farmyard roosters."
+	next "It can kick in"
 
-	page "that can send the"
-	next "victim clear over"
-	next "the horizon"
+	page "four directions"
+	next "at once before a"
+	next "foe can blink."
 	dex
 
 _GolduckDexEntry::
-	text "Often seen swim-"
-	next "ming elegantly by"
-	next "lake shores. It"
+	text "Another duck. Any"
+	next "claims that it"
+	next "clucks, roosts or"
 
-	page "is often mistaken"
-	next "for the Japanese"
-	next "monster, Kappa"
+	page "lays brown eggs"
+	next "are false. It is"
+	next "a duck. Thank you."
 	dex
 
 _HypnoDexEntry::
-	text "When it locks eyes"
-	next "with an enemy, it"
-	next "will use a mix of"
+	text "It sways its"
+	next "beard back and"
+	next "forth. Anyone who"
 
-	page "PSI moves such as"
-	next "HYPNOSIS and"
-	next "CONFUSION"
+	page "watches it for"
+	next "too long starts"
+	next "to cluck."
 	dex
 
 _GolbatDexEntry::
-	text "Once it strikes,"
-	next "it will not stop"
-	next "draining energy"
+	text "Its beak opens"
+	next "surprisingly wide."
+	next "It swoops from"
 
-	page "from the victim"
-	next "even if it gets"
-	next "too heavy to fly"
+	page "the rafters to"
+	next "steal feed from"
+	next "other birds."
 	dex
 
 _MewtwoDexEntry::
-	text "It was created by"
-	next "a scientist after"
-	next "years of horrific"
+	text "A goose made in a"
+	next "lab. Its cable"
+	next "links its mind to"
 
-	page "gene splicing and"
-	next "DNA engineering"
-	next "experiments"
+	page "a glowing node."
+	next "It is not a"
+	next "chicken at all."
 	dex
 
 _SnorlaxDexEntry::
-	text "Very lazy. Just"
-	next "eats and sleeps."
-	next "As its rotund"
+	text "It sleeps through"
+	next "every dawn, so it"
+	next "never crows. It"
 
-	page "bulk builds, it"
-	next "becomes steadily"
-	next "more slothful"
+	page "only wakes up to"
+	next "eat, then falls"
+	next "asleep again."
 	dex
 
 _MagikarpDexEntry::
-	text "In the distant"
-	next "past, it was"
-	next "somewhat stronger"
+	text "A scrawny chick"
+	next "that can only"
+	next "flop about in"
 
-	page "than the horribly"
-	next "weak descendants"
-	next "that exist today"
+	page "puddles. It is"
+	next "weak, but it never"
+	next "gives up."
 	dex
 
 _MukDexEntry::
-	text "Thickly covered"
-	next "with a filthy,"
-	next "vile sludge. It"
+	text "It wallows in the"
+	next "muddiest corner of"
+	next "the farm. Where it"
 
-	page "is so toxic, even"
-	next "its footprints"
-	next "contain poison"
+	page "walks, the grass"
+	next "wilts and the"
+	next "puddles go black."
 	dex
 
 _KinglerDexEntry::
-	text "The large pincer"
-	next "has 10000 hp of"
-	next "crushing power."
+	text "One of its wings"
+	next "is far bigger than"
+	next "the other. It can"
 
-	page "However, its huge"
-	next "size makes it"
-	next "unwieldy to use"
+	page "knock over a fox"
+	next "with it, but it"
+	next "flies in circles."
 	dex
 
 _CloysterDexEntry::
-	text "When attacked, it"
-	next "launches its"
-	next "horns in quick"
+	text "Its feathers are"
+	next "layered like hard"
+	next "shells. Once it"
 
-	page "volleys. Its"
-	next "innards have"
-	next "never been seen"
+	page "tucks its head in,"
+	next "nothing can get"
+	next "at it."
 	dex
 
 _ElectrodeDexEntry::
-	text "It stores electric"
-	next "energy under very"
-	next "high pressure."
+	text "It stores so much"
+	next "static that its"
+	next "feathers stand on"
 
-	page "It often explodes"
-	next "with little or no"
-	next "provocation"
+	page "end. One wrong"
+	next "poke and it goes"
+	next "off with a POP!"
 	dex
 
 _ClefableDexEntry::
-	text "A timid fairy"
-	next "#MON that is"
-	next "rarely seen. It"
+	text "Its fluffy beard"
+	next "hides its face. It"
+	next "is rarely seen, as"
 
-	page "will run and hide"
-	next "the moment it"
-	next "senses people"
+	page "it only comes out"
+	next "on quiet nights"
+	next "with a full moon."
 	dex
 
 _WeezingDexEntry::
-	text "Where two kinds"
-	next "of poison gases"
-	next "meet, 2 CLUCKINGs"
+	text "Its two heads"
+	next "squawk at each"
+	next "other all day. The"
 
-	page "can fuse into a"
-	next "SQUAWKING over"
-	next "many years"
+	page "noise and the"
+	next "smell keep every"
+	next "other bird away."
 	dex
 
 _PersianDexEntry::
-	text "Although its fur"
-	next "has many admirers,"
-	next "it is tough to"
+	text "A proud bird with"
+	next "a glossy coat. It"
+	next "perches up high"
 
-	page "raise as a pet"
-	next "because of its"
-	next "fickle meanness"
+	page "and looks down on"
+	next "everyone. It hates"
+	next "getting muddy."
 	dex
 
 _MarowakDexEntry::
-	text "The bone it holds"
-	next "is its key weapon."
-	next "It throws the"
+	text "It still wears its"
+	next "old eggshell, now"
+	next "cracked and worn."
 
-	page "bone skillfully"
-	next "like a boomerang"
-	next "to KO targets"
+	page "It tosses it at"
+	next "foes like a"
+	next "boomerang."
 	dex
 
 _HaunterDexEntry::
-	text "Because of its"
-	next "ability to slip"
-	next "through block"
+	text "It crows at"
+	next "midnight instead"
+	next "of dawn. Those who"
 
-	page "walls, it is said"
-	next "to be from an-"
-	next "other dimension"
+	page "hear it feel a"
+	next "chill down their"
+	next "spine."
 	dex
 
 _AbraDexEntry::
-	text "Using its ability"
-	next "to read minds, it"
-	next "will identify"
+	text "It is black from"
+	next "beak to toe, even"
+	next "inside. It sleeps"
 
-	page "impending danger"
-	next "and TELEPORT to"
-	next "safety"
+	page "18 hours a day and"
+	next "vanishes if you"
+	next "blink."
 	dex
 
 _AlakazamDexEntry::
-	text "Its brain can out-"
-	next "perform a super-"
-	next "computer."
+	text "Its brain is said"
+	next "to be the size of"
+	next "a hen's egg. It"
 
-	page "Its intelligence"
-	next "quotient is said"
-	next "to be 5,000"
+	page "remembers every"
+	next "seed it has ever"
+	next "eaten."
 	dex
 
 _PidgeottoDexEntry::
-	text "Very protective"
-	next "of its sprawling"
-	next "territorial area,"
+	text "It guards a wide"
+	next "patch of yard and"
+	next "flaps up onto"
 
-	page "this #MON will"
-	next "fiercely peck at"
-	next "any intruder"
+	page "fence posts to"
+	next "keep watch for"
+	next "hawks."
 	dex
 
 _PidgeotDexEntry::
-	text "When hunting, it"
-	next "skims the surface"
-	next "of water at high"
+	text "Its tail feathers"
+	next "sweep the ground"
+	next "as it walks. It"
 
-	page "speed to pick off"
-	next "unwary prey such"
-	next "as MAGICHICK"
+	page "keeps them clean"
+	next "by perching high"
+	next "above the mud."
 	dex
 
 _StarmieDexEntry::
-	text "Its central core"
-	next "glows with the"
-	next "seven colors of"
+	text "Its crest glows"
+	next "with all colors of"
+	next "the rainbow. Some"
 
-	page "the rainbow. Some"
-	next "people value the"
-	next "core as a gem"
+	page "say it is a"
+	next "message from"
+	next "the stars."
 	dex
 
 _BulbasaurDexEntry::
-	text "A strange seed was"
-	next "planted on its"
-	next "back at birth."
+	text "Hatched in a seed"
+	next "tray. It pecks at"
+	next "sprouts all day"
 
-	page "The plant sprouts"
-	next "and grows with"
-	next "this #MON"
+	page "and naps in warm"
+	next "potting soil when"
+	next "it is full."
 	dex
 
 _VenusaurDexEntry::
-	text "The plant blooms"
-	next "when it is"
-	next "absorbing solar"
+	text "The smallest of"
+	next "roosters, yet its"
+	next "full tail fans out"
 
-	page "energy. It stays"
-	next "on the move to"
-	next "seek sunlight"
+	page "like a flower. It"
+	next "bows to rivals"
+	next "before battle."
 	dex
 
 _TentacruelDexEntry::
-	text "The tentacles are"
-	next "normally kept"
-	next "short. On hunts,"
+	text "Its long tail"
+	next "feathers trail in"
+	next "the water like"
 
-	page "they are extended"
-	next "to ensnare and"
-	next "immobilize prey"
+	page "seaweed. Fish"
+	next "that brush against"
+	next "them are stunned."
 	dex
 
 _GoldeenDexEntry::
-	text "Its tail fin"
-	next "billows like an"
-	next "elegant ballroom"
+	text "Its golden laced"
+	next "feathers shimmer"
+	next "in the water. It"
 
-	page "dress, giving it"
-	next "the nickname of"
-	next "the Water Queen"
+	page "swims gracefully"
+	next "and is known as"
+	next "the farm's queen."
 	dex
 
 _SeakingDexEntry::
-	text "In the autumn"
-	next "spawning season,"
-	next "they can be seen"
+	text "A prize winner at"
+	next "every show. It"
+	next "preens for hours"
 
-	page "swimming power-"
-	next "fully up rivers"
-	next "and creeks"
+	page "before swimming"
+	next "so its feathers"
+	next "stay perfect."
 	dex
 
 _PonytaDexEntry::
-	text "Its hooves are 10"
-	next "times harder than"
-	next "diamonds. It can"
+	text "It can run soon"
+	next "after it hatches."
+	next "Its feet are so"
 
-	page "trample anything"
-	next "completely flat"
-	next "in little time"
+	page "warm that frost"
+	next "melts wherever it"
+	next "has trodden."
 	dex
 
 _RapidashDexEntry::
-	text "Very competitive,"
-	next "this #MON will"
-	next "chase anything"
+	text "It struts so fast"
+	next "that its feet"
+	next "scorch the ground."
 
-	page "that moves fast"
-	next "in the hopes of"
-	next "racing it"
+	page "It races the"
+	next "other roosters to"
+	next "every meal."
 	dex
 
 _RattataDexEntry::
-	text "Bites anything"
-	next "when it attacks."
-	next "Small and very"
+	text "Small but bold, it"
+	next "will peck at the"
+	next "feet of anything"
 
-	page "quick, it is a"
-	next "common sight in"
-	next "many places"
+	page "that walks past."
+	next "It breeds fast and"
+	next "is found anywhere."
 	dex
 
 _RaticateDexEntry::
-	text "It uses its whis-"
-	next "kers to maintain"
-	next "its balance."
+	text "Its sharp spurs"
+	next "keep growing all"
+	next "its life, so it"
 
-	page "It apparently"
-	next "slows down if"
-	next "they are cut off"
+	page "files them down"
+	next "on stones and"
+	next "fence posts."
 	dex
 
 _NidorinoDexEntry::
-	text "An aggressive"
-	next "#MON that is"
-	next "quick to attack."
+	text "It is quick to"
+	next "anger and will"
+	next "charge at anything"
 
-	page "The horn on its"
-	next "head secretes a"
-	next "powerful venom"
+	page "with its spurs."
+	next "It crows at least"
+	next "twice an hour."
 	dex
 
 _NidorinaDexEntry::
-	text "The female's horn"
-	next "develops slowly."
-	next "Prefers physical"
+	text "It keeps its flock"
+	next "in order. When it"
+	next "senses danger, its"
 
-	page "attacks such as"
-	next "clawing and"
-	next "biting"
+	page "neck feathers"
+	next "stand up and it"
+	next "cackles a warning."
 	dex
 
 _GeodudeDexEntry::
-	text "Found in fields"
-	next "and mountains."
-	next "Mistaking them"
+	text "It swallows small"
+	next "stones to help it"
+	next "grind its food. It"
 
-	page "for boulders,"
-	next "people often step"
-	next "or trip on them"
+	page "is often mistaken"
+	next "for a brown rock"
+	next "in the yard."
 	dex
 
 _PorygonDexEntry::
-	text "A #MON that"
-	next "consists entirely"
-	next "of programming"
+	text "A toy rooster made"
+	next "of plastic. It was"
+	next "built by SILPH CO."
 
-	page "code. Capable of"
-	next "moving freely in"
-	next "cyberspace"
+	page "to see if a fake"
+	next "rooster could"
+	next "wake people up."
 	dex
 
 _AerodactylDexEntry::
-	text "A ferocious, pre-"
-	next "historic #MON"
-	next "that goes for the"
+	text "The ancestor of"
+	next "all chickens, it"
+	next "was revived from"
 
-	page "enemy's throat"
-	next "with its serrated"
-	next "saw-like fangs"
+	page "amber. It still"
+	next "has teeth in its"
+	next "beak."
 	dex
 
 _MagnemiteDexEntry::
-	text "Uses anti-gravity"
-	next "to stay suspended."
-	next "Appears without"
+	text "Bits of wire and"
+	next "nails stick to its"
+	next "down. It peeps in"
 
-	page "warning and uses"
-	next "THUNDER WAVE and"
-	next "similar moves"
+	page "a strange buzzing"
+	next "tone near power"
+	next "lines."
 	dex
 
 _CharmanderDexEntry::
-	text "Obviously prefers"
-	next "hot places. When"
-	next "it rains, steam"
+	text "Its down is the"
+	next "color of embers."
+	next "It huddles under"
 
-	page "is said to spout"
-	next "from the tip of"
-	next "its tail"
+	page "heat lamps and"
+	next "peeps loudly when"
+	next "they switch off."
 	dex
 
 _SquirtleDexEntry::
-	text "After birth, its"
-	next "back swells and"
-	next "hardens into a"
+	text "It loves to splash"
+	next "in puddles and"
+	next "drinking troughs."
 
-	page "shell. Powerfully"
-	next "sprays foam from"
-	next "its mouth"
+	page "Its fluffy blue"
+	next "down dries quickly"
+	next "in the sun."
 	dex
 
 _CharmeleonDexEntry::
-	text "When it swings"
-	next "its burning tail,"
-	next "it elevates the"
+	text "A hot-tempered"
+	next "cockerel. It pecks"
+	next "at anything red,"
 
-	page "temperature to"
-	next "unbearably high"
-	next "levels"
+	page "including its own"
+	next "reflection. Its"
+	next "comb glows warmly."
 	dex
 
 _WartortleDexEntry::
-	text "Often hides in"
-	next "water to stalk"
-	next "unwary prey. For"
+	text "Its long wattles"
+	next "swing as it runs."
+	next "It can drink a"
 
-	page "swimming fast, it"
-	next "moves its ears to"
-	next "maintain balance"
+	page "whole water dish"
+	next "in one go, then"
+	next "crows for more."
 	dex
 
 _CharizardDexEntry::
-	text "Spits fire that"
-	next "is hot enough to"
-	next "melt boulders."
+	text "It crows so loud"
+	next "at dawn, sparks"
+	next "fly from its comb."
 
-	page "Known to cause"
-	next "forest fires"
-	next "unintentionally"
+	page "It never wakes"
+	next "late, and won't"
+	next "let you either."
 	dex
 
 _OddishDexEntry::
-	text "During the day,"
-	next "it keeps its face"
-	next "buried in the"
+	text "A small tuft grows"
+	next "on its head. It"
+	next "buries itself in"
 
-	page "ground. At night,"
-	next "it wanders around"
-	next "sowing its seeds"
+	page "straw by day and"
+	next "wanders the yard"
+	next "at night."
 	dex
 
 _GloomDexEntry::
-	text "The fluid that"
-	next "oozes from its"
-	next "mouth isn't drool."
+	text "Its crest now"
+	next "covers its eyes,"
+	next "so it bumps into"
 
-	page "It is a nectar"
-	next "that is used to"
-	next "attract prey"
+	page "things often. It"
+	next "gives off a musty"
+	next "smell when grumpy."
 	dex
 
 _VileplumeDexEntry::
-	text "The larger its"
-	next "petals, the more"
-	next "toxic pollen it"
+	text "Its huge crest"
+	next "looks like a pom-"
+	next "pom. It shakes it"
 
-	page "contains. Its big"
-	next "head is heavy and"
-	next "hard to hold up"
+	page "to scatter dust"
+	next "that makes foes"
+	next "sneeze."
 	dex
 
 _BellsproutDexEntry::
-	text "A carnivorous"
-	next "#MON that traps"
-	next "and eats bugs."
+	text "A skinny chick"
+	next "with long legs. It"
+	next "plants itself in"
 
-	page "It uses its root"
-	next "feet to soak up"
-	next "needed moisture"
+	page "sunny gardens and"
+	next "waits for bugs to"
+	next "wander past."
 	dex
 
 _WeepinbellDexEntry::
-	text "It spits out"
-	next "POISONPOWDER to"
-	next "immobilize the"
+	text "It hangs from"
+	next "branches by its"
+	next "feet and snaps its"
 
-	page "enemy and then"
-	next "finishes it with"
-	next "a spray of ACID"
+	page "long bill at any"
+	next "bug that comes"
+	next "too close."
 	dex
 
 _VictreebelDexEntry::
-	text "Said to live in"
-	next "huge colonies"
-	next "deep in jungles,"
+	text "Its huge beak can"
+	next "swallow a frog"
+	next "whole. It lures"
 
-	page "although no one"
-	next "has ever returned"
-	next "from there"
+	page "prey with a sweet"
+	next "smell from its"
+	next "comb."
 	dex
