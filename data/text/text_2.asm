@@ -182,7 +182,7 @@ _CeruleanPokecenterGuyText::
 	done
 
 _LavenderPokecenterGuyText::
-	text "CUBSHELLs wear"
+	text "CUESHELLs wear"
 	line "skulls, right?"
 
 	para "People will pay a"

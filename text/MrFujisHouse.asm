@@ -7,7 +7,7 @@ _MrFujisHouseSuperNerdMrFujiIsntHereText::
 _MrFujisHouseSuperNerdMrFujiHadBeenPrayingText::
 	text "MR.FUJI had been"
 	line "praying alone for"
-	cont "CUBSHELL's mother."
+	cont "CUESHELL's mother."
 	done
 
 _MrFujisHouseLittleGirlThisIsMrFujisHouseText::

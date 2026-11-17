@@ -16,7 +16,7 @@ MonsterNames::
 	dname "CROWGAR"
 	dname "NIDOHEN♀"
 	dname "BROODQUEEN"
-	dname "CUBSHELL"
+	dname "CUESHELL"
 	dname "BRAHMHORN"
 	dname "LAYPRAS"
 	dname "ARCAROOST"

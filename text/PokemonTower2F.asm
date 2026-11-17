@@ -31,7 +31,7 @@ _PokemonTower2FRivalHowsYourDexText::
 	text "How's your #DEX"
 	line "coming, pal?"
 	cont "I just caught a"
-	cont "CUBSHELL!"
+	cont "CUESHELL!"
 
 	para "I can't find the"
 	line "grown-up MAROBAWK"

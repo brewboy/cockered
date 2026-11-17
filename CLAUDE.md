@@ -118,7 +118,7 @@ In-game names (in **bold**) are max 10 characters (`NAME_LENGTH - 1`) and live i
 101. Electrode → **ELECTROOST** – Round Cochin standard
 102. Exeggcute → **EXEGGCLUCK** – six Easter Egger eggs (Grass/Psychic)
 103. Exeggutor → **EXEGGROOST** – Easter Egger rooster
-104. Cubone → **CUBSHELL** – Chick wearing an eggshell (Ground)
+104. Cubone → **CUESHELL** – Chick wearing an eggshell (Ground)
 105. Marowak → **MAROBAWK** – Cockerel wearing an eggshell
 106. Hitmonlee → **HITMONSPUR** – Thai Game rooster (Fighting)
 107. Hitmonchan → **HITMONPECK** – Cubalaya rooster (Fighting)

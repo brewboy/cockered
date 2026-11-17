@@ -8,7 +8,7 @@ _PokemonTower7FMrFujiRescueText::
 
 	para "I came to calm"
 	line "the soul of"
-	cont "CUBSHELL's mother."
+	cont "CUESHELL's mother."
 
 	para "I think MAROBAWK's"
 	line "spirit has gone"
