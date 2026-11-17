@@ -178,7 +178,9 @@ In-game names (in **bold**) are max 10 characters (`NAME_LENGTH - 1`) and live i
 
 ## Sprites
 
-- Front and back sprites are imported with `python3 tools/import_rooster_sprites.py <dir>`, where `<dir>` holds 56×56 grayscale PNGs named `NNN_<breed>.png` in Pokédex order. Re-run it and `make` whenever the art changes.
+- Source art lives in `gfx/rooster_src/`: `gameboy/` (56×56, four shades, used by the game), `colour/` (56×56 RGBA, reference), `colour_x4/` (the colour set at 224×224) and `index.csv`. Files are named `NNN_<breed>.png` in Pokédex order.
+- Import with `python3 tools/import_rooster_sprites.py` (defaults to `gfx/rooster_src/gameboy`), then `make`. Re-run whenever the art changes.
+- The Mewtwo goose is drawn by `tools/draw_rooster_goose.py`, which writes matching gameboy, colour and colour_x4 versions.
 - Fronts are cropped to the smallest bottom-centred 40/48/56 square. Back sprites are derived from the fronts (mirrored to face right, shrunk to 32×32) as placeholders until proper back art exists.
 - Farfetch'd (#83) is skipped and keeps its original sprites. Mewtwo (#150) uses `150_lab_bred_goose.png`.
 - Each pics bank (`gfx/pics.asm`, "Pics 1"–"Pics 5") must stay within its ROM bank; check free space in `pokered.map` after big art changes.

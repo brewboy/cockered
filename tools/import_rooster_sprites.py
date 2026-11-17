@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Import Rooster Edition sprites into gfx/pokemon/front and gfx/pokemon/back.
 
-Usage: tools/import_rooster_sprites.py SPRITE_DIR
+Usage: tools/import_rooster_sprites.py [SPRITE_DIR]
 
-SPRITE_DIR holds 56x56 grayscale PNGs named NNN_<breed>.png (Pokédex order).
+SPRITE_DIR (default: gfx/rooster_src/gameboy) holds 56x56 grayscale PNGs named NNN_<breed>.png (Pokédex order).
 Front sprites are cropped to the smallest bottom-centred 40/48/56 square that
 fits them. Back sprites are derived from the fronts: mirrored to face right and
 shrunk to 32x32. Run from the repository root.
@@ -131,7 +131,7 @@ def species_files():
 
 
 def main():
-	src = sys.argv[1]
+	src = sys.argv[1] if len(sys.argv) > 1 else 'gfx/rooster_src/gameboy'
 	for dex, name in enumerate(species_files(), 1):
 		if dex in SKIP:
 			continue
