@@ -137,20 +137,20 @@ _CeruleanCityGuardText::
 	done
 
 _CeruleanCityCooltrainerF1SlowbroUseSonicboomText::
-	text "OK! SLOWBRO!"
+	text "OK! SLOWROO!"
 	line "Use SONICBOOM!"
-	cont "Come on, SLOWBRO"
+	cont "Come on, SLOWROO"
 	cont "pay attention!"
 	done
 
 _CeruleanCityCooltrainerF1SlowbroPunchText::
-	text "SLOWBRO punch!"
+	text "SLOWROO punch!"
 	line "No! You blew it"
 	cont "again!"
 	done
 
 _CeruleanCityCooltrainerF1SlowbroWithdrawText::
-	text "SLOWBRO, WITHDRAW!"
+	text "SLOWROO, WITHDRAW!"
 	line "No! That's wrong!"
 
 	para "It's so hard to"
@@ -163,22 +163,22 @@ _CeruleanCityCooltrainerF1SlowbroWithdrawText::
 	done
 
 _CeruleanCitySlowbroTookASnoozeText::
-	text "SLOWBRO took a"
+	text "SLOWROO took a"
 	line "snooze..."
 	done
 
 _CeruleanCitySlowbroIsLoafingAroundText::
-	text "SLOWBRO is"
+	text "SLOWROO is"
 	line "loafing around..."
 	done
 
 _CeruleanCitySlowbroTurnedAwayText::
-	text "SLOWBRO turned"
+	text "SLOWROO turned"
 	line "away..."
 	done
 
 _CeruleanCitySlowbroIgnoredOrdersText::
-	text "SLOWBRO"
+	text "SLOWROO"
 	line "ignored orders..."
 	done
 

@@ -9,7 +9,7 @@ _RockTunnel1FHiker1EndBattleText::
 	prompt
 
 _RockTunnel1FHiker1AfterBattleText::
-	text "Watch for ONIX!"
+	text "Beware SHAMONIX!"
 	line "It can put the"
 	cont "squeeze on you!"
 	done
@@ -59,7 +59,7 @@ _RockTunnel1FSuperNerdEndBattleText::
 
 _RockTunnel1FSuperNerdAfterBattleText::
 	text "Oh well, I'll get"
-	line "a ZUBAT as I go!"
+	line "a ZUBANTAM later!"
 	done
 
 _RockTunnel1FCooltrainerF1BattleText::
@@ -74,7 +74,7 @@ _RockTunnel1FCooltrainerF1EndBattleText::
 	prompt
 
 _RockTunnel1FCooltrainerF1AfterBattleText::
-	text "I saw a MACHOP"
+	text "I saw a MACHICK"
 	line "in this tunnel!"
 	done
 

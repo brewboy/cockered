@@ -86,7 +86,7 @@ BillsHousePokemonList::
 	set BIT_NO_TEXT_DELAY, [hl]
 	hlcoord 0, 0
 	ld b, 10
-	ld c, 9
+	ld c, 10
 	call TextBoxBorder
 	hlcoord 2, 2
 	ld de, BillsMonListText
@@ -123,10 +123,10 @@ BillsHousePokemonListText1:
 	text_end
 
 BillsMonListText:
-	db   "EEVEE"
-	next "FLAREON"
-	next "JOLTEON"
-	next "VAPOREON"
+	db   "CHEEPEE"
+	next "FLARECHIN"
+	next "JOLTDOTTE"
+	next "VAPORCHIN"
 	next "CANCEL@"
 
 BillsHousePokemonListText2:

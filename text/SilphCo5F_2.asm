@@ -22,8 +22,8 @@ _SilphCo5FRocket2EndBattleText::
 _SilphCo5FRocket2AfterBattleText::
 	text "Which reminds me."
 
-	para "KOFFING evolves"
-	line "into WEEZING!"
+	para "CLUCKING evolves"
+	line "into SQUAWKING!"
 	done
 
 _SilphCo5FPokemonReport1Text::
@@ -31,7 +31,7 @@ _SilphCo5FPokemonReport1Text::
 	line "REPORT!"
 
 	para "#MON LAB"
-	line "created PORYGON,"
+	line "made POULTRYGON,"
 	cont "the first virtual"
 	cont "reality #MON."
 	done

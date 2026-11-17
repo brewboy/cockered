@@ -1,5 +1,5 @@
 _CeladonCityLittleGirlText::
-	text "I got my KOFFING"
+	text "I got my CLUCKING"
 	line "in CINNABAR!"
 
 	para "It's nice, but it"
@@ -54,7 +54,7 @@ _CeladonCityGramps3TM41ExplanationText::
 	line "can use it!"
 
 	para "That #MON is"
-	line "CHANSEY!"
+	line "HENSEY!"
 	done
 
 _CeladonCityGramps3TM41NoRoomText::
@@ -64,15 +64,15 @@ _CeladonCityGramps3TM41NoRoomText::
 
 _CeladonCityFisherText::
 	text "This is my trusted"
-	line "pal, POLIWRATH!"
+	line "pal, POLIROOST!"
 
 	para "It evolved from"
-	line "POLIWHIRL when I"
+	line "POLIWATTLE when I"
 	cont "used WATER STONE!"
 	done
 
 _CeladonCityPoliwrathText::
-	text "POLIWRATH: Ribi"
+	text "POLIROOST: Ribi"
 	line "ribit!@"
 	text_end
 

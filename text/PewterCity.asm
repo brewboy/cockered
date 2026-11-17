@@ -1,6 +1,6 @@
 _PewterCityCooltrainerFText::
 	text "It's rumored that"
-	line "CLEFAIRYs came"
+	line "CLUCKFAIRYs came"
 	cont "from the moon!"
 
 	para "They appeared "

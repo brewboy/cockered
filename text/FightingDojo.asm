@@ -115,13 +115,13 @@ _FightingDojoBlackbelt4AfterBattleText::
 _FightingDojoHitmonleePokeBallText::
 	text "You want the"
 	line "hard kicking"
-	cont "HITMONLEE?"
+	cont "HITMONSPUR?"
 	done
 
 _FightingDojoHitmonchanPokeBallText::
 	text "You want the"
 	line "piston punching"
-	cont "HITMONCHAN?"
+	cont "HITMONPECK?"
 	done
 
 _FightingDojoBetterNotGetGreedyText::

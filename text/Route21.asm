@@ -20,12 +20,12 @@ _Route21Fisher2BattleText::
 
 _Route21Fisher2EndBattleText::
 	text "Darn"
-	line "MAGIKARP!"
+	line "MAGICHICK!"
 	prompt
 
 _Route21Fisher2AfterBattleText::
 	text "I seem to only"
-	line "catch MAGIKARP!"
+	line "catch MAGICHICK!"
 	done
 
 _Route21Swimmer1BattleText::

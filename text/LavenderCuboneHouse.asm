@@ -1,13 +1,13 @@
 _LavenderCuboneHouseCuboneText::
-	text "CUBONE: Kyarugoo!@"
+	text "CUBSHELL: Kyaru!@"
 	text_end
 
 _LavenderCuboneHouseBrunetteGirlPoorCubonesMotherText::
 	text "I hate those"
 	line "horrible ROCKETs!"
 
-	para "That poor CUBONE's"
-	line "mother..."
+	para "That poor"
+	line "CUBSHELL's mother…"
 
 	para "It was killed"
 	line "trying to escape"

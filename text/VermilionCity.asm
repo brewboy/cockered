@@ -2,7 +2,7 @@ _VermilionCityBeautyText::
 	text "We're careful"
 	line "about pollution!"
 
-	para "We've heard GRIMER"
+	para "We heard GRIMEGG"
 	line "multiplies in"
 	cont "toxic sludge!"
 	done
@@ -67,14 +67,14 @@ _VermilionCityGambler2Text::
 	done
 
 _VermilionCityMachopText::
-	text "MACHOP: Guoh!"
+	text "MACHICK: Guoh!"
 	line "Gogogoh!@"
 	text_end
 
 _VermilionCityMachopStompingTheLandFlatText::
 	text_start
 
-	para "A MACHOP is"
+	para "A MACHICK is"
 	line "stomping the land"
 	cont "flat."
 	done
