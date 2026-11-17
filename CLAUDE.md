@@ -175,3 +175,10 @@ In-game names (in **bold**) are max 10 characters (`NAME_LENGTH - 1`) and live i
 - Several lines reuse a breed across chick, cockerel and rooster stages so the evolution reads visually.
 - Breeds like Onagadori, Phoenix and Yokohama have very long tails, which suits the legendary birds.
 - Swap any mapping freely; this is a starting point for sprite work.
+
+## Sprites
+
+- Front and back sprites are imported with `python3 tools/import_rooster_sprites.py <dir>`, where `<dir>` holds 56×56 grayscale PNGs named `NNN_<breed>.png` in Pokédex order. Re-run it and `make` whenever the art changes.
+- Fronts are cropped to the smallest bottom-centred 40/48/56 square. Back sprites are derived from the fronts (mirrored to face right, shrunk to 32×32) as placeholders until proper back art exists.
+- Farfetch'd (#83) is skipped and keeps its original sprites. Mewtwo (#150) uses `150_lab_bred_goose.png`.
+- Each pics bank (`gfx/pics.asm`, "Pics 1"–"Pics 5") must stay within its ROM bank; check free space in `pokered.map` after big art changes.
