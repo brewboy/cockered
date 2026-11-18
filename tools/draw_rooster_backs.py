@@ -127,6 +127,14 @@ LAVENDER_ARAUCANA = dict(body=(153, 148, 186), hackle=(176, 172, 206), wing=(119
 	tail_hi=(176, 172, 206), comb='pea', tail_style='none', ear_tufts=True)
 CEMANI = dict(body=(34, 34, 44), hackle=(30, 30, 40), wing=(23, 22, 33), tail=(30, 29, 40), tail_hi=(44, 65, 72),
 	skin=(54, 48, 62))
+MALAY = dict(body=(96, 36, 28), hackle=(172, 86, 36), wing=(130, 54, 30), tail=GREEN_BLACK, tail_hi=GREEN_HI,
+	comb='pea', tail_style='stub')
+LEGHORN = dict(body=WHITE, hackle=WHITE, wing=SILVER, tail=WHITE, tail_hi=SILVER, earlobe=WHITE)
+BLR_WYANDOTTE = dict(body=(153, 66, 41), hackle=(190, 92, 50), wing=(119, 50, 34), tail=(76, 84, 124),
+	tail_hi=(112, 128, 164), lace=(76, 84, 124), comb='rose')
+BARNEVELDER = dict(body=(108, 57, 32), hackle=(40, 36, 42), wing=(84, 43, 27), tail=GREEN_BLACK, tail_hi=GREEN_HI,
+	lace=(28, 28, 34))
+NEW_HAMPSHIRE = dict(body=(180, 91, 45), hackle=(226, 142, 62), wing=(140, 69, 38), tail=GREEN_BLACK, tail_hi=GREEN_HI)
 WELSUMMER_HEN = dict(body=(144, 90, 52), hackle=(206, 152, 80), wing=(112, 68, 44), tail=(97, 59, 39),
 	tail_hi=(140, 100, 60), comb='hen')
 
@@ -197,6 +205,18 @@ SPECIES = {
 	64: dict(CEMANI, stage=1),
 	65: dict(CEMANI, stage=2),
 	66: dict(stage=0, body=(196, 130, 76)),
+	67: dict(MALAY, stage=1),
+	68: dict(MALAY, stage=2),
+	69: dict(stage=0, body=(246, 222, 120)),
+	70: dict(LEGHORN, stage=1, tail_style='fan1'),
+	71: dict(LEGHORN, stage=2),
+	72: dict(stage=0, body=(170, 150, 170)),
+	73: dict(BLR_WYANDOTTE, stage=2),
+	74: dict(stage=0, body=(150, 104, 64)),
+	75: dict(BARNEVELDER, stage=1),
+	76: dict(BARNEVELDER, stage=2),
+	77: dict(stage=0, body=(226, 160, 95)),
+	78: dict(NEW_HAMPSHIRE, stage=2),
 }
 
 
