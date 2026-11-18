@@ -88,7 +88,8 @@ SKIN = (232, 172, 164)  # bare skin showing through a moult
 # ear_tufts (feather tufts sticking out behind the face), heads (extra heads
 # standing behind the first), head on a chick (colour of its head), tall (long
 # neck on a smaller body, for big game birds), big_wing, beard as a colour,
-# eggs (stage 'eggs': a clutch of eggs in the given colours instead of a bird).
+# eggs (stage 'eggs': a clutch of eggs in the given colours instead of a bird),
+# shell (wearing the top of an eggshell as a helmet; hides the comb).
 SERAMA = dict(body=(193, 159, 108), hackle=(232, 150, 60), wing=(157, 99, 45), tail=GREEN_BLACK, tail_hi=GREEN_HI)
 RIR = dict(body=(131, 41, 27), hackle=(180, 68, 30), wing=(102, 31, 22), tail=GREEN_BLACK, tail_hi=GREEN_HI)
 ANDALUSIAN = dict(body=(76, 84, 118), hackle=(98, 110, 141), wing=(62, 74, 102), tail=(52, 62, 90),
@@ -154,6 +155,18 @@ FAVEROLLES = dict(body=(28, 26, 36), hackle=(238, 218, 162), wing=(206, 134, 84)
 DUCCLE = dict(body=(188, 122, 56), hackle=(228, 152, 62), wing=(146, 93, 47), tail=GREEN_BLACK, tail_hi=GREEN_HI,
 	lace=WHITE, beard=(216, 142, 62))
 ROUND_COCHIN = dict(comb='hen', fluffy=True, tail_style='stub')
+EASTER_EGGER = dict(body=(131, 96, 70), hackle=(198, 152, 92), wing=(102, 73, 59), tail=(60, 62, 74),
+	tail_hi=(64, 86, 94), comb='pea', beard=(226, 200, 160))
+THAI_GAME = dict(body=(23, 22, 33), hackle=(224, 152, 60), wing=(152, 50, 30), tail=(24, 48, 44), tail_hi=(40, 77, 74),
+	comb='pea', tall=True)
+CUBALAYA = dict(body=(23, 22, 33), hackle=(222, 112, 40), wing=(172, 62, 30), tail=GREEN_BLACK, tail_hi=GREEN_HI,
+	comb='pea')
+CREVECOEUR = dict(body=(34, 34, 44), hackle=(30, 29, 40), wing=(23, 22, 33), tail=(24, 48, 44), tail_hi=(40, 77, 74),
+	crest=True, crest_size=.8, comb='v', beard=(42, 42, 54))
+GREY_SUMATRA = dict(body=(100, 104, 120), hackle=(108, 110, 128), wing=(84, 84, 107), tail=(68, 68, 91),
+	tail_hi=(108, 110, 128), comb='pea', skin=(110, 30, 48))
+BRAHMA = dict(body=(226, 226, 232), hackle=WHITE, wing=SILVER, tail=(28, 34, 38), tail_hi=(70, 74, 84), comb='pea',
+	hackle_stripes=(28, 28, 34))
 WELSUMMER_HEN = dict(body=(144, 90, 52), hackle=(206, 152, 80), wing=(112, 68, 44), tail=(97, 59, 39),
 	tail_hi=(140, 100, 60), comb='hen')
 
@@ -261,6 +274,20 @@ SPECIES = {
 	101: dict(ROUND_COCHIN, stage=2, body=(226, 226, 232), hackle=WHITE, wing=SILVER, tail=SILVER, tail_hi=WHITE),
 	102: dict(stage='eggs', eggs=[(140, 186, 198), (160, 192, 148), (214, 172, 150), (160, 192, 148),
 		(214, 172, 150), (140, 186, 198)]),
+	103: dict(EASTER_EGGER, stage=2),
+	104: dict(stage=0, body=(178, 132, 86), shell=True),
+	105: dict(stage=1, body=(139, 86, 50), hackle=(196, 140, 76), wing=(108, 66, 42), tail=(94, 56, 38),
+		tail_hi=(133, 92, 57), tail_style='fan1', shell=True),
+	106: dict(THAI_GAME, stage=2),
+	107: dict(CUBALAYA, stage=2),
+	108: dict(CREVECOEUR, stage=2),
+	109: dict(stage=0, body=(150, 154, 168)),
+	110: dict(GREY_SUMATRA, stage=2, heads=2),
+	111: dict(stage=0, body=(240, 234, 214)),
+	112: dict(BRAHMA, stage=1, tail_style='fan1'),
+	113: dict(BUFF, stage=2, tail_style='fan2', fluffy=True),
+	114: dict(stage=2, body=(76, 94, 134), hackle=(96, 116, 156), wing=(65, 76, 118), tail=(65, 76, 118),
+		tail_hi=(96, 116, 156), crest=True, crest_size=1.2, comb='v', frizzle=True),
 }
 
 
@@ -393,6 +420,17 @@ def chick_details(c, body, dx, dy, sc, k, beak=BEAK, beak_shade=BEAK_SHADE, head
 HEAD_PARTS = ('neck', 'feature', 'ring', 'crest')
 
 
+def eggshell(c, cx, cy, r):
+	"""The top half of an eggshell worn as a helmet, with a jagged rim."""
+	c.layer += 1
+	for y in range(N):
+		for x in range(N):
+			rim = cy + (1 if x % 3 == 0 else 0) - (1 if x % 3 == 2 else 0)
+			if ((x + .5 - cx) / (r + .6)) ** 2 + ((y + .5 - cy) / (r + 1.2)) ** 2 <= 1 and y + .5 < rim:
+				hi = (x + .5 - cx) < -r * .2 and y + .5 < cy - r * .5
+				c.set(x, y, 'shell', WHITE if hi or y + .5 < rim - 1.5 else SILVER)
+
+
 def draw(spec):
 	"""Draw a bird; extra heads are copies of its head and neck, set back behind it."""
 	c = draw_one(spec)
@@ -442,10 +480,17 @@ def draw_one(spec):
 		chicks = [(-1.5, 7, .62, 'a'), (12.5, 5, .62, 'b'), (5, 12.5, .66, 'c')] if spec.get('trio') else [(0, 0, 1, '')]
 		for dx, dy, sc, k in chicks:
 			chick_shapes(c, body, dx, dy, sc, k)
+		if spec.get('shell'):
+			eggshell(c, 19, 9.5, 7.8)
 		c.outline()
 		for dx, dy, sc, k in chicks:
 			skin = spec.get('skin')
 			chick_details(c, body, dx, dy, sc, k, skin or BEAK, shade(skin) if skin else BEAK_SHADE, spec.get('head'))
+		if spec.get('shell'):
+			# the eye sits just under the jagged rim: ring it so it stands apart
+			ex = next(x for x in range(N) if c.col[11][x] == (20, 20, 24))
+			for x, y in ((ex - 1, 11), (ex + 1, 11), (ex, 12), (ex - 1, 12)):
+				c.col[y][x] = light(body)
 		return c
 
 	big = st == 2
@@ -490,6 +535,8 @@ def draw_one(spec):
 					if spec.get('crest_spots') and x % 2 == 0 and (y + x // 2) % 3 == 0:
 						col = spec['crest_spots']
 					c.set(x, y, 'crest', col)
+	if spec.get('shell'):
+		eggshell(c, hx, hy - 1, hr)
 	if spec.get('fluffy'):
 		# hair-like plumage: tufts poke out along the top of the body
 		for x in range(3, 29, 3):
@@ -615,7 +662,8 @@ def draw_one(spec):
 		heights = [3, 5, 3, 6, 3, 6, 3, 5, 2] if big else [2, 3, 2, 4, 2, 3, 2]
 		x0 = ix - len(heights) // 2
 		comb = [(x0 + i, top - k, CS if k == 0 else CC) for i, h in enumerate(heights) for k in range(h)]
-	features(c, comb)
+	if not spec.get('shell'):
+		features(c, comb)
 	ey = iy
 	edge = max(x for x in range(N) if c.part[ey + 1][x] == 'neck')
 	c.col[ey][edge - 3] = (20, 20, 24)
