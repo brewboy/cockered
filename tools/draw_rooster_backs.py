@@ -61,6 +61,9 @@ TAILS = {
 	# a showy round fan of nine feathers spread behind the bird
 	'nine': (3.4, 2.4, [((9, 21), (9 + 6 * math.cos(math.radians(a)), 21 + 6 * math.sin(math.radians(a))),
 		(9 + 12.5 * math.cos(math.radians(a)), 21 + 12.5 * math.sin(math.radians(a)))) for a in range(185, 296, 13)]),
+	# a Phoenix's trailing tail: arching up and spilling off the left edge
+	'long': (3.8, 1.6, [((9, 23), (-3, 8), (-4, 32)), ((10, 22), (-1, 3), (-2, 27)), ((11, 21), (2, 0), (0, 21)),
+		((12, 20), (6, -2), (3, 14))]),
 	# rumpless: no tail at all
 	'none': (0, 0, []),
 	# moulting: only a ragged stub is left
@@ -89,7 +92,9 @@ SKIN = (232, 172, 164)  # bare skin showing through a moult
 # standing behind the first), head on a chick (colour of its head), tall (long
 # neck on a smaller body, for big game birds), big_wing, beard as a colour,
 # eggs (stage 'eggs': a clutch of eggs in the given colours instead of a bird),
-# shell (wearing the top of an eggshell as a helmet; hides the comb).
+# shell (wearing the top of an eggshell as a helmet; hides the comb), bars (colour
+# of stripes across body, wing and tail), comb 'cup' (buttercup crown) or
+# 'horns' (V-shaped horns), baby (colour of a chick standing in front).
 SERAMA = dict(body=(193, 159, 108), hackle=(232, 150, 60), wing=(157, 99, 45), tail=GREEN_BLACK, tail_hi=GREEN_HI)
 RIR = dict(body=(131, 41, 27), hackle=(180, 68, 30), wing=(102, 31, 22), tail=GREEN_BLACK, tail_hi=GREEN_HI)
 ANDALUSIAN = dict(body=(76, 84, 118), hackle=(98, 110, 141), wing=(62, 74, 102), tail=(52, 62, 90),
@@ -167,6 +172,11 @@ GREY_SUMATRA = dict(body=(100, 104, 120), hackle=(108, 110, 128), wing=(84, 84, 
 	tail_hi=(108, 110, 128), comb='pea', skin=(110, 30, 48))
 BRAHMA = dict(body=(226, 226, 232), hackle=WHITE, wing=SILVER, tail=(28, 34, 38), tail_hi=(70, 74, 84), comb='pea',
 	hackle_stripes=(28, 28, 34))
+PHOENIX = dict(body=(23, 22, 33), tail=GREEN_BLACK, tail_hi=GREEN_HI, tail_style='long')
+APPENZELLER = dict(body=WHITE, hackle=WHITE, wing=SILVER, tail=GREEN_BLACK, tail_hi=GREEN_HI, lace=(28, 34, 38),
+	crest=True, comb='horns')
+GOLD_SEBRIGHT = dict(body=(226, 164, 58), hackle=(238, 188, 100), wing=(197, 142, 52), tail=(197, 142, 52),
+	tail_hi=(238, 200, 137), lace=(28, 28, 34), comb='rose')
 WELSUMMER_HEN = dict(body=(144, 90, 52), hackle=(206, 152, 80), wing=(112, 68, 44), tail=(97, 59, 39),
 	tail_hi=(140, 100, 60), comb='hen')
 
@@ -288,6 +298,22 @@ SPECIES = {
 	113: dict(BUFF, stage=2, tail_style='fan2', fluffy=True),
 	114: dict(stage=2, body=(76, 94, 134), hackle=(96, 116, 156), wing=(65, 76, 118), tail=(65, 76, 118),
 		tail_hi=(96, 116, 156), crest=True, crest_size=1.2, comb='v', frizzle=True),
+	115: dict(stage=1, body=(139, 86, 50), hackle=(196, 140, 76), wing=(108, 66, 42), tail=(94, 56, 38),
+		tail_hi=(133, 92, 57), comb='hen', tail_style='stub', baby=(226, 180, 120)),
+	116: dict(stage=0, body=(214, 170, 96)),
+	117: dict(stage=2, body=(222, 162, 60), hackle=(234, 174, 62), wing=(193, 140, 54), tail=(222, 162, 60),
+		tail_hi=(238, 200, 137), bars=(28, 28, 34)),
+	118: dict(GOLD_SEBRIGHT, stage=1, tail_style='fan1'),
+	119: dict(GOLD_SEBRIGHT, stage=2, tail_style='fan2'),
+	120: dict(APPENZELLER, stage=1, tail_style='fan1', crest_size=-.4),
+	121: dict(APPENZELLER, stage=2, crest_size=.6),
+	122: dict(stage=2, body=(23, 22, 33), hackle=(34, 34, 44), wing=(30, 29, 40), tail=(24, 48, 44), tail_hi=(40, 77, 74),
+		crest=WHITE, crest_size=1.4, comb='v'),
+	123: dict(stage=2, body=(195, 138, 54), hackle=(238, 150, 50), wing=(152, 105, 45), tail=GREEN_BLACK,
+		tail_hi=GREEN_HI, comb='cup'),
+	124: dict(MINORCA, stage=2, comb='horns'),
+	125: dict(PHOENIX, stage=2, hackle=(238, 188, 70), wing=(204, 122, 40)),
+	126: dict(PHOENIX, stage=2, hackle=(214, 90, 36), wing=(172, 50, 30)),
 }
 
 
@@ -453,6 +479,22 @@ def draw(spec):
 			for x in range(N):
 				if c.part[y][x] == 'neck2':
 					c.part[y][x] = 'neck_back'
+	if spec.get('baby'):
+		# a chick standing in front of its mother, lower left
+		b = Canvas()
+		chick_shapes(b, spec['baby'], -1, 15, .55, '')
+		b.outline()
+		chick_details(b, spec['baby'], -1, 15, .55, '')
+		for y in range(N):
+			for x in range(N):
+				if b.part[y][x] is not None:
+					c.part[y][x], c.col[y][x] = 'baby', b.col[y][x]
+		# edge the mother where she meets the chick
+		for y in range(N):
+			for x in range(N):
+				if c.part[y][x] not in (None, 'baby') and any(0 <= x + ox < N and 0 <= y + oy < N
+						and c.part[y + oy][x + ox] == 'baby' for ox, oy in ((-1, 0), (1, 0), (0, -1), (0, 1))):
+					c.col[y][x] = OUTL
 	return c
 
 
@@ -600,6 +642,12 @@ def draw_one(spec):
 					c.col[y][x] = light(base)
 					if c.part[y + 1][x - 1] == c.part[y][x]:
 						c.col[y + 1][x - 1] = shade(base)
+	if spec.get('bars'):
+		# barred plumage: dark stripes across the feathers
+		for y in range(N):
+			for x in range(N):
+				if c.part[y][x] in ('body', 'wing', 'tail') and (y + (x // 4) % 2) % 3 == 0:
+					c.col[y][x] = spec['bars']
 	if spec.get('moult'):
 		# bare skin showing through where feathers have dropped
 		for px, py, r in ((11, 25, 2.2), (19, 29, 1.8), (6, 28, 1.5), (23, 24, 1.4), (16, 22, 1.2)):
@@ -652,6 +700,15 @@ def draw_one(spec):
 		heights = [1, 2, 2, 2, 1] if big else [1, 2, 1, 1]
 		x0 = ix - len(heights) // 2 + 1
 		comb = [(x0 + i, top - k, CS if k == 0 else CC) for i, h in enumerate(heights) for k in range(h)]
+	elif spec.get('comb') == 'cup':
+		# a buttercup comb: a crown of points round a cup
+		heights = [3, 2, 3, 1, 3, 2, 3]
+		x0 = ix - len(heights) // 2
+		comb = [(x0 + i, top - k, CS if k == 0 else CC) for i, h in enumerate(heights) for k in range(h)]
+	elif spec.get('comb') == 'horns':
+		# two horns in a V, one leaning back and one forward
+		comb = [(ix - 1, top, CS), (ix + 1, top, CS), (ix - 1, top - 1, CC), (ix - 2, top - 2, CC), (ix - 2, top - 3, CC),
+			(ix + 1, top - 1, CC), (ix + 2, top - 2, CC), (ix + 2, top - 3, CC), (ix - 3, top - 4, CC), (ix + 3, top - 4, CC)]
 	elif spec.get('comb') == 'hen':
 		# a hen's single comb: small and low
 		heights = [2, 3, 3, 3, 2, 1] if big else [1, 2, 2, 2, 1]
