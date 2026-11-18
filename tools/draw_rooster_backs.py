@@ -86,7 +86,9 @@ SKIN = (232, 172, 164)  # bare skin showing through a moult
 # comb 'pea' (low and small), skin (colour of comb, wattles and beak, for
 # all-black birds), hackle_stripes (colour of stripes down the neck feathers),
 # ear_tufts (feather tufts sticking out behind the face), heads (extra heads
-# standing behind the first), head on a chick (colour of its head).
+# standing behind the first), head on a chick (colour of its head), tall (long
+# neck on a smaller body, for big game birds), big_wing, beard as a colour,
+# eggs (stage 'eggs': a clutch of eggs in the given colours instead of a bird).
 SERAMA = dict(body=(193, 159, 108), hackle=(232, 150, 60), wing=(157, 99, 45), tail=GREEN_BLACK, tail_hi=GREEN_HI)
 RIR = dict(body=(131, 41, 27), hackle=(180, 68, 30), wing=(102, 31, 22), tail=GREEN_BLACK, tail_hi=GREEN_HI)
 ANDALUSIAN = dict(body=(76, 84, 118), hackle=(98, 110, 141), wing=(62, 74, 102), tail=(52, 62, 90),
@@ -143,6 +145,15 @@ SULTAN = dict(body=WHITE, hackle=WHITE, wing=SILVER, tail=WHITE, tail_hi=SILVER,
 MARANS = dict(body=(23, 22, 33), hackle=(196, 104, 44), wing=(30, 29, 40), tail=GREEN_BLACK, tail_hi=GREEN_HI)
 HAMBURG = dict(body=(245, 245, 240), hackle=(213, 211, 217), wing=(213, 211, 217), tail=GREEN_BLACK, tail_hi=GREEN_HI,
 	lace=(28, 34, 38), comb='rose', earlobe=WHITE)
+SUMATRA = dict(body=(30, 32, 42), hackle=(26, 28, 38), wing=(20, 21, 31), tail=(24, 48, 44), tail_hi=(40, 77, 74),
+	comb='pea', skin=(110, 30, 48))
+SHAMO = dict(body=(81, 29, 22), hackle=(182, 82, 36), wing=(123, 54, 27), tail=GREEN_BLACK, tail_hi=GREEN_HI,
+	comb='pea', tall=True, tail_style='stub')
+FAVEROLLES = dict(body=(28, 26, 36), hackle=(238, 218, 162), wing=(206, 134, 84), tail=GREEN_BLACK, tail_hi=GREEN_HI,
+	beard=(42, 40, 48))
+DUCCLE = dict(body=(188, 122, 56), hackle=(228, 152, 62), wing=(146, 93, 47), tail=GREEN_BLACK, tail_hi=GREEN_HI,
+	lace=WHITE, beard=(216, 142, 62))
+ROUND_COCHIN = dict(comb='hen', fluffy=True, tail_style='stub')
 WELSUMMER_HEN = dict(body=(144, 90, 52), hackle=(206, 152, 80), wing=(112, 68, 44), tail=(97, 59, 39),
 	tail_hi=(140, 100, 60), comb='hen')
 
@@ -236,6 +247,20 @@ SPECIES = {
 	88: dict(stage=0, body=(44, 44, 54)),
 	89: dict(MARANS, stage=2),
 	90: dict(HAMBURG, stage=1),
+	91: dict(HAMBURG, stage=2),
+	92: dict(stage=0, body=(44, 46, 56), skin=(110, 30, 48)),
+	93: dict(SUMATRA, stage=1),
+	94: dict(SUMATRA, stage=2),
+	95: dict(SHAMO, stage=2),
+	96: dict(stage=0, body=(234, 182, 146)),
+	97: dict(FAVEROLLES, stage=2),
+	98: dict(DUCCLE, stage=1),
+	99: dict(DUCCLE, stage=2, big_wing=True),
+	100: dict(ROUND_COCHIN, stage=1, body=(210, 154, 70), hackle=(226, 172, 84), wing=(197, 148, 76),
+		tail=(197, 148, 76), tail_hi=(228, 194, 144)),
+	101: dict(ROUND_COCHIN, stage=2, body=(226, 226, 232), hackle=WHITE, wing=SILVER, tail=SILVER, tail_hi=WHITE),
+	102: dict(stage='eggs', eggs=[(140, 186, 198), (160, 192, 148), (214, 172, 150), (160, 192, 148),
+		(214, 172, 150), (140, 186, 198)]),
 }
 
 
@@ -395,9 +420,22 @@ def draw(spec):
 
 def draw_one(spec):
 	c = Canvas()
-	st, body = spec['stage'], spec['body']
+	st, body = spec['stage'], spec.get('body')
 	lace = spec.get('lace')
 	hackle = spec.get('hackle', body)
+
+	if st == 'eggs':
+		# a clutch seen from behind: back row first, each egg its own part
+		spots = ((7, 19), (16, 17.5), (25, 19.5), (4, 27), (14, 27.5), (24, 27))
+		for i, ((ex, ey), col) in enumerate(zip(spots, spec['eggs'])):
+			c.ellipse(f'egg{i}', ex, ey, 5, 6.5, col)
+		c.outline()
+		# a speckle or two on each egg
+		for i, (ex, ey) in enumerate(spots):
+			for x, y in ((round(ex), round(ey) + 1), (round(ex) - 2, round(ey) + 3)):
+				if c.part[y][x] == f'egg{i}' and c.col[y][x] != OUTL:
+					c.col[y][x] = shade(c.col[y][x])
+		return c
 
 	if st == 0:
 		# one chick, or a huddle of three smaller ones (back two first)
@@ -415,7 +453,14 @@ def draw_one(spec):
 
 	# neck and head are one part, so the silhouette flows from the shoulders
 	# up into the head with no seam; the neck leans forward towards the opponent
-	if big:
+	if big and spec.get('tall'):
+		# a towering game bird: smaller body, long upright neck
+		c.ellipse('body', 14.5, 27, 13, 9, body, lace)
+		c.ellipse('wing', 8, 28.5, 6, 4, wing, lace, rim=False, hi=False)
+		c.stroke('neck', ((17, 23), (17.5, 14), (21, 7.5)), 10, 7.5, hackle)
+		hx, hy, hr = 21.5, 6.5, 4.5
+		cape, cy = range(12, 23), 23
+	elif big:
 		c.ellipse('body', 15.5, 25, 14, 11, body, lace)
 		c.ellipse('wing', 8, 27.5, 6.5, 4.5, wing, lace, rim=False, hi=False)
 		c.stroke('neck', ((17, 21), (18, 14), (21, 10)), 12, 8.5, hackle)
@@ -458,6 +503,17 @@ def draw_one(spec):
 		c.stroke('tail', f, w0, w1, tail if i % 2 == 0 else shade(tail), tail_hi)
 		c.layer -= 1  # all feathers are one part, outlined only on the outside
 	c.layer += 1
+	if spec.get('big_wing'):
+		# one huge wing raised up in front of the tail, flight feathers fanned out
+		c.layer += 2
+		for i, f in enumerate((((15, 24), (8, 18), (1, 9)), ((15, 25), (7, 22), (0, 15)), ((15, 25), (8, 24), (1, 21)))):
+			c.stroke('bigwing', f, 8 - i, 3, wing if i % 2 == 0 else shade(wing), light(wing))
+			c.layer -= 1
+		c.layer += 1
+		for y in range(N):
+			for x in range(N):
+				if c.part[y][x] == 'bigwing' and x > 9 and (x + 2 * y) % 4 == 0 and (x // 2 + y) % 2 == 0:
+					c.col[y][x] = lace
 	if spec.get('tail_tip'):
 		for f in feathers:
 			ex, ey0 = f[2]
@@ -569,7 +625,8 @@ def draw_one(spec):
 	features(c, beak)
 	if spec.get('beard'):
 		# a fluffy muff under the beak instead of wattles
-		muff = [(edge + dx, ey + 3 + dy, shade(hackle) if dy == 2 or dx == 1 else hackle)
+		bc = spec['beard'] if isinstance(spec['beard'], tuple) else hackle
+		muff = [(edge + dx, ey + 3 + dy, shade(bc) if dy == 2 or dx == 1 else bc)
 			for dx in (-2, -1, 0, 1) for dy in (0, 1, 2) if (dx, dy) != (1, 2)]
 		features(c, muff)
 	elif spec.get('silkie'):
