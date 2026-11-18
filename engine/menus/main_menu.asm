@@ -599,11 +599,11 @@ TextSpeedOptionText:
 	next " FAST  MEDIUM SLOW@"
 
 BattleAnimationOptionText:
-	db   "BATTLE ANIMATION"
+	db   "FIGHT ANIMATION"
 	next " ON       OFF@"
 
 BattleStyleOptionText:
-	db   "BATTLE STYLE"
+	db   "FIGHT STYLE"
 	next " SHIFT    SET@"
 
 OptionMenuCancelText:

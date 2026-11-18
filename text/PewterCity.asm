@@ -10,7 +10,7 @@ _PewterCityCooltrainerFText::
 
 _PewterCityCooltrainerMText::
 	text "There aren't many"
-	line "serious #MON"
+	line "serious COCK"
 	cont "trainers here!"
 
 	para "They're all like"
@@ -58,7 +58,7 @@ _PewterCitySuperNerd2ThatsRightText::
 
 _PewterCitySuperNerd2ImSprayingRepelText::
 	text "I'm spraying REPEL"
-	line "to keep #MON"
+	line "to keep COCKS"
 	cont "out of my garden!"
 	done
 
@@ -79,9 +79,9 @@ _PewterCityYoungsterGoTakeOnBrockText::
 _PewterCityTrainerTipsText::
 	text "TRAINER TIPS"
 
-	para "Any #MON that"
+	para "Any COCK that"
 	line "takes part in"
-	cont "battle, however"
+	cont "a fight, however"
 	cont "short, earns EXP!"
 	done
 
@@ -89,7 +89,7 @@ _PewterCityPoliceNoticeSignText::
 	text "NOTICE!"
 
 	para "Thieves have been"
-	line "stealing #MON"
+	line "stealing COCK"
 	cont "fossils at MT."
 	cont "MOON! Please call"
 	cont "PEWTER POLICE"
@@ -103,11 +103,11 @@ _PewterCityMuseumSignText::
 
 _PewterCityGymSignText::
 	text "PEWTER CITY"
-	line "#MON GYM"
+	line "COCK GYM"
 	cont "LEADER: BROCK"
 
 	para "The Rock Solid"
-	line "#MON Trainer!"
+	line "COCK Trainer!"
 	done
 
 _PewterCitySignText::

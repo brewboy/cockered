@@ -1,7 +1,7 @@
 _CinnabarMartSilphWorkerFText::
 	text "Don't they have X"
 	line "ATTACK? It's good"
-	cont "for battles!"
+	cont "for fights!"
 	done
 
 _CinnabarMartScientistText::

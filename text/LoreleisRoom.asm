@@ -1,18 +1,18 @@
 _LoreleisRoomLoreleiBeforeBattleText::
 	text "Welcome to"
-	line "#MON LEAGUE!"
+	line "COCK LEAGUE!"
 
 	para "I am LORELEI of"
 	line "the ELITE FOUR!"
 
 	para "No one can best"
 	line "me when it comes"
-	cont "to icy #MON!"
+	cont "to icy COCKS!"
 
 	para "Freezing moves"
 	line "are powerful!"
 
-	para "Your #MON will"
+	para "Your COCKS will"
 	line "be at my mercy"
 	cont "when they are"
 	cont "frozen solid!"
@@ -32,7 +32,7 @@ _LoreleisRoomLoreleiAfterBattleText::
 	cont "Go on ahead!"
 
 	para "You only got a"
-	line "taste of #MON"
+	line "taste of COCK"
 	cont "LEAGUE power!"
 	done
 

@@ -30,7 +30,7 @@ _BluesHouseDaisyUseMapText::
 	done
 
 _BluesHouseDaisyWalkingText::
-	text "#MON are living"
+	text "COCKS are living"
 	line "things! If they"
 	cont "get tired, give"
 	cont "them a rest!"

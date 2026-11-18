@@ -12,7 +12,7 @@ _Route10SuperNerd1EndBattleText::
 
 _Route10SuperNerd1AfterBattleText::
 	text "I have more rare"
-	line "#MON at home!"
+	line "COCKS at home!"
 	done
 
 _Route10Hiker1BattleText::
@@ -34,12 +34,12 @@ _Route10Hiker1AfterBattleText::
 
 _Route10SuperNerd2BattleText::
 	text "Hi kid, want to"
-	line "see my #MON?"
+	line "see my COCKS?"
 	done
 
 _Route10SuperNerd2EndBattleText::
 	text "Oh no!"
-	line "My #MON!"
+	line "My COCKS!"
 	prompt
 
 _Route10SuperNerd2AfterBattleText::
@@ -49,7 +49,7 @@ _Route10SuperNerd2AfterBattleText::
 
 _Route10CooltrainerF1BattleText::
 	text "I've been to a"
-	line "#MON GYM a few"
+	line "COCK GYM a few"
 	cont "times. But, I"
 	cont "lost each time."
 	done
@@ -92,7 +92,7 @@ _Route10CooltrainerF2EndBattleText::
 	prompt
 
 _Route10CooltrainerF2AfterBattleText::
-	text "The #MON here"
+	text "The COCKS here"
 	line "are so chunky!"
 	cont "There should be a"
 	cont "pink one with a"

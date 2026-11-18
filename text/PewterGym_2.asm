@@ -5,7 +5,7 @@ _PewterGymBrockPostBattleAdviceText::
 
 	para "You appear to be"
 	line "very gifted as a"
-	cont "#MON trainer!"
+	cont "COCK trainer!"
 
 	para "Go to the GYM in"
 	line "CERULEAN and test"
@@ -28,21 +28,21 @@ _TM34ExplanationText::
 	para "A TM contains a"
 	line "technique that"
 	cont "can be taught to"
-	cont "#MON!"
+	cont "COCKS!"
 
 	para "A TM is good only"
 	line "once! So when you"
 	cont "use one to teach"
 	cont "a new technique,"
-	cont "pick the #MON"
+	cont "pick the COCKS"
 	cont "carefully!"
 
 	para "TM34 contains"
 	line "BIDE!"
 
-	para "Your #MON will"
+	para "Your COCKS will"
 	line "absorb damage in"
-	cont "battle then pay"
+	cont "a fight then pay"
 	cont "it back double!"
 	done
 
@@ -67,11 +67,11 @@ _PewterGymBrockBoulderBadgeInfoText::
 	text_start
 
 	para "That's an official"
-	line "#MON LEAGUE"
+	line "COCK LEAGUE"
 	cont "BADGE!"
 
 	para "Its bearer's"
-	line "#MON become"
+	line "COCKS become"
 	cont "more powerful!"
 
 	para "The technique"
@@ -106,7 +106,7 @@ _PewterGymGuidePreAdviceText::
 	text "Hiya! I can tell"
 	line "you have what it"
 	cont "takes to become a"
-	cont "#MON champ!"
+	cont "COCK champ!"
 
 	para "I'm no trainer,"
 	line "but I can tell"
@@ -122,13 +122,13 @@ _PewterGymGuideBeginAdviceText::
 	prompt
 
 _PewterGymGuideAdviceText::
-	text "The 1st #MON"
+	text "The 1st COCK"
 	line "out in a match is"
 	cont "at the top of the"
-	cont "#MON LIST!"
+	cont "COCK LIST!"
 
 	para "By changing the"
-	line "order of #MON,"
+	line "order of COCKS,"
 	cont "matches could be"
 	cont "made easier!"
 	done
@@ -141,6 +141,6 @@ _PewterGymGuideFreeServiceText::
 
 _PewterGymGuidePostBattleText::
 	text "Just as I thought!"
-	line "You're #MON"
+	line "You're COCK"
 	cont "champ material!"
 	done

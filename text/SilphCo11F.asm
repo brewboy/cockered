@@ -36,7 +36,7 @@ _SilphCo11FSilphPresidentMasterBallDescriptionText::
 	cont "BALL!"
 
 	para "It will catch any"
-	line "#MON without"
+	line "COCKS without"
 	cont "fail!"
 
 	para "You should be"
@@ -90,7 +90,7 @@ _SilphCo11FGiovanniYouRuinedOurPlansText::
 
 	para "<PLAYER>! Never"
 	line "forget that all"
-	cont "#MON exist"
+	cont "COCKS exist"
 	cont "for TEAM ROCKET!"
 
 	para "I must go, but I"
@@ -126,10 +126,10 @@ _SilphCo11FRocket2EndBattleText::
 _SilphCo11FRocket2AfterBattleText::
 	text "Watch your step,"
 	line "my BOSS likes his"
-	cont "#MON tough!"
+	cont "COCKS tough!"
 	done
 
 _SilphCo11FPorygonText::
 	text "The monitor has"
-	line "#MON on it!"
+	line "COCKS on it!"
 	done

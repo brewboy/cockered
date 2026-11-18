@@ -39,16 +39,16 @@ _SaffronGymSabrinaPostBattleAdviceText::
 
 _SaffronGymSabrinaMarshBadgeInfoText::
 	text "The MARSHBADGE"
-	line "makes #MON up"
+	line "makes COCKS up"
 	cont "to L70 obey you!"
 
-	para "Stronger #MON"
+	para "Stronger COCKS"
 	line "will become wild,"
 	cont "ignoring your"
-	cont "orders in battle!"
+	cont "orders in a fight!"
 
 	para "Just don't raise"
-	line "your #MON too"
+	line "your COCKS too"
 	cont "much!"
 
 	para "Wait, please take"
@@ -78,13 +78,13 @@ _SaffronGymGuideChampInMakingText::
 	text "Yo! Champ in"
 	line "making!"
 
-	para "SABRINA's #MON"
+	para "SABRINA's COCKS"
 	line "use psychic power"
 	cont "instead of force!"
 
-	para "Fighting #MON"
+	para "Fighting COCKS"
 	line "are weak against"
-	cont "psychic #MON!"
+	cont "psychic COCKS!"
 
 	para "They get creamed"
 	line "before they can"
@@ -112,7 +112,7 @@ _SaffronGymChanneler1EndBattleText::
 	prompt
 
 _SaffronGymChanneler1AfterBattleText::
-	text "In a battle of"
+	text "In a fight between"
 	line "equals, the one"
 	cont "with the stronger"
 	cont "will wins!"
@@ -133,17 +133,17 @@ _SaffronGymYoungster1EndBattleText::
 	prompt
 
 _SaffronGymYoungster1AfterBattleText::
-	text "Psychic #MON"
+	text "Psychic COCKS"
 	line "fear only ghosts"
 	cont "and bugs!"
 	done
 
 _SaffronGymChanneler2BattleText::
-	text "#MON take on"
+	text "COCKS take on"
 	line "the appearance of"
 	cont "their trainers."
 
-	para "Your #MON must"
+	para "Your COCKS must"
 	line "be tough, then!"
 	done
 
@@ -155,7 +155,7 @@ _SaffronGymChanneler2EndBattleText::
 _SaffronGymChanneler2AfterBattleText::
 	text "I must teach"
 	line "better techniques"
-	cont "to my #MON!"
+	cont "to my COCKS!"
 	done
 
 _SaffronGymYoungster2BattleText::
@@ -177,7 +177,7 @@ _SaffronGymYoungster2AfterBattleText::
 
 _SaffronGymChanneler3BattleText::
 	text "You and I, our"
-	line "#MON shall"
+	line "COCKS shall"
 	cont "fight!"
 	done
 
@@ -208,7 +208,7 @@ _SaffronGymYoungster3EndBattleText::
 
 _SaffronGymYoungster3AfterBattleText::
 	text "There used to be"
-	line "2 #MON GYMs in"
+	line "2 COCK GYMs in"
 	cont "SAFFRON."
 
 	para "The FIGHTING DOJO"
@@ -219,7 +219,7 @@ _SaffronGymYoungster3AfterBattleText::
 	done
 
 _SaffronGymYoungster4BattleText::
-	text "SAFFRON #MON"
+	text "SAFFRON COCK"
 	line "GYM is famous for"
 	cont "its psychics!"
 

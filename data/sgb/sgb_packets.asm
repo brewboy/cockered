@@ -224,7 +224,12 @@ PalPacket_Slots:          PAL_SET PAL_SLOTS1, PAL_SLOTS2, PAL_SLOTS3, PAL_SLOTS4
 PalPacket_Titlescreen:    PAL_SET PAL_LOGO2, PAL_LOGO1, PAL_MEWMON, PAL_PURPLEMON
 PalPacket_TrainerCard:    PAL_SET PAL_MEWMON, PAL_BADGE, PAL_REDMON, PAL_YELLOWMON
 PalPacket_Generic:        PAL_SET PAL_MEWMON, 0, 0, 0
-PalPacket_NidorinoIntro:  PAL_SET PAL_PURPLEMON, PAL_BLACK, 0, 0
+; the opening cock fight takes the opponent's colours: NIDOROOST on Red, SILKYPUFF on Blue
+IF DEF(_RED)
+PalPacket_NidorinoIntro:  PAL_SET PAL_ROOSTER + 32, PAL_BLACK, 0, 0
+ELSE
+PalPacket_NidorinoIntro:  PAL_SET PAL_ROOSTER + 38, PAL_BLACK, 0, 0
+ENDC
 PalPacket_GameFreakIntro: PAL_SET PAL_GAMEFREAK, PAL_REDMON, PAL_VIRIDIAN, PAL_BLUEMON
 
 PalTrnPacket:  PAL_TRN
