@@ -32,6 +32,15 @@ VBlank::
 	ld [rROMB], a
 	call PrepareOAMData
 
+	ld a, [wOnCGB]
+	and a
+	jr z, .notCGB
+	ld a, BANK(CGBVBlank)
+	ldh [hLoadedROMBank], a
+	ld [rROMB], a
+	call CGBVBlank
+.notCGB
+
 	; VBlank-sensitive operations end.
 
 	call Random

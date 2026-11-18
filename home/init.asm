@@ -30,6 +30,8 @@ Init::
 
 	ld sp, wStack
 
+	ld a, [wOnCGB] ; set by _Start; keep it across the clear
+	ld e, a
 	ld hl, STARTOF(WRAM0)
 	ld bc, SIZEOF(WRAM0)
 .loop
@@ -39,6 +41,8 @@ Init::
 	ld a, b
 	or c
 	jr nz, .loop
+	ld a, e
+	ld [wOnCGB], a
 
 	call ClearVram
 

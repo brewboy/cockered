@@ -40,7 +40,7 @@ _Route8SuperNerd2EndBattleText::
 	prompt
 
 _Route8SuperNerd2AfterBattleText::
-	text "Go with GRIMER"
+	text "Go with GRIMEGG"
 	line "first...and..."
 	cont "...and...then..."
 	done
@@ -78,7 +78,7 @@ _Route8SuperNerd3AfterBattleText::
 	done
 
 _Route8CooltrainerF2BattleText::
-	text "MEOWTH is so cute,"
+	text "BAWKTH is so cute,"
 	line "meow, meow, meow!"
 	done
 
@@ -87,8 +87,8 @@ _Route8CooltrainerF2EndBattleText::
 	prompt
 
 _Route8CooltrainerF2AfterBattleText::
-	text "I think PIDGEY"
-	line "and RATTATA"
+	text "I think PECKGEY"
+	line "and BANTATTA"
 	cont "are cute too!"
 	done
 
@@ -137,12 +137,12 @@ _Route8CooltrainerF4EndBattleText::
 	text "Stop!"
 
 	para "Don't be so mean"
-	line "to my CLEFAIRY!"
+	line "to my CLUCKFAIRY!"
 	prompt
 
 _Route8CooltrainerF4AfterBattleText::
 	text "I heard that"
-	line "CLEFAIRY evolves"
+	line "CLUCKFAIRY evolves"
 	cont "when it's exposed"
 	cont "to a MOON STONE."
 	done

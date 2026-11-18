@@ -62,21 +62,21 @@ _FuchsiaCityGymSignText::
 	done
 
 _FuchsiaCityChanseySignText::
-	text "Name: CHANSEY"
+	text "Name: HENSEY"
 
 	para "Catching one is"
 	line "all up to chance."
 	prompt
 
 _FuchsiaCityVoltorbSignText::
-	text "Name: VOLTORB"
+	text "Name: VOLTCHIN"
 
 	para "The very image of"
 	line "a # BALL."
 	prompt
 
 _FuchsiaCityKangaskhanSignText::
-	text "Name: KANGASKHAN"
+	text "Name: BROODKHAN"
 
 	para "A maternal #MON"
 	line "that raises its"
@@ -85,21 +85,21 @@ _FuchsiaCityKangaskhanSignText::
 	prompt
 
 _FuchsiaCitySlowpokeSignText::
-	text "Name: SLOWPOKE"
+	text "Name: SLOWPECK"
 
 	para "Friendly and very"
 	line "slow moving."
 	prompt
 
 _FuchsiaCityLaprasSignText::
-	text "Name: LAPRAS"
+	text "Name: LAYPRAS"
 
 	para "A.K.A. the king"
 	line "of the seas."
 	prompt
 
 _FuchsiaCityFossilSignOmanyteText::
-	text "Name: OMANYTE"
+	text "Name: OMEGGNITE"
 
 	para "A #MON that"
 	line "was resurrected"
@@ -107,7 +107,7 @@ _FuchsiaCityFossilSignOmanyteText::
 	prompt
 
 _FuchsiaCityFossilSignKabutoText::
-	text "Name: KABUTO"
+	text "Name: KABUCHICK"
 
 	para "A #MON that"
 	line "was resurrected"

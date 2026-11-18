@@ -392,15 +392,19 @@ SendSGBPacket:
 LoadSGB:
 	xor a
 	ld [wOnSGB], a
+	ld a, [wOnCGB]
+	and a
+	jr z, .notCGB
+	; A GBC has colour palettes too: set wOnSGB so palette commands and the
+	; colour-tuned effects run, while SendSGBPackets goes the CGB route.
+	ld a, 1
+	ld [wOnSGB], a
+	jp CGBInit
+.notCGB
 	call CheckSGB
 	ret nc
 	ld a, 1
 	ld [wOnSGB], a
-	ld a, [wOnCGB]
-	and a
-	jr z, .notCGB
-	ret
-.notCGB
 	di
 	call PrepareSuperNintendoVRAMTransfer
 	ei
@@ -565,42 +569,11 @@ Wait7000:
 SendSGBPackets:
 	ld a, [wOnCGB]
 	and a
-	jr z, .notCGB
-	push de
-	call InitCGBPalettes
-	pop hl
-	call EmptyFunc3
-	ret
-.notCGB
+	jp nz, CGBApplyPackets
 	push de
 	call SendSGBPacket
 	pop hl
 	jp SendSGBPacket
-
-InitCGBPalettes:
-	ld a, $80 ; index 0 with auto-increment
-	ldh [rBGPI], a
-	inc hl
-	ld c, $20
-.loop
-	ld a, [hli]
-	inc hl
-	add a
-	add a
-	add a
-	ld de, SuperPalettes
-	add e
-	jr nc, .noCarry
-	inc d
-.noCarry
-	ld a, [de]
-	ldh [rBGPD], a
-	dec c
-	jr nz, .loop
-	ret
-
-EmptyFunc3:
-	ret
 
 CopySGBBorderTiles:
 ; SGB tile data is stored in a 4BPP planar format.
@@ -637,5 +610,6 @@ INCLUDE "data/sgb/sgb_packets.asm"
 INCLUDE "data/pokemon/palettes.asm"
 
 INCLUDE "data/sgb/sgb_palettes.asm"
+	assert SuperPalettes + 256 tiles <= $8000, "PAL_TRN reads 4KB from SuperPalettes"
 
 INCLUDE "data/sgb/sgb_border.asm"

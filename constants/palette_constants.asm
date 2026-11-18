@@ -59,4 +59,8 @@ DEF SET_PAL_DEFAULT EQU $ff
 	const PAL_BADGE     ; $22
 	const PAL_CAVE      ; $23
 	const PAL_GAMEFREAK ; $24
-DEF NUM_SGB_PALS EQU const_value
+; Rooster Edition: one palette per species except Farfetch'd (see data/sgb/rooster_palettes.asm)
+DEF PAL_ROOSTER EQU const_value
+DEF NUM_ROOSTER_PALS EQU 150
+DEF NUM_SGB_PALS EQU const_value + NUM_ROOSTER_PALS
+	assert NUM_SGB_PALS <= 256, "palette IDs are stored in one byte"

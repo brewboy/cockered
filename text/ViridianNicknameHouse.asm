@@ -18,6 +18,6 @@ _ViridianNicknameHouseSpearowText::
 	done
 
 _ViridianNicknameHouseSpearySignText::
-	text "SPEAROW"
+	text "SPURROW"
 	line "Name: SPEARY"
 	done
