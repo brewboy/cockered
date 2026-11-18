@@ -85,7 +85,8 @@ SKIN = (232, 172, 164)  # bare skin showing through a moult
 # comb 'walnut' or 'v' (small combs in front of a crest), trio (three chicks),
 # comb 'pea' (low and small), skin (colour of comb, wattles and beak, for
 # all-black birds), hackle_stripes (colour of stripes down the neck feathers),
-# ear_tufts (feather tufts sticking out behind the face).
+# ear_tufts (feather tufts sticking out behind the face), heads (extra heads
+# standing behind the first), head on a chick (colour of its head).
 SERAMA = dict(body=(193, 159, 108), hackle=(232, 150, 60), wing=(157, 99, 45), tail=GREEN_BLACK, tail_hi=GREEN_HI)
 RIR = dict(body=(131, 41, 27), hackle=(180, 68, 30), wing=(102, 31, 22), tail=GREEN_BLACK, tail_hi=GREEN_HI)
 ANDALUSIAN = dict(body=(76, 84, 118), hackle=(98, 110, 141), wing=(62, 74, 102), tail=(52, 62, 90),
@@ -135,6 +136,13 @@ BLR_WYANDOTTE = dict(body=(153, 66, 41), hackle=(190, 92, 50), wing=(119, 50, 34
 BARNEVELDER = dict(body=(108, 57, 32), hackle=(40, 36, 42), wing=(84, 43, 27), tail=GREEN_BLACK, tail_hi=GREEN_HI,
 	lace=(28, 28, 34))
 NEW_HAMPSHIRE = dict(body=(180, 91, 45), hackle=(226, 142, 62), wing=(140, 69, 38), tail=GREEN_BLACK, tail_hi=GREEN_HI)
+JERSEY_GIANT = dict(body=(30, 34, 42), hackle=(26, 29, 38), wing=(20, 22, 31), tail=(24, 48, 44), tail_hi=(40, 77, 74))
+MINORCA = dict(body=(34, 34, 44), hackle=(30, 29, 40), wing=(23, 22, 33), tail=(24, 48, 44), tail_hi=(40, 77, 74),
+	earlobe=WHITE)
+SULTAN = dict(body=WHITE, hackle=WHITE, wing=SILVER, tail=WHITE, tail_hi=SILVER, crest=True, comb='v', beard=True)
+MARANS = dict(body=(23, 22, 33), hackle=(196, 104, 44), wing=(30, 29, 40), tail=GREEN_BLACK, tail_hi=GREEN_HI)
+HAMBURG = dict(body=(245, 245, 240), hackle=(213, 211, 217), wing=(213, 211, 217), tail=GREEN_BLACK, tail_hi=GREEN_HI,
+	lace=(28, 34, 38), comb='rose', earlobe=WHITE)
 WELSUMMER_HEN = dict(body=(144, 90, 52), hackle=(206, 152, 80), wing=(112, 68, 44), tail=(97, 59, 39),
 	tail_hi=(140, 100, 60), comb='hen')
 
@@ -217,6 +225,17 @@ SPECIES = {
 	76: dict(BARNEVELDER, stage=2),
 	77: dict(stage=0, body=(226, 160, 95)),
 	78: dict(NEW_HAMPSHIRE, stage=2),
+	79: dict(stage=0, body=(46, 48, 58)),
+	80: dict(JERSEY_GIANT, stage=2),
+	81: dict(stage=0, body=(226, 226, 230), head=(44, 44, 54)),
+	82: dict(stage=0, body=(226, 226, 230), head=(44, 44, 54), trio=True),
+	84: dict(MINORCA, stage=1, heads=2),
+	85: dict(MINORCA, stage=2, heads=3),
+	86: dict(SULTAN, stage=1, tail_style='fan1', crest_size=.4),
+	87: dict(SULTAN, stage=2, crest_size=1.2),
+	88: dict(stage=0, body=(44, 44, 54)),
+	89: dict(MARANS, stage=2),
+	90: dict(HAMBURG, stage=1),
 }
 
 
@@ -312,9 +331,15 @@ def chick_shapes(c, body, dx, dy, sc, k):
 	c.stroke('wing' + k, ((X(25.5), Y(21)), (X(27.5), Y(23)), (X(27.5), Y(26.5))), 5 * sc, 2 * sc, shade(body))
 
 
-def chick_details(c, body, dx, dy, sc, k, beak=BEAK, beak_shade=BEAK_SHADE):
+def chick_details(c, body, dx, dy, sc, k, beak=BEAK, beak_shade=BEAK_SHADE, head=None):
 	"""Shading, eye and beak for a chick drawn by chick_shapes, after outlining."""
 	P = lambda x, y: (round(dx + x * sc), round(dy + y * sc))
+	if head:  # a differently coloured head, like a Lakenvelder's
+		for y in range(N):
+			for x in range(N):
+				if (c.part[y][x] == 'body' + k and c.col[y][x] != OUTL and y + .5 < dy + 17 * sc
+						and (x + .5 - dx - 19 * sc) ** 2 + (y + .5 - dy - 11.5 * sc) ** 2 <= (7.5 * sc) ** 2):
+					c.col[y][x] = light(head) if y + .5 < dy + 7 * sc else head
 	for y in range(N):
 		for x in range(N):
 			if c.part[y][x] == 'wing' + k and c.col[y][x] == body and y >= dy + 24 * sc:
@@ -340,7 +365,35 @@ def chick_details(c, body, dx, dy, sc, k, beak=BEAK, beak_shade=BEAK_SHADE):
 			c.col[y][x] = shade(body)
 
 
+HEAD_PARTS = ('neck', 'feature', 'ring', 'crest')
+
+
 def draw(spec):
+	"""Draw a bird; extra heads are copies of its head and neck, set back behind it."""
+	c = draw_one(spec)
+	for dx, dy in ((-7, 1), (-13, 3))[:spec.get('heads', 1) - 1]:
+		h = draw_one(spec)
+		for y in range(N):
+			for x in range(N):
+				if h.part[y][x] in HEAD_PARTS and 0 <= x + dx < N and 0 <= y + dy < N:
+					tx, ty = x + dx, y + dy
+					if c.part[ty][tx] in (None, 'tail'):
+						c.part[ty][tx], c.col[ty][tx] = 'neck2', h.col[y][x]
+		# the bird in front gets an edge where it overlaps the copy, which
+		# then becomes part of the bird for the next copy back
+		edge = [(x, y) for y in range(N) for x in range(N) if c.part[y][x] not in (None, 'neck2', 'tail')
+			and any(0 <= x + ox < N and 0 <= y + oy < N and c.part[y + oy][x + ox] == 'neck2'
+				for ox, oy in ((-1, 0), (1, 0), (0, -1), (0, 1)))]
+		for x, y in edge:
+			c.col[y][x] = OUTL
+		for y in range(N):
+			for x in range(N):
+				if c.part[y][x] == 'neck2':
+					c.part[y][x] = 'neck_back'
+	return c
+
+
+def draw_one(spec):
 	c = Canvas()
 	st, body = spec['stage'], spec['body']
 	lace = spec.get('lace')
@@ -353,10 +406,8 @@ def draw(spec):
 			chick_shapes(c, body, dx, dy, sc, k)
 		c.outline()
 		for dx, dy, sc, k in chicks:
-			if spec.get('skin'):
-				chick_details(c, body, dx, dy, sc, k, spec['skin'], shade(spec['skin']))
-			else:
-				chick_details(c, body, dx, dy, sc, k)
+			skin = spec.get('skin')
+			chick_details(c, body, dx, dy, sc, k, skin or BEAK, shade(skin) if skin else BEAK_SHADE, spec.get('head'))
 		return c
 
 	big = st == 2
