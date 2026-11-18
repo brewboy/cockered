@@ -30,8 +30,11 @@ _PokemonMansion3FScientistAfterBattleText::
 
 _PokemonMansion3FDiaryText::
 	text "Diary: Feb. 6"
-	line "MEWPEEP hatched."
+	line "From MEWPEEP's"
+	cont "down, we bred an"
+	cont "egg in the lab."
 
-	para "We named the"
-	line "newborn MEWHONK."
+	para "A goose hatched!"
+	line "We named the"
+	cont "newborn MEWHONK."
 	done
