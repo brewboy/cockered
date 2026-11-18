@@ -209,8 +209,8 @@ SPECIES = {
 	18: dict(JAPANESE, stage=2, tail_style='upright3'),
 	19: dict(BLACK_RED, stage=1),
 	20: dict(BLACK_RED, stage=2),
-	21: dict(MODERN_GAME, stage=1, tail_style='fan1'),
-	22: dict(MODERN_GAME, stage=2, tail_style='fan2'),
+	21: dict(MODERN_GAME, stage=1, tail_style='fan1', tall=True),
+	22: dict(MODERN_GAME, stage=2, tail_style='fan2', tall=True),
 	23: dict(stage=0, body=(60, 58, 70)),
 	24: dict(NAKED_NECK, stage=2),
 	25: dict(BUFF, stage=1, tail_style='fan1'),
@@ -245,7 +245,7 @@ SPECIES = {
 	54: dict(YELLOW_PEKIN, stage=1, tail_style='fan1'),
 	55: dict(BLUE_PEKIN, stage=2, tail_style='fan2'),
 	56: dict(stage=0, body=(190, 120, 70)),
-	57: dict(ASIL, stage=2, tail_style='sickle1'),
+	57: dict(ASIL, stage=2, tail_style='sickle1', tall=True),
 	58: dict(stage=0, body=(196, 110, 60)),
 	59: dict(RED_SUSSEX, stage=2),
 	60: dict(stage=0, body=(190, 186, 216)),
@@ -255,8 +255,8 @@ SPECIES = {
 	64: dict(CEMANI, stage=1),
 	65: dict(CEMANI, stage=2),
 	66: dict(stage=0, body=(196, 130, 76)),
-	67: dict(MALAY, stage=1),
-	68: dict(MALAY, stage=2),
+	67: dict(MALAY, stage=1, tall=True),
+	68: dict(MALAY, stage=2, tall=True),
 	69: dict(stage=0, body=(246, 222, 120)),
 	70: dict(LEGHORN, stage=1, tail_style='fan1'),
 	71: dict(LEGHORN, stage=2),
@@ -661,6 +661,13 @@ def draw_one(spec):
 		c.stroke('neck', ((17, 23), (17.5, 14), (21, 7.5)), 10, 7.5, hackle)
 		hx, hy, hr = 21.5, 6.5, 4.5
 		cape, cy = range(12, 23), 23
+	elif spec.get('tall'):
+		# a young game bird: already long in the neck, on a slim body
+		c.ellipse('body', 14.5, 27.5, 12, 8.5, body, lace)
+		c.ellipse('wing', 8.5, 29, 5.5, 3.5, wing, lace, rim=False, hi=False)
+		c.stroke('neck', ((17, 24), (17.5, 16), (21, 10)), 9, 7, hackle)
+		hx, hy, hr = 21, 9, 4
+		cape, cy = range(12, 22), 24
 	elif big:
 		c.ellipse('body', 15.5, 25, 14, 11, body, lace)
 		c.ellipse('wing', 8, 27.5, 6.5, 4.5, wing, lace, rim=False, hi=False)
@@ -843,7 +850,8 @@ def draw_one(spec):
 		comb = [(x0 + i, top - k, CS if k == 0 else CC) for i, h in enumerate(heights) for k in range(h)]
 	else:
 		# single comb in profile: a solid blade with spikes, tallest in the middle
-		heights = [3, 5, 3, 6, 3, 6, 3, 5, 2] if big else [2, 3, 2, 4, 2, 3, 2]
+		# (a tall bird's head sits near the top of the frame, so it gets the smaller comb)
+		heights = [3, 5, 3, 6, 3, 6, 3, 5, 2] if big and not spec.get('tall') else [2, 3, 2, 4, 2, 3, 2]
 		x0 = ix - len(heights) // 2
 		comb = [(x0 + i, top - k, CS if k == 0 else CC) for i, h in enumerate(heights) for k in range(h)]
 	if not spec.get('shell'):
