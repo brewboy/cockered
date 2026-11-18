@@ -2248,6 +2248,20 @@ wBoxMonNicksEnd::
 wBoxDataEnd::
 
 
+SECTION "CGB Palette State", WRAM0
+
+; palette IDs (SuperPalettes) for BG palettes 0-3
+wCGBPalIDs:: ds 4
+; DMG palette registers the colour palettes were last built from
+wCGBLastBGP::  db
+wCGBLastOBP0:: db
+wCGBLastOBP1:: db
+; attributes for one screen row while decoding an ATTR_BLK packet
+wCGBAttrRow:: ds SCREEN_WIDTH
+
+ENDSECTION
+
+
 SECTION "Stack", WRAM0
 
 ; the stack grows downward

@@ -185,3 +185,8 @@ In-game names (in **bold**) are max 10 characters (`NAME_LENGTH - 1`) and live i
 - Drawn backs are rear views made by `tools/draw_rooster_backs.py` (`SPECIES` holds each breed's colours and stage). It writes 32×32 gameboy, colour and colour_x4 versions under `gfx/rooster_src/back/`; run it before the importer.
 - Farfetch'd (#83) is skipped and keeps its original sprites. Mewtwo (#150) uses `150_lab_bred_goose.png`.
 - Each pics bank (`gfx/pics.asm`, "Pics 1"–"Pics 5") must stay within its ROM bank; check free space in `pokered.map` after big art changes.
+
+## Colour
+
+- The ROM is GBC-compatible (`rgbfix -c`) and still runs on DMG and SGB. On a GBC, `engine/gfx/cgb_palettes.asm` turns the SGB palette commands into GBC palettes and BG attribute maps, and VBlank rebuilds the colours whenever `rBGP`/`rOBP0`/`rOBP1` change, so fades and flashes work unchanged. The palette engine lives in its own "Palettes" section (bank $2C).
+- Each species except Farfetch'd has its own palette (`PAL_ROOSTER + n`), generated from the colour fronts by `python3 tools/make_rooster_palettes.py`, which writes `data/sgb/rooster_palettes.asm` and `data/pokemon/palettes.asm`. Re-run it after changing the art.
