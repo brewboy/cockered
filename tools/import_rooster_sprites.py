@@ -5,8 +5,10 @@ Usage: tools/import_rooster_sprites.py [SPRITE_DIR]
 
 SPRITE_DIR (default: gfx/rooster_src/gameboy) holds 56x56 grayscale PNGs named NNN_<breed>.png (Pokédex order).
 Front sprites are cropped to the smallest bottom-centred 40/48/56 square that
-fits them. Back sprites are derived from the fronts: mirrored to face right and
-shrunk to 32x32. Run from the repository root.
+fits them. Back sprites come from SPRITE_DIR/../back/gameboy/ (32x32, drawn by
+tools/draw_rooster_backs.py) when a file with the same name exists there;
+otherwise they are derived from the fronts: mirrored to face right and shrunk
+to 32x32. Run from the repository root.
 """
 
 import glob
@@ -139,8 +141,14 @@ def main():
 		rows = read_png(path)
 		f = front(rows)
 		write_png(f'gfx/pokemon/front/{name}.png', f)
-		write_png(f'gfx/pokemon/back/{name}b.png', back(rows))
-		print(f'{dex:03} {name:<12} front {len(f)}x{len(f)}  <- {os.path.basename(path)}')
+		drawn = os.path.join(src, '..', 'back', 'gameboy', os.path.basename(path))
+		if os.path.exists(drawn):
+			b, kind = read_png(drawn), 'drawn'
+			assert len(b) == len(b[0]) == 32, f'{drawn}: expected 32x32'
+		else:
+			b, kind = back(rows), 'derived'
+		write_png(f'gfx/pokemon/back/{name}b.png', b)
+		print(f'{dex:03} {name:<12} front {len(f)}x{len(f)}  back {kind:<7} <- {os.path.basename(path)}')
 
 
 if __name__ == '__main__':
