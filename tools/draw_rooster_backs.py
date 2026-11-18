@@ -43,18 +43,60 @@ def gb(c):
 	return 85 if y < 90 else 170 if y < 185 else 255
 
 
-# Per-species look. stage: 0 chick, 1 cockerel, 2 rooster.
+# Tail presets: (base width, tip width, [quadratic Bezier feathers from the rump outwards]).
+TAILS = {
+	# sickles rise from the back and arch over towards the viewer
+	'sickle1': (3.6, 1.6, [((9, 23), (-1, 15), (1, 26)), ((10, 22), (2, 8), (3, 20)), ((11, 21), (7, 7), (7, 16))]),
+	'sickle2': (4.2, 1.6, [((8, 23), (-4, 12), (0, 28)), ((9, 22), (-2, 2), (1, 20)), ((10, 21), (2, -3), (4, 14)),
+		((12, 20), (8, -3), (8, 10))]),
+	# hen-feathered: a short, broad fan with no sickles
+	'fan1': (6.5, 2.0, [((9, 24), (5, 21), (3, 18)), ((10, 23), (7, 18), (6, 14)), ((11, 22), (10, 17), (10, 13))]),
+	'fan2': (7.0, 2.0, [((9, 23), (4, 19), (2, 15)), ((10, 22), (6, 16), (5, 11)), ((11, 21), (10, 15), (10, 9))]),
+	# upright, almost vertical tails that grow with each stage
+	'upright1': (5.0, 2.0, [((8, 24), (5, 19), (5, 14)), ((10, 23), (8, 16), (9, 11)), ((12, 22), (11, 17), (13, 12))]),
+	'upright2': (5.4, 2.0, [((8, 24), (4, 16), (5, 9)), ((10, 23), (7, 12), (9, 5)), ((12, 22), (11, 13), (13, 7))]),
+	'upright3': (6.0, 2.0, [((8, 23), (2, 12), (4, 4)), ((10, 22), (6, 8), (9, 1)), ((12, 21), (11, 9), (14, 3)),
+		((13, 21), (15, 13), (16, 8))]),
+	# moulting: only a ragged stub is left
+	'stub': (3.4, 2.0, [((9, 23), (7, 21), (6, 19)), ((10, 22), (9, 20), (9, 17))]),
+}
+
+WHITE = (245, 245, 240)
+SILVER = (213, 211, 217)
+GREEN_BLACK, GREEN_HI = (28, 34, 38), (43, 68, 70)
+SKIN = (232, 172, 164)  # bare skin showing through a moult
+
+# Per-species look. stage: 0 chick, 1 cockerel/hen, 2 rooster.
 # body/hackle/wing/tail are base colours; lace adds the laced-feather pattern.
+# Optional: tail_style (a TAILS key, default by stage), comb ('single' or 'rose'),
+# moult (bare patches, ragged tail, loose feathers).
+SERAMA = dict(body=(193, 159, 108), hackle=(232, 150, 60), wing=(157, 99, 45), tail=GREEN_BLACK, tail_hi=GREEN_HI)
+RIR = dict(body=(131, 41, 27), hackle=(180, 68, 30), wing=(102, 31, 22), tail=GREEN_BLACK, tail_hi=GREEN_HI)
+ANDALUSIAN = dict(body=(76, 84, 118), hackle=(98, 110, 141), wing=(62, 74, 102), tail=(52, 62, 90),
+	tail_hi=(98, 110, 141), lace=(42, 48, 77))
+SEBRIGHT = dict(body=WHITE, hackle=WHITE, wing=SILVER, tail=SILVER, tail_hi=WHITE, comb='rose')
+DUTCH = dict(body=(23, 22, 33), hackle=(236, 160, 60), wing=(170, 70, 36), tail=(24, 48, 44), tail_hi=(40, 77, 74))
+JAPANESE = dict(body=WHITE, hackle=WHITE, wing=SILVER, tail=GREEN_BLACK, tail_hi=GREEN_HI)
+
 SPECIES = {
 	1: dict(stage=0, body=(235, 203, 134)),
-	2: dict(stage=1, body=(193, 159, 108), hackle=(232, 150, 60), wing=(157, 99, 45), tail=(28, 34, 38), tail_hi=(43, 68, 70)),
-	3: dict(stage=2, body=(193, 159, 108), hackle=(232, 150, 60), wing=(157, 99, 45), tail=(28, 34, 38), tail_hi=(43, 68, 70)),
+	2: dict(SERAMA, stage=1),
+	3: dict(SERAMA, stage=2),
 	4: dict(stage=0, body=(195, 128, 84)),
-	5: dict(stage=1, body=(131, 41, 27), hackle=(180, 68, 30), wing=(102, 31, 22), tail=(28, 34, 38), tail_hi=(43, 68, 70)),
-	6: dict(stage=2, body=(131, 41, 27), hackle=(180, 68, 30), wing=(102, 31, 22), tail=(28, 34, 38), tail_hi=(43, 68, 70)),
+	5: dict(RIR, stage=1),
+	6: dict(RIR, stage=2),
 	7: dict(stage=0, body=(150, 164, 188)),
-	8: dict(stage=1, body=(76, 84, 118), hackle=(98, 110, 141), wing=(62, 74, 102), tail=(52, 62, 90), tail_hi=(98, 110, 141), lace=(42, 48, 77)),
-	9: dict(stage=2, body=(76, 84, 118), hackle=(98, 110, 141), wing=(62, 74, 102), tail=(52, 62, 90), tail_hi=(98, 110, 141), lace=(42, 48, 77)),
+	8: dict(ANDALUSIAN, stage=1),
+	9: dict(ANDALUSIAN, stage=2),
+	10: dict(SEBRIGHT, stage=1, tail_style='fan1', lace=(166, 161, 182)),
+	11: dict(SEBRIGHT, stage=1, tail_style='stub', moult=True),
+	12: dict(SEBRIGHT, stage=2, tail_style='fan2', lace=(28, 28, 34), tail=WHITE, tail_hi=SILVER),
+	13: dict(DUTCH, stage=1),
+	14: dict(DUTCH, stage=1, tail_style='stub', moult=True),
+	15: dict(DUTCH, stage=2),
+	16: dict(JAPANESE, stage=1, tail_style='upright1'),
+	17: dict(JAPANESE, stage=1, tail_style='upright2'),
+	18: dict(JAPANESE, stage=2, tail_style='upright3'),
 }
 
 
@@ -192,24 +234,10 @@ def draw(spec):
 	c.layer -= 1
 	c.ellipse('neck', hx, hy, hr + .3, hr, hackle, rim=False, hi=False)
 
-	# tail sickles rise from the back of the bird and arch over towards the viewer
-	if big:
-		feathers = [
-			((8, 23), (-4, 12), (0, 28)),
-			((9, 22), (-2, 2), (1, 20)),
-			((10, 21), (2, -3), (4, 14)),
-			((12, 20), (8, -3), (8, 10)),
-		]
-		w0 = 4.2
-	else:
-		feathers = [
-			((9, 23), (-1, 15), (1, 26)),
-			((10, 22), (2, 8), (3, 20)),
-			((11, 21), (7, 7), (7, 16)),
-		]
-		w0 = 3.6
+	style = spec.get('tail_style', 'sickle2' if big else 'sickle1')
+	w0, w1, feathers = TAILS[style]
 	for i, f in enumerate(feathers):
-		c.stroke('tail', f, w0, 1.6, tail if i % 2 == 0 else shade(tail), tail_hi)
+		c.stroke('tail', f, w0, w1, tail if i % 2 == 0 else shade(tail), tail_hi)
 		c.layer -= 1  # all feathers are one part, outlined only on the outside
 	c.layer += 1
 
@@ -227,6 +255,13 @@ def draw(spec):
 				left = x > 0 and c.part[y][x - 1] != 'neck'
 				right = x < N - 1 and c.part[y][x + 1] != 'neck'
 				c.col[y][x] = light(hackle) if left else shade(hackle) if right else hackle
+	if spec.get('moult'):
+		# bare skin showing through where feathers have dropped
+		for px, py, r in ((11, 25, 2.2), (19, 29, 1.8), (6, 28, 1.5), (23, 24, 1.4), (16, 22, 1.2)):
+			for y in range(N):
+				for x in range(N):
+					if c.part[y][x] in ('body', 'wing') and (x + .5 - px) ** 2 + (y + .5 - py) ** 2 <= r * r:
+						c.col[y][x] = SKIN if y < py + r * .4 else shade(SKIN)
 	c.outline(inner=('wing', 'fringe', 'neck'))
 	# soft wing edge instead of a black outline
 	for y in range(N):
@@ -240,10 +275,17 @@ def draw(spec):
 	# features keep all their pixels
 	ix, iy = round(hx - .5), round(hy - .5)
 	top = min(y for y in range(N) if c.part[y][ix] == 'neck')
-	# single comb in profile: a solid blade with spikes, tallest in the middle
-	heights = [3, 5, 3, 6, 3, 6, 3, 5, 2] if big else [2, 3, 2, 4, 2, 3, 2]
-	x0 = ix - len(heights) // 2
-	comb = [(x0 + i, top - k, COMB_SHADE if k == 0 else COMB) for i, h in enumerate(heights) for k in range(h)]
+	if spec.get('comb') == 'rose':
+		# rose comb: low and wide and bumpy, with a spike pointing back
+		heights = [2, 2, 3, 2, 3, 2, 1] if big else [2, 3, 2, 2, 1]
+		x0 = ix - len(heights) // 2 + 1
+		comb = [(x0 + i, top - k, COMB_SHADE if k == 0 else COMB) for i, h in enumerate(heights) for k in range(h)]
+		comb += [(x0 - 1, top - 1, COMB), (x0 - 2, top - 1, COMB), (x0 - 3, top - 2, COMB)]
+	else:
+		# single comb in profile: a solid blade with spikes, tallest in the middle
+		heights = [3, 5, 3, 6, 3, 6, 3, 5, 2] if big else [2, 3, 2, 4, 2, 3, 2]
+		x0 = ix - len(heights) // 2
+		comb = [(x0 + i, top - k, COMB_SHADE if k == 0 else COMB) for i, h in enumerate(heights) for k in range(h)]
 	features(c, comb)
 	ey = iy
 	edge = max(x for x in range(N) if c.part[ey + 1][x] == 'neck')
@@ -254,6 +296,10 @@ def draw(spec):
 	features(c, beak)
 	w = [(edge - 1, ey + 3 + i, COMB) for i in range(3)] + [(edge, ey + 3 + i, COMB) for i in range(n)]
 	features(c, w)
+	if spec.get('moult'):
+		# a couple of loose feathers drifting away
+		for fx, fy in ((2, 7), (6, 3)):
+			features(c, [(fx, fy, hackle), (fx + 1, fy, hackle), (fx + 1, fy - 1, shade(hackle))])
 	return c
 
 
