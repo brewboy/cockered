@@ -94,7 +94,8 @@ SKIN = (232, 172, 164)  # bare skin showing through a moult
 # eggs (stage 'eggs': a clutch of eggs in the given colours instead of a bird),
 # shell (wearing the top of an eggshell as a helmet; hides the comb), bars (colour
 # of stripes across body, wing and tail), comb 'cup' (buttercup crown) or
-# 'horns' (V-shaped horns), baby (colour of a chick standing in front).
+# 'horns' (V-shaped horns), baby (colour of a chick standing in front), toy
+# (colour of the wheeled base a toy stands on), cracks (lines on a lone egg).
 SERAMA = dict(body=(193, 159, 108), hackle=(232, 150, 60), wing=(157, 99, 45), tail=GREEN_BLACK, tail_hi=GREEN_HI)
 RIR = dict(body=(131, 41, 27), hackle=(180, 68, 30), wing=(102, 31, 22), tail=GREEN_BLACK, tail_hi=GREEN_HI)
 ANDALUSIAN = dict(body=(76, 84, 118), hackle=(98, 110, 141), wing=(62, 74, 102), tail=(52, 62, 90),
@@ -177,6 +178,8 @@ APPENZELLER = dict(body=WHITE, hackle=WHITE, wing=SILVER, tail=GREEN_BLACK, tail
 	crest=True, comb='horns')
 GOLD_SEBRIGHT = dict(body=(226, 164, 58), hackle=(238, 188, 100), wing=(197, 142, 52), tail=(197, 142, 52),
 	tail_hi=(238, 200, 137), lace=(28, 28, 34), comb='rose')
+CORNISH = dict(body=(31, 27, 34), hackle=(40, 36, 41), wing=(40, 40, 50), tail=(27, 26, 38), tail_hi=(70, 74, 84),
+	lace=(134, 62, 36), comb='pea')
 WELSUMMER_HEN = dict(body=(144, 90, 52), hackle=(206, 152, 80), wing=(112, 68, 44), tail=(97, 59, 39),
 	tail_hi=(140, 100, 60), comb='hen')
 
@@ -314,6 +317,24 @@ SPECIES = {
 	124: dict(MINORCA, stage=2, comb='horns'),
 	125: dict(PHOENIX, stage=2, hackle=(238, 188, 70), wing=(204, 122, 40)),
 	126: dict(PHOENIX, stage=2, hackle=(214, 90, 36), wing=(172, 50, 30)),
+	127: dict(stage=2, body=(186, 147, 99), hackle=(192, 92, 40), wing=(130, 60, 30), tail=GREEN_BLACK,
+		tail_hi=GREEN_HI, comb='pea', tall=True, tail_style='stub'),
+	128: dict(BRAHMA, stage=2, body=(23, 22, 33), wing=(216, 216, 222), tail=(24, 48, 44), tail_hi=(40, 77, 74)),
+	129: dict(stage=0, body=(236, 226, 170)),
+	130: dict(CORNISH, stage=2, tail_style='stub'),
+	131: dict(BRAHMA, stage=2, comb='hen', tail_style='fan2'),
+	132: dict(stage='eggs', eggs=[(232, 232, 236)]),
+	133: dict(stage=0, body=(157, 110, 71), head=(236, 214, 170)),
+	134: dict(COCHIN, stage=2, tail_style='fan2', body=(85, 102, 148), hackle=(98, 118, 164), wing=(66, 77, 124),
+		tail=(66, 77, 124), tail_hi=(98, 118, 164)),
+	135: dict(GOLD_SEBRIGHT, stage=2, body=(190, 131, 47), hackle=(228, 162, 60), wing=(148, 100, 39),
+		tail=GREEN_BLACK, tail_hi=GREEN_HI, tail_style='sickle2'),
+	136: dict(COCHIN, stage=2, tail_style='fan2', body=(164, 62, 32), hackle=(188, 72, 36), wing=(127, 47, 27),
+		tail=(127, 47, 27), tail_hi=(188, 72, 36)),
+	137: dict(stage=1, body=(214, 60, 40), hackle=(246, 200, 60), wing=(246, 200, 60), tail=(60, 150, 90),
+		tail_hi=(110, 190, 130), tail_style='fan1', toy=(70, 110, 190)),
+	138: dict(stage='eggs', eggs=[(176, 168, 150)], cracks_col=(88, 82, 78),
+		cracks=[(11, 12), (12, 13), (12, 14), (13, 15), (19, 20), (20, 21), (19, 22), (20, 23), (14, 26), (15, 26)]),
 }
 
 
@@ -506,12 +527,30 @@ def draw_one(spec):
 
 	if st == 'eggs':
 		# a clutch seen from behind: back row first, each egg its own part
-		spots = ((7, 19), (16, 17.5), (25, 19.5), (4, 27), (14, 27.5), (24, 27))
-		for i, ((ex, ey), col) in enumerate(zip(spots, spec['eggs'])):
-			c.ellipse(f'egg{i}', ex, ey, 5, 6.5, col)
+		if len(spec['eggs']) == 1:
+			# a single big egg standing upright
+			spots = ((16, 18.5),)
+			col = spec['eggs'][0]
+			c.layer += 1
+			for y in range(N):
+				for x in range(N):
+					v = (y + .5 - 18.5) / 13  # -1 at the top, 1 at the bottom
+					rx = 9.8 * (1 + .12 * v) * max(0, 1 - v * v) ** .5  # narrower towards the top
+					u = (x + .5 - 16) / max(rx, .01)
+					if abs(v) <= 1 and abs(u) <= 1:
+						shadow = v > .5 or u > .75 or (u > .45 and v > .1)
+						hi = -.7 < u < -.2 and -.75 < v < -.35
+						c.set(x, y, 'egg0', shade(col) if shadow else light(col) if hi else col)
+		else:
+			spots = ((7, 19), (16, 17.5), (25, 19.5), (4, 27), (14, 27.5), (24, 27))
+			for i, ((ex, ey), col) in enumerate(zip(spots, spec['eggs'])):
+				c.ellipse(f'egg{i}', ex, ey, 5, 6.5, col)
 		c.outline()
-		# a speckle or two on each egg
-		for i, (ex, ey) in enumerate(spots):
+		if spec.get('cracks'):
+			for x, y in spec['cracks']:
+				c.col[y][x] = spec['cracks_col']
+		# a speckle or two on each egg of a clutch
+		for i, (ex, ey) in enumerate(spots if len(spots) > 1 else ()):
 			for x, y in ((round(ex), round(ey) + 1), (round(ex) - 2, round(ey) + 3)):
 				if c.part[y][x] == f'egg{i}' and c.col[y][x] != OUTL:
 					c.col[y][x] = shade(c.col[y][x])
@@ -662,6 +701,19 @@ def draw_one(spec):
 			for x in range(N):
 				if ((x + .5 - 15.5) / 16) ** 2 + ((y + .5 - 31) / 4.5) ** 2 <= 1:
 					c.set(x, y, 'nest', shade(straw) if (x * 2 + y * 3) % 5 == 0 else light(straw) if y < 28 else straw)
+	if spec.get('toy'):
+		# a wheeled toy base under the bird, wheels poking out below
+		base = spec['toy']
+		c.layer += 1
+		for y in range(26, N):
+			for x in range(1, 31):
+				c.set(x, y, 'base', light(base) if y == 26 else base if y < 29 else shade(base))
+		c.layer += 1
+		for wx in (6, 25):
+			for y in range(28, N):
+				for x in range(wx - 3, wx + 4):
+					if (x - wx) ** 2 + (y - 31) ** 2 <= 8:
+						c.set(x, y, 'wheel', (138, 139, 146) if (x, y) == (wx, 31) else (40, 40, 50))
 	c.outline(inner=('wing', 'fringe', 'neck'))
 	# soft wing edge instead of a black outline
 	for y in range(N):
