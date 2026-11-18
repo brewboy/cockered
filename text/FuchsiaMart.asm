@@ -9,6 +9,6 @@ _FuchsiaMartMiddleAgedManText::
 _FuchsiaMartCooltrainerFText::
 	text "Did you try X"
 	line "SPEED? It speeds"
-	cont "up a #MON in"
-	cont "battle!"
+	cont "up a COCK in"
+	cont "a fight!"
 	done

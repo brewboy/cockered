@@ -60,7 +60,7 @@ _Route21Swimmer2AfterBattleText::
 
 _Route21Swimmer3BattleText::
 	text "I caught all my"
-	line "#MON at sea!"
+	line "COCKS at sea!"
 	done
 
 _Route21Swimmer3EndBattleText::
@@ -70,7 +70,7 @@ _Route21Swimmer3EndBattleText::
 
 _Route21Swimmer3AfterBattleText::
 	text "Where'd you catch"
-	line "your #MON?"
+	line "your COCKS?"
 	done
 
 _Route21Swimmer4BattleText::

@@ -2,8 +2,8 @@ _LavenderMartBaldingGuyText::
 	text "I'm searching for"
 	line "items that raise"
 	cont "the abilities of"
-	cont "#MON during a"
-	cont "single battle."
+	cont "COCKS during a"
+	cont "single fight."
 
 	para "X ATTACK, X"
 	line "DEFEND, X SPEED"
@@ -17,7 +17,7 @@ _LavenderMartBaldingGuyText::
 _LavenderMartCooltrainerMReviveText::
 	text "You know REVIVE?"
 	line "It revives any"
-	cont "fainted #MON!"
+	cont "fainted COCK!"
 	done
 
 _LavenderMartCooltrainerMNuggetText::

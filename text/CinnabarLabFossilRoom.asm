@@ -5,7 +5,7 @@ _CinnabarLabFossilRoomScientist1Text::
 	line "doctor!"
 
 	para "I study here rare"
-	line "#MON fossils!"
+	line "COCK fossils!"
 
 	para "You! Have you a"
 	line "fossil for me?"
@@ -45,12 +45,12 @@ _CinnabarLabFossilRoomScientist1SeesFossilText::
 	line "@"
 	text_ram wStringBuffer
 	text ", a"
-	cont "#MON that is"
+	cont "COCK that is"
 	cont "already extinct!"
 
 	para "My Resurrection"
 	line "Machine will make"
-	cont "that #MON live"
+	cont "that COCK live"
 	cont "again!"
 	done
 

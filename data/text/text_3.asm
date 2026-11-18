@@ -21,7 +21,7 @@ _OlderFileWillBeErasedText::
 
 _WhenYouChangeBoxText::
 	text "When you change a"
-	line "#MON BOX, data"
+	line "COCK BOX, data"
 	cont "will be saved."
 
 	para "Is that okay?"
@@ -29,7 +29,7 @@ _WhenYouChangeBoxText::
 
 _ChooseABoxText::
 	text "Choose a"
-	line "<PKMN> BOX.@"
+	line "COCK BOX.@"
 	text_end
 
 _EvolvedText::
@@ -125,7 +125,7 @@ _FellText::
 
 _RanFromBattleText::
 	text "<USER>"
-	line "ran from battle!"
+	line "fled the fight!"
 	prompt
 
 _RanAwayScaredText::

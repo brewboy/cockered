@@ -192,3 +192,13 @@ In-game names (in **bold**) are max 10 characters (`NAME_LENGTH - 1`) and live i
 
 - The ROM is GBC-compatible (`rgbfix -c`) and still runs on DMG and SGB. On a GBC, `engine/gfx/cgb_palettes.asm` turns the SGB palette commands into GBC palettes and BG attribute maps, and VBlank rebuilds the colours whenever `rBGP`/`rOBP0`/`rOBP1` change, so fades and flashes work unchanged. The palette engine lives in its own "Palettes" section (bank $2C).
 - Each species except Farfetch'd has its own palette (`PAL_ROOSTER + n`), generated from the colour fronts by `python3 tools/make_rooster_palettes.py`, which writes `data/sgb/rooster_palettes.asm` and `data/pokemon/palettes.asm`. Re-run it after changing the art.
+
+## Title logo
+
+- The title-screen logo (`gfx/title/pokemon_logo.png`, 128×56, i.e. 16×7 tiles placed by position) says COCK. It is drawn by `python3 tools/draw_rooster_logo.py`: chunky bouncing letters with a light grey fill, black outline and dark grey drop shadow, like the old logo. Run `make` afterwards.
+
+## Intro fight
+
+- The opening fight is CROWGAR (Black Sumatra, seen from behind; stands in for Gengar) against NIDOROOST on Red or SILKYPUFF on Blue (for Nidorino/Jigglypuff). `python3 tools/draw_rooster_intro.py` draws them and writes `gfx/intro/` (file names kept from the original) plus colour references in `gfx/rooster_src/intro/`; pass a folder to preview instead. Run `make` afterwards.
+- CROWGAR's three 56×56 poses are stored as unique tiles (tile 0 blank, tile 1 solid black, which the intro also uses for its black bars) with a 7×7 tilemap per pose; together they must stay within 108 tiles, which the script checks. The standing and wings-flared poses share their body, neck and head to save tiles.
+- The scene's palette (`PalPacket_NidorinoIntro` in `data/sgb/sgb_packets.asm`) is the opponent's species palette.

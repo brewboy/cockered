@@ -54,10 +54,10 @@ _WardensHouseWardenHM04ExplanationText::
 	text "WARDEN: HM04"
 	line "teaches STRENGTH!"
 
-	para "It lets #MON"
+	para "It lets COCKS"
 	line "move boulders"
 	cont "when you're out-"
-	cont "side of battle."
+	cont "side of fights."
 
 	para "Oh yes, did you"
 	line "find SECRET HOUSE"
@@ -76,11 +76,11 @@ _WardensHouseWardenHM04NoRoomText::
 	done
 
 _WardensHouseDisplayPhotosAndFossilsText::
-	text "#MON photos"
+	text "COCK photos"
 	line "and fossils."
 	done
 
 _WardensHouseDisplayMerchandiseText::
-	text "Old #MON"
+	text "Old COCK"
 	line "merchandise."
 	done

@@ -4,7 +4,7 @@
 
 	charmap "<NULL>",    $00
 	charmap "<PAGE>",    $49
-	charmap "<PKMN>",    $4a ; "<PK><MN>"
+	charmap "<PKMN>",    $4a ; "<PK><MN>" (drawn as "CoCk")
 	charmap "<_CONT>",   $4b ; implements "<CONT>"
 	charmap "<SCROLL>",  $4c
 	charmap "<NEXT>",    $4e
@@ -13,7 +13,7 @@
 	charmap "<PARA>",    $51
 	charmap "<PLAYER>",  $52 ; wPlayerName
 	charmap "<RIVAL>",   $53 ; wRivalName
-	charmap "#",         $54 ; "POKé"
+	charmap "#",         $54 ; "COCK" (was "POKé")
 	charmap "<CONT>",    $55
 	charmap "<……>",      $56 ; "……"
 	charmap "<DONE>",    $57
@@ -158,8 +158,8 @@
 	charmap "'v",        $bf
 
 	charmap "'",         $e0
-	charmap "<PK>",      $e1
-	charmap "<MN>",      $e2
+	charmap "<PK>",      $e1 ; "Co"
+	charmap "<MN>",      $e2 ; "Ck"
 	charmap "-",         $e3
 
 	charmap "'r",        $e4

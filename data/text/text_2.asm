@@ -133,7 +133,7 @@ _DexRatingText::
 _GymStatueText1::
 	text_ram wGymCityName
 	text_start
-	line "#MON GYM"
+	line "COCK GYM"
 	cont "LEADER: @"
 	text_ram wGymLeaderName
 	text_start
@@ -145,7 +145,7 @@ _GymStatueText1::
 _GymStatueText2::
 	text_ram wGymCityName
 	text_start
-	line "#MON GYM"
+	line "COCK GYM"
 	cont "LEADER: @"
 	text_ram wGymLeaderName
 	text_start
@@ -156,17 +156,17 @@ _GymStatueText2::
 	done
 
 _ViridianCityPokecenterGuyText::
-	text "#MON CENTERs"
+	text "COCK CENTERs"
 	line "heal your tired,"
 	cont "hurt or fainted"
-	cont "#MON!"
+	cont "COCKS!"
 	done
 
 _PewterCityPokecenterGuyText::
 	text "Yawn!"
 
 	para "When SILKYPUFF"
-	line "sings, #MON"
+	line "sings, COCKS"
 	cont "get drowsy..."
 
 	para "...Me too..."
@@ -175,7 +175,7 @@ _PewterCityPokecenterGuyText::
 
 _CeruleanPokecenterGuyText::
 	text "BILL has lots of"
-	line "#MON!"
+	line "COCKS!"
 
 	para "He collects rare"
 	line "ones too!"
@@ -191,7 +191,7 @@ _LavenderPokecenterGuyText::
 
 _MtMoonPokecenterBenchGuyText::
 	text "If you have too"
-	line "many #MON, you"
+	line "many COCKS, you"
 	cont "should store them"
 	cont "via PC!"
 	done
@@ -204,7 +204,7 @@ _RockTunnelPokecenterGuyText::
 
 _UnusedBenchGuyText1::
 	text "I wish I could"
-	line "catch #MON."
+	line "catch COCKS."
 	done
 
 _UnusedBenchGuyText2::
@@ -221,17 +221,17 @@ _UnusedBenchGuyText3::
 _VermilionPokecenterGuyText::
 	text "It is true that a"
 	line "higher level"
-	cont "#MON will be"
+	cont "COCK will be"
 	cont "more powerful..."
 
-	para "But, all #MON"
+	para "But, all COCKS"
 	line "will have weak"
 	cont "points against"
 	cont "specific types."
 
 	para "So, there is no"
 	line "universally"
-	cont "strong #MON."
+	cont "strong COCKS."
 	done
 
 _CeladonCityPokecenterGuyText::
@@ -242,15 +242,15 @@ _CeladonCityPokecenterGuyText::
 
 _FuchsiaCityPokecenterGuyText::
 	text "If you're studying "
-	line "#MON, visit"
+	line "COCKS, visit"
 	cont "the SAFARI ZONE."
 
 	para "It has all sorts"
-	line "of rare #MON."
+	line "of rare COCKS."
 	done
 
 _CinnabarPokecenterGuyText::
-	text "#MON can still"
+	text "COCKS can still"
 	line "learn techniques"
 	cont "after canceling"
 	cont "evolution."
@@ -281,7 +281,7 @@ _CeladonCityHotelText::
 
 _BookcaseText::
 	text "Crammed full of"
-	line "#MON books!"
+	line "COCK books!"
 	done
 
 _NewBicycleText::
@@ -301,7 +301,7 @@ _SaveOptionText::
 	done
 
 _StrengthsAndWeaknessesText::
-	text "All #MON types"
+	text "All COCK types"
 	line "have strong and"
 	cont "weak points"
 	cont "against others."
@@ -319,7 +319,7 @@ _GameOverText::
 	done
 
 _CinnabarGymQuizIntroText::
-	text "#MON Quiz!"
+	text "COCK Quiz!"
 
 	para "Get it right and"
 	line "the door opens to"
@@ -330,7 +330,7 @@ _CinnabarGymQuizIntroText::
 
 	para "If you want to"
 	line "conserve your"
-	cont "#MON for the"
+	cont "COCKS for the"
 	cont "GYM LEADER..."
 
 	para "Then get it right!"
@@ -344,7 +344,7 @@ _CinnabarQuizQuestionsText1::
 
 _CinnabarQuizQuestionsText2::
 	text "There are 9"
-	line "certified #MON"
+	line "certified COCK"
 	cont "LEAGUE BADGEs?"
 	done
 
@@ -357,11 +357,11 @@ _CinnabarQuizQuestionsText4::
 	text "Are thunder moves"
 	line "effective against"
 	cont "ground element-"
-	cont "type #MON?"
+	cont "type COCKS?"
 	done
 
 _CinnabarQuizQuestionsText5::
-	text "#MON of the"
+	text "COCKS of the"
 	line "same kind and"
 	cont "level are not"
 	cont "identical?"
@@ -384,11 +384,11 @@ _CinnabarGymQuizIncorrectText::
 	prompt
 
 _MagazinesText::
-	text "#MON magazines!"
+	text "COCK magazines!"
 
-	para "#MON notebooks!"
+	para "COCK notebooks!"
 
-	para "#MON graphs!"
+	para "COCK graphs!"
 	done
 
 _BillsHouseMonitorText::
@@ -405,11 +405,11 @@ _BillsHouseInitiatedText::
 
 _BillsHousePokemonListText1::
 	text "BILL's favorite"
-	line "#MON list!"
+	line "COCK list!"
 	prompt
 
 _BillsHousePokemonListText2::
-	text "Which #MON do"
+	text "Which COCK do"
 	line "you want to see?"
 	done
 
@@ -420,19 +420,19 @@ _OakLabEmailText::
 	para "..."
 
 	para "Calling all"
-	line "#MON trainers!"
+	line "COCK trainers!"
 
 	para "The elite trainers"
-	line "of #MON LEAGUE"
+	line "of COCK LEAGUE"
 	cont "are ready to take"
 	cont "on all comers!"
 
 	para "Bring your best"
-	line "#MON and see"
+	line "COCKS and see"
 	cont "how you rate as a"
 	cont "trainer!"
 
-	para "#MON LEAGUE HQ"
+	para "COCK LEAGUE HQ"
 	line "INDIGO PLATEAU"
 
 	para "PS: PROF.OAK,"
@@ -502,21 +502,21 @@ _ViridianSchoolNotebookText1::
 
 	para "# BALLs are"
 	line "used to catch"
-	cont "#MON."
+	cont "COCKS."
 
-	para "Up to 6 #MON"
+	para "Up to 6 COCKS"
 	line "can be carried."
 
 	para "People who raise"
-	line "and make #MON"
+	line "and make COCK"
 	cont "fight are called"
-	cont "#MON trainers."
+	cont "COCK trainers."
 	prompt
 
 _ViridianSchoolNotebookText2::
 	text "Second page..."
 
-	para "A healthy #MON"
+	para "A healthy COCK"
 	line "may be hard to"
 	cont "catch, so weaken"
 	cont "it first!"
@@ -529,30 +529,30 @@ _ViridianSchoolNotebookText2::
 _ViridianSchoolNotebookText3::
 	text "Third page..."
 
-	para "#MON trainers"
+	para "COCK trainers"
 	line "seek others to"
-	cont "engage in #MON"
+	cont "engage in COCK"
 	cont "fights."
 
-	para "Battles are"
-	line "constantly fought"
-	cont "at #MON GYMs."
+	para "Fights are"
+	line "constantly held"
+	cont "at COCK GYMs."
 	prompt
 
 _ViridianSchoolNotebookText4::
 	text "Fourth page..."
 
 	para "The goal for"
-	line "#MON trainers"
+	line "COCK trainers"
 	cont "is to beat the "
-	cont "top 8 #MON"
+	cont "top 8 COCK"
 	cont "GYM LEADERs."
 
 	para "Do so to earn the"
 	line "right to face..."
 
 	para "The ELITE FOUR of"
-	line "#MON LEAGUE!"
+	line "COCK LEAGUE!"
 	prompt
 
 _EnemiesOnEverySideText::
@@ -571,7 +571,7 @@ _FightingDojoText::
 
 _IndigoPlateauHQText::
 	text "INDIGO PLATEAU"
-	line "#MON LEAGUE HQ"
+	line "COCK LEAGUE HQ"
 	done
 
 _RedBedroomSNESText::
@@ -593,13 +593,13 @@ _Route15UpstairsBinocularsText::
 _AerodactylFossilText::
 	text "PTEROFOWL Fossil"
 	line "A primitive and"
-	cont "rare #MON."
+	cont "rare COCKS."
 	done
 
 _KabutopsFossilText::
 	text "KABUROOST Fossil"
 	line "A primitive and"
-	cont "rare #MON."
+	cont "rare COCKS."
 	done
 
 _LinkCableHelpText1::
@@ -621,7 +621,7 @@ _LinkCableInfoText1::
 	cont "GAME BOY, talk to"
 	cont "the attendant on"
 	cont "the right in any"
-	cont "#MON CENTER."
+	cont "COCK CENTER."
 	prompt
 
 _LinkCableInfoText2::
@@ -633,14 +633,14 @@ _LinkCableInfoText2::
 _LinkCableInfoText3::
 	text "TRADE CENTER is"
 	line "used for trading"
-	cont "#MON."
+	cont "COCKS."
 	prompt
 
 _ViridianSchoolBlackboardText1::
 	text "The blackboard"
-	line "describes #MON"
+	line "describes COCK"
 	cont "STATUS changes"
-	cont "during battles."
+	cont "during fights."
 	prompt
 
 _ViridianSchoolBlackboardText2::
@@ -649,13 +649,13 @@ _ViridianSchoolBlackboardText2::
 	done
 
 _ViridianBlackboardSleepText::
-	text "A #MON can't"
+	text "A COCK can't"
 	line "attack if it's"
 	cont "asleep!"
 
-	para "#MON will stay"
+	para "COCKS will stay"
 	line "asleep even after"
-	cont "battles."
+	cont "fights."
 
 	para "Use AWAKENING to"
 	line "wake them up!"
@@ -663,11 +663,11 @@ _ViridianBlackboardSleepText::
 
 _ViridianBlackboardPoisonText::
 	text "When poisoned, a"
-	line "#MON's health"
+	line "COCK's health"
 	cont "steadily drops."
 
 	para "Poison lingers"
-	line "after battles."
+	line "after fights."
 
 	para "Use an ANTIDOTE"
 	line "to cure poison!"
@@ -675,11 +675,11 @@ _ViridianBlackboardPoisonText::
 
 _ViridianBlackboardPrlzText::
 	text "Paralysis could"
-	line "make #MON"
+	line "make COCK"
 	cont "moves misfire!"
 
 	para "Paralysis remains"
-	line "after battles."
+	line "after fights."
 
 	para "Use PARLYZ HEAL"
 	line "for treatment!"
@@ -692,7 +692,7 @@ _ViridianBlackboardBurnText::
 	cont "ongoing damage."
 
 	para "Burns remain"
-	line "after battles."
+	line "after fights."
 
 	para "Use BURN HEAL to"
 	line "cure a burn!"
@@ -700,15 +700,15 @@ _ViridianBlackboardBurnText::
 
 _ViridianBlackboardFrozenText::
 	text "If frozen, a"
-	line "#MON becomes"
+	line "COCK becomes"
 	cont "totally immobile!"
 
 	para "It stays frozen"
 	line "even after the"
-	cont "battle ends."
+	cont "fight ends."
 
 	para "Use ICE HEAL to"
-	line "thaw out #MON!"
+	line "thaw out COCKS!"
 	prompt
 
 _VermilionGymTrashText::
@@ -789,18 +789,18 @@ _IndigoPlateauStatuesText1::
 _IndigoPlateauStatuesText2::
 	text "The ultimate goal"
 	line "of trainers!"
-	cont "#MON LEAGUE HQ"
+	cont "COCK LEAGUE HQ"
 	done
 
 _IndigoPlateauStatuesText3::
 	text "The highest"
-	line "#MON authority"
-	cont "#MON LEAGUE HQ"
+	line "COCK authority"
+	cont "COCK LEAGUE HQ"
 	done
 
 _PokemonBooksText::
 	text "Crammed full of"
-	line "#MON books!"
+	line "COCK books!"
 	done
 
 _DiglettSculptureText::
@@ -819,7 +819,7 @@ _TownMapText::
 
 _PokemonStuffText::
 	text "Wow! Tons of"
-	line "#MON stuff!"
+	line "COCK stuff!"
 	done
 
 _OutOfSafariBallsText::
@@ -886,7 +886,7 @@ _PlayerMonFaintedText::
 	prompt
 
 _UseNextMonText::
-	text "Use next #MON?"
+	text "Use next COCK?"
 	done
 
 _Rival1WinText::
@@ -896,7 +896,7 @@ _Rival1WinText::
 
 _PlayerBlackedOutText2::
 	text "<PLAYER> is out of"
-	line "useable #MON!"
+	line "useable COCKS!"
 
 	para "<PLAYER> blacked"
 	line "out!"
@@ -918,7 +918,7 @@ _TrainerAboutToUseText::
 	text "!"
 
 	para "Will <PLAYER>"
-	line "change #MON?"
+	line "change COCK?"
 	done
 
 _TrainerSentOutText::
@@ -941,7 +941,7 @@ _CantEscapeText::
 _NoRunningText::
 	text "No! There's no"
 	line "running from a"
-	cont "trainer battle!"
+	cont "trainer fight!"
 	prompt
 
 _GotAwayText::
@@ -1359,26 +1359,26 @@ _WhichFloorText::
 	done
 
 _PartyMenuNormalText::
-	text "Choose a #MON."
+	text "Choose a COCK."
 	done
 
 _PartyMenuItemUseText::
 	text "Use item on which"
-	line "#MON?"
+	line "COCK?"
 	done
 
 _PartyMenuBattleText::
 	text "Bring out which"
-	line "#MON?"
+	line "COCK?"
 	done
 
 _PartyMenuUseTMText::
 	text "Use TM on which"
-	line "#MON?"
+	line "COCK?"
 	done
 
 _PartyMenuSwapMonText::
-	text "Move #MON"
+	text "Move COCK"
 	line "where?"
 	done
 
@@ -1449,7 +1449,7 @@ _AccessedBillsPCText::
 	text "Accessed BILL's"
 	line "PC."
 
-	para "Accessed #MON"
+	para "Accessed COCK"
 	line "Storage System."
 	prompt
 
@@ -1457,7 +1457,7 @@ _AccessedSomeonesPCText::
 	text "Accessed someone's"
 	line "PC."
 
-	para "Accessed #MON"
+	para "Accessed COCK"
 	line "Storage System."
 	prompt
 
@@ -1539,7 +1539,7 @@ _TossHowManyText::
 	done
 
 _AccessedHoFPCText::
-	text "Accessed #MON"
+	text "Accessed COCK"
 	line "LEAGUE's site."
 
 	para "Accessed the HALL"
@@ -1556,7 +1556,7 @@ _WhatText::
 
 _DepositWhichMonText::
 	text "Deposit which"
-	line "#MON?"
+	line "COCK?"
 	done
 
 _MonWasStoredText::
@@ -1569,12 +1569,12 @@ _MonWasStoredText::
 
 _CantDepositLastMonText::
 	text "You can't deposit"
-	line "the last #MON!"
+	line "the last COCK!"
 	prompt
 
 _BoxFullText::
 	text "Oops! This Box is"
-	line "full of #MON."
+	line "full of COCKS."
 	prompt
 
 _MonIsTakenOutText::
@@ -1588,20 +1588,20 @@ _MonIsTakenOutText::
 
 _NoMonText::
 	text "What? There are"
-	line "no #MON here!"
+	line "no COCKS here!"
 	prompt
 
 _CantTakeMonText::
 	text "You can't take"
-	line "any more #MON."
+	line "any more COCKS."
 
-	para "Deposit #MON"
+	para "Deposit COCKS"
 	line "first."
 	prompt
 
 _ReleaseWhichMonText::
 	text "Release which"
-	line "#MON?"
+	line "COCK?"
 	done
 
 _OnceReleasedText::
@@ -1697,31 +1697,31 @@ _LinkCanceledText::
 _OakSpeechText1::
 	text "Hello there!"
 	line "Welcome to the"
-	cont "world of #MON!"
+	cont "world of COCKS!"
 
 	para "My name is OAK!"
 	line "People call me"
-	cont "the #MON PROF!"
+	cont "the COCK PROF!"
 	prompt
 
 _OakSpeechText2A::
 	text "This world is"
 	line "inhabited by"
 	cont "creatures called"
-	cont "#MON!@"
+	cont "COCKS!@"
 	text_end
 
 _OakSpeechText2B::
 	text_start
 
 	para "For some people,"
-	line "#MON are"
+	line "COCKS are"
 	cont "pets. Others use"
 	cont "them for fights."
 
 	para "Myself..."
 
-	para "I study #MON"
+	para "I study COCKS"
 	line "as a profession."
 	prompt
 
@@ -1744,12 +1744,12 @@ _OakSpeechText3::
 	text "<PLAYER>!"
 
 	para "Your very own"
-	line "#MON legend is"
+	line "COCK legend is"
 	cont "about to unfold!"
 
 	para "A world of dreams"
 	line "and adventures"
-	cont "with #MON"
+	cont "with COCKS"
 	cont "awaits! Let's go!"
 	done
 

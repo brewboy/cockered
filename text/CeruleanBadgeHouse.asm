@@ -1,5 +1,5 @@
 _CeruleanBadgeHouseMiddleAgedManText::
-	text "#MON BADGEs"
+	text "COCK BADGEs"
 	line "are owned only by"
 	cont "skilled trainers."
 
@@ -25,7 +25,7 @@ _CeruleanBadgeHouseMiddleAgedManVisitAnyTimeText::
 
 _CeruleanBadgeHouseBoulderBadgeText::
 	text "The ATTACK of all"
-	line "#MON increases"
+	line "COCKS increases"
 	cont "a little bit."
 
 	para "It also lets you"
@@ -34,7 +34,7 @@ _CeruleanBadgeHouseBoulderBadgeText::
 	prompt
 
 _CeruleanBadgeHouseCascadeBadgeText::
-	text "#MON up to L30"
+	text "COCKS up to L30"
 	line "will obey you."
 
 	para "Any higher, they"
@@ -42,21 +42,21 @@ _CeruleanBadgeHouseCascadeBadgeText::
 
 	para "It also lets you"
 	line "use CUT outside"
-	cont "of battle."
+	cont "of fights."
 	prompt
 
 _CeruleanBadgeHouseThunderBadgeText::
 	text "The SPEED of all"
-	line "#MON increases"
+	line "COCKS increases"
 	cont "a little bit."
 
 	para "It also lets you"
 	line "use FLY outside"
-	cont "of battle."
+	cont "of fights."
 	prompt
 
 _CeruleanBadgeHouseRainbowBadgeText::
-	text "#MON up to L50"
+	text "COCKS up to L50"
 	line "will obey you."
 
 	para "Any higher, they"
@@ -64,21 +64,21 @@ _CeruleanBadgeHouseRainbowBadgeText::
 
 	para "It also lets you"
 	line "use STRENGTH out-"
-	cont "side of battle."
+	cont "side of fights."
 	prompt
 
 _CeruleanBadgeHouseSoulBadgeText::
 	text "The DEFENSE of all"
-	line "#MON increases"
+	line "COCKS increases"
 	cont "a little bit."
 
 	para "It also lets you"
 	line "use SURF outside"
-	cont "of battle."
+	cont "of fights."
 	prompt
 
 _CeruleanBadgeHouseMarshBadgeText::
-	text "#MON up to L70"
+	text "COCKS up to L70"
 	line "will obey you."
 
 	para "Any higher, they"
@@ -86,12 +86,12 @@ _CeruleanBadgeHouseMarshBadgeText::
 	prompt
 
 _CeruleanBadgeHouseVolcanoBadgeText::
-	text "Your #MON's"
+	text "Your COCK's"
 	line "SPECIAL abilities"
 	cont "increase a bit."
 	prompt
 
 _CeruleanBadgeHouseEarthBadgeText::
-	text "All #MON will"
+	text "All COCKS will"
 	line "obey you!"
 	prompt

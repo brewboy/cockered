@@ -3,7 +3,7 @@ _CeladonMansion1FMeowthText::
 	text_end
 
 _CeladonMansion1FGrannyText::
-	text "My dear #MON"
+	text "My dear COCKS"
 	line "keep me company."
 
 	para "BAWKTH even brings"

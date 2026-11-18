@@ -28,7 +28,7 @@ _FightingDojoKarateMasterIWillGiveYouAPokemonText::
 
 	para "In return, I will"
 	line "give you a prized"
-	cont "fighting #MON!"
+	cont "fighting COCK!"
 
 	para "Choose whichever"
 	line "one you like!"
