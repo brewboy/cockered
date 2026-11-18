@@ -95,7 +95,9 @@ SKIN = (232, 172, 164)  # bare skin showing through a moult
 # shell (wearing the top of an eggshell as a helmet; hides the comb), bars (colour
 # of stripes across body, wing and tail), comb 'cup' (buttercup crown) or
 # 'horns' (V-shaped horns), baby (colour of a chick standing in front), toy
-# (colour of the wheeled base a toy stands on), cracks (lines on a lone egg).
+# (colour of the wheeled base a toy stands on), cracks (dark lines, for eggs and
+# stone fossils), sleeping (lying down with the head tucked low, dozing), tiny
+# (a smaller chick), stripes (colour of a chick's back stripes), stage 'goose'.
 SERAMA = dict(body=(193, 159, 108), hackle=(232, 150, 60), wing=(157, 99, 45), tail=GREEN_BLACK, tail_hi=GREEN_HI)
 RIR = dict(body=(131, 41, 27), hackle=(180, 68, 30), wing=(102, 31, 22), tail=GREEN_BLACK, tail_hi=GREEN_HI)
 ANDALUSIAN = dict(body=(76, 84, 118), hackle=(98, 110, 141), wing=(62, 74, 102), tail=(52, 62, 90),
@@ -180,6 +182,9 @@ GOLD_SEBRIGHT = dict(body=(226, 164, 58), hackle=(238, 188, 100), wing=(197, 142
 	tail_hi=(238, 200, 137), lace=(28, 28, 34), comb='rose')
 CORNISH = dict(body=(31, 27, 34), hackle=(40, 36, 41), wing=(40, 40, 50), tail=(27, 26, 38), tail_hi=(70, 74, 84),
 	lace=(134, 62, 36), comb='pea')
+FOSSIL_CRACKS = [(10, 18), (11, 19), (11, 20), (12, 21), (20, 24), (21, 25), (20, 26), (6, 26), (7, 27), (17, 15),
+	(18, 16), (24, 20), (25, 21), (14, 28), (15, 28)]
+JUNGLEFOWL = dict(body=(20, 22, 31), hackle=(238, 152, 50), wing=(172, 56, 30), tail=(24, 48, 44), tail_hi=(44, 92, 100))
 WELSUMMER_HEN = dict(body=(144, 90, 52), hackle=(206, 152, 80), wing=(112, 68, 44), tail=(97, 59, 39),
 	tail_hi=(140, 100, 60), comb='hen')
 
@@ -335,6 +340,24 @@ SPECIES = {
 		tail_hi=(110, 190, 130), tail_style='fan1', toy=(70, 110, 190)),
 	138: dict(stage='eggs', eggs=[(176, 168, 150)], cracks_col=(88, 82, 78),
 		cracks=[(11, 12), (12, 13), (12, 14), (13, 15), (19, 20), (20, 21), (19, 22), (20, 23), (14, 26), (15, 26)]),
+	139: dict(stage=0, body=(150, 141, 147), cracks=FOSSIL_CRACKS, cracks_col=(88, 82, 78), skin=(120, 112, 104)),
+	140: dict(stage=0, body=(156, 148, 134), cracks=FOSSIL_CRACKS, cracks_col=(88, 82, 78), skin=(120, 112, 104)),
+	141: dict(stage=1, body=(132, 124, 112), hackle=(120, 112, 104), wing=(102, 93, 97), tail=(110, 104, 96),
+		tail_hi=(156, 148, 134), tail_style='fan1', comb='hen', skin=(88, 82, 78), cracks=FOSSIL_CRACKS,
+		cracks_col=(88, 82, 78)),
+	142: dict(stage=2, body=(84, 80, 92), hackle=(170, 130, 96), wing=(115, 85, 72), tail=(57, 52, 69),
+		tail_hi=(95, 79, 83), skin=(95, 79, 83), tall=True),
+	143: dict(BRAHMA, stage=2, sleeping=True, tail_style='stub', comb='pea'),
+	144: dict(stage=2, body=WHITE, hackle=WHITE, wing=(192, 62, 40), tail=WHITE, tail_hi=SILVER, tail_style='long',
+		comb='pea'),
+	145: dict(PHOENIX, stage=2, hackle=(238, 188, 70), wing=(204, 122, 40), tail_tip=(116, 131, 128)),
+	146: dict(PHOENIX, stage=2, body=(178, 58, 30), hackle=(238, 152, 50), wing=(202, 72, 30), tail=(214, 90, 36),
+		tail_hi=(238, 152, 50)),
+	147: dict(stage=0, body=(157, 120, 82), stripes=(96, 66, 44)),
+	148: dict(JUNGLEFOWL, stage=1),
+	149: dict(JUNGLEFOWL, stage=2),
+	150: dict(stage='goose'),
+	151: dict(stage=0, body=(244, 186, 198), tiny=True),
 }
 
 
@@ -467,6 +490,36 @@ def chick_details(c, body, dx, dy, sc, k, beak=BEAK, beak_shade=BEAK_SHADE, head
 HEAD_PARTS = ('neck', 'feature', 'ring', 'crest')
 
 
+def draw_goose():
+	"""Mewtwo's lab-bred goose from behind: long S-neck, lab band, glowing eye."""
+	c = Canvas()
+	white, grey = (238, 238, 232), (196, 196, 200)
+	c.stroke('tail', ((6, 24), (2, 22), (0, 19.5)), 6, 2.5, SILVER)
+	c.ellipse('body', 14.5, 26, 14, 9, white)
+	c.ellipse('wing', 10, 26.5, 8.5, 4.5, grey, rim=False, hi=False)
+	c.stroke('neck', ((19, 22), (16, 14), (21.5, 6.5)), 7, 5, white)
+	c.layer -= 1
+	c.ellipse('neck', 22.5, 5.5, 3.6, 3.2, white, rim=False, hi=False)
+	c.outline(inner=('wing', 'neck'))
+	# feather lines on the folded wing
+	for x in range(4, 18, 3):
+		for y in (26, 27):
+			if c.part[y][x] == 'wing':
+				c.col[y][x + (y - 26)] = (161, 157, 176)
+	# lab band round the neck, with its tag
+	for y in range(N):
+		for x in range(N):
+			if c.part[y][x] == 'neck' and c.col[y][x] != OUTL and y in (14, 15):
+				c.col[y][x] = (124, 124, 136) if y == 14 else (90, 90, 104)
+	features(c, [(14, 15, (150, 90, 200)), (14, 16, (150, 90, 200))])
+	# glowing eye and an orange bill pointing right
+	edge = max(x for x in range(N) if c.part[6][x] == 'neck')
+	c.col[5][edge - 2] = (190, 110, 240)
+	c.col[4][edge - 2] = (230, 200, 250)
+	features(c, [(edge + 1, 6, (226, 124, 46)), (edge + 2, 6, (226, 124, 46)), (edge + 1, 7, (176, 90, 34))])
+	return c
+
+
 def eggshell(c, cx, cy, r):
 	"""The top half of an eggshell worn as a helmet, with a jagged rim."""
 	c.layer += 1
@@ -500,6 +553,10 @@ def draw(spec):
 			for x in range(N):
 				if c.part[y][x] == 'neck2':
 					c.part[y][x] = 'neck_back'
+	if spec.get('cracks') and spec['stage'] != 'eggs':
+		for x, y in spec['cracks']:
+			if c.part[y][x] in ('body', 'wing', 'neck') and c.col[y][x] != OUTL:
+				c.col[y][x] = spec['cracks_col']
 	if spec.get('baby'):
 		# a chick standing in front of its mother, lower left
 		b = Canvas()
@@ -556,13 +613,24 @@ def draw_one(spec):
 					c.col[y][x] = shade(c.col[y][x])
 		return c
 
+	if st == 'goose':
+		return draw_goose()
+
 	if st == 0:
 		# one chick, or a huddle of three smaller ones (back two first)
 		chicks = [(-1.5, 7, .62, 'a'), (12.5, 5, .62, 'b'), (5, 12.5, .66, 'c')] if spec.get('trio') else [(0, 0, 1, '')]
+		if spec.get('tiny'):
+			chicks = [(6.5, 12.5, .62, '')]
 		for dx, dy, sc, k in chicks:
 			chick_shapes(c, body, dx, dy, sc, k)
 		if spec.get('shell'):
 			eggshell(c, 19, 9.5, 7.8)
+		if spec.get('stripes'):
+			# wild-type chick: dark stripes running down the back
+			for y in range(N):
+				for x in range(N):
+					if c.part[y][x] == 'body' and y < 27 and (x - y // 3) % 6 in (0, 1):
+						c.col[y][x] = spec['stripes']
 		c.outline()
 		for dx, dy, sc, k in chicks:
 			skin = spec.get('skin')
@@ -579,7 +647,14 @@ def draw_one(spec):
 
 	# neck and head are one part, so the silhouette flows from the shoulders
 	# up into the head with no seam; the neck leans forward towards the opponent
-	if big and spec.get('tall'):
+	if big and spec.get('sleeping'):
+		# lying flat and wide, the head sunk low at the front, dozing
+		c.ellipse('body', 15, 24.5, 15.5, 10, body, lace)
+		c.ellipse('wing', 8, 27, 7, 4.5, wing, lace, rim=False, hi=False)
+		c.stroke('neck', ((21, 22), (24, 19.5), (25.5, 18)), 10, 8, hackle)
+		hx, hy, hr = 25.5, 17.5, 4.3
+		cape, cy = range(13, 27), 18
+	elif big and spec.get('tall'):
 		# a towering game bird: smaller body, long upright neck
 		c.ellipse('body', 14.5, 27, 13, 9, body, lace)
 		c.ellipse('wing', 8, 28.5, 6, 4, wing, lace, rim=False, hi=False)
@@ -775,8 +850,17 @@ def draw_one(spec):
 		features(c, comb)
 	ey = iy
 	edge = max(x for x in range(N) if c.part[ey + 1][x] == 'neck')
-	c.col[ey][edge - 3] = (20, 20, 24)
-	c.col[ey][edge - 4] = light(hackle)
+	if spec.get('sleeping'):
+		# closed eye, and Zs drifting up
+		c.col[ey][edge - 3] = c.col[ey][edge - 4] = (20, 20, 24)
+		zc = (81, 99, 167)
+		z = lambda x0, y0, n: ([(x0 + i, y0, zc) for i in range(n)] + [(x0 + n - 1 - i, y0 + i, zc) for i in range(1, n - 1)]
+			+ [(x0 + i, y0 + n - 1, zc) for i in range(n)])
+		for x, y, col in z(17, 5, 4) + z(22, 0, 5):  # no outline, so the letters stay crisp
+			c.set(x, y, 'zzz', col)
+	else:
+		c.col[ey][edge - 3] = (20, 20, 24)
+		c.col[ey][edge - 4] = light(hackle)
 	n = 3 if big else 2
 	beak = [(edge + i, ey + 1, BC) for i in range(n)] + [(edge + i, ey + 2, BS) for i in range(n - 1)]
 	features(c, beak)
