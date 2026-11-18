@@ -5,7 +5,7 @@ Usage: tools/draw_rooster_mew.py [SRC_DIR]
 
 The tiny pink Serama chick floats like Mew: its body is lifted off the ground
 with its toes tucked up, two little wings flare out, and a long thin tail curls
-up behind it, ending in a round tuft. Writes 151_tiny_pink_serama_chick.png
+up behind it, ending in a round tuft, with a few sparkles around it. Writes 151_tiny_pink_serama_chick.png
 into SRC_DIR's gameboy/ (56x56, four shades), colour/ (56x56 RGBA) and
 colour_x4/ (224x224 RGBA) folders. SRC_DIR defaults to gfx/rooster_src.
 """
@@ -140,6 +140,18 @@ def draw():
 	# toes tucked up under the body, dangling a little
 	toes = {(25, 43): PALETTE['b'], (26, 43): PALETTE['B'], (29, 43): PALETTE['b'], (30, 43): PALETTE['B']}
 	s.paint(toes)
+
+	# a few sparkles twinkling around it: soft pink arms round a bright heart,
+	# so they show on the Game Boy too
+	for cx, cy, big in ((12, 14, True), (22, 8, False), (6, 34, False), (40, 48, True), (54, 40, False)):
+		sparkle = {(cx, cy): hi}
+		for dx, dy in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+			sparkle[(cx + dx, cy + dy)] = soft
+			if big:
+				sparkle[(cx + 2 * dx, cy + 2 * dy)] = soft
+		for p, c in sparkle.items():
+			if p not in s.col:
+				s.col[p] = c
 	return s
 
 

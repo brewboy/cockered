@@ -651,6 +651,12 @@ def draw_one(spec):
 		if spec.get('mew'):
 			# toes tucked up under the floating body
 			features(c, [(14, 30, BEAK), (15, 30, BEAK_SHADE), (18, 30, BEAK), (19, 30, BEAK_SHADE)])
+			# a couple of sparkles, as on the front
+			for cx, cy, big in ((27, 6, True), (30, 27, False)):
+				arms = [(cx + dx * k, cy + dy * k) for dx, dy in ((1, 0), (-1, 0), (0, 1), (0, -1)) for k in range(1, 3 if big else 2)]
+				for x, y in [(cx, cy)] + arms:
+					if 0 <= x < N and 0 <= y < N and c.part[y][x] is None:
+						c.set(x, y, 'sparkle', light(body) if (x, y) == (cx, cy) else shade(body))
 		if spec.get('shell'):
 			# the eye sits just under the jagged rim: ring it so it stands apart
 			ex = next(x for x in range(N) if c.col[11][x] == (20, 20, 24))
