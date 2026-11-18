@@ -78,7 +78,9 @@ SKIN = (232, 172, 164)  # bare skin showing through a moult
 # frizzle (curled-back feathers on the body and wings), tail_tip (colour at the
 # end of each tail feather), silkie (pom-pom crest, walnut comb, tufty outline),
 # beard (a muff under the beak instead of wattles), earlobe (colour of the lobe
-# behind the eye), nest (sitting on a straw nest).
+# behind the eye), nest (sitting on a straw nest), crest (True for the hackle
+# colour, or a colour) with crest_size and crest_spots, fluffy (tufty outline),
+# comb 'walnut' or 'v' (small combs in front of a crest), trio (three chicks).
 SERAMA = dict(body=(193, 159, 108), hackle=(232, 150, 60), wing=(157, 99, 45), tail=GREEN_BLACK, tail_hi=GREEN_HI)
 RIR = dict(body=(131, 41, 27), hackle=(180, 68, 30), wing=(102, 31, 22), tail=GREEN_BLACK, tail_hi=GREEN_HI)
 ANDALUSIAN = dict(body=(76, 84, 118), hackle=(98, 110, 141), wing=(62, 74, 102), tail=(52, 62, 90),
@@ -94,7 +96,7 @@ BUFF = dict(body=(214, 158, 74), hackle=(226, 172, 84), wing=(197, 148, 76), tai
 	tail_hi=(236, 186, 96), comb='hen')
 PEKIN = dict(body=(196, 162, 110), hackle=(212, 180, 126), wing=(185, 155, 114), tail=(185, 155, 114),
 	tail_hi=(220, 199, 168), comb='hen')
-SILKIE = dict(silkie=True, comb='walnut', tail=(60, 62, 72), tail_hi=(119, 122, 125), tail_style='stub')
+SILKIE = dict(silkie=True, crest=True, fluffy=True, comb='walnut', tail=(60, 62, 72), tail_hi=(119, 122, 125), tail_style='stub')
 WHITE_SILKIE = dict(SILKIE, body=WHITE, hackle=WHITE, wing=SILVER)
 BUFF_SILKIE = dict(SILKIE, body=(238, 198, 156), hackle=(245, 221, 196), wing=(207, 171, 141))
 WELSUMMER = dict(body=(39, 26, 27), hackle=(214, 146, 64), wing=(172, 86, 40), tail=GREEN_BLACK, tail_hi=GREEN_HI)
@@ -102,6 +104,15 @@ RED_FRIZZLE = dict(body=(170, 56, 30), hackle=(214, 96, 40), wing=(130, 46, 27),
 	tail_hi=(145, 63, 30), frizzle=True)
 ROSECOMB = dict(body=(34, 34, 44), hackle=(30, 29, 40), wing=(23, 22, 33), tail=(24, 48, 44), tail_hi=(40, 77, 74),
 	comb='rose', earlobe=WHITE)
+POLISH = dict(body=(224, 176, 96), hackle=(224, 176, 96), wing=(195, 152, 86), tail=(195, 152, 86),
+	tail_hi=(246, 236, 212), lace=(246, 236, 212), crest=True, comb='v')
+HOUDAN = dict(body=(34, 34, 44), hackle=(34, 34, 44), wing=(23, 22, 33), tail=GREEN_BLACK, tail_hi=GREEN_HI,
+	lace=WHITE, crest=True, crest_spots=WHITE, comb='v', beard=True)
+COCHIN = dict(body=(155, 148, 186), hackle=(178, 172, 206), wing=(121, 113, 156), tail=(155, 148, 186),
+	tail_hi=(178, 172, 206), comb='hen', fluffy=True)
+NANKIN = dict(body=(186, 121, 56), hackle=(232, 160, 70), wing=(145, 92, 47), tail=GREEN_BLACK, tail_hi=GREEN_HI)
+YELLOW_PEKIN = dict(body=(226, 182, 70), hackle=(242, 202, 86), wing=(211, 174, 78), tail=(211, 174, 78),
+	tail_hi=(238, 211, 144), comb='hen', fluffy=True)
 WELSUMMER_HEN = dict(body=(144, 90, 52), hackle=(206, 152, 80), wing=(112, 68, 44), tail=(97, 59, 39),
 	tail_hi=(140, 100, 60), comb='hen')
 
@@ -148,6 +159,18 @@ SPECIES = {
 	40: dict(BUFF_SILKIE, stage=2, beard=True),
 	41: dict(ROSECOMB, stage=1),
 	42: dict(ROSECOMB, stage=2),
+	43: dict(stage=0, body=(232, 196, 124)),
+	44: dict(POLISH, stage=1, tail_style='fan1', crest_size=.6),
+	45: dict(POLISH, stage=2, crest_size=1.6),
+	46: dict(HOUDAN, stage=1, crest_size=.4),
+	47: dict(HOUDAN, stage=2, crest_size=1.8),
+	48: dict(COCHIN, stage=1, tail_style='fan1'),
+	49: dict(COCHIN, stage=2, tail_style='fan2'),
+	50: dict(stage=0, body=(156, 106, 64)),
+	51: dict(stage=0, body=(156, 106, 64), trio=True),
+	52: dict(NANKIN, stage=1),
+	53: dict(NANKIN, stage=2),
+	54: dict(YELLOW_PEKIN, stage=1, tail_style='fan1'),
 }
 
 
@@ -227,45 +250,64 @@ class Canvas:
 			self.col[y][x] = OUTL
 
 
+def chick_shapes(c, body, dx, dy, sc, k):
+	"""A chick: one fluffy ball, the head just a bump rising from it, placed at
+	(dx, dy) and scaled by sc. Parts are suffixed with k so chicks can overlap."""
+	X = lambda v: dx + v * sc
+	Y = lambda v: dy + v * sc
+	# head first, then the body over its lower half, both one part so the
+	# silhouette is a single outline with no seam at the neck
+	c.ellipse('body' + k, X(19), Y(11.5), 7.5 * sc, 7.5 * sc, body, rim=False)
+	c.layer -= 1
+	c.ellipse('body' + k, X(15.5), Y(24.5), 12.5 * sc, 11.5 * sc, body, hi=False)
+	# stubby wings swept back towards the viewer: the near one on the left
+	# flank, the far one just peeking out past the right side
+	c.stroke('wing' + k, ((X(8), Y(21)), (X(5), Y(23)), (X(3), Y(26.5))), 7 * sc, 2.4 * sc, body)
+	c.stroke('wing' + k, ((X(25.5), Y(21)), (X(27.5), Y(23)), (X(27.5), Y(26.5))), 5 * sc, 2 * sc, shade(body))
+
+
+def chick_details(c, body, dx, dy, sc, k):
+	"""Shading, eye and beak for a chick drawn by chick_shapes, after outlining."""
+	P = lambda x, y: (round(dx + x * sc), round(dy + y * sc))
+	for y in range(N):
+		for x in range(N):
+			if c.part[y][x] == 'wing' + k and c.col[y][x] == body and y >= dy + 24 * sc:
+				c.col[y][x] = shade(body)
+	# soft crease where the head rises out of the back
+	for x, y in (P(12, 16), P(13, 17), P(14, 17), P(15, 18)):
+		if 0 <= y < N and c.part[y][x] == 'body' + k and c.col[y][x] != OUTL:
+			c.col[y][x] = shade(body)
+	# eye, and the beak poking past the outline on the right
+	ey = P(0, 11)[1]
+	ex = max(x for x in range(N) if c.part[ey][x] == 'body' + k) - 2
+	c.col[ey][ex] = (20, 20, 24)
+	if gb(body) < 170:  # on a dark chick, ring the eye so it still reads
+		for x, y in ((ex - 1, ey), (ex, ey - 1), (ex + 1, ey)):
+			c.col[y][x] = light(light(body))
+	bx = ex + 2
+	for x, y, col in ((bx, ey + 1, BEAK), (bx + 1, ey + 1, BEAK), (bx, ey + 2, BEAK_SHADE),
+			(bx + 1, ey, OUTL), (bx + 2, ey + 1, OUTL), (bx + 1, ey + 2, OUTL), (bx, ey + 3, OUTL)):
+		c.set(x, y, 'beak', col)
+	# fluff at the rump
+	for x, y in (P(14, 29), P(15, 30), P(16, 29), P(11, 31), P(19, 31)):
+		if 0 <= y < N and c.part[y][x] == 'body' + k and c.col[y][x] != OUTL:
+			c.col[y][x] = shade(body)
+
+
 def draw(spec):
 	c = Canvas()
 	st, body = spec['stage'], spec['body']
 	lace = spec.get('lace')
 	hackle = spec.get('hackle', body)
 
-	if st == 0:  # chick: one fluffy ball, the head just a bump rising from it
-		# head first, then the body over its lower half, both one part so the
-		# silhouette is a single outline with no seam at the neck
-		c.ellipse('body', 19, 11.5, 7.5, 7.5, body, rim=False)
-		c.layer -= 1
-		c.ellipse('body', 15.5, 24.5, 12.5, 11.5, body, hi=False)
-		# stubby wings swept back towards the viewer: the near one on the left
-		# flank, the far one just peeking out past the right side
-		c.stroke('wing', ((8, 21), (5, 23), (3, 26.5)), 7, 2.4, body)
-		c.stroke('wing', ((25.5, 21), (27.5, 23), (27.5, 26.5)), 5, 2, shade(body))
+	if st == 0:
+		# one chick, or a huddle of three smaller ones (back two first)
+		chicks = [(-1.5, 7, .62, 'a'), (12.5, 5, .62, 'b'), (5, 12.5, .66, 'c')] if spec.get('trio') else [(0, 0, 1, '')]
+		for dx, dy, sc, k in chicks:
+			chick_shapes(c, body, dx, dy, sc, k)
 		c.outline()
-		for y in range(N):
-			for x in range(N):
-				if c.part[y][x] == 'wing' and c.col[y][x] == body and y >= 24:
-					c.col[y][x] = shade(body)
-		# soft crease where the head rises out of the back
-		for x, y in ((12, 16), (13, 17), (14, 17), (15, 18)):
-			if c.col[y][x] != OUTL:
-				c.col[y][x] = shade(body)
-		# eye, and the beak poking past the outline on the right
-		ey = 11
-		ex = max(x for x in range(N) if c.part[ey][x]) - 2
-		c.col[ey][ex] = (20, 20, 24)
-		if gb(body) < 170:  # on a dark chick, ring the eye so it still reads
-			for x, y in ((ex - 1, ey), (ex, ey - 1), (ex + 1, ey)):
-				c.col[y][x] = light(light(body))
-		bx = ex + 2
-		for x, y, col in ((bx, ey + 1, BEAK), (bx + 1, ey + 1, BEAK), (bx, ey + 2, BEAK_SHADE),
-				(bx + 1, ey, OUTL), (bx + 2, ey + 1, OUTL), (bx + 1, ey + 2, OUTL), (bx, ey + 3, OUTL)):
-			c.set(x, y, 'beak', col)
-		# a little wing nub and fluff at the rump
-		for x, y in ((14, 29), (15, 30), (16, 29), (11, 31), (19, 31)):
-			c.col[y][x] = shade(body)
+		for dx, dy, sc, k in chicks:
+			chick_details(c, body, dx, dy, sc, k)
 		return c
 
 	big = st == 2
@@ -287,9 +329,11 @@ def draw(spec):
 		cape, cy = range(13, 24), 22
 	c.layer -= 1
 	c.ellipse('neck', hx, hy, hr + .3, hr, hackle, rim=False, hi=False)
-	if spec.get('silkie'):
-		# fluffy pom-pom crest swept back over the head, outlined so it stands out
-		cx, cy0, r = hx - 1.5, hy - 3.2, hr + .2
+	if spec.get('crest'):
+		# pom-pom crest swept back over the head, outlined so it stands out
+		ccol = spec['crest'] if isinstance(spec['crest'], tuple) else hackle
+		grow = spec.get('crest_size', 0)
+		cx, cy0, r = hx - 1.5 - grow * .4, hy - 3.2 + grow * .3, hr + .2 + grow
 		c.layer += 1
 		for y in range(N):
 			for x in range(N):
@@ -297,7 +341,11 @@ def draw(spec):
 				# tufts: the edge wobbles in and out around the crest
 				wob = .18 * math.cos(math.atan2(y + .5 - cy0, x + .5 - cx) * 7)
 				if d <= 1 + wob:
-					c.set(x, y, 'crest', shade(hackle) if y + .5 > cy0 + r * .45 else light(hackle) if y < cy0 - 1 else hackle)
+					col = shade(ccol) if y + .5 > cy0 + r * .45 else light(ccol) if y < cy0 - 1 else ccol
+					if spec.get('crest_spots') and x % 2 == 0 and (y + x // 2) % 3 == 0:
+						col = spec['crest_spots']
+					c.set(x, y, 'crest', col)
+	if spec.get('fluffy'):
 		# hair-like plumage: tufts poke out along the top of the body
 		for x in range(3, 29, 3):
 			top_y = min((y for y in range(N) if c.part[y][x] == 'body'), default=None)
@@ -383,6 +431,10 @@ def draw(spec):
 		comb = [(face - 1, iy - 3, dark), (face, iy - 3, dark), (face - 1, iy - 2, shade(dark))]
 		for x, y in ((face - 1, iy), (face - 2, iy + 1), (face - 1, iy + 1), (face - 3, iy)):
 			c.col[y][x] = (70, 60, 84)
+	elif spec.get('comb') == 'v':
+		# a small V-shaped comb peeking out in front of the crest
+		face = max(x for x in range(N) if c.part[iy][x] == 'neck')
+		comb = [(face - 2, iy - 3, COMB), (face - 2, iy - 4, COMB), (face - 1, iy - 3, COMB_SHADE), (face, iy - 4, COMB)]
 	elif spec.get('comb') == 'hen':
 		# a hen's single comb: small and low
 		heights = [2, 3, 3, 3, 2, 1] if big else [1, 2, 2, 2, 1]
