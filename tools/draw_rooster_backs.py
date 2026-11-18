@@ -14,6 +14,7 @@ the same thresholds as the fronts, so the versions always match.
 """
 
 import csv
+import math
 import os
 import sys
 
@@ -57,6 +58,9 @@ TAILS = {
 	'upright2': (5.4, 2.0, [((8, 24), (4, 16), (5, 9)), ((10, 23), (7, 12), (9, 5)), ((12, 22), (11, 13), (13, 7))]),
 	'upright3': (6.0, 2.0, [((8, 23), (2, 12), (4, 4)), ((10, 22), (6, 8), (9, 1)), ((12, 21), (11, 9), (14, 3)),
 		((13, 21), (15, 13), (16, 8))]),
+	# a showy round fan of nine feathers spread behind the bird
+	'nine': (3.4, 2.4, [((9, 21), (9 + 6 * math.cos(math.radians(a)), 21 + 6 * math.sin(math.radians(a))),
+		(9 + 12.5 * math.cos(math.radians(a)), 21 + 12.5 * math.sin(math.radians(a)))) for a in range(185, 296, 13)]),
 	# moulting: only a ragged stub is left
 	'stub': (3.4, 2.0, [((9, 23), (7, 21), (6, 19)), ((10, 22), (9, 20), (9, 17))]),
 }
@@ -71,7 +75,10 @@ SKIN = (232, 172, 164)  # bare skin showing through a moult
 # Optional: tail_style (a TAILS key, default by stage), comb ('single', 'rose' or
 # 'hen', a small single comb with small wattles), moult (bare patches, ragged tail,
 # loose feathers), bare_neck (no hackle cape; `head` colours the feathered crown),
-# frizzle (curled-back feathers on the body and wings).
+# frizzle (curled-back feathers on the body and wings), tail_tip (colour at the
+# end of each tail feather), silkie (pom-pom crest, walnut comb, tufty outline),
+# beard (a muff under the beak instead of wattles), earlobe (colour of the lobe
+# behind the eye), nest (sitting on a straw nest).
 SERAMA = dict(body=(193, 159, 108), hackle=(232, 150, 60), wing=(157, 99, 45), tail=GREEN_BLACK, tail_hi=GREEN_HI)
 RIR = dict(body=(131, 41, 27), hackle=(180, 68, 30), wing=(102, 31, 22), tail=GREEN_BLACK, tail_hi=GREEN_HI)
 ANDALUSIAN = dict(body=(76, 84, 118), hackle=(98, 110, 141), wing=(62, 74, 102), tail=(52, 62, 90),
@@ -87,6 +94,14 @@ BUFF = dict(body=(214, 158, 74), hackle=(226, 172, 84), wing=(197, 148, 76), tai
 	tail_hi=(236, 186, 96), comb='hen')
 PEKIN = dict(body=(196, 162, 110), hackle=(212, 180, 126), wing=(185, 155, 114), tail=(185, 155, 114),
 	tail_hi=(220, 199, 168), comb='hen')
+SILKIE = dict(silkie=True, comb='walnut', tail=(60, 62, 72), tail_hi=(119, 122, 125), tail_style='stub')
+WHITE_SILKIE = dict(SILKIE, body=WHITE, hackle=WHITE, wing=SILVER)
+BUFF_SILKIE = dict(SILKIE, body=(238, 198, 156), hackle=(245, 221, 196), wing=(207, 171, 141))
+WELSUMMER = dict(body=(39, 26, 27), hackle=(214, 146, 64), wing=(172, 86, 40), tail=GREEN_BLACK, tail_hi=GREEN_HI)
+RED_FRIZZLE = dict(body=(170, 56, 30), hackle=(214, 96, 40), wing=(130, 46, 27), tail=(113, 39, 24),
+	tail_hi=(145, 63, 30), frizzle=True)
+ROSECOMB = dict(body=(34, 34, 44), hackle=(30, 29, 40), wing=(23, 22, 33), tail=(24, 48, 44), tail_hi=(40, 77, 74),
+	comb='rose', earlobe=WHITE)
 WELSUMMER_HEN = dict(body=(144, 90, 52), hackle=(206, 152, 80), wing=(112, 68, 44), tail=(97, 59, 39),
 	tail_hi=(140, 100, 60), comb='hen')
 
@@ -121,6 +136,18 @@ SPECIES = {
 	28: dict(PEKIN, stage=2, tail_style='fan2', frizzle=True),
 	29: dict(WELSUMMER_HEN, stage=1, tail_style='fan1'),
 	30: dict(WELSUMMER_HEN, stage=2, tail_style='fan2'),
+	31: dict(WELSUMMER_HEN, stage=2, tail_style='fan2', nest=(214, 180, 96)),
+	32: dict(WELSUMMER, stage=1, tail_style='fan1'),
+	33: dict(WELSUMMER, stage=1),
+	34: dict(WELSUMMER, stage=2),
+	35: dict(WHITE_SILKIE, stage=1),
+	36: dict(WHITE_SILKIE, stage=2, beard=True),
+	37: dict(RED_FRIZZLE, stage=1, tail_style='fan1'),
+	38: dict(RED_FRIZZLE, stage=2, tail_style='nine', tail_tip=(240, 214, 200)),
+	39: dict(BUFF_SILKIE, stage=1),
+	40: dict(BUFF_SILKIE, stage=2, beard=True),
+	41: dict(ROSECOMB, stage=1),
+	42: dict(ROSECOMB, stage=2),
 }
 
 
@@ -260,6 +287,22 @@ def draw(spec):
 		cape, cy = range(13, 24), 22
 	c.layer -= 1
 	c.ellipse('neck', hx, hy, hr + .3, hr, hackle, rim=False, hi=False)
+	if spec.get('silkie'):
+		# fluffy pom-pom crest swept back over the head, outlined so it stands out
+		cx, cy0, r = hx - 1.5, hy - 3.2, hr + .2
+		c.layer += 1
+		for y in range(N):
+			for x in range(N):
+				d = ((x + .5 - cx) / r) ** 2 + ((y + .5 - cy0) / (r - .6)) ** 2
+				# tufts: the edge wobbles in and out around the crest
+				wob = .18 * math.cos(math.atan2(y + .5 - cy0, x + .5 - cx) * 7)
+				if d <= 1 + wob:
+					c.set(x, y, 'crest', shade(hackle) if y + .5 > cy0 + r * .45 else light(hackle) if y < cy0 - 1 else hackle)
+		# hair-like plumage: tufts poke out along the top of the body
+		for x in range(3, 29, 3):
+			top_y = min((y for y in range(N) if c.part[y][x] == 'body'), default=None)
+			if top_y and c.part[top_y - 1][x] is None:
+				c.set(x, top_y - 1, 'body', body)
 
 	style = spec.get('tail_style', 'sickle2' if big else 'sickle1')
 	w0, w1, feathers = TAILS[style]
@@ -267,6 +310,13 @@ def draw(spec):
 		c.stroke('tail', f, w0, w1, tail if i % 2 == 0 else shade(tail), tail_hi)
 		c.layer -= 1  # all feathers are one part, outlined only on the outside
 	c.layer += 1
+	if spec.get('tail_tip'):
+		for f in feathers:
+			ex, ey0 = f[2]
+			for y in range(N):
+				for x in range(N):
+					if c.part[y][x] == 'tail' and (x + .5 - ex) ** 2 + (y + .5 - ey0) ** 2 <= 2.2:
+						c.col[y][x] = spec['tail_tip']
 
 	# hackle feathers fall over the shoulders in points
 	c.layer += 1
@@ -300,6 +350,13 @@ def draw(spec):
 				for x in range(N):
 					if c.part[y][x] in ('body', 'wing') and (x + .5 - px) ** 2 + (y + .5 - py) ** 2 <= r * r:
 						c.col[y][x] = SKIN if y < py + r * .4 else shade(SKIN)
+	if spec.get('nest'):
+		straw = spec['nest']
+		c.layer += 1
+		for y in range(26, N):
+			for x in range(N):
+				if ((x + .5 - 15.5) / 16) ** 2 + ((y + .5 - 31) / 4.5) ** 2 <= 1:
+					c.set(x, y, 'nest', shade(straw) if (x * 2 + y * 3) % 5 == 0 else light(straw) if y < 28 else straw)
 	c.outline(inner=('wing', 'fringe', 'neck'))
 	# soft wing edge instead of a black outline
 	for y in range(N):
@@ -319,6 +376,13 @@ def draw(spec):
 		x0 = ix - len(heights) // 2 + 1
 		comb = [(x0 + i, top - k, COMB_SHADE if k == 0 else COMB) for i, h in enumerate(heights) for k in range(h)]
 		comb += [(x0 - 1, top - 1, COMB), (x0 - 2, top - 1, COMB), (x0 - 3, top - 2, COMB)]
+	elif spec.get('comb') == 'walnut':
+		# a Silkie's small dark walnut comb in front of the crest, and its dark face
+		dark = (96, 44, 78)
+		face = max(x for x in range(N) if c.part[iy][x] == 'neck')
+		comb = [(face - 1, iy - 3, dark), (face, iy - 3, dark), (face - 1, iy - 2, shade(dark))]
+		for x, y in ((face - 1, iy), (face - 2, iy + 1), (face - 1, iy + 1), (face - 3, iy)):
+			c.col[y][x] = (70, 60, 84)
 	elif spec.get('comb') == 'hen':
 		# a hen's single comb: small and low
 		heights = [2, 3, 3, 3, 2, 1] if big else [1, 2, 2, 2, 1]
@@ -337,9 +401,20 @@ def draw(spec):
 	n = 3 if big else 2
 	beak = [(edge + i, ey + 1, BEAK) for i in range(n)] + [(edge + i, ey + 2, BEAK_SHADE) for i in range(n - 1)]
 	features(c, beak)
-	drop = 2 if spec.get('comb') == 'hen' else 3  # hens have small wattles
-	w = [(edge - 1, ey + 3 + i, COMB) for i in range(drop)] + [(edge, ey + 3 + i, COMB) for i in range(n if drop == 3 else 1)]
-	features(c, w)
+	if spec.get('beard'):
+		# a fluffy muff under the beak instead of wattles
+		muff = [(edge + dx, ey + 3 + dy, shade(hackle) if dy == 2 or dx == 1 else hackle)
+			for dx in (-2, -1, 0, 1) for dy in (0, 1, 2) if (dx, dy) != (1, 2)]
+		features(c, muff)
+	elif spec.get('silkie'):
+		pass  # wattles hidden in the fluff
+	else:
+		drop = 2 if spec.get('comb') == 'hen' else 3  # hens have small wattles
+		w = [(edge - 1, ey + 3 + i, COMB) for i in range(drop)] + [(edge, ey + 3 + i, COMB) for i in range(n if drop == 3 else 1)]
+		features(c, w)
+	if spec.get('earlobe'):
+		for x, y in ((edge - 4, ey + 2), (edge - 5, ey + 2), (edge - 4, ey + 3)):
+			c.col[y][x] = spec['earlobe']
 	if spec.get('moult'):
 		# a couple of loose feathers drifting away
 		for fx, fy in ((2, 7), (6, 3)):
