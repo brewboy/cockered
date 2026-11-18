@@ -97,7 +97,8 @@ SKIN = (232, 172, 164)  # bare skin showing through a moult
 # 'horns' (V-shaped horns), baby (colour of a chick standing in front), toy
 # (colour of the wheeled base a toy stands on), cracks (dark lines, for eggs and
 # stone fossils), sleeping (lying down with the head tucked low, dozing), tiny
-# (a smaller chick), stripes (colour of a chick's back stripes), stage 'goose'.
+# (a smaller chick), stripes (colour of a chick's back stripes), stage 'goose',
+# mew (a tiny chick floating like Mew: flared wing tips, toes tucked, long tail).
 SERAMA = dict(body=(193, 159, 108), hackle=(232, 150, 60), wing=(157, 99, 45), tail=GREEN_BLACK, tail_hi=GREEN_HI)
 RIR = dict(body=(131, 41, 27), hackle=(180, 68, 30), wing=(102, 31, 22), tail=GREEN_BLACK, tail_hi=GREEN_HI)
 ANDALUSIAN = dict(body=(76, 84, 118), hackle=(98, 110, 141), wing=(62, 74, 102), tail=(52, 62, 90),
@@ -357,7 +358,7 @@ SPECIES = {
 	148: dict(JUNGLEFOWL, stage=1),
 	149: dict(JUNGLEFOWL, stage=2),
 	150: dict(stage='goose'),
-	151: dict(stage=0, body=(244, 186, 198), tiny=True),
+	151: dict(stage=0, body=(244, 186, 198), mew=True),
 }
 
 
@@ -621,8 +622,20 @@ def draw_one(spec):
 		chicks = [(-1.5, 7, .62, 'a'), (12.5, 5, .62, 'b'), (5, 12.5, .66, 'c')] if spec.get('trio') else [(0, 0, 1, '')]
 		if spec.get('tiny'):
 			chicks = [(6.5, 12.5, .62, '')]
+		if spec.get('mew'):
+			chicks = [(7.5, 7, .62, '')]  # lifted clear of the ground
+			# Mew's long thin tail curls up from the rump, behind the body
+			c.stroke('tail', ((12, 24), (0, 25), (4, 9)), 3.6, 3, body)
+			c.ellipse('tail', 4.5, 6, 3.2, 3.2, body, rim=False)
 		for dx, dy, sc, k in chicks:
 			chick_shapes(c, body, dx, dy, sc, k)
+		if spec.get('mew'):
+			# little wing tips flared up and out from both shoulders
+			c.stroke('wingtip', ((13, 21), (10.5, 17), (10, 13.5)), 3.4, 2, light(body))
+			c.layer -= 1
+			c.stroke('wingtip', ((12.5, 22), (9, 19.5), (7.5, 16.5)), 3, 1.8, body)
+			c.layer += 1
+			c.stroke('wingtip2', ((23.5, 22.5), (27, 21.5), (29.5, 18.5)), 3, 1.8, shade(body))
 		if spec.get('shell'):
 			eggshell(c, 19, 9.5, 7.8)
 		if spec.get('stripes'):
@@ -635,6 +648,9 @@ def draw_one(spec):
 		for dx, dy, sc, k in chicks:
 			skin = spec.get('skin')
 			chick_details(c, body, dx, dy, sc, k, skin or BEAK, shade(skin) if skin else BEAK_SHADE, spec.get('head'))
+		if spec.get('mew'):
+			# toes tucked up under the floating body
+			features(c, [(14, 30, BEAK), (15, 30, BEAK_SHADE), (18, 30, BEAK), (19, 30, BEAK_SHADE)])
 		if spec.get('shell'):
 			# the eye sits just under the jagged rim: ring it so it stands apart
 			ex = next(x for x in range(N) if c.col[11][x] == (20, 20, 24))

@@ -59,7 +59,8 @@ def palette(src, dex):
 def main():
 	src = sys.argv[1] if len(sys.argv) > 1 else 'gfx/rooster_src'
 	table = open('data/pokemon/palettes.asm').read()
-	rows = re.findall(r'\tdb (PAL_\w+)\s*; (\w+)', table)
+	# entries are either original names or ones this script wrote before
+	rows = re.findall(r'\tdb (PAL_\w+(?: \+ \d+)?)\s*; (\S+)', table)
 	assert len(rows) == 152, len(rows)  # MISSINGNO + 151
 
 	pals, out = [], ['MonsterPalettes:', '\ttable_width 1']
