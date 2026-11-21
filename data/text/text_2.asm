@@ -1707,8 +1707,8 @@ _OakSpeechText1::
 _OakSpeechText2A::
 	text "This world is"
 	line "inhabited by"
-	cont "creatures called"
-	cont "COCKS!@"
+	cont "all manner of"
+	cont "COCK!@"
 	text_end
 
 _OakSpeechText2B::
