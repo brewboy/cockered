@@ -28,8 +28,9 @@ _PokemonTower2FRivalVictoryText::
 	prompt
 
 _PokemonTower2FRivalHowsYourDexText::
-	text "How's your #DEX"
-	line "coming, pal?"
+	text "How's your"
+	line "#TOME coming,"
+	cont "pal?"
 	cont "I just caught a"
 	cont "CUESHELL!"
 

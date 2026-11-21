@@ -31,7 +31,7 @@ _RockTunnelB1FHiker1AfterBattleText::
 
 _RockTunnelB1FSuperNerd1BattleText::
 	text "You have a"
-	line "#DEX?"
+	line "#TOME?"
 	cont "I want one too!"
 	done
 
@@ -42,7 +42,7 @@ _RockTunnelB1FSuperNerd1EndBattleText::
 
 _RockTunnelB1FSuperNerd1AfterBattleText::
 	text "When you finish"
-	line "your #DEX, can"
+	line "your #TOME, can"
 	cont "I have it?"
 	done
 

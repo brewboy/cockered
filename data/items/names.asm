@@ -8,7 +8,7 @@ ItemNames::
 	li "BICYCLE"
 	li "?????" ; SURFBOARD
 	li "SAFARI BALL"
-	li "COCKDEX"
+	li "COCKTOME"
 	li "MOON STONE"
 	li "ANTIDOTE"
 	li "BURN HEAL"

@@ -10,7 +10,7 @@ _ChampionsRoomRivalIntroText::
 	cont "me sharp!"
 
 	para "While working on"
-	line "#DEX, I looked"
+	line "#TOME, I looked"
 	cont "all over for"
 	cont "powerful COCK!"
 

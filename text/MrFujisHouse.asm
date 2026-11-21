@@ -38,10 +38,10 @@ _MrFujisHouseNidorinoText::
 _MrFujisHouseMrFujiIThinkThisMayHelpYourQuestText::
 	text "MR.FUJI: <PLAYER>."
 
-	para "Your #DEX quest"
-	line "may fail without"
-	cont "love for your"
-	cont "COCK."
+	para "Your #TOME"
+	line "quest may fail"
+	cont "without love for"
+	cont "your COCK."
 
 	para "I think this may"
 	line "help your quest."

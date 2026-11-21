@@ -154,14 +154,14 @@ _OaksLabOak1ComeSeeMeSometimesText::
 	line "sometimes."
 
 	para "I want to know how"
-	line "your #DEX is"
+	line "your #TOME is"
 	cont "coming along."
 	done
 
 _OaksLabOak1HowIsYourPokedexComingText::
 	text "OAK: Good to see "
 	line "you! How is your "
-	cont "#DEX coming? "
+	cont "#TOME coming? "
 	cont "Here, let me take"
 	cont "a look!"
 	prompt
@@ -299,7 +299,7 @@ _OaksLabOakIHaveARequestText::
 _OaksLabOakMyInventionPokedexText::
 	text "On the desk there"
 	line "is my invention,"
-	cont "#DEX!"
+	cont "#TOME!"
 
 	para "It automatically"
 	line "records data on"
@@ -316,7 +316,7 @@ _OaksLabOakGotPokedexText::
 	cont "these with you!"
 
 	para "<PLAYER> got"
-	line "#DEX from OAK!@"
+	line "#TOME from OAK!@"
 	text_end
 
 _OaksLabOakThatWasMyDreamText::

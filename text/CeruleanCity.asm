@@ -39,7 +39,7 @@ _CeruleanCityRivalIWentToBillsText::
 
 	para "That added a lot"
 	line "of pages to my"
-	cont "#DEX!"
+	cont "#TOME!"
 
 	para "After all, BILL's"
 	line "world famous as a"

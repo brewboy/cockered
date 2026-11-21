@@ -13,7 +13,7 @@ _AgathaBeforeBattleText::
 
 	para "Now he just wants"
 	line "to fiddle with"
-	cont "his #DEX! He's"
+	cont "his #TOME! He's"
 	cont "wrong! COCK"
 	cont "are for fighting!"
 
