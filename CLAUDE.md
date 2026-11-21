@@ -193,9 +193,10 @@ In-game names (in **bold**) are max 10 characters (`NAME_LENGTH - 1`) and live i
 - The ROM is GBC-compatible (`rgbfix -c`) and still runs on DMG and SGB. On a GBC, `engine/gfx/cgb_palettes.asm` turns the SGB palette commands into GBC palettes and BG attribute maps, and VBlank rebuilds the colours whenever `rBGP`/`rOBP0`/`rOBP1` change, so fades and flashes work unchanged. The palette engine lives in its own "Palettes" section (bank $2C).
 - Each species except Farfetch'd has its own palette (`PAL_ROOSTER + n`), generated from the colour fronts by `python3 tools/make_rooster_palettes.py`, which writes `data/sgb/rooster_palettes.asm` and `data/pokemon/palettes.asm`. Re-run it after changing the art.
 
-## Title logo
+## Title screen and signs
 
-- The title-screen logo (`gfx/title/pokemon_logo.png`, 128×56, i.e. 16×7 tiles placed by position) says COCK. It is drawn by `python3 tools/draw_rooster_logo.py`: chunky bouncing letters with a light grey fill, black outline and dark grey drop shadow, like the old logo. Run `make` afterwards.
+- The title keeps the original POKéMON logo; the edition line under it reads "Rhode Island Red" (Red) or "Blue Wyandotte" (Blue). `python3 tools/draw_rooster_version.py` draws both into `gfx/title/red_version.png` and `blue_version.png` (80×8, 10 tiles, centred, in the original's small bold font), and `PrintGameVersionOnTitleScreen` in `engine/movie/title.asm` places them centred under the logo. Run `make` afterwards.
+- The sign over every COCK CENTER says COCK instead of POKé. Those two tiles are in `gfx/tilesets/overworld.png` (row 4, tiles 2–3, next to MART), and `gfx/tilesets/forest.png` has a copy (row 1, tiles 0–1); keep the two in step.
 
 ## Intro fight
 
