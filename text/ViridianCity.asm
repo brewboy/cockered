@@ -1,11 +1,11 @@
 _ViridianCityYoungster1Text::
 	text "Those # BALLs"
 	line "at your waist!"
-	cont "You have COCKS!"
+	cont "You have COCK!"
 
 	para "It's great that"
 	line "you can carry and"
-	cont "use COCKS any"
+	cont "use COCK any"
 	cont "time, anywhere!"
 	done
 
@@ -26,7 +26,7 @@ _ViridianCityYoungster2YouWantToKnowAboutText::
 	text "You want to know"
 	line "about the 2 kinds"
 	cont "of caterpillar"
-	cont "COCKS?"
+	cont "COCK?"
 	done
 
 ViridianCityYoungster2OkThenText::
@@ -121,7 +121,7 @@ _ViridianCityOldManKnowHowToCatchPokemonText::
 
 	para "What? Don't you"
 	line "know how to catch"
-	cont "COCKS?"
+	cont "COCK?"
 
 	para "I'll show you"
 	line "how to then."
@@ -147,7 +147,7 @@ _ViridianCitySignText::
 _ViridianCityTrainerTips1Text::
 	text "TRAINER TIPS"
 
-	para "Catch COCKS"
+	para "Catch COCK"
 	line "and expand your"
 	cont "collection!"
 
@@ -160,13 +160,13 @@ _ViridianCityTrainerTips2Text::
 	text "TRAINER TIPS"
 
 	para "The fight moves"
-	line "of COCKS are"
+	line "of COCK are"
 	cont "limited by their"
 	cont "POWER POINTs, PP."
 
 	para "To replenish PP,"
 	line "rest your tired"
-	cont "COCKS at a"
+	cont "COCK at a"
 	cont "COCK CENTER!"
 	done
 

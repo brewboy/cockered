@@ -54,12 +54,12 @@ _MtMoon1FSuperNerdBattleText::
 
 _MtMoon1FSuperNerdEndBattleText::
 	text "My"
-	line "COCKS won't do!"
+	line "COCK won't do!"
 	prompt
 
 _MtMoon1FSuperNerdAfterBattleText::
 	text "I have to find"
-	line "stronger COCKS."
+	line "stronger COCK."
 	done
 
 _MtMoon1FCooltrainerF2BattleText::

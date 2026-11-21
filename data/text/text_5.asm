@@ -81,7 +81,7 @@ _GotMonText::
 
 _SentToBoxText::
 	text "There's no more"
-	line "room for COCKS!"
+	line "room for COCK!"
 	cont "@"
 	text_ram wBoxMonNicks
 	text " was"
@@ -93,7 +93,7 @@ _SentToBoxText::
 
 _BoxIsFullText::
 	text "There's no more"
-	line "room for COCKS!"
+	line "room for COCK!"
 
 	para "The COCK BOX"
 	line "is full and can't"

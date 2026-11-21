@@ -6,6 +6,6 @@ _SafariZoneCenterRestHouseGirlText::
 
 _SafariZoneCenterRestHouseScientistText::
 	text "I'm catching"
-	line "COCKS to take"
+	line "COCK to take"
 	cont "home as gifts!"
 	done

@@ -101,7 +101,7 @@ _PlayedFluteNoEffectText::
 
 _FluteWokeUpText::
 	text "All sleeping"
-	line "COCKS woke up."
+	line "COCK woke up."
 	prompt
 
 _PlayedFluteHadEffectText::

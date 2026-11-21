@@ -46,7 +46,7 @@ _Route12Fisher2EndBattleText::
 _Route12Fisher2AfterBattleText::
 	text "With a better ROD,"
 	line "I could catch"
-	cont "better COCKS!"
+	cont "better COCK!"
 	done
 
 _Route12CooltrainerMBattleText::
@@ -60,7 +60,7 @@ _Route12CooltrainerMEndBattleText::
 
 _Route12CooltrainerMAfterBattleText::
 	text "I could have made"
-	line "my COCKS evolve"
+	line "my COCK evolve"
 	cont "with MOON STONE!"
 	done
 
@@ -77,7 +77,7 @@ _Route12SuperNerdAfterBattleText::
 	text "Water conducts"
 	line "electricity, so"
 	cont "you should zap"
-	cont "sea COCKS!"
+	cont "sea COCK!"
 	done
 
 _Route12Fisher3BattleText::

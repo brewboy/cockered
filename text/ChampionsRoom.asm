@@ -12,7 +12,7 @@ _ChampionsRoomRivalIntroText::
 	para "While working on"
 	line "#DEX, I looked"
 	cont "all over for"
-	cont "powerful COCKS!"
+	cont "powerful COCK!"
 
 	para "Not only that, I"
 	line "assembled teams"
@@ -71,7 +71,7 @@ _ChampionsRoomRivalAfterBattleText::
 
 	para "I never made any"
 	line "mistakes raising"
-	cont "my COCKS..."
+	cont "my COCK..."
 
 	para "Darn it! You're"
 	line "the new COCK"
@@ -121,7 +121,7 @@ _ChampionsRoomOakDisappointedWithRivalText::
 
 	para "You have forgotten"
 	line "to treat your"
-	cont "COCKS with"
+	cont "COCK with"
 	cont "trust and love!"
 
 	para "Without them, you"
@@ -138,7 +138,7 @@ _ChampionsRoomOakComeWithMeText::
 	cont "own doing!"
 
 	para "The bond you share"
-	line "with your COCKS"
+	line "with your COCK"
 	cont "is marvelous!"
 
 	para "<PLAYER>!"

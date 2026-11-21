@@ -53,7 +53,7 @@ _MartSignText::
 	done
 
 _PokeCenterSignText::
-	text "Heal Your COCKS!"
+	text "Heal Your COCK!"
 	line "COCK CENTER"
 	done
 
@@ -77,7 +77,7 @@ _OaksAideHiText::
 	para "If you caught @"
 	text_decimal hOaksAideRequirement, 1, 3
 	text_start
-	line "kinds of COCKS,"
+	line "kinds of COCK,"
 	cont "I'm supposed to"
 	cont "give you an"
 	cont "@"
@@ -89,7 +89,7 @@ _OaksAideHiText::
 	cont "least @"
 	text_decimal hOaksAideRequirement, 1, 3
 	text " kinds of"
-	cont "COCKS?"
+	cont "COCK?"
 	done
 
 _OaksAideUhOhText::
@@ -98,7 +98,7 @@ _OaksAideUhOhText::
 	cont "caught only @"
 	text_decimal hOaksAideNumMonsOwned, 1, 3
 	text_start
-	cont "kinds of COCKS!"
+	cont "kinds of COCK!"
 
 	para "You need @"
 	text_decimal hOaksAideRequirement, 1, 3
@@ -126,7 +126,7 @@ _OaksAideHereYouGoText::
 	line "caught @"
 	text_decimal hOaksAideNumMonsOwned, 1, 3
 	text " kinds "
-	cont "of COCKS!"
+	cont "of COCK!"
 	cont "Congratulations!"
 
 	para "Here you go!"

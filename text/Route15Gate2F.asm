@@ -1,7 +1,7 @@
 _Route15Gate2FOaksAideExpAllText::
 	text "EXP.ALL gives"
 	line "EXP points to all"
-	cont "the COCKS with"
+	cont "the COCK with"
 	cont "you, even if they"
 	cont "don't fight."
 

@@ -9,7 +9,7 @@ _CeruleanCityRivalPreBattleText::
 	para "I'm doing great!"
 	line "I caught a bunch"
 	cont "of strong and"
-	cont "smart COCKS!"
+	cont "smart COCK!"
 
 	para "Here, let me see"
 	line "what you caught,"
@@ -35,7 +35,7 @@ _CeruleanCityRivalIWentToBillsText::
 	para "I went to BILL's"
 	line "and got him to"
 	cont "show me his rare"
-	cont "COCKS!"
+	cont "COCK!"
 
 	para "That added a lot"
 	line "of pages to my"
@@ -118,7 +118,7 @@ _CeruleanCitySuperNerd1Text::
 _CeruleanCitySuperNerd2Text::
 	text "You're making an"
 	line "encyclopedia on"
-	cont "COCKS? That"
+	cont "COCK? That"
 	cont "sounds amusing."
 	done
 
@@ -154,7 +154,7 @@ _CeruleanCityCooltrainerF1SlowbroWithdrawText::
 	line "No! That's wrong!"
 
 	para "It's so hard to"
-	line "control COCKS!"
+	line "control COCK!"
 
 	para "Your COCK's"
 	line "obedience depends"
@@ -194,7 +194,7 @@ _CeruleanCityCooltrainerF2Text::
 _CeruleanCitySuperNerd3Text::
 	text "This is CERULEAN"
 	line "CAVE! Horribly"
-	cont "strong COCKS"
+	cont "strong COCK"
 	cont "live in there!"
 
 	para "The COCK LEAGUE"

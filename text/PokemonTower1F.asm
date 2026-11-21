@@ -1,7 +1,7 @@
 _PokemonTower1FReceptionistText::
 	text "COCK TOWER was"
 	line "erected in the"
-	cont "memory of COCKS"
+	cont "memory of COCK"
 	cont "that had died."
 	done
 

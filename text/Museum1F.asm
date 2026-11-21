@@ -33,7 +33,7 @@ _Museum1FScientist1TheresALabSomewhereText::
 	text "There's a lab"
 	line "somewhere trying"
 	cont "to resurrect"
-	cont "ancient COCKS"
+	cont "ancient COCK"
 	cont "from AMBER."
 	done
 
@@ -65,7 +65,7 @@ _Museum1FScientist2TakeThisToAPokemonLabText::
 	cont "COCK DNA!"
 
 	para "It would be great"
-	line "if COCKS could"
+	line "if COCK could"
 	cont "be resurrected"
 	cont "from it!"
 

@@ -63,7 +63,7 @@ StartMenuPokedexText:
 	db "COCKDEX@"
 
 StartMenuPokemonText:
-	db "COCKS@"
+	db "COCK@"
 
 StartMenuItemText:
 	db "ITEM@"

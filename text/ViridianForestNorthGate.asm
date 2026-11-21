@@ -1,5 +1,5 @@
 _ViridianForestNorthGateSuperNerdText::
-	text "Many COCKS live"
+	text "Many COCK live"
 	line "only in forests "
 	cont "and caves."
 

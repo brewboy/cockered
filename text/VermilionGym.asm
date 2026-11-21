@@ -8,7 +8,7 @@ _VermilionGymLTSurgePreBattleText::
 	cont "That's for sure!"
 
 	para "I tell you kid,"
-	line "electric COCKS"
+	line "electric COCK"
 	cont "saved me during"
 	cont "the war!"
 

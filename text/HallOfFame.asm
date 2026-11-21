@@ -12,7 +12,7 @@ _HallOfFameOakText::
 	cont "honored for their"
 	cont "exploits here!"
 
-	para "Their COCKS are"
+	para "Their COCK are"
 	line "also recorded in"
 	cont "the HALL OF FAME!"
 
@@ -23,6 +23,6 @@ _HallOfFameOakText::
 
 	para "Congratulations,"
 	line "<PLAYER>, you and"
-	cont "your COCKS are"
+	cont "your COCK are"
 	cont "HALL OF FAMERs!"
 	done

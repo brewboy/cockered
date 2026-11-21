@@ -1,7 +1,7 @@
 _FuchsiaCityYoungster1Text::
 	text "Did you try the"
 	line "SAFARI GAME? Some"
-	cont "COCKS can only"
+	cont "COCK can only"
 	cont "be caught there."
 	done
 
@@ -12,7 +12,7 @@ _FuchsiaCityGamblerText::
 
 	para "Out back is the"
 	line "SAFARI GAME for"
-	cont "catching COCKS."
+	cont "catching COCK."
 	done
 
 _FuchsiaCityErikText::

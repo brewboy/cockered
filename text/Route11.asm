@@ -26,7 +26,7 @@ _Route11Gambler2EndBattleText::
 _Route11Gambler2AfterBattleText::
 	text "You can't be a"
 	line "coward in the"
-	cont "world of COCKS!"
+	cont "world of COCK!"
 	done
 
 _Route11Youngster1BattleText::
@@ -68,7 +68,7 @@ _Route11Youngster2BattleText::
 
 _Route11Youngster2EndBattleText::
 	text "My"
-	line "COCKS couldn't!"
+	line "COCK couldn't!"
 	prompt
 
 _Route11Youngster2AfterBattleText5::
@@ -114,7 +114,7 @@ _Route11Youngster3BattleText::
 _Route11Youngster3EndBattleText::
 	text "Darn!"
 	line "I need to make my"
-	cont "COCKS stronger!"
+	cont "COCK stronger!"
 	prompt
 
 _Route11Youngster3AfterBattleText::

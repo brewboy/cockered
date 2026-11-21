@@ -9,7 +9,7 @@ _Route20Swimmer1EndBattleText::
 
 _Route20Swimmer1AfterBattleText::
 	text "I wish I could"
-	line "ride my COCKS."
+	line "ride my COCK."
 	done
 
 _Route20Swimmer2BattleText::
@@ -68,7 +68,7 @@ _Route20Swimmer5EndBattleText::
 _Route20Swimmer5AfterBattleText::
 	text "I should've been"
 	line "buffing up my"
-	cont "COCKS, not me!"
+	cont "COCK, not me!"
 	done
 
 _Route20Swimmer6BattleText::
@@ -89,7 +89,7 @@ _Route20Swimmer6AfterBattleText::
 
 _Route20CooltrainerMBattleText::
 	text "I rode my bird"
-	line "COCKS here!"
+	line "COCK here!"
 	done
 
 _Route20CooltrainerMEndBattleText::
@@ -129,7 +129,7 @@ _Route20Swimmer8EndBattleText::
 	prompt
 
 _Route20Swimmer8AfterBattleText::
-	text "COCKS have"
+	text "COCK have"
 	line "taken over an"
 	cont "abandoned mansion"
 	cont "on CINNABAR!"
@@ -138,7 +138,7 @@ _Route20Swimmer8AfterBattleText::
 _Route20Swimmer9BattleText::
 	text "CINNABAR, in the"
 	line "west, has a LAB"
-	cont "for COCKS."
+	cont "for COCK."
 	done
 
 _Route20Swimmer9EndBattleText::

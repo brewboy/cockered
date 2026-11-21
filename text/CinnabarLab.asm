@@ -1,9 +1,9 @@
 _CinnabarLabFishingGuruText::
-	text "We study COCKS"
+	text "We study COCK"
 	line "extensively here."
 
 	para "People often bring"
-	line "us rare COCKS"
+	line "us rare COCK"
 	cont "for examination."
 	done
 

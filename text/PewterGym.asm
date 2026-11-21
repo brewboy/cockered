@@ -8,7 +8,7 @@ _PewterGymBrockPreBattleText::
 	cont "determination!"
 
 	para "That's why my"
-	line "COCKS are all"
+	line "COCK are all"
 	cont "the rock-type!"
 
 	para "Do you still want"

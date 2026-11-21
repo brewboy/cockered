@@ -2,7 +2,7 @@ _LavenderMartBaldingGuyText::
 	text "I'm searching for"
 	line "items that raise"
 	cont "the abilities of"
-	cont "COCKS during a"
+	cont "COCK during a"
 	cont "single fight."
 
 	para "X ATTACK, X"

@@ -39,17 +39,17 @@ _PokemonFanClubChairmanIntroText::
 	line "COCK Fan Club!"
 
 	para "I have collected"
-	line "over 100 COCKS!"
+	line "over 100 COCK!"
 
 	para "I'm very fussy"
 	line "when it comes to"
-	cont "COCKS!"
+	cont "COCK!"
 
 	para "So..."
 
 	para "Did you come"
 	line "visit to hear"
-	cont "about my COCKS?"
+	cont "about my COCK?"
 	done
 
 _PokemonFanClubChairmanStoryText::
@@ -117,7 +117,7 @@ _PokemonFanClubChairFinalText::
 
 	para "Did you come see"
 	line "me about my"
-	cont "COCKS again?"
+	cont "COCK again?"
 
 	para "No? Too bad!"
 	done
@@ -130,7 +130,7 @@ _PokemonFanClubBagFullText::
 _PokemonFanClubReceptionistText::
 	text "Our Chairman is"
 	line "very vocal about"
-	cont "COCKS."
+	cont "COCK."
 	done
 
 _PokemonFanClubSign1Text::

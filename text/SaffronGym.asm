@@ -39,16 +39,16 @@ _SaffronGymSabrinaPostBattleAdviceText::
 
 _SaffronGymSabrinaMarshBadgeInfoText::
 	text "The MARSHBADGE"
-	line "makes COCKS up"
+	line "makes COCK up"
 	cont "to L70 obey you!"
 
-	para "Stronger COCKS"
+	para "Stronger COCK"
 	line "will become wild,"
 	cont "ignoring your"
 	cont "orders in a fight!"
 
 	para "Just don't raise"
-	line "your COCKS too"
+	line "your COCK too"
 	cont "much!"
 
 	para "Wait, please take"
@@ -78,13 +78,13 @@ _SaffronGymGuideChampInMakingText::
 	text "Yo! Champ in"
 	line "making!"
 
-	para "SABRINA's COCKS"
+	para "SABRINA's COCK"
 	line "use psychic power"
 	cont "instead of force!"
 
-	para "Fighting COCKS"
+	para "Fighting COCK"
 	line "are weak against"
-	cont "psychic COCKS!"
+	cont "psychic COCK!"
 
 	para "They get creamed"
 	line "before they can"
@@ -133,17 +133,17 @@ _SaffronGymYoungster1EndBattleText::
 	prompt
 
 _SaffronGymYoungster1AfterBattleText::
-	text "Psychic COCKS"
+	text "Psychic COCK"
 	line "fear only ghosts"
 	cont "and bugs!"
 	done
 
 _SaffronGymChanneler2BattleText::
-	text "COCKS take on"
+	text "COCK take on"
 	line "the appearance of"
 	cont "their trainers."
 
-	para "Your COCKS must"
+	para "Your COCK must"
 	line "be tough, then!"
 	done
 
@@ -155,7 +155,7 @@ _SaffronGymChanneler2EndBattleText::
 _SaffronGymChanneler2AfterBattleText::
 	text "I must teach"
 	line "better techniques"
-	cont "to my COCKS!"
+	cont "to my COCK!"
 	done
 
 _SaffronGymYoungster2BattleText::
@@ -177,7 +177,7 @@ _SaffronGymYoungster2AfterBattleText::
 
 _SaffronGymChanneler3BattleText::
 	text "You and I, our"
-	line "COCKS shall"
+	line "COCK shall"
 	cont "fight!"
 	done
 

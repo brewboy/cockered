@@ -93,7 +93,7 @@ _GameCornerGymGuideChampInMakingText::
 	para "CELADON GYM's"
 	line "LEADER is ERIKA!"
 	cont "She uses grass-"
-	cont "type COCKS!"
+	cont "type COCK!"
 
 	para "She might appear"
 	line "docile, but don't"
@@ -102,7 +102,7 @@ _GameCornerGymGuideChampInMakingText::
 
 _GameCornerGymGuideTheyOfferRarePokemonText::
 	text "They offer rare"
-	line "COCKS that can"
+	line "COCK that can"
 	cont "be exchanged for"
 	cont "your coins."
 

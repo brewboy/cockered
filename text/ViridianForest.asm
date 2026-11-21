@@ -8,7 +8,7 @@ _ViridianForestYoungster1Text::
 
 _ViridianForestYoungster2BattleText::
 	text "Hey! You have"
-	line "COCKS! Come on!"
+	line "COCK! Come on!"
 	cont "Let's fight'em!"
 	done
 
@@ -32,7 +32,7 @@ _ViridianForestYoungster3BattleText::
 _ViridianForestYoungster3EndBattleText::
 	text "Huh?"
 	line "I ran out of"
-	cont "COCKS!"
+	cont "COCK!"
 	prompt
 
 _ViridianForestYoungster3AfterBattleText::
@@ -65,7 +65,7 @@ _ViridianForestYoungster4AfterBattleText::
 _ViridianForestYoungster5Text::
 	text "I ran out of #"
 	line "BALLs to catch"
-	cont "COCKS with!"
+	cont "COCK with!"
 
 	para "You should carry"
 	line "extras!"
@@ -99,16 +99,16 @@ _ViridianForestTrainerTips3Text::
 	text "TRAINER TIPS"
 
 	para "No stealing of"
-	line "COCKS from"
+	line "COCK from"
 	cont "other trainers!"
 	cont "Catch only wild"
-	cont "COCKS!"
+	cont "COCK!"
 	done
 
 _ViridianForestTrainerTips4Text::
 	text "TRAINER TIPS"
 
-	para "Weaken COCKS"
+	para "Weaken COCK"
 	line "before attempting"
 	cont "capture!"
 

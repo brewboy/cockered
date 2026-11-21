@@ -84,5 +84,5 @@ _BillsHouseBillCheckOutMyRarePokemonText::
 	text "BILL: Look, bud,"
 	line "just check out"
 	cont "some of my rare"
-	cont "COCKS on my PC!"
+	cont "COCK on my PC!"
 	done

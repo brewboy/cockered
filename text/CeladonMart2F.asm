@@ -1,6 +1,6 @@
 _CeladonMart2FMiddleAgedManText::
 	text "SUPER REPEL keeps"
-	line "weak COCKS at"
+	line "weak COCK at"
 	cont "bay..."
 
 	para "Hmm, it's a more"

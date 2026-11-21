@@ -43,7 +43,7 @@ _SilphCo7FSilphWorkerM2AfterTheMasterBallText::
 	text "TEAM ROCKET was"
 	line "after the MASTER"
 	cont "BALL which will"
-	cont "catch any COCKS!"
+	cont "catch any COCK!"
 	done
 
 _SilphCo7FSilphWorkerM2CancelledMasterBallText::
@@ -57,7 +57,7 @@ _SilphCo7FSilphWorkerM3ItWouldBeBadText::
 	text "It would be bad"
 	line "if TEAM ROCKET"
 	cont "took over SILPH"
-	cont "or our COCKS!"
+	cont "or our COCK!"
 	done
 
 _SilphCo7FSilphWorkerM3YouChasedOffTeamRocketText::

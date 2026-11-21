@@ -20,7 +20,7 @@ _Route3Youngster1EndBattleText::
 
 _Route3Youngster1AfterBattleText::
 	text "There are other"
-	line "kinds of COCKS"
+	line "kinds of COCK"
 	cont "than those found"
 	cont "in the forest!"
 	done
@@ -38,9 +38,9 @@ _Route3Youngster2EndBattleText::
 
 _Route3Youngster2AfterBattleText::
 	text "Are you storing"
-	line "your COCKS on"
+	line "your COCK on"
 	cont "PC? Each BOX can"
-	cont "hold 20 COCKS!"
+	cont "hold 20 COCK!"
 	done
 
 _Route3CooltrainerF1BattleText::
@@ -66,7 +66,7 @@ _Route3Youngster3BattleText::
 
 _Route3Youngster3EndBattleText::
 	text "If I"
-	line "had new COCKS I"
+	line "had new COCK I"
 	cont "would've won!"
 	prompt
 
@@ -111,7 +111,7 @@ _Route3Youngster4AfterBattleText::
 
 _Route3Youngster5BattleText::
 	text "You can fight my"
-	line "new COCKS!"
+	line "new COCK!"
 	done
 
 _Route3Youngster5EndBattleText::
@@ -120,7 +120,7 @@ _Route3Youngster5EndBattleText::
 	prompt
 
 _Route3Youngster5AfterBattleText::
-	text "Trained COCKS"
+	text "Trained COCK"
 	line "are stronger than"
 	cont "the wild ones!"
 	done

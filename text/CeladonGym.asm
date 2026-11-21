@@ -13,7 +13,7 @@ _CeladonGymErikaPreBattleText::
 
 	para "I teach the art of"
 	line "flower arranging."
-	cont "My COCKS are of"
+	cont "My COCK are of"
 	cont "the grass-type."
 
 	para "Oh, I'm sorry, I"
@@ -38,22 +38,22 @@ _CeladonGymErikaReceivedRainbowBadgeText::
 
 _CeladonGymErikaPostBattleAdviceText::
 	text "You are cataloging"
-	line "COCKS? I must"
+	line "COCK? I must"
 	cont "say I'm impressed."
 
 	para "I would never"
-	line "collect COCKS"
+	line "collect COCK"
 	cont "if they were"
 	cont "unattractive."
 	done
 
 _CeladonGymRainbowBadgeInfoText::
 	text "The RAINBOWBADGE"
-	line "will make COCKS"
+	line "will make COCK"
 	cont "up to L50 obey."
 
 	para "It also allows"
-	line "COCKS to use"
+	line "COCK to use"
 	cont "STRENGTH in and"
 	cont "out of fights."
 
@@ -77,7 +77,7 @@ _TM21ExplanationText::
 	para "Half the damage"
 	line "it inflicts is"
 	cont "drained to heal"
-	cont "your COCKS!"
+	cont "your COCK!"
 	done
 
 _CeladonGymTM21NoRoomText::
@@ -114,13 +114,13 @@ _CeladonGymEndBattleText3::
 	prompt
 
 _CeladonGymAfterBattleText3::
-	text "Grass-type COCKS"
+	text "Grass-type COCK"
 	line "are tough against"
 	cont "the water-type!"
 
 	para "They also have an"
 	line "edge on rock and"
-	cont "ground COCKS!"
+	cont "ground COCK!"
 	done
 
 _CeladonGymBattleText4::
@@ -141,7 +141,7 @@ _CeladonGymAfterBattleText4::
 
 _CeladonGymBattleText5::
 	text "Look at my grass"
-	line "COCKS!"
+	line "COCK!"
 
 	para "They're so easy"
 	line "to raise!"
@@ -153,7 +153,7 @@ _CeladonGymEndBattleText5::
 
 _CeladonGymAfterBattleText5::
 	text "We only use grass-"
-	line "type COCKS at"
+	line "type COCK at"
 	cont "our GYM!"
 
 	para "We also use them"
@@ -164,7 +164,7 @@ _CeladonGymAfterBattleText5::
 _CeladonGymBattleText6::
 	text "Don't bring any"
 	line "bugs or fire"
-	cont "COCKS in here!"
+	cont "COCK in here!"
 	done
 
 _CeladonGymEndBattleText6::
@@ -213,7 +213,7 @@ _CeladonGymEndBattleText8::
 
 _CeladonGymAfterBattleText8::
 	text "I didn't bring my"
-	line "best COCKS!"
+	line "best COCK!"
 
 	para "Wait 'til next"
 	line "time!"

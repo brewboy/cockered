@@ -1,6 +1,6 @@
 _FuchsiaGymKogaPostBattleAdviceText::
 	text "When afflicted by"
-	line "TOXIC, COCKS"
+	line "TOXIC, COCK"
 	cont "suffer more and"
 	cont "more as the fight"
 	cont "progresses!"
@@ -13,7 +13,7 @@ _FuchsiaGymKogaSoulBadgeInfoText::
 	text "Now that you have"
 	line "the SOULBADGE,"
 	cont "the DEFENSE of"
-	cont "your COCKS"
+	cont "your COCK"
 	cont "increases!"
 
 	para "It also lets you"
@@ -50,7 +50,7 @@ _FuchsiaGymKogaTM06NoRoomText::
 _FuchsiaGymRocker1BattleText::
 	text "Strength isn't"
 	line "the key for"
-	cont "COCKS!"
+	cont "COCK!"
 
 	para "It's strategy!"
 

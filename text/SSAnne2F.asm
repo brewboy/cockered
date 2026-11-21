@@ -36,7 +36,7 @@ _SSAnne2FRivalDefeatedText::
 
 	para "At least you're"
 	line "raising your"
-	cont "COCKS!"
+	cont "COCK!"
 	prompt
 
 _SSAnne2FRivalVictoryText::

@@ -75,7 +75,7 @@ _Route17Biker5AfterBattleText::
 	done
 
 _Route17Biker6BattleText::
-	text "My COCKS won't"
+	text "My COCK won't"
 	line "evolve! Why?"
 	done
 
@@ -85,7 +85,7 @@ _Route17Biker6EndBattleText::
 	prompt
 
 _Route17Biker6AfterBattleText::
-	text "Maybe some COCKS"
+	text "Maybe some COCK"
 	line "need element"
 	cont "STONEs to evolve."
 	done
@@ -157,10 +157,10 @@ _Route17NoticeSign1Text::
 _Route17TrainerTips1Text::
 	text "TRAINER TIPS"
 
-	para "All COCKS are"
+	para "All COCK are"
 	line "unique."
 
-	para "Even COCKS of"
+	para "Even COCK of"
 	line "the same type and"
 	cont "level grow at"
 	cont "different rates."

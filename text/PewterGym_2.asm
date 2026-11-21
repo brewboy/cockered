@@ -28,19 +28,19 @@ _TM34ExplanationText::
 	para "A TM contains a"
 	line "technique that"
 	cont "can be taught to"
-	cont "COCKS!"
+	cont "COCK!"
 
 	para "A TM is good only"
 	line "once! So when you"
 	cont "use one to teach"
 	cont "a new technique,"
-	cont "pick the COCKS"
+	cont "pick the COCK"
 	cont "carefully!"
 
 	para "TM34 contains"
 	line "BIDE!"
 
-	para "Your COCKS will"
+	para "Your COCK will"
 	line "absorb damage in"
 	cont "a fight then pay"
 	cont "it back double!"
@@ -71,7 +71,7 @@ _PewterGymBrockBoulderBadgeInfoText::
 	cont "BADGE!"
 
 	para "Its bearer's"
-	line "COCKS become"
+	line "COCK become"
 	cont "more powerful!"
 
 	para "The technique"
@@ -128,7 +128,7 @@ _PewterGymGuideAdviceText::
 	cont "COCK LIST!"
 
 	para "By changing the"
-	line "order of COCKS,"
+	line "order of COCK,"
 	cont "matches could be"
 	cont "made easier!"
 	done

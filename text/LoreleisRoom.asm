@@ -7,12 +7,12 @@ _LoreleisRoomLoreleiBeforeBattleText::
 
 	para "No one can best"
 	line "me when it comes"
-	cont "to icy COCKS!"
+	cont "to icy COCK!"
 
 	para "Freezing moves"
 	line "are powerful!"
 
-	para "Your COCKS will"
+	para "Your COCK will"
 	line "be at my mercy"
 	cont "when they are"
 	cont "frozen solid!"

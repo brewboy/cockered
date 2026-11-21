@@ -58,7 +58,7 @@ _PewterCitySuperNerd2ThatsRightText::
 
 _PewterCitySuperNerd2ImSprayingRepelText::
 	text "I'm spraying REPEL"
-	line "to keep COCKS"
+	line "to keep COCK"
 	cont "out of my garden!"
 	done
 

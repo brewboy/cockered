@@ -1,6 +1,6 @@
 _CeladonPokecenterGentlemanText::
 	text "# FLUTE awakens"
-	line "COCKS with a"
+	line "COCK with a"
 	cont "sound that only"
 	cont "they can hear!"
 	done

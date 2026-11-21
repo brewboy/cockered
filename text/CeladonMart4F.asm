@@ -9,7 +9,7 @@ _CeladonMart4FYoungsterText::
 	line "useful."
 
 	para "You can run from"
-	line "wild COCKS by"
+	line "wild COCK by"
 	cont "distracting them"
 	cont "with a # DOLL!"
 	done

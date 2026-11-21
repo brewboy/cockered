@@ -80,12 +80,12 @@ _RockTunnel1FCooltrainerF1AfterBattleText::
 
 _RockTunnel1FCooltrainerF2BattleText::
 	text "I came this far"
-	line "for COCKS!"
+	line "for COCK!"
 	done
 
 _RockTunnel1FCooltrainerF2EndBattleText::
 	text "I'm"
-	line "out of COCKS!"
+	line "out of COCK!"
 	prompt
 
 _RockTunnel1FCooltrainerF2AfterBattleText::
@@ -94,7 +94,7 @@ _RockTunnel1FCooltrainerF2AfterBattleText::
 	done
 
 _RockTunnel1FCooltrainerF3BattleText::
-	text "You have COCKS!"
+	text "You have COCK!"
 	line "Let's start!"
 	done
 

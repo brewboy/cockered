@@ -11,7 +11,7 @@ _PokemonFaintedText::
 
 _PlayerBlackedOutText::
 	text "<PLAYER> is out of"
-	line "useable COCKS!"
+	line "useable COCK!"
 
 	para "<PLAYER> blacked"
 	line "out!"
@@ -162,23 +162,23 @@ _PokemonCenterWelcomeText::
 	line "COCK CENTER!"
 
 	para "We heal your"
-	line "COCKS back to"
+	line "COCK back to"
 	cont "perfect health!"
 	prompt
 
 _ShallWeHealYourPokemonText::
 	text "Shall we heal your"
-	line "COCKS?"
+	line "COCK?"
 	done
 
 _NeedYourPokemonText::
 	text "OK. We'll need"
-	line "your COCKS."
+	line "your COCK."
 	done
 
 _PokemonFightingFitText::
 	text "Thank you!"
-	line "Your COCKS are"
+	line "Your COCK are"
 	cont "fighting fit!"
 	prompt
 

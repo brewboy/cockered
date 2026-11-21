@@ -1,5 +1,5 @@
 _CeladonHotelGrannyText::
-	text "COCKS? No, this"
+	text "COCK? No, this"
 	line "is a hotel for"
 	cont "people."
 

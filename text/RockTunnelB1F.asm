@@ -59,7 +59,7 @@ _RockTunnelB1FSuperNerd2EndBattleText::
 _RockTunnelB1FSuperNerd2AfterBattleText::
 	text "Costume players"
 	line "dress up as"
-	cont "COCKS for fun."
+	cont "COCK for fun."
 	done
 
 _RockTunnelB1FHiker2BattleText::
@@ -77,7 +77,7 @@ _RockTunnelB1FHiker2EndBattleText::
 _RockTunnelB1FHiker2AfterBattleText::
 	text "In mountains,"
 	line "you'll often find"
-	cont "rock-type COCKS."
+	cont "rock-type COCK."
 	done
 
 _RockTunnelB1FCooltrainerF2BattleText::
@@ -93,7 +93,7 @@ _RockTunnelB1FCooltrainerF2EndBattleText::
 
 _RockTunnelB1FCooltrainerF2AfterBattleText::
 	text "I like tiny"
-	line "COCKS, big ones"
+	line "COCK, big ones"
 	cont "are too scary!"
 	done
 

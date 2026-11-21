@@ -4,7 +4,7 @@ _CeruleanPokecenterSuperNerdText::
 	para "I heard that"
 	line "he'll do whatever"
 	cont "it takes to get"
-	cont "rare COCKS!"
+	cont "rare COCK!"
 	done
 
 _CeruleanPokecenterGentlemanText::
@@ -20,5 +20,5 @@ _CeruleanPokecenterGentlemanText::
 
 	para "Who wouldn't want"
 	line "to boast about"
-	cont "their COCKS?"
+	cont "their COCK?"
 	done

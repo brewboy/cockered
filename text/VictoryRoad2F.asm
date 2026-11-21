@@ -66,7 +66,7 @@ _VictoryRoad2FSuperNerd2AfterBattleText::
 	text "I can beat you"
 	line "when it comes to"
 	cont "knowledge about"
-	cont "COCKS!"
+	cont "COCK!"
 	done
 
 _VictoryRoad2FSuperNerd3BattleText::

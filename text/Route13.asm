@@ -1,5 +1,5 @@
 _Route13CooltrainerM1BattleText::
-	text "My bird COCKS"
+	text "My bird COCK"
 	line "want to scrap!"
 	done
 
@@ -9,7 +9,7 @@ _Route13CooltrainerM1EndBattleText::
 	prompt
 
 _Route13CooltrainerM1AfterBattleText::
-	text "My COCKS look"
+	text "My COCK look"
 	line "happy even though"
 	cont "they lost."
 	done
@@ -47,7 +47,7 @@ _Route13CooltrainerF2AfterBattleText::
 	done
 
 _Route13CooltrainerF3BattleText::
-	text "My cute COCKS"
+	text "My cute COCK"
 	line "wish to make your"
 	cont "acquaintance."
 	done
@@ -59,7 +59,7 @@ _Route13CooltrainerF3EndBattleText::
 
 _Route13CooltrainerF3AfterBattleText::
 	text "You have to make"
-	line "COCKS fight to"
+	line "COCK fight to"
 	cont "toughen them up!"
 	done
 
@@ -76,7 +76,7 @@ _Route13CooltrainerF4EndBattleText::
 _Route13CooltrainerF4AfterBattleText::
 	text "CARBOS boosted"
 	line "the SPEED of my"
-	cont "COCKS."
+	cont "COCK."
 	done
 
 _Route13CooltrainerM2BattleText::
@@ -107,7 +107,7 @@ _Route13Beauty1EndBattleText::
 _Route13Beauty1AfterBattleText::
 	text "I wonder which is"
 	line "stronger, male or"
-	cont "female COCKS?"
+	cont "female COCK?"
 	done
 
 _Route13Beauty2BattleText::
@@ -123,7 +123,7 @@ _Route13Beauty2EndBattleText::
 _Route13Beauty2AfterBattleText::
 	text "I don't know"
 	line "anything about"
-	cont "COCKS. I just"
+	cont "COCK. I just"
 	cont "like cool ones!"
 	done
 
@@ -143,7 +143,7 @@ _Route13BikerAfterBattleText::
 
 _Route13CooltrainerM3BattleText::
 	text "I always go with"
-	line "bird COCKS!"
+	line "bird COCK!"
 	done
 
 _Route13CooltrainerM3EndBattleText::

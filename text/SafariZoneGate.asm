@@ -6,7 +6,7 @@ _SafariZoneGateSafariZoneWorker1Text::
 _SafariZoneGateSafariZoneWorker1WouldYouLikeToJoinText::
 	text "For just ¥500,"
 	line "you can catch all"
-	cont "the COCKS you"
+	cont "the COCK you"
 	cont "want in the park!"
 
 	para "Would you like to"
@@ -75,7 +75,7 @@ _SafariZoneGateSafariZoneWorker2SafariZoneExplanationText::
 
 	para "Each zone has"
 	line "different kinds"
-	cont "of COCKS. Use"
+	cont "of COCK. Use"
 	cont "SAFARI BALLs to"
 	cont "catch them!"
 
@@ -88,7 +88,7 @@ _SafariZoneGateSafariZoneWorker2SafariZoneExplanationText::
 	line "open an unused"
 	cont "COCK BOX so"
 	cont "there's room for"
-	cont "new COCKS!"
+	cont "new COCK!"
 	done
 
 _SafariZoneGateSafariZoneWorker2YoureARegularHereText::

@@ -119,7 +119,7 @@ _MtMoonB2FRocket4EndBattleText::
 	prompt
 
 _MtMoonB2FRocket4AfterBattleText::
-	text "COCKS lived"
+	text "COCK lived"
 	line "here long before"
 	cont "people came."
 	done

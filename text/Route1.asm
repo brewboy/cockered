@@ -22,7 +22,7 @@ _Route1Youngster1GotPotionText::
 _Route1Youngster1AlsoGotPokeballsText::
 	text "We also carry"
 	line "# BALLs for"
-	cont "catching COCKS!"
+	cont "catching COCK!"
 	done
 
 _Route1Youngster1NoRoomText::

@@ -55,7 +55,7 @@ _Route8CooltrainerF1EndBattleText::
 	prompt
 
 _Route8CooltrainerF1AfterBattleText::
-	text "When COCKS grow"
+	text "When COCK grow"
 	line "up they get ugly!"
 	cont "They shouldn't"
 	cont "evolve!"
@@ -63,7 +63,7 @@ _Route8CooltrainerF1AfterBattleText::
 
 _Route8SuperNerd3BattleText::
 	text "School is fun, but"
-	line "so are COCKS."
+	line "so are COCK."
 	done
 
 _Route8SuperNerd3EndBattleText::
@@ -122,7 +122,7 @@ _Route8Gambler2EndBattleText::
 
 _Route8Gambler2AfterBattleText::
 	text "Gambling and"
-	line "COCKS are like"
+	line "COCK are like"
 	cont "eating peanuts!"
 	cont "Just can't stop!"
 	done
@@ -130,7 +130,7 @@ _Route8Gambler2AfterBattleText::
 _Route8CooltrainerF4BattleText::
 	text "What's a cute,"
 	line "round and fluffy"
-	cont "COCKS?"
+	cont "COCK?"
 	done
 
 _Route8CooltrainerF4EndBattleText::

@@ -5,11 +5,11 @@ _PalletTownOakHeyWaitDontGoOutText::
 
 _PalletTownOakItsUnsafeText::
 	text "OAK: It's unsafe!"
-	line "Wild COCKS live"
+	line "Wild COCK live"
 	cont "in tall grass!"
 
 	para "You need your own"
-	line "COCKS for your"
+	line "COCK for your"
 	cont "protection."
 	cont "I know!"
 
@@ -19,7 +19,7 @@ _PalletTownOakItsUnsafeText::
 
 _PalletTownGirlText::
 	text "I'm raising"
-	line "COCKS too!"
+	line "COCK too!"
 
 	para "When they get"
 	line "strong, they can"
@@ -32,7 +32,7 @@ _PalletTownFisherText::
 
 	para "You can now store"
 	line "and recall items"
-	cont "and COCKS as"
+	cont "and COCK as"
 	cont "data via PC!"
 	done
 

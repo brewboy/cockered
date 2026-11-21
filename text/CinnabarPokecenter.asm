@@ -12,7 +12,7 @@ _CinnabarPokecenterGentlemanText::
 	text "Do you have any"
 	line "friends?"
 
-	para "COCKS you get"
+	para "COCK you get"
 	line "in trades grow"
 	cont "very quickly."
 

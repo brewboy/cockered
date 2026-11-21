@@ -22,7 +22,7 @@ _OaksLabRivalMyPokemonLooksStrongerText::
 _OaksLabThoseArePokeBallsText::
 	text "Those are #"
 	line "BALLs. They"
-	cont "contain COCKS!"
+	cont "contain COCK!"
 	done
 
 _OaksLabYouWantCharmanderText::
@@ -110,7 +110,7 @@ _OaksLabOak1ParcelThanksText::
 	done
 
 _OaksLabOak1PokemonAroundTheWorldText::
-	text "COCKS around the"
+	text "COCK around the"
 	line "world wait for"
 	cont "you, <PLAYER>!"
 	done
@@ -118,13 +118,13 @@ _OaksLabOak1PokemonAroundTheWorldText::
 _OaksLabOak1ReceivedPokeballsText::
 	text "OAK: You can't get"
 	line "detailed data on"
-	cont "COCKS by just"
+	cont "COCK by just"
 	cont "seeing them."
 
 	para "You must catch"
 	line "them! Use these"
 	cont "to capture wild"
-	cont "COCKS."
+	cont "COCK."
 
 	para "<PLAYER> got 5"
 	line "# BALLs!@"
@@ -179,7 +179,7 @@ _OaksLabOak2Text::
 _OaksLabGirlText::
 	text "PROF.OAK is the"
 	line "authority on"
-	cont "COCKS!"
+	cont "COCK!"
 
 	para "Many COCK"
 	line "trainers hold him"
@@ -203,7 +203,7 @@ _OaksLabOakChooseMonText::
 	para "Here, <PLAYER>!"
 
 	para "There are 3"
-	line "COCKS here!"
+	line "COCK here!"
 
 	para "Haha!"
 
@@ -253,7 +253,7 @@ _OaksLabRivalIllTakeYouOnText::
 	text "<RIVAL>: Wait"
 	line "<PLAYER>!"
 	cont "Let's check out"
-	cont "our COCKS!"
+	cont "our COCK!"
 
 	para "Come on, I'll take"
 	line "you on!"
@@ -303,7 +303,7 @@ _OaksLabOakMyInventionPokedexText::
 
 	para "It automatically"
 	line "records data on"
-	cont "COCKS you've"
+	cont "COCK you've"
 	cont "seen or caught!"
 
 	para "It's a hi-tech"
@@ -322,7 +322,7 @@ _OaksLabOakGotPokedexText::
 _OaksLabOakThatWasMyDreamText::
 	text "To make a complete"
 	line "guide on all the"
-	cont "COCKS in the"
+	cont "COCK in the"
 	cont "world..."
 
 	para "That was my dream!"
@@ -361,6 +361,6 @@ _OaksLabRivalLeaveItAllToMeText::
 	done
 
 _OaksLabScientistText::
-	text "I study COCKS as"
+	text "I study COCK as"
 	line "PROF.OAK's AIDE."
 	done

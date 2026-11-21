@@ -9,7 +9,7 @@ _Route11SuperNerd2AfterBattleText::
 	done
 
 _Route11Youngster4BattleText::
-	text "My COCKS should"
+	text "My COCK should"
 	line "be ready by now!"
 	done
 

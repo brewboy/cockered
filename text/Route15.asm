@@ -39,7 +39,7 @@ _Route15CooltrainerF2AfterBattleText::
 _Route15CooltrainerM1BattleText::
 	text "When I whistle, I"
 	line "can summon bird"
-	cont "COCKS!"
+	cont "COCK!"
 	done
 
 _Route15CooltrainerM1EndBattleText::
@@ -86,7 +86,7 @@ _Route15Beauty1AfterBattleText::
 	done
 
 _Route15Beauty2BattleText::
-	text "I raise COCKS"
+	text "I raise COCK"
 	line "because I live"
 	cont "alone!"
 	done
@@ -99,7 +99,7 @@ _Route15Beauty2EndBattleText::
 _Route15Beauty2AfterBattleText::
 	text "I just like going"
 	line "home to be with"
-	cont "my COCKS!"
+	cont "my COCK!"
 	done
 
 _Route15Biker1BattleText::
@@ -137,7 +137,7 @@ _Route15Biker2AfterBattleText::
 
 _Route15CooltrainerF3BattleText::
 	text "What's cool?"
-	line "Trading COCKS!"
+	line "Trading COCK!"
 	done
 
 _Route15CooltrainerF3EndBattleText::
@@ -146,13 +146,13 @@ _Route15CooltrainerF3EndBattleText::
 	prompt
 
 _Route15CooltrainerF3AfterBattleText::
-	text "I trade COCKS"
+	text "I trade COCK"
 	line "with my friends!"
 	done
 
 _Route15CooltrainerF4BattleText::
 	text "Want to play with"
-	line "my COCKS?"
+	line "my COCK?"
 	done
 
 _Route15CooltrainerF4EndBattleText::

@@ -36,7 +36,7 @@ _ViridianGymGiovanniPostBattleAdviceText::
 
 	para "I will dedicate my"
 	line "life to the study"
-	cont "of COCKS!"
+	cont "of COCK!"
 
 	para "Let us meet again"
 	line "some day!"
@@ -45,7 +45,7 @@ _ViridianGymGiovanniPostBattleAdviceText::
 
 _ViridianGymGiovanniEarthBadgeInfoText::
 	text "The EARTHBADGE"
-	line "makes COCKS of"
+	line "makes COCK of"
 	cont "any level obey!"
 
 	para "It is evidence of"
@@ -71,7 +71,7 @@ _ViridianGymGiovanniTM27ExplanationText::
 
 	para "TM27 is FISSURE!"
 	line "It will take out"
-	cont "COCKS with just"
+	cont "COCK with just"
 	cont "one hit!"
 
 	para "I made it when I"
@@ -117,7 +117,7 @@ _ViridianGymHiker1AfterBattleText::
 	done
 
 _ViridianGymRocker1BattleText::
-	text "COCKS and I, we"
+	text "COCK and I, we"
 	line "make wonderful"
 	cont "music together!"
 	done
@@ -144,7 +144,7 @@ _ViridianGymHiker2EndBattleText::
 	prompt
 
 _ViridianGymHiker2AfterBattleText::
-	text "If my COCKS"
+	text "If my COCK"
 	line "were as good at"
 	cont "Karate as I..."
 	done
@@ -181,7 +181,7 @@ _ViridianGymHiker3AfterBattleText::
 	done
 
 _ViridianGymRocker2BattleText::
-	text "Your COCKS will"
+	text "Your COCK will"
 	line "cower at the"
 	cont "crack of my whip!"
 	done
@@ -230,7 +230,7 @@ _ViridianGymGuidePreBattleText::
 	para "I heard that the"
 	line "trainers here"
 	cont "like ground-type"
-	cont "COCKS!"
+	cont "COCK!"
 	done
 
 _ViridianGymGuidePostBattleText::

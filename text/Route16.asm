@@ -70,7 +70,7 @@ _Route16Biker5EndBattleText::
 	prompt
 
 _Route16Biker5AfterBattleText::
-	text "I like my COCKS"
+	text "I like my COCK"
 	line "ferocious! They"
 	cont "tear up enemies!"
 	done
@@ -87,7 +87,7 @@ _Route16Biker6EndBattleText::
 _Route16Biker6AfterBattleText::
 	text "I like harassing"
 	line "people with my"
-	cont "vicious COCKS!"
+	cont "vicious COCK!"
 	done
 
 _Route16Text7::

@@ -20,7 +20,7 @@ _LavenderTownLittleGirlHaHaGuessNotText::
 _LavenderTownCooltrainerMText::
 	text "This town is known"
 	line "as the grave site"
-	cont "of COCKS."
+	cont "of COCK."
 
 	para "Memorial services"
 	line "are held in"
@@ -33,7 +33,7 @@ _LavenderTownSuperNerdText::
 
 	para "I think they're"
 	line "the spirits of"
-	cont "COCKS that the"
+	cont "COCK that the"
 	cont "ROCKETs killed."
 	done
 
@@ -59,6 +59,6 @@ _LavenderTownPokemonHouseSignText::
 
 _LavenderTownPokemonTowerSignText::
 	text "May the Souls of"
-	line "COCKS Rest Easy"
+	line "COCK Rest Easy"
 	cont "COCK TOWER"
 	done

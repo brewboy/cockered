@@ -1,5 +1,5 @@
 _PewterSpeechHouseGamblerText::
-	text "COCKS learn new"
+	text "COCK learn new"
 	line "techniques as"
 	cont "they grow!"
 
@@ -9,7 +9,7 @@ _PewterSpeechHouseGamblerText::
 	done
 
 _PewterSpeechHouseYoungsterText::
-	text "COCKS become"
+	text "COCK become"
 	line "easier to catch"
 	cont "when they are"
 	cont "hurt or asleep!"

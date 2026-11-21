@@ -131,7 +131,7 @@ _CeladonCityTrainerTips2Text::
 	text "TRAINER TIPS"
 
 	para "GUARD SPEC."
-	line "protects COCKS"
+	line "protects COCK"
 	cont "against SPECIAL"
 	cont "attacks such as"
 	cont "fire and water!"

@@ -54,7 +54,7 @@ _WardensHouseWardenHM04ExplanationText::
 	text "WARDEN: HM04"
 	line "teaches STRENGTH!"
 
-	para "It lets COCKS"
+	para "It lets COCK"
 	line "move boulders"
 	cont "when you're out-"
 	cont "side of fights."

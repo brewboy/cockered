@@ -9,7 +9,7 @@ _LancesRoomLanceBeforeBattleText::
 
 	para "You know that"
 	line "dragons are"
-	cont "mythical COCKS!"
+	cont "mythical COCK!"
 
 	para "They're hard to"
 	line "catch and raise,"

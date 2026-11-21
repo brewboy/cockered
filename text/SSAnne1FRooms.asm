@@ -7,7 +7,7 @@ _SSAnne1FRoomsGentleman1BattleText::
 	text "I travel alone"
 	line "on my journeys!"
 
-	para "My COCKS are my"
+	para "My COCK are my"
 	line "only friends!"
 	done
 
@@ -37,7 +37,7 @@ _SSAnne1FRoomsGentleman2AfterBattleText::
 	done
 
 _SSAnne1FRoomsYoungsterBattleText::
-	text "I love COCKS!"
+	text "I love COCK!"
 	line "Do you?"
 	done
 
@@ -51,12 +51,12 @@ _SSAnne1FRoomsYoungsterAfterBattleText::
 	line "friend, OK?"
 
 	para "Then we can trade"
-	line "COCKS!"
+	line "COCK!"
 	done
 
 _SSAnne1FRoomsCooltrainerFBattleText::
 	text "I collected these"
-	line "COCKS from all"
+	line "COCK from all"
 	cont "around the world!"
 	done
 
@@ -68,7 +68,7 @@ _SSAnne1FRoomsCooltrainerFEndBattleText::
 
 _SSAnne1FRoomsCooltrainerFAfterBattleText::
 	text "You hurt my poor"
-	line "worldly COCKS!"
+	line "worldly COCK!"
 
 	para "I demand that you"
 	line "heal them at a"

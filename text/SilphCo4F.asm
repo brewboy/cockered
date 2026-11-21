@@ -25,13 +25,13 @@ _SilphCo4FRocket1AfterBattleText::
 	done
 
 _SilphCo4FScientistBattleText::
-	text "My COCKS are my"
+	text "My COCK are my"
 	line "loyal soldiers!"
 	done
 
 _SilphCo4FScientistEndBattleText::
 	text "Darn!"
-	line "You weak COCKS!"
+	line "You weak COCK!"
 	prompt
 
 _SilphCo4FScientistAfterBattleText::

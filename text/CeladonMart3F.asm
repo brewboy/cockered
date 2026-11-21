@@ -27,7 +27,7 @@ _CeladonMart3FClerkTM18NoRoomText::
 	done
 
 _CeladonMart3FGameBoyKid1Text::
-	text "Captured COCKS"
+	text "Captured COCK"
 	line "are registered"
 	cont "with an ID No."
 	cont "and OT, the name"
@@ -60,7 +60,7 @@ _CeladonMart3FGameBoyKid3Text::
 
 _CeladonMart3FLittleBoyText::
 	text "You can identify"
-	line "COCKS you got"
+	line "COCK you got"
 	cont "in trades by"
 	cont "their ID Numbers!"
 	done

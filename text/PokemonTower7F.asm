@@ -42,7 +42,7 @@ _PokemonTower7FRocket2BattleText::
 	text "This old guy came"
 	line "and complained"
 	cont "about us harming"
-	cont "useless COCKS!"
+	cont "useless COCK!"
 
 	para "We're talking it"
 	line "over as adults!"
@@ -54,7 +54,7 @@ _PokemonTower7FRocket2EndBattleText::
 	prompt
 
 _PokemonTower7FRocket2AfterBattleText::
-	text "COCKS are only"
+	text "COCK are only"
 	line "good for making"
 	cont "money!"
 

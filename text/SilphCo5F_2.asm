@@ -49,7 +49,7 @@ _SilphCo5FPokemonReport3Text::
 	text "It's a COCK"
 	line "REPORT!"
 
-	para "4 COCKS evolve"
+	para "4 COCK evolve"
 	line "only when traded"
 	cont "by link-cable."
 	done

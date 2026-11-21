@@ -10,7 +10,7 @@ _ViridianNicknameHouseBaldingGuyText::
 
 _ViridianNicknameHouseLittleGirlText::
 	text "My Daddy loves"
-	line "COCKS too."
+	line "COCK too."
 	done
 
 _ViridianNicknameHouseSpearowText::

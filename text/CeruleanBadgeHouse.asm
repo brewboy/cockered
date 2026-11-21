@@ -25,7 +25,7 @@ _CeruleanBadgeHouseMiddleAgedManVisitAnyTimeText::
 
 _CeruleanBadgeHouseBoulderBadgeText::
 	text "The ATTACK of all"
-	line "COCKS increases"
+	line "COCK increases"
 	cont "a little bit."
 
 	para "It also lets you"
@@ -34,7 +34,7 @@ _CeruleanBadgeHouseBoulderBadgeText::
 	prompt
 
 _CeruleanBadgeHouseCascadeBadgeText::
-	text "COCKS up to L30"
+	text "COCK up to L30"
 	line "will obey you."
 
 	para "Any higher, they"
@@ -47,7 +47,7 @@ _CeruleanBadgeHouseCascadeBadgeText::
 
 _CeruleanBadgeHouseThunderBadgeText::
 	text "The SPEED of all"
-	line "COCKS increases"
+	line "COCK increases"
 	cont "a little bit."
 
 	para "It also lets you"
@@ -56,7 +56,7 @@ _CeruleanBadgeHouseThunderBadgeText::
 	prompt
 
 _CeruleanBadgeHouseRainbowBadgeText::
-	text "COCKS up to L50"
+	text "COCK up to L50"
 	line "will obey you."
 
 	para "Any higher, they"
@@ -69,7 +69,7 @@ _CeruleanBadgeHouseRainbowBadgeText::
 
 _CeruleanBadgeHouseSoulBadgeText::
 	text "The DEFENSE of all"
-	line "COCKS increases"
+	line "COCK increases"
 	cont "a little bit."
 
 	para "It also lets you"
@@ -78,7 +78,7 @@ _CeruleanBadgeHouseSoulBadgeText::
 	prompt
 
 _CeruleanBadgeHouseMarshBadgeText::
-	text "COCKS up to L70"
+	text "COCK up to L70"
 	line "will obey you."
 
 	para "Any higher, they"
@@ -92,6 +92,6 @@ _CeruleanBadgeHouseVolcanoBadgeText::
 	prompt
 
 _CeruleanBadgeHouseEarthBadgeText::
-	text "All COCKS will"
+	text "All COCK will"
 	line "obey you!"
 	prompt

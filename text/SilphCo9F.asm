@@ -14,7 +14,7 @@ SilphCo9FNurseThankYouText::
 	done
 
 _SilphCo9FRocket1BattleText::
-	text "Your COCKS seem"
+	text "Your COCK seem"
 	line "to adore you, kid!"
 	done
 
@@ -29,7 +29,7 @@ _SilphCo9FRocket1AfterBattleText::
 	done
 
 _SilphCo9FScientistBattleText::
-	text "Your COCKS have"
+	text "Your COCK have"
 	line "weak points! I"
 	cont "can nail them!"
 	done

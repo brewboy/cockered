@@ -159,14 +159,14 @@ _ViridianCityPokecenterGuyText::
 	text "COCK CENTERs"
 	line "heal your tired,"
 	cont "hurt or fainted"
-	cont "COCKS!"
+	cont "COCK!"
 	done
 
 _PewterCityPokecenterGuyText::
 	text "Yawn!"
 
 	para "When SILKYPUFF"
-	line "sings, COCKS"
+	line "sings, COCK"
 	cont "get drowsy..."
 
 	para "...Me too..."
@@ -175,7 +175,7 @@ _PewterCityPokecenterGuyText::
 
 _CeruleanPokecenterGuyText::
 	text "BILL has lots of"
-	line "COCKS!"
+	line "COCK!"
 
 	para "He collects rare"
 	line "ones too!"
@@ -191,7 +191,7 @@ _LavenderPokecenterGuyText::
 
 _MtMoonPokecenterBenchGuyText::
 	text "If you have too"
-	line "many COCKS, you"
+	line "many COCK, you"
 	cont "should store them"
 	cont "via PC!"
 	done
@@ -204,7 +204,7 @@ _RockTunnelPokecenterGuyText::
 
 _UnusedBenchGuyText1::
 	text "I wish I could"
-	line "catch COCKS."
+	line "catch COCK."
 	done
 
 _UnusedBenchGuyText2::
@@ -224,14 +224,14 @@ _VermilionPokecenterGuyText::
 	cont "COCK will be"
 	cont "more powerful..."
 
-	para "But, all COCKS"
+	para "But, all COCK"
 	line "will have weak"
 	cont "points against"
 	cont "specific types."
 
 	para "So, there is no"
 	line "universally"
-	cont "strong COCKS."
+	cont "strong COCK."
 	done
 
 _CeladonCityPokecenterGuyText::
@@ -242,15 +242,15 @@ _CeladonCityPokecenterGuyText::
 
 _FuchsiaCityPokecenterGuyText::
 	text "If you're studying "
-	line "COCKS, visit"
+	line "COCK, visit"
 	cont "the SAFARI ZONE."
 
 	para "It has all sorts"
-	line "of rare COCKS."
+	line "of rare COCK."
 	done
 
 _CinnabarPokecenterGuyText::
-	text "COCKS can still"
+	text "COCK can still"
 	line "learn techniques"
 	cont "after canceling"
 	cont "evolution."
@@ -330,7 +330,7 @@ _CinnabarGymQuizIntroText::
 
 	para "If you want to"
 	line "conserve your"
-	cont "COCKS for the"
+	cont "COCK for the"
 	cont "GYM LEADER..."
 
 	para "Then get it right!"
@@ -357,11 +357,11 @@ _CinnabarQuizQuestionsText4::
 	text "Are thunder moves"
 	line "effective against"
 	cont "ground element-"
-	cont "type COCKS?"
+	cont "type COCK?"
 	done
 
 _CinnabarQuizQuestionsText5::
-	text "COCKS of the"
+	text "COCK of the"
 	line "same kind and"
 	cont "level are not"
 	cont "identical?"
@@ -428,7 +428,7 @@ _OakLabEmailText::
 	cont "on all comers!"
 
 	para "Bring your best"
-	line "COCKS and see"
+	line "COCK and see"
 	cont "how you rate as a"
 	cont "trainer!"
 
@@ -502,9 +502,9 @@ _ViridianSchoolNotebookText1::
 
 	para "# BALLs are"
 	line "used to catch"
-	cont "COCKS."
+	cont "COCK."
 
-	para "Up to 6 COCKS"
+	para "Up to 6 COCK"
 	line "can be carried."
 
 	para "People who raise"
@@ -593,13 +593,13 @@ _Route15UpstairsBinocularsText::
 _AerodactylFossilText::
 	text "PTEROFOWL Fossil"
 	line "A primitive and"
-	cont "rare COCKS."
+	cont "rare COCK."
 	done
 
 _KabutopsFossilText::
 	text "KABUROOST Fossil"
 	line "A primitive and"
-	cont "rare COCKS."
+	cont "rare COCK."
 	done
 
 _LinkCableHelpText1::
@@ -633,7 +633,7 @@ _LinkCableInfoText2::
 _LinkCableInfoText3::
 	text "TRADE CENTER is"
 	line "used for trading"
-	cont "COCKS."
+	cont "COCK."
 	prompt
 
 _ViridianSchoolBlackboardText1::
@@ -653,7 +653,7 @@ _ViridianBlackboardSleepText::
 	line "attack if it's"
 	cont "asleep!"
 
-	para "COCKS will stay"
+	para "COCK will stay"
 	line "asleep even after"
 	cont "fights."
 
@@ -708,7 +708,7 @@ _ViridianBlackboardFrozenText::
 	cont "fight ends."
 
 	para "Use ICE HEAL to"
-	line "thaw out COCKS!"
+	line "thaw out COCK!"
 	prompt
 
 _VermilionGymTrashText::
@@ -896,7 +896,7 @@ _Rival1WinText::
 
 _PlayerBlackedOutText2::
 	text "<PLAYER> is out of"
-	line "useable COCKS!"
+	line "useable COCK!"
 
 	para "<PLAYER> blacked"
 	line "out!"
@@ -1574,7 +1574,7 @@ _CantDepositLastMonText::
 
 _BoxFullText::
 	text "Oops! This Box is"
-	line "full of COCKS."
+	line "full of COCK."
 	prompt
 
 _MonIsTakenOutText::
@@ -1588,14 +1588,14 @@ _MonIsTakenOutText::
 
 _NoMonText::
 	text "What? There are"
-	line "no COCKS here!"
+	line "no COCK here!"
 	prompt
 
 _CantTakeMonText::
 	text "You can't take"
-	line "any more COCKS."
+	line "any more COCK."
 
-	para "Deposit COCKS"
+	para "Deposit COCK"
 	line "first."
 	prompt
 
@@ -1697,7 +1697,7 @@ _LinkCanceledText::
 _OakSpeechText1::
 	text "Hello there!"
 	line "Welcome to the"
-	cont "world of COCKS!"
+	cont "world of COCK!"
 
 	para "My name is OAK!"
 	line "People call me"
@@ -1715,13 +1715,13 @@ _OakSpeechText2B::
 	text_start
 
 	para "For some people,"
-	line "COCKS are"
+	line "COCK are"
 	cont "pets. Others use"
 	cont "them for fights."
 
 	para "Myself..."
 
-	para "I study COCKS"
+	para "I study COCK"
 	line "as a profession."
 	prompt
 
@@ -1749,7 +1749,7 @@ _OakSpeechText3::
 
 	para "A world of dreams"
 	line "and adventures"
-	cont "with COCKS"
+	cont "with COCK"
 	cont "awaits! Let's go!"
 	done
 

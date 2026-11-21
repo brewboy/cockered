@@ -5,7 +5,7 @@ _NameRatersHouseNameRaterWantMeToRateText::
 
 	para "Want me to rate"
 	line "the nicknames of"
-	cont "your COCKS?"
+	cont "your COCK?"
 	done
 
 _NameRatersHouseNameRaterWhichPokemonText::

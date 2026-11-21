@@ -3,5 +3,5 @@ _SSAnne3FSailorText::
 	line "sword master!"
 
 	para "He even teaches"
-	line "CUT to COCKS!"
+	line "CUT to COCK!"
 	done

@@ -34,7 +34,7 @@ _SilphCo6FSilphWorkerF2TeamRocketConquerWorldText::
 	text "TEAM ROCKET is"
 	line "trying to conquer"
 	cont "the world with"
-	cont "COCKS!"
+	cont "COCK!"
 	done
 
 _SilphCo6FSilphWorkerF2TeamRocketRanText::

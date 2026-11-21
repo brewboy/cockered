@@ -7,7 +7,7 @@ _VermilionGymLTSurgePostBattleAdviceText::
 
 	para "But, it's useless"
 	line "against ground-"
-	cont "type COCKS!"
+	cont "type COCK!"
 	done
 
 _VermilionGymLTSurgeThunderBadgeInfoText::
@@ -16,7 +16,7 @@ _VermilionGymLTSurgeThunderBadgeInfoText::
 	cont "COCK's SPEED!"
 
 	para "It also lets your"
-	line "COCKS FLY any"
+	line "COCK FLY any"
 	cont "time, kid!"
 
 	para "You're special,"
@@ -124,10 +124,10 @@ _VermilionGymGymGuideChampInMakingText::
 	cont "American!"
 
 	para "He's an expert on"
-	line "electric COCKS!"
+	line "electric COCK!"
 
 	para "Birds and water"
-	line "COCKS are at"
+	line "COCK are at"
 	cont "risk! Beware of"
 	cont "paralysis too!"
 

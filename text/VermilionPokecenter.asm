@@ -1,7 +1,7 @@
 _VermilionPokecenterFishingGuruText::
 	text "Even if they are"
 	line "the same level,"
-	cont "COCKS can have"
+	cont "COCK can have"
 	cont "very different"
 	cont "abilities."
 

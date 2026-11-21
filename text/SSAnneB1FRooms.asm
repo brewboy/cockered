@@ -37,7 +37,7 @@ _SSAnneB1FRoomsSailor2AfterBattleText::
 
 _SSAnneB1FRoomsSailor3BattleText::
 	text "Us sailors have"
-	line "COCKS too!"
+	line "COCK too!"
 	done
 
 _SSAnneB1FRoomsSailor3EndBattleText::
@@ -47,7 +47,7 @@ _SSAnneB1FRoomsSailor3EndBattleText::
 
 _SSAnneB1FRoomsSailor3AfterBattleText::
 	text "We caught all our"
-	line "COCKS while"
+	line "COCK while"
 	cont "out at sea!"
 	done
 
@@ -62,7 +62,7 @@ _SSAnneB1FRoomsSailor4EndBattleText::
 	prompt
 
 _SSAnneB1FRoomsSailor4AfterBattleText::
-	text "Sea COCKS live"
+	text "Sea COCK live"
 	line "in deep water."
 	cont "You'll need a ROD!"
 	done
@@ -88,7 +88,7 @@ _SSAnneB1FRoomsFisherBattleText::
 	text "Hello stranger!"
 	line "Stop and chat!"
 
-	para "All my COCKS"
+	para "All my COCK"
 	line "are from the sea!"
 	done
 

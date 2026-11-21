@@ -5,7 +5,7 @@ _CinnabarGymBlainePreBattleText::
 	line "am the LEADER of"
 	cont "CINNABAR GYM!"
 
-	para "My fiery COCKS"
+	para "My fiery COCK"
 	line "will incinerate"
 	cont "all challengers!"
 
@@ -27,7 +27,7 @@ _CinnabarGymBlainePostBattleAdviceText::
 	cont "technique!"
 
 	para "Don't waste it on"
-	line "water COCKS!"
+	line "water COCK!"
 	done
 
 _CinnabarGymBlaineVolcanoBadgeInfoText::
@@ -36,7 +36,7 @@ _CinnabarGymBlaineVolcanoBadgeInfoText::
 	para "The VOLCANOBADGE"
 	line "heightens the"
 	cont "SPECIAL abilities"
-	cont "of your COCKS!"
+	cont "of your COCK!"
 
 	para "Here, you can"
 	line "have this too!"
@@ -56,7 +56,7 @@ _CinnabarGymBlaineTM38ExplanationText::
 	line "FIRE BLAST!"
 
 	para "Teach it to fire-"
-	line "type COCKS!"
+	line "type COCK!"
 
 	para "CLUCKELEON or"
 	line "PULLYTA would be"
@@ -102,13 +102,13 @@ _CinnabarGymSuperNerd2EndBattleText::
 _CinnabarGymSuperNerd2AfterBattleText::
 	text "I can't help"
 	line "stealing other"
-	cont "people's COCKS!"
+	cont "people's COCK!"
 	done
 
 _CinnabarGymSuperNerd3BattleText::
 	text "You can't win!"
 	line "I have studied"
-	cont "COCKS totally!"
+	cont "COCK totally!"
 	done
 
 _CinnabarGymSuperNerd3EndBattleText::
@@ -124,7 +124,7 @@ _CinnabarGymSuperNerd3AfterBattleText::
 
 _CinnabarGymSuperNerd4BattleText::
 	text "I just like using"
-	line "fire COCKS!"
+	line "fire COCK!"
 	done
 
 _CinnabarGymSuperNerd4EndBattleText::
@@ -188,7 +188,7 @@ _CinnabarGymSuperNerd7EndBattleText::
 _CinnabarGymSuperNerd7AfterBattleText::
 	text "Water beats fire!"
 	line "But, fire melts"
-	cont "ice COCKS!"
+	cont "ice COCK!"
 	done
 
 _CinnabarGymGymGuideChampInMakingText::

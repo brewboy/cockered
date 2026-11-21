@@ -1,7 +1,7 @@
 _Route18CooltrainerM1BattleText::
 	text "I always check"
 	line "every grassy area"
-	cont "for new COCKS."
+	cont "for new COCK."
 	done
 
 _Route18CooltrainerM1EndBattleText::
@@ -26,7 +26,7 @@ _Route18CooltrainerM2EndBattleText::
 
 _Route18CooltrainerM2AfterBattleText::
 	text "I also collect sea"
-	line "COCKS on"
+	line "COCK on"
 	cont "weekends!"
 	done
 

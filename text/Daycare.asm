@@ -2,7 +2,7 @@ _DaycareGentlemanIntroText::
 	text "I run a DAYCARE."
 	line "Would you like me"
 	cont "to raise one of"
-	cont "your COCKS?"
+	cont "your COCK?"
 	done
 
 _DaycareGentlemanWhichMonText::

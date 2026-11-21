@@ -1,6 +1,6 @@
 _CopycatsHouse2FCopycatDoYouLikePokemonText::
 	text "<PLAYER>: Hi! Do"
-	line "you like COCKS?"
+	line "you like COCK?"
 
 	para "<PLAYER>: Uh no, I"
 	line "just asked you."

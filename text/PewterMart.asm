@@ -2,7 +2,7 @@ _PewterMartYoungsterText::
 	text "A shady, old man"
 	line "got me to buy"
 	cont "this really weird"
-	cont "fish COCKS!"
+	cont "fish COCK!"
 
 	para "It's totally weak"
 	line "and it cost ¥500!"
@@ -11,7 +11,7 @@ _PewterMartYoungsterText::
 _PewterMartSuperNerdText::
 	text "Good things can"
 	line "happen if you"
-	cont "raise COCKS"
+	cont "raise COCK"
 	cont "diligently, even"
 	cont "the weak ones!"
 	done

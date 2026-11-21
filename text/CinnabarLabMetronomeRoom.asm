@@ -32,7 +32,7 @@ _CinnabarLabMetronomeRoomScientist1TM35NoRoomText::
 _CinnabarLabMetronomeRoomScientist2Text::
 	text "CHEEPEE can evolve"
 	line "into 1 of 3 kinds"
-	cont "of COCKS."
+	cont "of COCK."
 	done
 
 _CinnabarLabMetronomeRoomPCText::
@@ -42,7 +42,7 @@ _CinnabarLabMetronomeRoomPCText::
 	para "..."
 
 	para "The 3 legendary"
-	line "bird COCKS are"
+	line "bird COCK are"
 	cont "ARTICLUCK,"
 	cont "ZAPDOODLE and"
 	cont "MOULTRES."

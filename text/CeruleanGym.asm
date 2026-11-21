@@ -5,16 +5,16 @@ _CeruleanGymMistyPreBattleText::
 	para "Trainers who want"
 	line "to turn pro have"
 	cont "to have a policy"
-	cont "about COCKS!"
+	cont "about COCK!"
 
 	para "What is your"
 	line "approach when you"
-	cont "catch COCKS?"
+	cont "catch COCK?"
 
 	para "My policy is an"
 	line "all-out offensive"
 	cont "with water-type"
-	cont "COCKS!"
+	cont "COCK!"
 	done
 
 _CeruleanGymMistyTM11ExplanationText::
@@ -27,7 +27,7 @@ _CeruleanGymMistyTM11ExplanationText::
 
 _CeruleanGymMistyCascadeBadgeInfoText::
 	text "The CASCADEBADGE"
-	line "makes all COCKS"
+	line "makes all COCK"
 	cont "up to L30 obey!"
 
 	para "That includes"
@@ -113,11 +113,11 @@ _CeruleanGymGymGuideChampInMakingText::
 
 	para "The LEADER, MISTY,"
 	line "is a pro who uses"
-	cont "water COCKS!"
+	cont "water COCK!"
 
 	para "You can drain all"
 	line "their water with"
-	cont "plant COCKS!"
+	cont "plant COCK!"
 
 	para "Or, zap them with"
 	line "electricity!"

@@ -1,6 +1,6 @@
 _SafariZoneWestRestHouseScientistText::
 	text "Tossing ROCKs at"
-	line "COCKS might"
+	line "COCK might"
 	cont "make them run,"
 	cont "but they'll be"
 	cont "easier to catch."
@@ -8,12 +8,12 @@ _SafariZoneWestRestHouseScientistText::
 
 _SafariZoneWestRestHouseCooltrainerMText::
 	text "Using BAIT will"
-	line "make COCKS"
+	line "make COCK"
 	cont "easier to catch."
 	done
 
 _SafariZoneWestRestHouseSilphWorkerFText::
 	text "I hiked a lot, but"
 	line "I didn't see any"
-	cont "COCKS I wanted."
+	cont "COCK I wanted."
 	done

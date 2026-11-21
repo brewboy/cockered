@@ -1,11 +1,11 @@
 _RockTunnelB1FHiker3AfterBattleText::
 	text "I'll raise my"
-	line "COCKS to beat"
+	line "COCK to beat"
 	cont "yours, kid!"
 	done
 
 _RockTunnelB1FSuperNerd3BattleText::
-	text "I draw COCKS"
+	text "I draw COCK"
 	line "when I'm home."
 	done
 

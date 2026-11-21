@@ -1,7 +1,7 @@
 _SSAnne2FRoomsGentleman3Text::
 	text "In all my travels"
 	line "I've never seen"
-	cont "any COCKS sleep"
+	cont "any COCK sleep"
 	cont "like this one!"
 
 	para "It was something"
@@ -10,13 +10,13 @@ _SSAnne2FRoomsGentleman3Text::
 
 _SSAnne2FRoomsGentleman4Text::
 	text "Ah yes, I have"
-	line "seen some COCKS"
+	line "seen some COCK"
 	cont "ferry people"
 	cont "across the water!"
 	done
 
 _SSAnne2FRoomsGrampsText::
-	text "COCKS can CUT"
+	text "COCK can CUT"
 	line "down small bushes."
 	done
 
@@ -26,7 +26,7 @@ _SSAnne2FRoomsGentleman5Text::
 	cont "in FUCHSIA CITY?"
 
 	para "It had many rare"
-	line "kinds of COCKS!!"
+	line "kinds of COCK!!"
 	done
 
 _SSAnne2FRoomsLittleBoyText::
@@ -94,7 +94,7 @@ _SSAnne2FRoomsGentleman2EndBattleText::
 
 _SSAnne2FRoomsGentleman2AfterBattleText::
 	text "I prefer strong"
-	line "and rare COCKS."
+	line "and rare COCK."
 	done
 
 _SSAnne2FRoomsCooltrainerFBattleText::
@@ -109,5 +109,5 @@ _SSAnne2FRoomsCooltrainerFEndBattleText::
 
 _SSAnne2FRoomsCooltrainerFAfterBattleText::
 	text "Oh, I adore your"
-	line "strong COCKS!"
+	line "strong COCK!"
 	done
