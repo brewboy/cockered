@@ -8,8 +8,9 @@ _LancesRoomLanceBeforeBattleText::
 	cont "dragon trainer!"
 
 	para "You know that"
-	line "dragons are"
-	cont "mythical COCK!"
+	line "dragons are the"
+	cont "wild ancestors of"
+	cont "all COCK!"
 
 	para "They're hard to"
 	line "catch and raise,"
