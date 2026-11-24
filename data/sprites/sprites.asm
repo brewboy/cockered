@@ -56,7 +56,7 @@ SpriteSheetPointerTable:
 	overworld_sprite FisherSprite, 12           ; SPRITE_FISHER
 	overworld_sprite KogaSprite, 12             ; SPRITE_KOGA
 	overworld_sprite GuardSprite, 12            ; SPRITE_GUARD
-	overworld_sprite GuardSprite, 12            ; SPRITE_UNUSED_GUARD
+	overworld_sprite LegendSprite, 12           ; SPRITE_LEGEND
 	overworld_sprite MomSprite, 12              ; SPRITE_MOM
 	overworld_sprite BaldingGuySprite, 12       ; SPRITE_BALDING_GUY
 	overworld_sprite LittleBoySprite, 12        ; SPRITE_LITTLE_BOY
@@ -74,7 +74,7 @@ SpriteSheetPointerTable:
 	overworld_sprite PokedexSprite, 4           ; SPRITE_POKEDEX
 	overworld_sprite ClipboardSprite, 4         ; SPRITE_CLIPBOARD
 	overworld_sprite SnorlaxSprite, 4           ; SPRITE_SNORLAX
-	overworld_sprite OldAmberSprite, 4          ; SPRITE_UNUSED_OLD_AMBER
+	overworld_sprite GooseSprite, 4             ; SPRITE_GOOSE
 	overworld_sprite OldAmberSprite, 4          ; SPRITE_OLD_AMBER
 	overworld_sprite GamblerAsleepSprite, 4     ; SPRITE_UNUSED_GAMBLER_ASLEEP_1
 	overworld_sprite GamblerAsleepSprite, 4     ; SPRITE_UNUSED_GAMBLER_ASLEEP_2

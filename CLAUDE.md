@@ -188,6 +188,14 @@ In-game names (in **bold**) are max 10 characters (`NAME_LENGTH - 1`) and live i
 - Farfetch'd (#83) is skipped and keeps its original sprites. Mewtwo (#150) uses `150_lab_bred_goose.png`.
 - Each pics bank (`gfx/pics.asm`, "Pics 1"–"Pics 5") must stay within its ROM bank; check free space in `pokered.map` after big art changes.
 
+## Overworld sprites and party icons
+
+- `python3 tools/draw_rooster_overworld.py` draws the creature sprites seen on maps and writes them into `gfx/sprites/` and `gfx/icons/`; pass a folder to get a preview sheet instead. Run `make` afterwards. The art is hand-drawn pixel grids in the script.
+- Shared sprites, redrawn in place: `monster` (standard rooster; also the Substitute decoy), `bird` (flapping bantam), `fairy` (Silkie), `seel` (hen floating on water; also the player's surfing sprite), `snorlax` (SNOROOSTER asleep) and `fossil` (fossil egg).
+- Two new sprites reuse unused slots, so no other sprite IDs move: `SPRITE_LEGEND` (long-tailed rooster for Articuno, Zapdos and Moltres; was `SPRITE_UNUSED_GUARD`) and `SPRITE_GOOSE` (MEWHONK in Cerulean Cave; was `SPRITE_UNUSED_OLD_AMBER`).
+- On sprites, `l` shows as white, `d` as light grey and `.` is see-through, so white birds must fill their bodies with `l` (the script's `fill_white` does this).
+- Party icons: the `bug`, `plant`, `snake` and `quadruped` icons are now a chick, a crested Polish, a naked-neck and a tall game bird. Each species' icon in `data/pokemon/menu_icons.asm` follows its breed: chicks get the chick, eggs the fossil egg, distinctive breeds their shape, flyers the bantam, grown Water types the floating hen, and everything else the rooster. The Poké Ball icon is unused because it shares the item-ball sprite.
+
 ## Colour
 
 - The ROM is GBC-compatible (`rgbfix -c`) and still runs on DMG and SGB. On a GBC, `engine/gfx/cgb_palettes.asm` turns the SGB palette commands into GBC palettes and BG attribute maps, and VBlank rebuilds the colours whenever `rBGP`/`rOBP0`/`rOBP1` change, so fades and flashes work unchanged. The palette engine lives in its own "Palettes" section (bank $2C).
