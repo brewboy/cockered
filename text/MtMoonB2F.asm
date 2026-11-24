@@ -1,11 +1,11 @@
 _MtMoonB2FDomeFossilYouWantText::
 	text "You want the"
-	line "DOME FOSSIL?"
+	line "CHICK FOSSIL?"
 	done
 
 _MtMoonB2FHelixFossilYouWantText::
 	text "You want the"
-	line "HELIX FOSSIL?"
+	line "EGG FOSSIL?"
 	done
 
 _MtMoonB2FReceivedFossilText::

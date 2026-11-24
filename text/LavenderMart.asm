@@ -21,8 +21,9 @@ _LavenderMartCooltrainerMReviveText::
 	done
 
 _LavenderMartCooltrainerMNuggetText::
-	text "I found a NUGGET"
-	line "in the mountains."
+	text "I found a GOLDEN"
+	line "EGG in the"
+	cont "mountains."
 
 	para "I thought it was"
 	line "useless, but it"
