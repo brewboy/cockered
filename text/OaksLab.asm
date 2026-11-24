@@ -262,7 +262,7 @@ _OaksLabRivalIllTakeYouOnText::
 _OaksLabRivalIPickedTheWrongPokemonText::
 	text "WHAT?"
 	line "Unbelievable!"
-	cont "I picked the"
+	cont "I took the"
 	cont "wrong COCK!"
 	prompt
 
