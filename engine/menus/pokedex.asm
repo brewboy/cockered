@@ -370,7 +370,7 @@ PokedexContentsText:
 
 PokedexMenuItemsText:
 	db   "DATA"
-	next "CRY"
+	next "CROW"
 	next "AREA"
 	next "QUIT@"
 
