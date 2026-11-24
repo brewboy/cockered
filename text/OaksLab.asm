@@ -256,7 +256,7 @@ _OaksLabRivalIllTakeYouOnText::
 	cont "our COCK!"
 
 	para "Come on, I'll take"
-	line "you on!"
+	line "you!"
 	done
 
 _OaksLabRivalIPickedTheWrongPokemonText::
