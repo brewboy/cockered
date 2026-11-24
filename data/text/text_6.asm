@@ -83,7 +83,7 @@ _VitaminNoEffectText::
 
 _ThrewBaitText::
 	text "<PLAYER> threw"
-	line "some BAIT."
+	line "some CORN."
 	done
 
 _ThrewRockText::

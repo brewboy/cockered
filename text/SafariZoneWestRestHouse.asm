@@ -7,7 +7,7 @@ _SafariZoneWestRestHouseScientistText::
 	done
 
 _SafariZoneWestRestHouseCooltrainerMText::
-	text "Using BAIT will"
+	text "Using CORN will"
 	line "make COCK"
 	cont "easier to catch."
 	done

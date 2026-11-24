@@ -1151,13 +1151,13 @@ _OHKOText::
 _LoafingAroundText::
 	text_ram wBattleMonNick
 	text " is"
-	line "loafing around."
+	line "scratching around."
 	prompt
 
 _BeganToNapText::
 	text_ram wBattleMonNick
 	text " began"
-	line "to nap!"
+	line "to roost!"
 	prompt
 
 _WontObeyText::
