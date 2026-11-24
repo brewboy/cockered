@@ -115,5 +115,5 @@ _MtMoon1FYoungster3AfterBattleText::
 
 _MtMoon1FBewareZubatSign::
 	text "Beware! ZUBANTAM"
-	line "is a blood sucker!"
+	line "pecks at ankles!"
 	done
