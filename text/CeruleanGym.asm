@@ -21,8 +21,8 @@ _CeruleanGymMistyTM11ExplanationText::
 	text "TM11 teaches"
 	line "BUBBLEBEAM!"
 
-	para "Use it on an"
-	line "aquatic COCK!"
+	para "Use it on a"
+	line "water-type COCK!"
 	done
 
 _CeruleanGymMistyCascadeBadgeInfoText::
