@@ -1265,7 +1265,7 @@ _VenusaurDexEntry::
 
 	page "like a flower. It"
 	next "bows to rivals"
-	next "before battle."
+	next "before a fight."
 	dex
 
 _TentacruelDexEntry::

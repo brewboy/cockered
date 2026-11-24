@@ -4,12 +4,12 @@ _BrunoBeforeBattleText::
 
 	para "Through rigorous"
 	line "training, people"
-	cont "and #MON can"
+	cont "and COCK can"
 	cont "become stronger!"
 
 	para "I've weight"
 	line "trained with"
-	cont "my #MON!"
+	cont "my COCK!"
 
 	para "<PLAYER>!"
 

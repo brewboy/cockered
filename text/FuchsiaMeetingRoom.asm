@@ -9,11 +9,11 @@ _FuchsiaMeetingRoomSafariZoneWorker1::
 _FuchsiaMeetingRoomSafariZoneWorker2::
 	text "SLOWPECK is very"
 	line "knowledgeable"
-	cont "about #MON!"
+	cont "about COCK!"
 
 	para "He even has some"
 	line "fossils of rare,"
-	cont "extinct #MON!"
+	cont "extinct COCK!"
 	done
 
 _FuchsiaMeetingRoomSafariZoneWorker3::

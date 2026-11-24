@@ -31,7 +31,7 @@ _SaffronCityRocket6Text::
 _SaffronCityRocket7Text::
 	text "With SILPH under"
 	line "control, we can"
-	cont "exploit #MON"
+	cont "exploit COCK"
 	cont "around the world!"
 	done
 
@@ -102,11 +102,11 @@ _SaffronCityFightingDojoSignText::
 
 _SaffronCityGymSignText::
 	text "SAFFRON CITY"
-	line "#MON GYM"
+	line "COCK GYM"
 	cont "LEADER: SABRINA"
 
 	para "The Master of"
-	line "Psychic #MON!"
+	line "Psychic COCK!"
 	done
 
 _SaffronCityTrainerTips1Text::
@@ -130,7 +130,7 @@ _SaffronCityTrainerTips2Text::
 
 	para "Try it on those"
 	line "hard-to-catch"
-	cont "#MON."
+	cont "COCK."
 	done
 
 _SaffronCitySilphCoSignText::

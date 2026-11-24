@@ -1,22 +1,23 @@
 ; function that displays the start menu
+; (one tile wider than the original, so COCKTOME fits)
 DrawStartMenu::
 	CheckEvent EVENT_GOT_POKEDEX
 ; menu with pokedex
-	hlcoord 10, 0
+	hlcoord 9, 0
 	ld b, $0e
-	ld c, $08
+	ld c, $09
 	jr nz, .drawTextBoxBorder
 ; shorter menu if the player doesn't have the pokedex
-	hlcoord 10, 0
+	hlcoord 9, 0
 	ld b, $0c
-	ld c, $08
+	ld c, $09
 .drawTextBoxBorder
 	call TextBoxBorder
 	ld a, PAD_DOWN | PAD_UP | PAD_START | PAD_B | PAD_A
 	ld [wMenuWatchedKeys], a
 	ld a, $02
 	ld [wTopMenuItemY], a ; Y position of first menu choice
-	ld a, $0b
+	ld a, $0a
 	ld [wTopMenuItemX], a ; X position of first menu choice
 	ld a, [wBattleAndStartSavedMenuItem] ; remembered menu selection from last time
 	ld [wCurrentMenuItem], a
@@ -25,7 +26,7 @@ DrawStartMenu::
 	ld [wMenuWatchMovingOutOfBounds], a
 	ld hl, wStatusFlags5
 	set BIT_NO_TEXT_DELAY, [hl]
-	hlcoord 12, 2
+	hlcoord 11, 2
 	CheckEvent EVENT_GOT_POKEDEX
 ; case for not having pokedex
 	ld a, $06
@@ -60,10 +61,10 @@ DrawStartMenu::
 	ret
 
 StartMenuPokedexText:
-	db "POKéDEX@"
+	db "COCKTOME@"
 
 StartMenuPokemonText:
-	db "POKéMON@"
+	db "COCK@"
 
 StartMenuItemText:
 	db "ITEM@"

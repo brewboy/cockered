@@ -437,7 +437,7 @@ PrintPlayTime:
 SaveScreenInfoText:
 	db   "PLAYER"
 	next "BADGES    "
-	next "#DEX    "
+	next "#TOME    "
 	next "TIME@"
 
 DisplayOptionMenu:
@@ -599,11 +599,11 @@ TextSpeedOptionText:
 	next " FAST  MEDIUM SLOW@"
 
 BattleAnimationOptionText:
-	db   "BATTLE ANIMATION"
+	db   "FIGHT ANIMATION"
 	next " ON       OFF@"
 
 BattleStyleOptionText:
-	db   "BATTLE STYLE"
+	db   "FIGHT STYLE"
 	next " SHIFT    SET@"
 
 OptionMenuCancelText:

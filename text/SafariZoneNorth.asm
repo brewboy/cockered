@@ -16,7 +16,7 @@ _SafariZoneNorthSignText::
 _SafariZoneNorthTrainerTips2Text::
 	text "TRAINER TIPS"
 
-	para "#MON hide in"
+	para "COCK hide in"
 	line "tall grass!"
 
 	para "Zigzag through"

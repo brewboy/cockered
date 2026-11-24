@@ -30,7 +30,7 @@ _Route24CooltrainerM1JoinTeamRocketText::
 
 	para "We're a group"
 	line "dedicated to evil"
-	cont "using #MON!"
+	cont "using COCK!"
 
 	para "Want to join?"
 

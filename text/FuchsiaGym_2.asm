@@ -1,8 +1,8 @@
 _FuchsiaGymKogaPostBattleAdviceText::
 	text "When afflicted by"
-	line "TOXIC, #MON"
+	line "TOXIC, COCK"
 	cont "suffer more and"
-	cont "more as battle"
+	cont "more as the fight"
 	cont "progresses!"
 
 	para "It will surely"
@@ -13,12 +13,12 @@ _FuchsiaGymKogaSoulBadgeInfoText::
 	text "Now that you have"
 	line "the SOULBADGE,"
 	cont "the DEFENSE of"
-	cont "your #MON"
+	cont "your COCK"
 	cont "increases!"
 
 	para "It also lets you"
 	line "SURF outside of"
-	cont "battle!"
+	cont "fights!"
 
 	para "Ah! Take this"
 	line "too!"
@@ -50,7 +50,7 @@ _FuchsiaGymKogaTM06NoRoomText::
 _FuchsiaGymRocker1BattleText::
 	text "Strength isn't"
 	line "the key for"
-	cont "#MON!"
+	cont "COCK!"
 
 	para "It's strategy!"
 
@@ -103,7 +103,7 @@ _FuchsiaGymRocker3AfterBattleText::
 	text "I like poison and"
 	line "sleep techniques,"
 	cont "as they linger"
-	cont "after battle!"
+	cont "after a fight!"
 	done
 
 _FuchsiaGymRocker4BattleText::

@@ -1,7 +1,7 @@
 _FuchsiaCityYoungster1Text::
 	text "Did you try the"
 	line "SAFARI GAME? Some"
-	cont "#MON can only"
+	cont "COCK can only"
 	cont "be caught there."
 	done
 
@@ -12,7 +12,7 @@ _FuchsiaCityGamblerText::
 
 	para "Out back is the"
 	line "SAFARI GAME for"
-	cont "catching #MON."
+	cont "catching COCK."
 	done
 
 _FuchsiaCityErikText::
@@ -24,7 +24,7 @@ _FuchsiaCityErikText::
 _FuchsiaCityYoungster2Text::
 	text "That item ball in"
 	line "there is really a"
-	cont "#MON."
+	cont "COCK."
 	done
 
 _FuchsiaCityPokemonText::
@@ -39,7 +39,7 @@ _FuchsiaCitySignText::
 
 _FuchsiaCitySafariGameSignText::
 	text "SAFARI GAME"
-	line "#MON-U-CATCH!"
+	line "COCK-U-CATCH!"
 	done
 
 _FuchsiaCityWardensHomeSignText::
@@ -48,13 +48,13 @@ _FuchsiaCityWardensHomeSignText::
 	done
 
 _FuchsiaCitySafariZoneSignText::
-	text "#MON PARADISE"
+	text "COCK PARADISE"
 	line "SAFARI ZONE"
 	done
 
 _FuchsiaCityGymSignText::
 	text "FUCHSIA CITY"
-	line "#MON GYM"
+	line "COCK GYM"
 	cont "LEADER: KOGA"
 
 	para "The Poisonous"
@@ -78,10 +78,10 @@ _FuchsiaCityVoltorbSignText::
 _FuchsiaCityKangaskhanSignText::
 	text "Name: BROODKHAN"
 
-	para "A maternal #MON"
+	para "A maternal COCK"
 	line "that raises its"
-	cont "young in a pouch"
-	cont "on its belly."
+	cont "young under its"
+	cont "wing."
 	prompt
 
 _FuchsiaCitySlowpokeSignText::
@@ -94,14 +94,14 @@ _FuchsiaCitySlowpokeSignText::
 _FuchsiaCityLaprasSignText::
 	text "Name: LAYPRAS"
 
-	para "A.K.A. the king"
+	para "A.K.A. the queen"
 	line "of the seas."
 	prompt
 
 _FuchsiaCityFossilSignOmanyteText::
 	text "Name: OMEGGNITE"
 
-	para "A #MON that"
+	para "A COCK that"
 	line "was resurrected"
 	cont "from a fossil."
 	prompt
@@ -109,7 +109,7 @@ _FuchsiaCityFossilSignOmanyteText::
 _FuchsiaCityFossilSignKabutoText::
 	text "Name: KABUCHICK"
 
-	para "A #MON that"
+	para "A COCK that"
 	line "was resurrected"
 	cont "from a fossil."
 	prompt

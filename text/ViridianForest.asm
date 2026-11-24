@@ -3,13 +3,13 @@ _ViridianForestYoungster1Text::
 	line "some friends!"
 
 	para "They're out for"
-	line "#MON fights!"
+	line "COCK FIGHTS!"
 	done
 
 _ViridianForestYoungster2BattleText::
 	text "Hey! You have"
-	line "#MON! Come on!"
-	cont "Let's battle'em!"
+	line "COCK! Come on!"
+	cont "Let's fight'em!"
 	done
 
 _ViridianForestYoungster2EndBattleText::
@@ -26,13 +26,13 @@ _ViridianForestYoungster2AfterBattleText::
 _ViridianForestYoungster3BattleText::
 	text "Yo! You can't jam"
 	line "out if you're a"
-	cont "#MON trainer!"
+	cont "COCK trainer!"
 	done
 
 _ViridianForestYoungster3EndBattleText::
 	text "Huh?"
 	line "I ran out of"
-	cont "#MON!"
+	cont "COCK!"
 	prompt
 
 _ViridianForestYoungster3AfterBattleText::
@@ -65,7 +65,7 @@ _ViridianForestYoungster4AfterBattleText::
 _ViridianForestYoungster5Text::
 	text "I ran out of #"
 	line "BALLs to catch"
-	cont "#MON with!"
+	cont "COCK with!"
 
 	para "You should carry"
 	line "extras!"
@@ -75,7 +75,7 @@ _ViridianForestTrainerTips1Text::
 	text "TRAINER TIPS"
 
 	para "If you want to"
-	line "avoid battles,"
+	line "avoid fights,"
 	cont "stay away from"
 	cont "grassy areas!"
 	done
@@ -83,7 +83,7 @@ _ViridianForestTrainerTips1Text::
 _ViridianForestUseAntidoteSignText::
 	text "For poison, use"
 	line "ANTIDOTE! Get it"
-	cont "at #MON MARTs!"
+	cont "at COCK MARTs!"
 	done
 
 _ViridianForestTrainerTips2Text::
@@ -91,7 +91,7 @@ _ViridianForestTrainerTips2Text::
 
 	para "Contact PROF.OAK"
 	line "via PC to get"
-	cont "your #DEX"
+	cont "your #TOME"
 	cont "evaluated!"
 	done
 
@@ -99,16 +99,16 @@ _ViridianForestTrainerTips3Text::
 	text "TRAINER TIPS"
 
 	para "No stealing of"
-	line "#MON from"
+	line "COCK from"
 	cont "other trainers!"
 	cont "Catch only wild"
-	cont "#MON!"
+	cont "COCK!"
 	done
 
 _ViridianForestTrainerTips4Text::
 	text "TRAINER TIPS"
 
-	para "Weaken #MON"
+	para "Weaken COCK"
 	line "before attempting"
 	cont "capture!"
 

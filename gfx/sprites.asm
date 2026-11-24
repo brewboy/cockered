@@ -25,6 +25,8 @@ PaperSprite::            INCBIN "gfx/sprites/paper.2bpp"
 PokedexSprite::          INCBIN "gfx/sprites/pokedex.2bpp"
 ClipboardSprite::        INCBIN "gfx/sprites/clipboard.2bpp"
 SnorlaxSprite::          INCBIN "gfx/sprites/snorlax.2bpp"
+GooseSprite::            INCBIN "gfx/sprites/goose.2bpp"
+LegendSprite::           INCBIN "gfx/sprites/legend.2bpp"
 OldAmberSprite::         INCBIN "gfx/sprites/old_amber.2bpp"
 GamblerAsleepSprite::    INCBIN "gfx/sprites/gambler_asleep.2bpp"
 

@@ -188,7 +188,26 @@ In-game names (in **bold**) are max 10 characters (`NAME_LENGTH - 1`) and live i
 - Farfetch'd (#83) is skipped and keeps its original sprites. Mewtwo (#150) uses `150_lab_bred_goose.png`.
 - Each pics bank (`gfx/pics.asm`, "Pics 1"–"Pics 5") must stay within its ROM bank; check free space in `pokered.map` after big art changes.
 
+## Overworld sprites and party icons
+
+- `python3 tools/draw_rooster_overworld.py` draws the creature sprites seen on maps and writes them into `gfx/sprites/` and `gfx/icons/`; pass a folder to get a preview sheet instead. Run `make` afterwards. The art is hand-drawn pixel grids in the script.
+- Shared sprites, redrawn in place: `monster` (standard rooster; also the Substitute decoy), `bird` (flapping bantam), `fairy` (Silkie), `seel` (hen floating on water; also the player's surfing sprite), `snorlax` (SNOROOSTER asleep) and `fossil` (fossil egg).
+- Two new sprites reuse unused slots, so no other sprite IDs move: `SPRITE_LEGEND` (long-tailed rooster for Articuno, Zapdos and Moltres; was `SPRITE_UNUSED_GUARD`) and `SPRITE_GOOSE` (MEWHONK in Cerulean Cave; was `SPRITE_UNUSED_OLD_AMBER`).
+- On sprites, `l` shows as white, `d` as light grey and `.` is see-through, so white birds must fill their bodies with `l` (the script's `fill_white` does this).
+- Party icons: the `bug`, `plant`, `snake` and `quadruped` icons are now a chick, a crested Polish, a naked-neck and a tall game bird. Each species' icon in `data/pokemon/menu_icons.asm` follows its breed: chicks get the chick, eggs the fossil egg, distinctive breeds their shape, flyers the bantam, grown Water types the floating hen, and everything else the rooster. The Poké Ball icon is unused because it shares the item-ball sprite.
+
 ## Colour
 
 - The ROM is GBC-compatible (`rgbfix -c`) and still runs on DMG and SGB. On a GBC, `engine/gfx/cgb_palettes.asm` turns the SGB palette commands into GBC palettes and BG attribute maps, and VBlank rebuilds the colours whenever `rBGP`/`rOBP0`/`rOBP1` change, so fades and flashes work unchanged. The palette engine lives in its own "Palettes" section (bank $2C).
 - Each species except Farfetch'd has its own palette (`PAL_ROOSTER + n`), generated from the colour fronts by `python3 tools/make_rooster_palettes.py`, which writes `data/sgb/rooster_palettes.asm` and `data/pokemon/palettes.asm`. Re-run it after changing the art.
+
+## Title screen and signs
+
+- The title keeps the original POKéMON logo; the edition line under it reads "Rhode Island Red" (Red) or "Blue Wyandotte" (Blue). `python3 tools/draw_rooster_version.py` draws both into `gfx/title/red_version.png` and `blue_version.png` (80×8, 10 tiles, centred, in the original's small bold font), and `PrintGameVersionOnTitleScreen` in `engine/movie/title.asm` places them centred under the logo. Run `make` afterwards.
+- The sign over every COCK CENTER says COCK instead of POKé. Those two tiles are in `gfx/tilesets/overworld.png` (row 4, tiles 2–3, next to MART), and `gfx/tilesets/forest.png` has a copy (row 1, tiles 0–1); keep the two in step.
+
+## Intro fight
+
+- The opening fight is CROWGAR (Black Sumatra, seen from behind; stands in for Gengar) against NIDOROOST on Red or SILKYPUFF on Blue (for Nidorino/Jigglypuff). `python3 tools/draw_rooster_intro.py` draws them and writes `gfx/intro/` (file names kept from the original) plus colour references in `gfx/rooster_src/intro/`; pass a folder to preview instead. Run `make` afterwards.
+- CROWGAR's three 56×56 poses are stored as unique tiles (tile 0 blank, tile 1 solid black, which the intro also uses for its black bars) with a 7×7 tilemap per pose; together they must stay within 108 tiles, which the script checks. The standing and wings-flared poses share their body, neck and head to save tiles.
+- The scene's palette (`PalPacket_NidorinoIntro` in `data/sgb/sgb_packets.asm`) is the opponent's species palette.

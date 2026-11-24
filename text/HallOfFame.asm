@@ -4,15 +4,15 @@ _HallOfFameOakText::
 	cont "<PLAYER>!"
 
 	para "This floor is the"
-	line "#MON HALL OF"
+	line "COCK HALL OF"
 	cont "FAME!"
 
-	para "#MON LEAGUE"
+	para "COCK LEAGUE"
 	line "champions are"
 	cont "honored for their"
 	cont "exploits here!"
 
-	para "Their #MON are"
+	para "Their COCK are"
 	line "also recorded in"
 	cont "the HALL OF FAME!"
 
@@ -23,6 +23,6 @@ _HallOfFameOakText::
 
 	para "Congratulations,"
 	line "<PLAYER>, you and"
-	cont "your #MON are"
+	cont "your COCK are"
 	cont "HALL OF FAMERs!"
 	done

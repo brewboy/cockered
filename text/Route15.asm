@@ -1,6 +1,6 @@
 _Route15CooltrainerF1BattleText::
 	text "Let me try out the"
-	line "#MON I just"
+	line "COCK I just"
 	cont "got in a trade!"
 	done
 
@@ -12,7 +12,7 @@ _Route15CooltrainerF1EndBattleText::
 _Route15CooltrainerF1AfterBattleText::
 	text "You can't change"
 	line "the nickname of"
-	cont "any #MON you"
+	cont "any COCK you"
 	cont "get in a trade."
 
 	para "Only the Original"
@@ -38,8 +38,8 @@ _Route15CooltrainerF2AfterBattleText::
 
 _Route15CooltrainerM1BattleText::
 	text "When I whistle, I"
-	line "can summon bird"
-	cont "#MON!"
+	line "can summon flying"
+	cont "COCK!"
 	done
 
 _Route15CooltrainerM1EndBattleText::
@@ -49,11 +49,11 @@ _Route15CooltrainerM1EndBattleText::
 
 _Route15CooltrainerM1AfterBattleText::
 	text "Maybe I'm not cut"
-	line "out for battles."
+	line "out for fights."
 	done
 
 _Route15CooltrainerM2BattleText::
-	text "Hmm? My birds are"
+	text "Hmm? My flyers are"
 	line "shivering! You're"
 	cont "good, aren't you?"
 	done
@@ -67,7 +67,7 @@ _Route15CooltrainerM2AfterBattleText::
 	text "Did you know moves"
 	line "like EARTHQUAKE"
 	cont "don't have any"
-	cont "effect on birds?"
+	cont "effect on flyers?"
 	done
 
 _Route15Beauty1BattleText::
@@ -86,7 +86,7 @@ _Route15Beauty1AfterBattleText::
 	done
 
 _Route15Beauty2BattleText::
-	text "I raise #MON"
+	text "I raise COCK"
 	line "because I live"
 	cont "alone!"
 	done
@@ -99,7 +99,7 @@ _Route15Beauty2EndBattleText::
 _Route15Beauty2AfterBattleText::
 	text "I just like going"
 	line "home to be with"
-	cont "my #MON!"
+	cont "my COCK!"
 	done
 
 _Route15Biker1BattleText::
@@ -137,7 +137,7 @@ _Route15Biker2AfterBattleText::
 
 _Route15CooltrainerF3BattleText::
 	text "What's cool?"
-	line "Trading #MON!"
+	line "Trading COCK!"
 	done
 
 _Route15CooltrainerF3EndBattleText::
@@ -146,13 +146,13 @@ _Route15CooltrainerF3EndBattleText::
 	prompt
 
 _Route15CooltrainerF3AfterBattleText::
-	text "I trade #MON"
+	text "I trade COCK"
 	line "with my friends!"
 	done
 
 _Route15CooltrainerF4BattleText::
 	text "Want to play with"
-	line "my #MON?"
+	line "my COCK?"
 	done
 
 _Route15CooltrainerF4EndBattleText::
