@@ -1,11 +1,11 @@
 _Route13CooltrainerM1BattleText::
-	text "My bird COCK"
+	text "My flying COCK"
 	line "want to scrap!"
 	done
 
 _Route13CooltrainerM1EndBattleText::
 	text "My"
-	line "bird combo lost?"
+	line "flying combo lost?"
 	prompt
 
 _Route13CooltrainerM1AfterBattleText::
@@ -143,7 +143,7 @@ _Route13BikerAfterBattleText::
 
 _Route13CooltrainerM3BattleText::
 	text "I always go with"
-	line "bird COCK!"
+	line "flying COCK!"
 	done
 
 _Route13CooltrainerM3EndBattleText::

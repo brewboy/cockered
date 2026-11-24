@@ -150,8 +150,9 @@ _CinnabarGymSuperNerd5EndBattleText::
 _CinnabarGymSuperNerd5AfterBattleText::
 	text "BLAINE was lost"
 	line "in the mountains"
-	cont "when a fiery bird"
-	cont "COCK appeared."
+	cont "when a fiery,"
+	cont "flying COCK"
+	cont "appeared."
 
 	para "Its light enabled"
 	line "BLAINE to find"

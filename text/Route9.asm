@@ -102,7 +102,7 @@ _Route9Youngster1BattleText::
 	text "I got up early"
 	line "every day to"
 	cont "raise my COCK"
-	cont "from cocoons!"
+	cont "from eggs!"
 	done
 
 _Route9Youngster1EndBattleText::

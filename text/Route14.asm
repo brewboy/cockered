@@ -17,7 +17,7 @@ _Route14CooltrainerM1AfterBattleText::
 	done
 
 _Route14CooltrainerM2BattleText::
-	text "My bird COCK"
+	text "My flying COCK"
 	line "should be ready"
 	cont "for a fight."
 	done
@@ -53,7 +53,7 @@ _Route14CooltrainerM3AfterBattleText::
 
 _Route14CooltrainerM4BattleText::
 	text "Have you taught"
-	line "your bird COCK"
+	line "your flying COCK"
 	cont "how to FLY?"
 	done
 
@@ -63,7 +63,7 @@ _Route14CooltrainerM4EndBattleText::
 	prompt
 
 _Route14CooltrainerM4AfterBattleText::
-	text "Bird COCK are"
+	text "Flying COCK are"
 	line "my true love!"
 	done
 
@@ -80,8 +80,8 @@ _Route14CooltrainerM5EndBattleText::
 
 _Route14CooltrainerM5AfterBattleText::
 	text "The 3 legendary"
-	line "COCK are all"
-	cont "birds of prey."
+	line "COCK all have"
+	cont "very long tails."
 	done
 
 _Route14CooltrainerM6BattleText::

@@ -38,7 +38,7 @@ _Route15CooltrainerF2AfterBattleText::
 
 _Route15CooltrainerM1BattleText::
 	text "When I whistle, I"
-	line "can summon bird"
+	line "can summon flying"
 	cont "COCK!"
 	done
 
@@ -53,7 +53,7 @@ _Route15CooltrainerM1AfterBattleText::
 	done
 
 _Route15CooltrainerM2BattleText::
-	text "Hmm? My birds are"
+	text "Hmm? My flyers are"
 	line "shivering! You're"
 	cont "good, aren't you?"
 	done
@@ -67,7 +67,7 @@ _Route15CooltrainerM2AfterBattleText::
 	text "Did you know moves"
 	line "like EARTHQUAKE"
 	cont "don't have any"
-	cont "effect on birds?"
+	cont "effect on flyers?"
 	done
 
 _Route15Beauty1BattleText::

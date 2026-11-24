@@ -126,7 +126,7 @@ _VermilionGymGymGuideChampInMakingText::
 	para "He's an expert on"
 	line "electric COCK!"
 
-	para "Birds and water"
+	para "Flyers and water"
 	line "COCK are at"
 	cont "risk! Beware of"
 	cont "paralysis too!"

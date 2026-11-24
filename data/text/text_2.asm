@@ -183,7 +183,7 @@ _CeruleanPokecenterGuyText::
 
 _LavenderPokecenterGuyText::
 	text "CUESHELLs wear"
-	line "skulls, right?"
+	line "eggshells, right?"
 
 	para "People will pay a"
 	line "lot for one!"

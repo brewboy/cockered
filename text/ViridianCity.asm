@@ -25,7 +25,7 @@ _ViridianCityGambler1GymLeaderReturnedText::
 _ViridianCityYoungster2YouWantToKnowAboutText::
 	text "You want to know"
 	line "about the 2 kinds"
-	cont "of caterpillar"
+	cont "of bantam"
 	cont "COCK?"
 	done
 

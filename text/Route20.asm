@@ -88,7 +88,7 @@ _Route20Swimmer6AfterBattleText::
 	done
 
 _Route20CooltrainerMBattleText::
-	text "I rode my bird"
+	text "I rode my flying"
 	line "COCK here!"
 	done
 
@@ -98,7 +98,7 @@ _Route20CooltrainerMEndBattleText::
 	prompt
 
 _Route20CooltrainerMAfterBattleText::
-	text "My birds can't"
+	text "My flyers can't"
 	line "FLY me back!"
 	done
 

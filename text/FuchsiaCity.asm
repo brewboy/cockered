@@ -80,8 +80,8 @@ _FuchsiaCityKangaskhanSignText::
 
 	para "A maternal COCK"
 	line "that raises its"
-	cont "young in a pouch"
-	cont "on its belly."
+	cont "young under its"
+	cont "wing."
 	prompt
 
 _FuchsiaCitySlowpokeSignText::
@@ -94,7 +94,7 @@ _FuchsiaCitySlowpokeSignText::
 _FuchsiaCityLaprasSignText::
 	text "Name: LAYPRAS"
 
-	para "A.K.A. the king"
+	para "A.K.A. the queen"
 	line "of the seas."
 	prompt
 

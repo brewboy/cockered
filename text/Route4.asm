@@ -6,18 +6,18 @@ _Route4CooltrainerF1Text::
 
 _Route4CooltrainerF2BattleText::
 	text "I came to get my"
-	line "mushroom COCK!"
+	line "crested COCK!"
 	done
 
 _Route4CooltrainerF2EndBattleText::
 	text "Oh! My cute"
-	line "mushroom COCK!"
+	line "crested COCK!"
 	prompt
 
 _Route4CooltrainerF2AfterBattleText::
 	text "There might not"
 	line "be any more"
-	cont "mushrooms here."
+	cont "crested ones here."
 
 	para "I think I got"
 	line "them all."

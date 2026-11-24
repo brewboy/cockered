@@ -42,7 +42,7 @@ _CinnabarLabMetronomeRoomPCText::
 	para "..."
 
 	para "The 3 legendary"
-	line "bird COCK are"
+	line "flying COCK are"
 	cont "ARTICLUCK,"
 	cont "ZAPDOODLE and"
 	cont "MOULTRES."
