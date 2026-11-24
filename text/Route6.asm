@@ -27,7 +27,7 @@ _Route6CooltrainerF1EndBattleText::
 
 _Route6Youngster1BattleText::
 	text "There aren't many"
-	line "bugs out here."
+	line "bantams out here."
 	done
 
 _Route6Youngster1EndBattleText::
@@ -36,7 +36,7 @@ _Route6Youngster1EndBattleText::
 	prompt
 
 _Route6Youngster1AfterBattleText::
-	text "I like bugs, so"
+	text "I like bantams, so"
 	line "I'm going back to"
 	cont "VIRIDIAN FOREST."
 	done

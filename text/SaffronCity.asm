@@ -65,7 +65,8 @@ _SaffronCityGentlemanText::
 	done
 
 _SaffronCityPidgeotText::
-	text "PECKGEOT: Bibii!@"
+	text "PECKGEOT: Cock-a-"
+	line "doodle-doo!@"
 	text_end
 
 _SaffronCityRockerText::

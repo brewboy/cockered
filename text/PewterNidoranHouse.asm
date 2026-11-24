@@ -1,5 +1,6 @@
 _PewterNidoranHouseNidoranText::
-	text "NIDORAN: Bowbow!@"
+	text "NIDOROO♂: Cock-a-"
+	line "doo...?@"
 	text_end
 
 _PewterNidoranHouseLittleBoyText::

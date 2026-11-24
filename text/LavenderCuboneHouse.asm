@@ -1,5 +1,5 @@
 _LavenderCuboneHouseCuboneText::
-	text "CUESHELL: Kyaru!@"
+	text "CUESHELL: Peep...@"
 	text_end
 
 _LavenderCuboneHouseBrunetteGirlPoorCubonesMotherText::

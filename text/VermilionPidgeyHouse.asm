@@ -6,7 +6,7 @@ _VermilionPidgeyHouseYoungsterText::
 	done
 
 _VermilionPidgeyHousePidgeyText::
-	text "PECKGEY: Kurukkoo!@"
+	text "PECKGEY: Bok bok!@"
 	text_end
 
 _VermilionPidgeyHouseLetterText::

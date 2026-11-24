@@ -28,11 +28,12 @@ _MrFujisHouseLittleGirlPokemonAreNiceToHugText::
 	done
 
 _MrFujisHousePsyduckText::
-	text "PSYCHICK: Gwappa!@"
+	text "PSYCHICK: Quack!@"
 	text_end
 
 _MrFujisHouseNidorinoText::
-	text "NIDOROOST: Gaoo!@"
+	text "NIDOROOST: Cock-a-"
+	line "doodle-doo!@"
 	text_end
 
 _MrFujisHouseMrFujiIThinkThisMayHelpYourQuestText::

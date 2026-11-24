@@ -67,8 +67,8 @@ _VermilionCityGambler2Text::
 	done
 
 _VermilionCityMachopText::
-	text "MACHICK: Guoh!"
-	line "Gogogoh!@"
+	text "MACHICK: Peep!"
+	line "Peepeepeep!@"
 	text_end
 
 _VermilionCityMachopStompingTheLandFlatText::

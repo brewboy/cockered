@@ -72,8 +72,8 @@ _CeladonCityFisherText::
 	done
 
 _CeladonCityPoliwrathText::
-	text "POLIROOST: Ribi"
-	line "ribit!@"
+	text "POLIROOST: Cock-a-"
+	line "doodle-doo!@"
 	text_end
 
 _CeladonCityRocket1Text::

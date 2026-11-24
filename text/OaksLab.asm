@@ -39,7 +39,7 @@ _OaksLabYouWantSquirtleText::
 
 _OaksLabYouWantBulbasaurText::
 	text "So! You want the"
-	line "plant COCK,"
+	line "grass COCK,"
 	cont "BULBACLUCK?"
 	done
 

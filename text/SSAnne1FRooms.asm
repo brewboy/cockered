@@ -1,6 +1,6 @@
 _SSAnne1FRoomsWigglytuffText::
-	text "SILKYTUFF: Puup"
-	line "pupuu!@"
+	text "SILKYTUFF: Cluck"
+	line "cluck!@"
 	text_end
 
 _SSAnne1FRoomsGentleman1BattleText::

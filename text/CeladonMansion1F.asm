@@ -1,5 +1,5 @@
 _CeladonMansion1FMeowthText::
-	text "BAWKTH: Meow!@"
+	text "BAWKTH: Bawk!@"
 	text_end
 
 _CeladonMansion1FGrannyText::
@@ -11,13 +11,13 @@ _CeladonMansion1FGrannyText::
 	done
 
 _CeladonMansion1FClefairyText::
-	text "CLUCKFAIRY: Pi"
-	line "pippippi!@"
+	text "CLUCKFAIRY: Cluck"
+	line "cluckcluck!@"
 	text_end
 
 _CeladonMansion1FNidoranFText::
-	text "NIDORAN: Kya"
-	line "kyaoo!@"
+	text "NIDOHEN♀: Buk"
+	line "bukbuk!@"
 	text_end
 
 _CeladonMansion1FManagersSuiteSignText::
