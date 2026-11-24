@@ -40,7 +40,7 @@ MoveNames::
 	li "THRASH"
 	li "DOUBLE-EDGE"
 	li "TAIL WHIP"
-	li "POISON STING"
+	li "POISON SPUR"
 	li "TWINEEDLE"
 	li "PIN MISSILE"
 	li "LEER"
