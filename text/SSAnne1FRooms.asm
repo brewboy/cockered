@@ -101,5 +101,6 @@ _SSAnne1FRoomsGentleman3Text::
 	line "POLICE agent!"
 
 	para "I'm on the trail"
-	line "of TEAM ROOST!"
+	line "of TEAM ROOST's"
+	cont "bookies!"
 	done

@@ -23,7 +23,7 @@ _LancesRoomLanceBeforeBattleText::
 	para "Well, are you"
 	line "ready to lose?"
 
-	para "Your LEAGUE"
+	para "Your RING"
 	line "challenge ends"
 	cont "with me, <PLAYER>!"
 	done
@@ -43,7 +43,7 @@ _LancesRoomLanceAfterBattleText::
 	cont "you, <PLAYER>!"
 
 	para "You are now the"
-	line "COCK LEAGUE"
+	line "COCK RING"
 	cont "champion!"
 
 	para "...Or, you would"
@@ -60,6 +60,6 @@ _LancesRoomLanceAfterBattleText::
 	cont "FOUR before you!"
 
 	para "He is the real"
-	line "COCK LEAGUE"
+	line "COCK RING"
 	cont "champion!@"
 	text_end

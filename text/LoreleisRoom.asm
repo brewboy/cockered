@@ -1,6 +1,6 @@
 _LoreleisRoomLoreleiBeforeBattleText::
 	text "Welcome to"
-	line "COCK LEAGUE!"
+	line "the COCK RING!"
 
 	para "I am LORELEI of"
 	line "the ELITE FOUR!"
@@ -32,8 +32,8 @@ _LoreleisRoomLoreleiAfterBattleText::
 	cont "Go on ahead!"
 
 	para "You only got a"
-	line "taste of COCK"
-	cont "LEAGUE power!"
+	line "taste of the COCK"
+	cont "RING's power!"
 	done
 
 _LoreleisRoomLoreleiDontRunAwayText::

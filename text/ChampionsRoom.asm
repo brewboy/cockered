@@ -22,7 +22,7 @@ _ChampionsRoomRivalIntroText::
 	para "And now!"
 
 	para "I'm the COCK"
-	line "LEAGUE champion!"
+	line "RING champion!"
 
 	para "<PLAYER>! Do you"
 	line "know what that"
@@ -42,7 +42,7 @@ _RivalDefeatedText::
 
 	para "After all that"
 	line "work to become"
-	cont "LEAGUE champ?"
+	cont "RING champ?"
 
 	para "My reign is over"
 	line "already?"
@@ -75,7 +75,7 @@ _ChampionsRoomRivalAfterBattleText::
 
 	para "Darn it! You're"
 	line "the new COCK"
-	cont "LEAGUE champion!"
+	cont "RING champion!"
 
 	para "Although I don't"
 	line "like to admit it."
@@ -89,7 +89,7 @@ _ChampionsRoomOakCongratulatesPlayerText::
 	text "OAK: So, you won!"
 	line "Congratulations!"
 	cont "You're the new"
-	cont "COCK LEAGUE"
+	cont "COCK RING"
 	cont "champion!"
 
 	para "You've grown up so"

@@ -67,7 +67,7 @@ _PewterGymBrockBoulderBadgeInfoText::
 	text_start
 
 	para "That's an official"
-	line "COCK LEAGUE"
+	line "COCK RING"
 	cont "BADGE!"
 
 	para "Its bearer's"

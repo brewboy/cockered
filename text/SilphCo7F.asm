@@ -194,7 +194,7 @@ _SilphCo7FRivalGoodLuckToYouText::
 	cont "how they evolve!"
 
 	para "I'm going to the"
-	line "COCK LEAGUE"
+	line "COCK RING"
 	cont "to boot out the"
 	cont "ELITE FOUR!"
 

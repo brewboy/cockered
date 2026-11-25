@@ -4,15 +4,13 @@ _VermilionMartCooltrainerMText::
 	cont "use COCK for"
 	cont "criminal acts."
 
-	para "TEAM ROOST"
-	line "traffics in rare"
-	cont "COCK."
+	para "TEAM ROOST runs"
+	line "the fights and"
+	cont "fixes the bets."
 
-	para "They also abandon"
-	line "COCK that they"
-	cont "consider not to"
-	cont "be popular or"
-	cont "useful."
+	para "They dump any"
+	line "COCK that loses"
+	cont "them money."
 	done
 
 _VermilionMartCooltrainerFText::

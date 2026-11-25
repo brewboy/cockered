@@ -7,7 +7,7 @@ _SaffronPokecenterBeautyText::
 _SaffronPokecenterGentlemanText::
 	text "SILPH breeds the"
 	line "COCK for every"
-	cont "LEAGUE gym."
+	cont "RING gym."
 
 	para "That's why it"
 	line "attracted TEAM"

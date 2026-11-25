@@ -31,8 +31,8 @@ _SaffronCityRocket6Text::
 _SaffronCityRocket7Text::
 	text "With SILPH under"
 	line "control, the"
-	cont "LEAGUE is just"
-	cont "another pit!"
+	cont "RING is ours"
+	cont "too!"
 	done
 
 _SaffronCityScientistText::

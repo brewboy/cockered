@@ -199,7 +199,7 @@ _CeruleanCitySuperNerd3Text::
 	cont "strong COCK"
 	cont "live in there!"
 
-	para "The COCK LEAGUE"
+	para "The COCK RING"
 	line "champion is the"
 	cont "only person who"
 	cont "is allowed in!"
