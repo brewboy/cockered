@@ -107,7 +107,7 @@ MapHeaderBanks::
 	db BANK(SSAnne2FRooms_h)
 	db BANK(SSAnneB1FRooms_h)
 	db BANK(JunglefowlHut_h) ; JUNGLEFOWL_HUT
-	db $1D ; UNUSED_MAP_6A
+	db BANK(JunglefowlRoost_h) ; JUNGLEFOWL_ROOST
 	db $1D ; UNUSED_MAP_6B
 	db BANK(VictoryRoad1F_h)
 	db $1D ; UNUSED_MAP_6D

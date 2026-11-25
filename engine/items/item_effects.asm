@@ -1496,6 +1496,8 @@ ItemUseEscapeRope:
 	ld a, [wCurMap]
 	cp AGATHAS_ROOM
 	jr z, .notUsable
+	cp JUNGLEFOWL_ROOST ; no escaping the island
+	jr z, .notUsable
 	ld a, [wCurMapTileset]
 	ld b, a
 	ld hl, EscapeRopeTilesets

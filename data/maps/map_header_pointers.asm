@@ -107,7 +107,7 @@ MapHeaderPointers::
 	dw SSAnne2FRooms_h
 	dw SSAnneB1FRooms_h
 	dw JunglefowlHut_h ; JUNGLEFOWL_HUT
-	dw LancesRoom_h ; UNUSED_MAP_6A
+	dw JunglefowlRoost_h ; JUNGLEFOWL_ROOST
 	dw LancesRoom_h ; UNUSED_MAP_6B
 	dw VictoryRoad1F_h
 	dw LancesRoom_h ; UNUSED_MAP_6D

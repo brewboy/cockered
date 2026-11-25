@@ -1232,3 +1232,8 @@ INCLUDE "data/maps/headers/JunglefowlHut.asm"
 INCLUDE "scripts/JunglefowlHut.asm"
 INCLUDE "data/maps/objects/JunglefowlHut.asm"
 JunglefowlHut_Blocks: INCBIN "maps/JunglefowlHut.blk"
+
+INCLUDE "data/maps/headers/JunglefowlRoost.asm"
+INCLUDE "scripts/JunglefowlRoost.asm"
+INCLUDE "data/maps/objects/JunglefowlRoost.asm"
+JunglefowlRoost_Blocks: INCBIN "maps/JunglefowlRoost.blk"

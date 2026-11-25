@@ -424,6 +424,9 @@ ToggleableObjectStates:
 	toggle_object_state JUNGLEFOWLISLAND_WATCHER,   ON
 	toggle_object_state JUNGLEFOWLISLAND_VINE_ROPE, ON
 
+	toggleable_objects_for JUNGLEFOWL_ROOST
+	toggle_object_state JUNGLEFOWLROOST_LEADER,     ON
+
 	assert_table_length NUM_TOGGLEABLE_OBJECTS
 
 	db -1, 1, ON ; end
