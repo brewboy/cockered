@@ -15,12 +15,12 @@ _SaffronCityRocket3Text::
 
 _SaffronCityRocket4Text::
 	text "SAFFRON belongs"
-	line "to TEAM ROCKET!"
+	line "to TEAM ROOST!"
 	done
 
 _SaffronCityRocket5Text::
-	text "Being evil makes"
-	line "me feel so alive!"
+	text "The house always"
+	line "wins!"
 	done
 
 _SaffronCityRocket6Text::
@@ -30,19 +30,19 @@ _SaffronCityRocket6Text::
 
 _SaffronCityRocket7Text::
 	text "With SILPH under"
-	line "control, we can"
-	cont "exploit COCK"
-	cont "around the world!"
+	line "control, the"
+	cont "RING is ours"
+	cont "too!"
 	done
 
 _SaffronCityScientistText::
 	text "You beat TEAM"
-	line "ROCKET all alone?"
+	line "ROOST all alone?"
 	cont "That's amazing!"
 	done
 
 _SaffronCitySilphWorkerMText::
-	text "Yeah! TEAM ROCKET"
+	text "Yeah! TEAM ROOST"
 	line "is gone!"
 	cont "It's safe to go"
 	cont "out again!"
@@ -65,11 +65,12 @@ _SaffronCityGentlemanText::
 	done
 
 _SaffronCityPidgeotText::
-	text "PECKGEOT: Bibii!@"
+	text "PECKGEOT: Cock-a-"
+	line "doodle-doo!@"
 	text_end
 
 _SaffronCityRockerText::
-	text "I saw ROCKET"
+	text "I saw ROOST"
 	line "BOSS escaping"
 	cont "SILPH's building."
 	done

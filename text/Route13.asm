@@ -64,8 +64,9 @@ _Route13CooltrainerF3AfterBattleText::
 	done
 
 _Route13CooltrainerF4BattleText::
-	text "I found CARBOS in"
-	line "a cave once."
+	text "I found CRACKD"
+	line "GRAIN in a cave"
+	cont "once."
 	done
 
 _Route13CooltrainerF4EndBattleText::
@@ -74,9 +75,9 @@ _Route13CooltrainerF4EndBattleText::
 	prompt
 
 _Route13CooltrainerF4AfterBattleText::
-	text "CARBOS boosted"
-	line "the SPEED of my"
-	cont "COCK."
+	text "CRACKD GRAIN"
+	line "boosted the SPEED"
+	cont "of my COCK."
 	done
 
 _Route13CooltrainerM2BattleText::

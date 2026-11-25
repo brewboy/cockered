@@ -201,6 +201,11 @@ In-game names (in **bold**) are max 10 characters (`NAME_LENGTH - 1`) and live i
 - The ROM is GBC-compatible (`rgbfix -c`) and still runs on DMG and SGB. On a GBC, `engine/gfx/cgb_palettes.asm` turns the SGB palette commands into GBC palettes and BG attribute maps, and VBlank rebuilds the colours whenever `rBGP`/`rOBP0`/`rOBP1` change, so fades and flashes work unchanged. The palette engine lives in its own "Palettes" section (bank $2C).
 - Each species except Farfetch'd has its own palette (`PAL_ROOSTER + n`), generated from the colour fronts by `python3 tools/make_rooster_palettes.py`, which writes `data/sgb/rooster_palettes.asm` and `data/pokemon/palettes.asm`. Re-run it after changing the art.
 
+## Trainer classes
+
+- Renamed classes: BANTAM BOY (Bug Catcher), FLOCK KEEPER (Bird Keeper), EGG JUGGLER, EGG THIEF (Burglar), EGGHEAD (Cue Ball) and WRANGLER (Tamer), in `data/trainers/names.asm`.
+- `python3 tools/draw_rooster_trainers.py` patches their battle pictures in `gfx/trainers/`: eggs instead of Poke Balls for the juggler, a hen on the flock keeper's hand, and an egg in the thief's sack. Running it again changes nothing; pass a folder for before/after previews. Run `make` afterwards.
+
 ## Title screen and signs
 
 - The title keeps the original POKéMON logo; the edition line under it reads "Rhode Island Red" (Red) or "Blue Wyandotte" (Blue). `python3 tools/draw_rooster_version.py` draws both into `gfx/title/red_version.png` and `blue_version.png` (80×8, 10 tiles, centred, in the original's small bold font), and `PrintGameVersionOnTitleScreen` in `engine/movie/title.asm` places them centred under the logo. Run `make` afterwards.

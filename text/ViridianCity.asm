@@ -39,7 +39,7 @@ ViridianCityYoungster2CaterpieAndWeedleDescriptionText::
 	cont "TWEEDLE does."
 
 	para "Watch out for its"
-	line "POISON STING!"
+	line "POISON SPUR!"
 	done
 
 _ViridianCityGirlHasntHadHisCoffeeYetText::

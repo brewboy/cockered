@@ -14,7 +14,7 @@ _PewterCityCooltrainerMText::
 	cont "trainers here!"
 
 	para "They're all like"
-	line "BUG CATCHERs,"
+	line "BANTAM BOYs,"
 	cont "but PEWTER GYM's"
 	cont "BROCK is totally"
 	cont "into it!"

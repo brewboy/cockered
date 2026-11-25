@@ -4,7 +4,7 @@ _ViridianGymGiovanniPreBattleText::
 
 	para "I planned to"
 	line "resurrect TEAM"
-	cont "ROCKET here!"
+	cont "ROOST here!"
 
 	para "But, you have"
 	line "caught me again!"
@@ -31,15 +31,26 @@ _ViridianGymGiovanniPostBattleAdviceText::
 	text "Having lost, I"
 	line "cannot face my"
 	cont "underlings!"
-	cont "TEAM ROCKET is"
-	cont "finished forever!"
 
-	para "I will dedicate my"
-	line "life to the study"
-	cont "of COCK!"
+	para "But think, kid."
+	line "Every fight you"
+	cont "won, someone paid"
+	cont "you."
+
+	para "You're not my"
+	line "enemy. You're the"
+	cont "best earner I"
+	cont "never had!"
+
+	para "TEAM ROOST is"
+	line "finished. Why run"
+	cont "a crooked ring"
+	cont "when the COCK"
+	cont "RING pays the"
+	cont "same, legally?"
 
 	para "Let us meet again"
-	line "some day!"
+	line "ringside!"
 	cont "Farewell!@"
 	text_end
 
@@ -54,11 +65,11 @@ _ViridianGymGiovanniEarthBadgeInfoText::
 
 	para "With it, you can"
 	line "enter the COCK"
-	cont "LEAGUE!"
+	cont "RING!"
 
 	para "It is my gift for"
 	line "your COCK"
-	cont "LEAGUE challenge!"
+	cont "RING challenge!"
 	done
 
 _ViridianGymGiovanniReceivedTM27Text::
@@ -175,7 +186,7 @@ _ViridianGymHiker3EndBattleText::
 	prompt
 
 _ViridianGymHiker3AfterBattleText::
-	text "COCK LEAGUE?"
+	text "COCK RING?"
 	line "You? Don't get"
 	cont "cocky!"
 	done
@@ -210,7 +221,7 @@ _ViridianGymCooltrainerM3EndBattleText::
 
 _ViridianGymCooltrainerM3AfterBattleText::
 	text "You can go onto"
-	line "COCK LEAGUE"
+	line "the COCK RING"
 	cont "only by defeating"
 	cont "our GYM LEADER!"
 	done

@@ -7,7 +7,7 @@ _HallOfFameOakText::
 	line "COCK HALL OF"
 	cont "FAME!"
 
-	para "COCK LEAGUE"
+	para "COCK RING"
 	line "champions are"
 	cont "honored for their"
 	cont "exploits here!"
@@ -19,7 +19,14 @@ _HallOfFameOakText::
 	para "<PLAYER>! You have"
 	line "endeavored hard"
 	cont "to become the new"
-	cont "LEAGUE champion!"
+	cont "RING champion!"
+
+	para "Your fights drew"
+	line "the biggest crowds"
+	cont "in RING history!"
+
+	para "Everyone did very"
+	line "well out of you!"
 
 	para "Congratulations,"
 	line "<PLAYER>, you and"

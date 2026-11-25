@@ -1,5 +1,5 @@
 _SilphCo6FSilphWorkerM1TookOverTheBuildingText::
-	text "The ROCKETs came"
+	text "The ROOSTs came"
 	line "and took over the"
 	cont "building!"
 	done
@@ -31,14 +31,14 @@ _SilphCo6FSilphWorkerF1HaveToMarryHimText::
 	done
 
 _SilphCo6FSilphWorkerF2TeamRocketConquerWorldText::
-	text "TEAM ROCKET is"
-	line "trying to conquer"
-	cont "the world with"
-	cont "COCK!"
+	text "TEAM ROOST wants"
+	line "every COCK FIGHT"
+	cont "in the world to"
+	cont "pay out to them!"
 	done
 
 _SilphCo6FSilphWorkerF2TeamRocketRanText::
-	text "TEAM ROCKET ran"
+	text "TEAM ROOST ran"
 	line "because of you!"
 	done
 
@@ -46,7 +46,7 @@ _SilphCo6FSilphWorkerM3TargetedSilphText::
 	text "They must have"
 	line "targeted SILPH"
 	cont "for our COCK"
-	cont "products."
+	cont "bloodlines."
 	done
 
 _SilphCo6FSilphWorkerM3WorkForSilphText::
@@ -57,7 +57,7 @@ _SilphCo6FSilphWorkerM3WorkForSilphText::
 
 _SilphCo6FRocket1BattleText::
 	text "I am one of the 4"
-	line "ROCKET BROTHERS!"
+	line "ROOST BROTHERS!"
 	done
 
 _SilphCo6FRocket1EndBattleText::
@@ -92,7 +92,7 @@ _SilphCo6FScientistAfterBattleText::
 
 _SilphCo6FRocket2BattleText::
 	text "You dare betray"
-	line "TEAM ROCKET?"
+	line "TEAM ROOST?"
 	done
 
 _SilphCo6FRocket2EndBattleText::

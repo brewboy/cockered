@@ -39,6 +39,8 @@ _SilphCo11FSilphPresidentMasterBallDescriptionText::
 	line "COCK without"
 	cont "fail!"
 
+	para "A sure thing!"
+
 	para "You should be"
 	line "quiet about using"
 	cont "it, though."
@@ -85,13 +87,13 @@ _SilphCo11FGiovanniYouRuinedOurPlansText::
 	line "You ruined our"
 	cont "plans for SILPH!"
 
-	para "But, TEAM ROCKET"
+	para "But, TEAM ROOST"
 	line "will never fall!"
 
-	para "<PLAYER>! Never"
-	line "forget that all"
-	cont "COCK exist"
-	cont "for TEAM ROCKET!"
+	para "<PLAYER>! Every"
+	line "bet you ever won"
+	cont "came out of"
+	cont "someone's loss!"
 
 	para "I must go, but I"
 	line "shall return!"

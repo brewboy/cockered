@@ -1,14 +1,17 @@
 _PewterPokecenterGentlemanText::
 	text "What!?"
 
-	para "TEAM ROCKET is"
+	para "TEAM ROOST is"
 	line "at MT.MOON? Huh?"
 	cont "I'm on the phone!"
+
+	para "...Yeah, put ¥500"
+	line "on BROCK to win!"
 
 	para "Scram!"
 	done
 
 _PewterPokecenterJigglypuffText::
-	text "SILKYPUFF: Puu"
-	line "pupuu!"
+	text "SILKYPUFF: Cluu"
+	line "cluuluu!"
 	done

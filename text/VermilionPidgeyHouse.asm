@@ -6,7 +6,7 @@ _VermilionPidgeyHouseYoungsterText::
 	done
 
 _VermilionPidgeyHousePidgeyText::
-	text "PECKGEY: Kurukkoo!@"
+	text "PECKGEY: Bok bok!@"
 	text_end
 
 _VermilionPidgeyHouseLetterText::
@@ -15,7 +15,7 @@ _VermilionPidgeyHouseLetterText::
 
 	para "I heard SAFFRON"
 	line "has problems with"
-	cont "TEAM ROCKET."
+	cont "TEAM ROOST."
 
 	para "VERMILION appears"
 	line "to be safe."

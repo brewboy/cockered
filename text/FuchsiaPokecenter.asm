@@ -13,8 +13,8 @@ _FuchsiaPokecenterCooltrainerFText::
 	line "trail west of"
 	cont "VIRIDIAN CITY."
 
-	para "It goes to COCK"
-	line "LEAGUE HQ."
+	para "It goes to the"
+	line "COCK RING HQ."
 	cont "The HQ governs"
 	cont "all trainers."
 	done

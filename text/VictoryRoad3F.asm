@@ -10,7 +10,7 @@ _VictoryRoad3FCooltrainerM1EndBattleText::
 
 _VictoryRoad3FCooltrainerM1AfterBattleText::
 	text "You beat GIOVANNI"
-	line "of TEAM ROCKET?"
+	line "of TEAM ROOST?"
 	done
 
 _VictoryRoad3FCooltrainerF1BattleText::
@@ -41,7 +41,7 @@ _VictoryRoad3FCooltrainerM2EndBattleText::
 _VictoryRoad3FCooltrainerM2AfterBattleText::
 	text "All trainers here"
 	line "are headed to the"
-	cont "COCK LEAGUE!"
+	cont "COCK RING!"
 	cont "Be careful!"
 	done
 

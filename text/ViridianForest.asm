@@ -20,7 +20,7 @@ _ViridianForestYoungster2EndBattleText::
 
 _ViridianForestYoungster2AfterBattleText::
 	text "Ssh! You'll scare"
-	line "the bugs away!"
+	line "the bantams away!"
 	done
 
 _ViridianForestYoungster3BattleText::

@@ -1,17 +1,17 @@
 _LavenderCuboneHouseCuboneText::
-	text "CUESHELL: Kyaru!@"
+	text "CUESHELL: Peep...@"
 	text_end
 
 _LavenderCuboneHouseBrunetteGirlPoorCubonesMotherText::
 	text "I hate those"
-	line "horrible ROCKETs!"
+	line "horrible ROOSTs!"
 
 	para "That poor"
 	line "CUESHELL's mother…"
 
-	para "It was killed"
-	line "trying to escape"
-	cont "from TEAM ROCKET!"
+	para "It wouldn't throw"
+	line "a fight, so they"
+	cont "killed it!"
 	done
 
 _LavenderCuboneHouseBrunetteGirlGhostIsGoneText::

@@ -39,7 +39,7 @@ _OaksLabYouWantSquirtleText::
 
 _OaksLabYouWantBulbasaurText::
 	text "So! You want the"
-	line "plant COCK,"
+	line "grass COCK,"
 	cont "BULBACLUCK?"
 	done
 
@@ -256,13 +256,13 @@ _OaksLabRivalIllTakeYouOnText::
 	cont "our COCK!"
 
 	para "Come on, I'll take"
-	line "you on!"
+	line "you!"
 	done
 
 _OaksLabRivalIPickedTheWrongPokemonText::
 	text "WHAT?"
 	line "Unbelievable!"
-	cont "I picked the"
+	cont "I took the"
 	cont "wrong COCK!"
 	prompt
 

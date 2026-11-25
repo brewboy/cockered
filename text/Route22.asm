@@ -3,7 +3,7 @@ _Route22RivalBeforeBattleText1::
 	line "<PLAYER>!"
 
 	para "You're going to"
-	line "COCK LEAGUE?"
+	line "the COCK RING?"
 
 	para "Forget it! You"
 	line "probably don't"
@@ -18,8 +18,8 @@ _Route22RivalBeforeBattleText1::
 	done
 
 _Route22RivalAfterBattleText1::
-	text "I heard COCK"
-	line "LEAGUE has many"
+	text "I heard the COCK"
+	line "RING has many"
 	cont "tough trainers!"
 
 	para "I have to figure"
@@ -53,7 +53,7 @@ _Route22RivalBeforeBattleText2::
 	cont "you here!"
 
 	para "So you're going to"
-	line "COCK LEAGUE?"
+	line "the COCK RING?"
 
 	para "You collected all"
 	line "the BADGEs too?"
@@ -62,7 +62,7 @@ _Route22RivalBeforeBattleText2::
 	para "Then I'll whip you"
 	line "<PLAYER> as a"
 	cont "warm up for"
-	cont "COCK LEAGUE!"
+	cont "the COCK RING!"
 
 	para "Come on!"
 	done
@@ -70,7 +70,7 @@ _Route22RivalBeforeBattleText2::
 _Route22RivalAfterBattleText2::
 	text "That loosened me"
 	line "up! I'm ready for"
-	cont "COCK LEAGUE!"
+	cont "the COCK RING!"
 
 	para "<PLAYER>, you need"
 	line "more practice!"
@@ -99,6 +99,6 @@ _Route22Rival2VictoryText::
 	prompt
 
 _Route22PokemonLeagueSignText::
-	text "COCK LEAGUE"
+	text "COCK RING"
 	line "Front Gate"
 	done

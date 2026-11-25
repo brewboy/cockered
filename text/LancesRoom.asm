@@ -8,8 +8,9 @@ _LancesRoomLanceBeforeBattleText::
 	cont "dragon trainer!"
 
 	para "You know that"
-	line "dragons are"
-	cont "mythical COCK!"
+	line "dragons are the"
+	cont "wild ancestors of"
+	cont "all COCK!"
 
 	para "They're hard to"
 	line "catch and raise,"
@@ -22,7 +23,7 @@ _LancesRoomLanceBeforeBattleText::
 	para "Well, are you"
 	line "ready to lose?"
 
-	para "Your LEAGUE"
+	para "Your RING"
 	line "challenge ends"
 	cont "with me, <PLAYER>!"
 	done
@@ -42,7 +43,7 @@ _LancesRoomLanceAfterBattleText::
 	cont "you, <PLAYER>!"
 
 	para "You are now the"
-	line "COCK LEAGUE"
+	line "COCK RING"
 	cont "champion!"
 
 	para "...Or, you would"
@@ -59,6 +60,6 @@ _LancesRoomLanceAfterBattleText::
 	cont "FOUR before you!"
 
 	para "He is the real"
-	line "COCK LEAGUE"
+	line "COCK RING"
 	cont "champion!@"
 	text_end

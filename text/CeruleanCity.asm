@@ -63,9 +63,9 @@ _CeruleanCityRocketText::
 	line "It's not your"
 	cont "yard! Huh? Me?"
 
-	para "I'm an innocent"
-	line "bystander! Don't"
-	cont "you believe me?"
+	para "I'm just a bookie"
+	line "collecting a debt!"
+	cont "Honest!"
 	done
 
 _CeruleanCityRocketReceivedTM28Text::
@@ -95,8 +95,9 @@ _CeruleanCityRocketIGiveUpText::
 	prompt
 
 _CeruleanCityRocketIllReturnTheTMText::
-	text "OK! I'll return"
-	line "the TM I stole!"
+	text "OK! Here's the TM."
+	line "The old man can"
+	cont "owe us instead!"
 	prompt
 
 _CeruleanCityCooltrainerMText::
@@ -126,14 +127,15 @@ _CeruleanCityGuardText::
 	text "The people here"
 	line "were robbed."
 
-	para "It's obvious that"
-	line "TEAM ROCKET is"
-	cont "behind this most"
-	cont "heinous crime!"
+	para "Folks say the old"
+	line "man lost big on"
+	cont "the fights, and"
+	cont "TEAM ROOST came"
+	cont "to collect!"
 
 	para "Even our POLICE"
 	line "force has trouble"
-	cont "with the ROCKETs!"
+	cont "with the ROOSTs!"
 	done
 
 _CeruleanCityCooltrainerF1SlowbroUseSonicboomText::
@@ -197,7 +199,7 @@ _CeruleanCitySuperNerd3Text::
 	cont "strong COCK"
 	cont "live in there!"
 
-	para "The COCK LEAGUE"
+	para "The COCK RING"
 	line "champion is the"
 	cont "only person who"
 	cont "is allowed in!"

@@ -89,7 +89,7 @@ SomeonesPCText:   db "SOMEONE's PC@"
 BillsPCText:      db "BILL's PC@"
 PlayersPCText:    db "'s PC@"
 OaksPCText:       db "PROF.OAK's PC@"
-PKMNLeaguePCText: db "COCK LEAGUE@"
+PKMNLeaguePCText: db "COCK RING@"
 LogOffPCText:     db "LOG OFF@"
 
 BillsPC_::

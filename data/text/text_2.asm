@@ -264,11 +264,11 @@ _SaffronCityPokecenterGuyText1::
 	text "It would be great"
 	line "if the ELITE FOUR"
 	cont "came and stomped"
-	cont "TEAM ROCKET!"
+	cont "TEAM ROOST!"
 	done
 
 _SaffronCityPokecenterGuyText2::
-	text "TEAM ROCKET took"
+	text "TEAM ROOST took"
 	line "off! We can go"
 	cont "out safely again!"
 	cont "That's great!"
@@ -345,7 +345,7 @@ _CinnabarQuizQuestionsText1::
 _CinnabarQuizQuestionsText2::
 	text "There are 9"
 	line "certified COCK"
-	cont "LEAGUE BADGEs?"
+	cont "RING BADGEs?"
 	done
 
 _CinnabarQuizQuestionsText3::
@@ -423,7 +423,7 @@ _OakLabEmailText::
 	line "COCK trainers!"
 
 	para "The elite trainers"
-	line "of COCK LEAGUE"
+	line "of the COCK RING"
 	cont "are ready to take"
 	cont "on all comers!"
 
@@ -432,7 +432,7 @@ _OakLabEmailText::
 	cont "how you rate as a"
 	cont "trainer!"
 
-	para "COCK LEAGUE HQ"
+	para "COCK RING HQ"
 	line "INDIGO PLATEAU"
 
 	para "PS: PROF.OAK,"
@@ -552,7 +552,7 @@ _ViridianSchoolNotebookText4::
 	line "right to face..."
 
 	para "The ELITE FOUR of"
-	line "COCK LEAGUE!"
+	line "the COCK RING!"
 	prompt
 
 _EnemiesOnEverySideText::
@@ -571,7 +571,7 @@ _FightingDojoText::
 
 _IndigoPlateauHQText::
 	text "INDIGO PLATEAU"
-	line "COCK LEAGUE HQ"
+	line "COCK RING HQ"
 	done
 
 _RedBedroomSNESText::
@@ -789,13 +789,13 @@ _IndigoPlateauStatuesText1::
 _IndigoPlateauStatuesText2::
 	text "The ultimate goal"
 	line "of trainers!"
-	cont "COCK LEAGUE HQ"
+	cont "COCK RING HQ"
 	done
 
 _IndigoPlateauStatuesText3::
 	text "The highest"
 	line "COCK authority"
-	cont "COCK LEAGUE HQ"
+	cont "COCK RING HQ"
 	done
 
 _PokemonBooksText::
@@ -866,10 +866,11 @@ _EnemyMonFaintedText::
 	prompt
 
 _MoneyForWinningText::
-	text "<PLAYER> got ¥@"
+	text "<PLAYER> collected"
+	line "¥@"
 	text_bcd wAmountMoneyWon, 3 | LEADING_ZEROES | LEFT_ALIGN
-	text_start
-	line "for winning!"
+	text " in"
+	cont "winnings!"
 	prompt
 
 _TrainerDefeatedText::
@@ -1151,13 +1152,13 @@ _OHKOText::
 _LoafingAroundText::
 	text_ram wBattleMonNick
 	text " is"
-	line "loafing around."
+	line "scratching around."
 	prompt
 
 _BeganToNapText::
 	text_ram wBattleMonNick
 	text " began"
-	line "to nap!"
+	line "to roost!"
 	prompt
 
 _WontObeyText::
@@ -1540,7 +1541,7 @@ _TossHowManyText::
 
 _AccessedHoFPCText::
 	text "Accessed COCK"
-	line "LEAGUE's site."
+	line "RING's site."
 
 	para "Accessed the HALL"
 	line "OF FAME List."

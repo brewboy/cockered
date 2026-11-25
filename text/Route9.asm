@@ -114,8 +114,8 @@ _Route9Youngster1EndBattleText::
 
 _Route9Youngster1AfterBattleText::
 	text "I have to collect"
-	line "more than bugs to"
-	cont "get stronger..."
+	line "more than bantams"
+	cont "to get stronger..."
 	done
 
 _Route9Hiker3BattleText::
@@ -135,19 +135,20 @@ _Route9Hiker3AfterBattleText::
 	done
 
 _Route9Youngster2BattleText::
-	text "Go, my super bug"
-	line "COCK!"
+	text "Go, my super"
+	line "bantam COCK!"
 	done
 
 _Route9Youngster2EndBattleText::
 	text "My"
-	line "bugs..."
+	line "bantams..."
 	prompt
 
 _Route9Youngster2AfterBattleText::
 	text "If you don't like"
-	line "bug COCK, you"
-	cont "bug me!"
+	line "bantam COCK, you"
+	cont "ruffle my"
+	cont "feathers!"
 	done
 
 _Route9SignText::

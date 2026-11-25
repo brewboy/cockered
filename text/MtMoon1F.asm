@@ -92,7 +92,7 @@ _MtMoon1FYoungster2EndBattleText::
 _MtMoon1FYoungster2AfterBattleText::
 	text "I saw them! I'm"
 	line "sure they're from"
-	cont "TEAM ROCKET!"
+	cont "TEAM ROOST!"
 	done
 
 _MtMoon1FYoungster3BattleText::
@@ -115,5 +115,5 @@ _MtMoon1FYoungster3AfterBattleText::
 
 _MtMoon1FBewareZubatSign::
 	text "Beware! ZUBANTAM"
-	line "is a blood sucker!"
+	line "pecks at ankles!"
 	done

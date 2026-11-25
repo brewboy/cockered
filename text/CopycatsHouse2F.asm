@@ -63,7 +63,8 @@ _CopycatsHouse2FCopycatTM31NoRoomText::
 	text_end
 
 _CopycatsHouse2FDoduoText::
-	text "CLUCKDUO: Giiih!"
+	text "CLUCKDUO: Bawk!"
+	line "Bawk!"
 
 	para "MIRROR MIRROR ON"
 	line "THE WALL, WHO IS"

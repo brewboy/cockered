@@ -2,7 +2,7 @@ _IndigoPlateauLobbyGymGuideText::
 	text "Yo! Champ in"
 	line "making!"
 
-	para "At COCK LEAGUE,"
+	para "At the COCK RING,"
 	line "you have to face"
 	cont "the ELITE FOUR in"
 	cont "succession."

@@ -14,7 +14,7 @@ _RocketHideoutB1FRocket1EndBattleText::
 
 _RocketHideoutB1FRocket1AfterBattleText::
 	text "Are you dissing"
-	line "TEAM ROCKET?"
+	line "TEAM ROOST?"
 	done
 
 _RocketHideoutB1FRocket2BattleText::
@@ -48,8 +48,8 @@ _RocketHideoutB1FRocket3AfterBattleText::
 	done
 
 _RocketHideoutB1FRocket4BattleText::
-	text "Why did you come"
-	line "here?"
+	text "You here to place"
+	line "a bet, kid?"
 	done
 
 _RocketHideoutB1FRocket4EndBattleText::

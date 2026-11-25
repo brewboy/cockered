@@ -1,7 +1,7 @@
 _PokemonFanClubPikachuFanNormalText::
 	text "Won't you admire"
 	line "my PECKACHU's"
-	cont "adorable tail?"
+	cont "adorable fluff?"
 	done
 
 _PokemonFanClubPikachuFanBetterText::
@@ -26,12 +26,12 @@ _PokemonFanClubSeelFanBetterText::
 	done
 
 _PokemonFanClubPikachuText::
-	text "PECKACHU: Chu!"
-	line "Pikachu!"
+	text "PECKACHU: Peck!"
+	line "Peckachu!"
 	done
 
 _PokemonFanClubSeelText::
-	text "SEELTAN: Kyuoo!"
+	text "SEELTAN: Bagawk!"
 	done
 
 _PokemonFanClubChairmanIntroText::

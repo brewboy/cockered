@@ -79,11 +79,11 @@ _Route8SuperNerd3AfterBattleText::
 
 _Route8CooltrainerF2BattleText::
 	text "BAWKTH is so cute,"
-	line "meow, meow, meow!"
+	line "bawk, bawk, bawk!"
 	done
 
 _Route8CooltrainerF2EndBattleText::
-	text "Meow!"
+	text "Bawk!"
 	prompt
 
 _Route8CooltrainerF2AfterBattleText::

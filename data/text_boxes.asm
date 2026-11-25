@@ -70,7 +70,7 @@ BattleMenuText:
 	next "ITEM  RUN@"
 
 SafariZoneBattleMenuText:
-	db   "BALL×       BAIT"
+	db   "BALL×       CORN"
 	next "THROW ROCK  RUN@"
 
 SwitchStatsCancelText:

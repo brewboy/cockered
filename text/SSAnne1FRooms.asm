@@ -1,6 +1,6 @@
 _SSAnne1FRoomsWigglytuffText::
-	text "SILKYTUFF: Puup"
-	line "pupuu!@"
+	text "SILKYTUFF: Cluck"
+	line "cluck!@"
 	text_end
 
 _SSAnne1FRoomsGentleman1BattleText::
@@ -101,5 +101,6 @@ _SSAnne1FRoomsGentleman3Text::
 	line "POLICE agent!"
 
 	para "I'm on the trail"
-	line "of TEAM ROCKET!"
+	line "of TEAM ROOST's"
+	cont "bookies!"
 	done

@@ -3,12 +3,12 @@ _CeladonMart5FGentlemanText::
 	line "enhancers can be"
 	cont "bought only here."
 
-	para "Use CALCIUM to"
-	line "increase SPECIAL"
-	cont "abilities."
+	para "Use OYSTER SHELL"
+	line "to increase"
+	cont "SPECIAL abilities."
 
-	para "Use CARBOS to"
-	line "increase SPEED."
+	para "Use CRACKD GRAIN"
+	line "to increase SPEED."
 	done
 
 _CeladonMart5FSailorText::
@@ -16,10 +16,10 @@ _CeladonMart5FSailorText::
 	line "COCK ability"
 	cont "enhancers."
 
-	para "PROTEIN increases"
+	para "MEALWORMS increase"
 	line "ATTACK power."
 
-	para "IRON increases"
+	para "GRIT increases"
 	line "DEFENSE!"
 	done
 
