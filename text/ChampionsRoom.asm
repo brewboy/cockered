@@ -10,9 +10,10 @@ _ChampionsRoomRivalIntroText::
 	cont "me sharp!"
 
 	para "While working on"
-	line "#TOME, I looked"
-	cont "all over for"
-	cont "powerful COCK!"
+	line "#TOME, I bought"
+	cont "the best"
+	cont "bloodlines in"
+	cont "KANTO!"
 
 	para "Not only that, I"
 	line "assembled teams"
@@ -33,6 +34,9 @@ _ChampionsRoomRivalIntroText::
 	para "I am the most"
 	line "powerful trainer"
 	cont "in the world!"
+
+	para "And the top"
+	line "earner, too!"
 	done
 
 _RivalDefeatedText::
@@ -72,6 +76,9 @@ _ChampionsRoomRivalAfterBattleText::
 	para "I never made any"
 	line "mistakes raising"
 	cont "my COCK..."
+
+	para "They were bred"
+	line "for this!"
 
 	para "Darn it! You're"
 	line "the new COCK"
@@ -124,7 +131,11 @@ _ChampionsRoomOakDisappointedWithRivalText::
 	cont "COCK with"
 	cont "trust and love!"
 
-	para "Without them, you"
+	para "A COCK that loves"
+	line "you will fight to"
+	cont "the very end!"
+
+	para "Without that, you"
 	line "will never become"
 	cont "a champ again!"
 	done
@@ -140,6 +151,10 @@ _ChampionsRoomOakComeWithMeText::
 	para "The bond you share"
 	line "with your COCK"
 	cont "is marvelous!"
+
+	para "They would fight"
+	line "to the end for"
+	cont "you!"
 
 	para "<PLAYER>!"
 	line "Come with me!"

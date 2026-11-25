@@ -21,6 +21,13 @@ _HallOfFameOakText::
 	cont "to become the new"
 	cont "RING champion!"
 
+	para "Your fights drew"
+	line "the biggest crowds"
+	cont "in RING history!"
+
+	para "Everyone did very"
+	line "well out of you!"
+
 	para "Congratulations,"
 	line "<PLAYER>, you and"
 	cont "your COCK are"
