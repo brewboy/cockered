@@ -34,7 +34,7 @@ _LavenderTownSuperNerdText::
 	para "I think they're"
 	line "the spirits of"
 	cont "COCK that the"
-	cont "ROCKETs killed."
+	cont "ROOSTs killed."
 	done
 
 _LavenderTownSignText::

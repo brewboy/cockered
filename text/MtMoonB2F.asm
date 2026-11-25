@@ -56,10 +56,13 @@ _MtMoonB2FSuperNerdThenThisIsMineText::
 	text_end
 
 _MtMoonB2FRocket1BattleText::
-	text "TEAM ROCKET will"
-	line "find the fossils,"
-	cont "revive and sell"
-	cont "them for cash!"
+	text "TEAM ROOST will"
+	line "find the fossils!"
+
+	para "Revive an ancient"
+	line "fighter, and no"
+	cont "bookie alive can"
+	cont "set the odds!"
 	done
 
 _MtMoonB2FRocket1EndBattleText::
@@ -69,14 +72,17 @@ _MtMoonB2FRocket1EndBattleText::
 
 _MtMoonB2FRocket1AfterBattleText::
 	text "You made me mad!"
-	line "TEAM ROCKET will"
-	cont "blacklist you!"
+	line "You're banned"
+	cont "from every pit"
+	cont "in KANTO!"
 	done
 
 _MtMoonB2FRocket2BattleText::
-	text "We, TEAM ROCKET,"
-	line "are COCK"
-	cont "gangsters!"
+	text "We, TEAM ROOST,"
+	line "are the house!"
+
+	para "And the house"
+	line "always wins!"
 	done
 
 _MtMoonB2FRocket2EndBattleText::
@@ -85,14 +91,14 @@ _MtMoonB2FRocket2EndBattleText::
 	prompt
 
 _MtMoonB2FRocket2AfterBattleText::
-	text "Darn it all! My"
-	line "associates won't"
-	cont "stand for this!"
+	text "Darn it all! I"
+	line "had money on"
+	cont "myself, too!"
 	done
 
 _MtMoonB2FRocket3BattleText::
-	text "We're pulling a"
-	line "big job here!"
+	text "We're digging up"
+	line "a sure thing!"
 	cont "Get lost, kid!"
 	done
 

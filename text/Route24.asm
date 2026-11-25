@@ -24,15 +24,22 @@ _Route24CooltrainerM1NoRoomText::
 	done
 
 _Route24CooltrainerM1JoinTeamRocketText::
-	text "By the way, would"
-	line "you like to join"
-	cont "TEAM ROCKET?"
+	text "By the way, I'm"
+	line "a scout for"
+	cont "TEAM ROOST."
 
-	para "We're a group"
-	line "dedicated to evil"
-	cont "using COCK!"
+	para "Five straight"
+	line "wins! Do you know"
+	cont "what the odds on"
+	cont "you were?"
 
-	para "Want to join?"
+	para "We made a fortune!"
+	line "That GOLDEN EGG"
+	cont "was your cut."
+
+	para "Come fight in our"
+	line "pits! Want to"
+	cont "join?"
 
 	para "Are you sure?"
 
@@ -57,8 +64,8 @@ _Route24CooltrainerM1DefeatedText::
 _Route24CooltrainerM1YouCouldBecomeATopLeaderText::
 	text "With your ability,"
 	line "you could become"
-	cont "a top leader in"
-	cont "TEAM ROCKET!"
+	cont "a top earner in"
+	cont "TEAM ROOST!"
 	done
 
 _Route24CooltrainerM2BattleText::

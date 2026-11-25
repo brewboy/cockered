@@ -83,7 +83,7 @@ _CeladonCityRocket1Text::
 
 _CeladonCityRocket2Text::
 	text "Keep out of TEAM"
-	line "ROCKET's way!"
+	line "ROOST's way!"
 	done
 
 _CeladonCityTrainerTips1Text::
@@ -148,7 +148,7 @@ _CeladonCityPrizeExchangeSignText::
 	done
 
 _CeladonCityGameCornerSignText::
-	text "ROCKET GAME CORNER"
+	text "ROOST GAME CORNER"
 	line "The playground"
 	cont "for grown-ups!"
 	done

@@ -264,11 +264,11 @@ _SaffronCityPokecenterGuyText1::
 	text "It would be great"
 	line "if the ELITE FOUR"
 	cont "came and stomped"
-	cont "TEAM ROCKET!"
+	cont "TEAM ROOST!"
 	done
 
 _SaffronCityPokecenterGuyText2::
-	text "TEAM ROCKET took"
+	text "TEAM ROOST took"
 	line "off! We can go"
 	cont "out safely again!"
 	cont "That's great!"
@@ -866,10 +866,11 @@ _EnemyMonFaintedText::
 	prompt
 
 _MoneyForWinningText::
-	text "<PLAYER> got ¥@"
+	text "<PLAYER> collected"
+	line "¥@"
 	text_bcd wAmountMoneyWon, 3 | LEADING_ZEROES | LEFT_ALIGN
-	text_start
-	line "for winning!"
+	text " in"
+	cont "winnings!"
 	prompt
 
 _TrainerDefeatedText::

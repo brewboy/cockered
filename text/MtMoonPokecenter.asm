@@ -7,11 +7,11 @@ _MtMoonPokecenterYoungsterText::
 	done
 
 _MtMoonPokecenterGentlemanText::
-	text "TEAM ROCKET"
-	line "attacks CERULEAN"
-	cont "citizens..."
+	text "TEAM ROOST"
+	line "shakes down"
+	cont "CERULEAN folk..."
 
-	para "TEAM ROCKET is"
+	para "TEAM ROOST is"
 	line "always in the"
 	cont "news!"
 	done

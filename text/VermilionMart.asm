@@ -4,7 +4,7 @@ _VermilionMartCooltrainerMText::
 	cont "use COCK for"
 	cont "criminal acts."
 
-	para "TEAM ROCKET"
+	para "TEAM ROOST"
 	line "traffics in rare"
 	cont "COCK."
 
