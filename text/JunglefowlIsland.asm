@@ -74,3 +74,56 @@ _JunglefowlIslandVineRopeToughText::
 	para "Long, tough vines"
 	line "twisted together."
 	done
+
+_JunglefowlIslandLashItText::
+	text "Got everything?"
+	line "Good."
+
+	para "Hold this end."
+	line "Pull it tight..."
+	prompt
+
+_JunglefowlIslandItFloatsText::
+	text "There. She'll"
+	line "float."
+	prompt
+
+_JunglefowlIslandCaughtNoneText::
+	text "Tell them about"
+	line "this place."
+
+	para "..."
+
+	para "No. Don't."
+	done
+
+_JunglefowlIslandCaughtSomeText::
+	text "Look after them."
+
+	para "Better than"
+	line "they'll be looked"
+	cont "after."
+	done
+
+_JunglefowlIslandCaughtTheLeaderText::
+	text "You took the old"
+	line "one, then."
+
+	para "So you're one of"
+	line "them after all."
+	done
+
+_JunglefowlIslandPushedOffText::
+	text "<PLAYER> pushed"
+	line "off from the old"
+	cont "jetty..."
+	done
+
+_VermilionCityRaftLandedText::
+	text "<PLAYER> drifted"
+	line "for a day and a"
+	cont "night..."
+
+	para "...and washed up"
+	line "in VERMILION CITY!"
+	done

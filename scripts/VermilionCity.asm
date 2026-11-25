@@ -102,7 +102,11 @@ VermilionCityPlayerMovingUp2Script:
 	ldh [hJoyHeld], a
 	ld a, SCRIPT_VERMILIONCITY_DEFAULT
 	ld [wVermilionCityCurScript], a
-	ret
+	CheckAndResetEvent EVENT_RAFT_JUST_LANDED ; home from Junglefowl Island
+	ret z
+	ld a, TEXT_VERMILIONCITY_RAFT_LANDED
+	ldh [hTextID], a
+	jp DisplayTextID
 
 VermilionCityPlayerMovingUp1Script:
 	ld a, [wSimulatedJoypadStatesIndex]
@@ -129,6 +133,7 @@ VermilionCity_TextPointers:
 	dw_const VermilionCityPokemonFanClubSignText, TEXT_VERMILIONCITY_POKEMON_FAN_CLUB_SIGN
 	dw_const VermilionCityGymSignText,            TEXT_VERMILIONCITY_GYM_SIGN
 	dw_const VermilionCityHarborSignText,         TEXT_VERMILIONCITY_HARBOR_SIGN
+	dw_const VermilionCityRaftLandedText,         TEXT_VERMILIONCITY_RAFT_LANDED
 
 VermilionCityBeautyText:
 	text_far _VermilionCityBeautyText
@@ -256,4 +261,8 @@ VermilionCityGymSignText:
 
 VermilionCityHarborSignText:
 	text_far _VermilionCityHarborSignText
+	text_end
+
+VermilionCityRaftLandedText:
+	text_far _VermilionCityRaftLandedText
 	text_end

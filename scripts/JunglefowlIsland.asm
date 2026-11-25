@@ -11,11 +11,13 @@ JunglefowlIsland_ScriptPointers:
 	dw_const JunglefowlIslandCastawayLeavesScript,  SCRIPT_JUNGLEFOWLISLAND_CASTAWAY_LEAVES
 	dw_const JunglefowlIslandWatcherRunsScript,     SCRIPT_JUNGLEFOWLISLAND_WATCHER_RUNS
 	dw_const JunglefowlIslandWatcherRanScript,      SCRIPT_JUNGLEFOWLISLAND_WATCHER_RAN
+	dw_const JunglefowlIslandRaftHelperScript,      SCRIPT_JUNGLEFOWLISLAND_RAFT_HELPER
+	dw_const JunglefowlIslandPushOffScript,         SCRIPT_JUNGLEFOWLISLAND_PUSH_OFF
 
 JunglefowlIslandDefaultScript:
 ; just washed ashore: the castaway comes down to the waterline
 	CheckEvent EVENT_MET_CASTAWAY
-	ret nz
+	jr nz, JunglefowlIslandCheckJettyScript
 	CheckEvent EVENT_WASHED_OVERBOARD
 	ret z
 	ld a, PAD_SELECT | PAD_START | PAD_CTRL_PAD
@@ -34,6 +36,121 @@ JunglefowlIslandDefaultScript:
 	ld a, SCRIPT_JUNGLEFOWLISLAND_CASTAWAY_ARRIVES
 	ld [wJunglefowlIslandCurScript], a
 	ret
+
+JunglefowlIslandCheckJettyScript:
+; with all three raft parts (he only gives the SAIL once you have the other
+; two), stepping onto the old jetty brings the castaway down to help
+	CheckEvent EVENT_GOT_SAIL
+	ret z
+	ld hl, JunglefowlIslandJettyCoords
+	call ArePlayerCoordsInArray
+	ret nc
+	ld a, PAD_BUTTONS | PAD_CTRL_PAD
+	ld [wJoyIgnore], a
+	xor a
+	ldh [hJoyHeld], a
+	ld a, SPRITE_FACING_UP
+	ld [wSpritePlayerStateData1FacingDirection], a
+	ld a, TOGGLE_JUNGLEFOWL_ISLAND_CASTAWAY
+	ld [wToggleableObjectIndex], a
+	predef ShowObject
+	ld a, SFX_GO_OUTSIDE ; out of his hut
+	call PlaySound
+	ld de, JunglefowlIslandCastawayToJetty14Movement
+	ld a, [wXCoord]
+	cp 14
+	jr z, .gotMovement
+	ld de, JunglefowlIslandCastawayToJetty15Movement
+.gotMovement
+	ld a, JUNGLEFOWLISLAND_CASTAWAY
+	ldh [hSpriteIndex], a
+	call MoveSprite
+	ld a, SCRIPT_JUNGLEFOWLISLAND_RAFT_HELPER
+	ld [wJunglefowlIslandCurScript], a
+	ret
+
+JunglefowlIslandJettyCoords:
+	dbmapcoord 14, 48
+	dbmapcoord 15, 48
+	db -1 ; end
+
+; from his door to the top of the jetty, just above the player
+JunglefowlIslandCastawayToJetty15Movement:
+	db NPC_MOVEMENT_RIGHT
+JunglefowlIslandCastawayToJetty14Movement:
+	db NPC_MOVEMENT_RIGHT
+	db NPC_MOVEMENT_RIGHT
+	db NPC_MOVEMENT_RIGHT
+	db NPC_MOVEMENT_RIGHT
+	db NPC_MOVEMENT_RIGHT
+	db NPC_MOVEMENT_RIGHT
+	db NPC_MOVEMENT_RIGHT
+	db NPC_MOVEMENT_RIGHT
+	db NPC_MOVEMENT_RIGHT
+	db NPC_MOVEMENT_RIGHT
+	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_DOWN
+	db -1 ; end
+
+JunglefowlIslandRaftHelperScript:
+; he lashes the raft together and says goodbye
+	ld a, [wStatusFlags5]
+	bit BIT_SCRIPTED_NPC_MOVEMENT, a
+	ret nz
+	ld a, JUNGLEFOWLISLAND_CASTAWAY
+	ldh [hSpriteIndex], a
+	ld a, SPRITE_FACING_DOWN
+	ldh [hSpriteFacingDirection], a
+	call SetSpriteFacingDirectionAndDelay
+	ld a, PAD_SELECT | PAD_START | PAD_CTRL_PAD
+	ld [wJoyIgnore], a
+	ld a, TEXT_JUNGLEFOWLISLAND_RAFT
+	ldh [hTextID], a
+	call DisplayTextID
+	ld a, PAD_BUTTONS | PAD_CTRL_PAD
+	ld [wJoyIgnore], a
+	ld a, SCRIPT_JUNGLEFOWLISLAND_PUSH_OFF
+	ld [wJunglefowlIslandCurScript], a
+	ret
+
+JunglefowlIslandPushOffScript:
+; off to sea, and a day and a night later, Vermilion (see VermilionCity.asm)
+	ld a, PAD_SELECT | PAD_START | PAD_CTRL_PAD
+	ld [wJoyIgnore], a
+	ld a, TEXT_JUNGLEFOWLISLAND_PUSHED_OFF
+	ldh [hTextID], a
+	call DisplayTextID
+	ld a, PAD_BUTTONS | PAD_CTRL_PAD
+	ld [wJoyIgnore], a
+	call JunglefowlIslandRestoreBlackoutMap
+	SetEvent EVENT_LEFT_JUNGLEFOWL_ISLAND
+	SetEvent EVENT_RAFT_JUST_LANDED
+	ld a, SCRIPT_JUNGLEFOWLISLAND_DEFAULT
+	ld [wJunglefowlIslandCurScript], a
+	ld a, VERMILION_CITY
+	ldh [hWarpDestinationMap], a
+	ld a, 5 ; the dock gate, where Vermilion walks you up into town
+	ld [wDestinationWarpID], a
+; Warps only load the arrival spot when the tileset changes, and the island
+; and Vermilion are both OVERWORLD, so put the player there ourselves (as map
+; connections do).
+	ld hl, JunglefowlIslandVermilionArrival
+	ld de, wCurrentTileBlockMapViewPointer
+	ld bc, 4 ; view pointer, then y and x
+	call CopyData
+	ld a, 31 & 1
+	ld [wYBlockCoord], a
+	ld a, 18 & 1
+	ld [wXBlockCoord], a
+	ld hl, wStatusFlags3
+	set BIT_WARP_FROM_CUR_SCRIPT, [hl]
+	ret
+
+JunglefowlIslandVermilionArrival:
+	event_displacement VERMILION_CITY_WIDTH, 18, 31 ; Vermilion's dock gate
 
 JunglefowlIslandCastawayToPlayerMovement:
 	db NPC_MOVEMENT_RIGHT
@@ -138,6 +255,8 @@ JunglefowlIsland_TextPointers:
 	dw_const JunglefowlIslandScratcherText,     TEXT_JUNGLEFOWLISLAND_SCRATCHER
 	dw_const JunglefowlIslandVineRopeText,      TEXT_JUNGLEFOWLISLAND_VINE_ROPE
 	dw_const JunglefowlIslandWashedAshoreText,  TEXT_JUNGLEFOWLISLAND_WASHED_ASHORE
+	dw_const JunglefowlIslandRaftText,          TEXT_JUNGLEFOWLISLAND_RAFT
+	dw_const JunglefowlIslandPushedOffText,     TEXT_JUNGLEFOWLISLAND_PUSHED_OFF
 
 JunglefowlIslandCastawayText:
 	text_far _JunglefowlIslandCastawayText
@@ -256,3 +375,67 @@ JunglefowlIslandRestoreBlackoutMap:
 	ld a, [wBlackoutMapBeforeIsland]
 	ld [wLastBlackoutMap], a
 	ret
+
+JunglefowlIslandRaftText:
+	text_asm
+	ld hl, .LashItText
+	call PrintText
+	ld a, SFX_CUT
+	call PlaySoundWaitForCurrent
+	call WaitForSoundToFinish
+	ld c, 20
+	call DelayFrames
+	ld a, SFX_PUSH_BOULDER
+	call PlaySoundWaitForCurrent
+	call WaitForSoundToFinish
+	ld hl, .ItFloatsText
+	call PrintText
+; the goodbye depends on what you took from the island
+	ld hl, .CaughtTheLeaderText
+	CheckEvent EVENT_CAUGHT_ROOST_LEADER
+	jr nz, .goodbye
+	call JunglefowlIslandCaughtAJunglefowl ; clobbers hl
+	ld hl, .CaughtSomeText
+	jr nz, .goodbye
+	ld hl, .CaughtNoneText
+.goodbye
+	call PrintText
+	jp TextScriptEnd
+
+.LashItText:
+	text_far _JunglefowlIslandLashItText
+	text_end
+
+.ItFloatsText:
+	text_far _JunglefowlIslandItFloatsText
+	text_end
+
+.CaughtTheLeaderText:
+	text_far _JunglefowlIslandCaughtTheLeaderText
+	text_end
+
+.CaughtSomeText:
+	text_far _JunglefowlIslandCaughtSomeText
+	text_end
+
+.CaughtNoneText:
+	text_far _JunglefowlIslandCaughtNoneText
+	text_end
+
+JunglefowlIslandCaughtAJunglefowl:
+; nz if DRATCHICK or DRAGONCOMB is registered as owned
+	ld c, DEX_DRATINI - 1
+	call .IsOwned
+	ret nz
+	ld c, DEX_DRAGONAIR - 1
+.IsOwned:
+	ld hl, wPokedexOwned
+	ld b, FLAG_TEST
+	predef FlagActionPredef
+	ld a, c
+	and a
+	ret
+
+JunglefowlIslandPushedOffText:
+	text_far _JunglefowlIslandPushedOffText
+	text_end
