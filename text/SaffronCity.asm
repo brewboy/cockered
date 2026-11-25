@@ -19,8 +19,8 @@ _SaffronCityRocket4Text::
 	done
 
 _SaffronCityRocket5Text::
-	text "Being evil makes"
-	line "me feel so alive!"
+	text "The house always"
+	line "wins!"
 	done
 
 _SaffronCityRocket6Text::
@@ -30,9 +30,9 @@ _SaffronCityRocket6Text::
 
 _SaffronCityRocket7Text::
 	text "With SILPH under"
-	line "control, we can"
-	cont "exploit COCK"
-	cont "around the world!"
+	line "control, the"
+	cont "LEAGUE is just"
+	cont "another pit!"
 	done
 
 _SaffronCityScientistText::

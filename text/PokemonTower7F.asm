@@ -10,6 +10,11 @@ _PokemonTower7FMrFujiRescueText::
 	line "the soul of"
 	cont "CUESHELL's mother."
 
+	para "She would not"
+	line "throw a fight for"
+	cont "TEAM ROOST, so"
+	cont "they killed her."
+
 	para "I think MAROBAWK's"
 	line "spirit has gone"
 	cont "to the afterlife."
@@ -39,10 +44,9 @@ _PokemonTower7FRocket1AfterBattleText::
 	done
 
 _PokemonTower7FRocket2BattleText::
-	text "This old guy came"
-	line "and complained"
-	cont "about us harming"
-	cont "useless COCK!"
+	text "This old guy"
+	line "takes in the COCK"
+	cont "we throw away!"
 
 	para "We're talking it"
 	line "over as adults!"
@@ -57,6 +61,9 @@ _PokemonTower7FRocket2AfterBattleText::
 	text "COCK are only"
 	line "good for making"
 	cont "money!"
+
+	para "Losers are"
+	line "worthless!"
 
 	para "Stay out of our"
 	line "business!"

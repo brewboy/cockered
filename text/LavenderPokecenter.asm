@@ -6,7 +6,7 @@ _LavenderPokecenterGentlemanText::
 
 _LavenderPokecenterLittleGirlText::
 	text "I saw CUESHELL's"
-	line "mother die trying"
-	cont "to escape from"
+	line "mother die! It"
+	cont "wouldn't lose for"
 	cont "TEAM ROOST!"
 	done

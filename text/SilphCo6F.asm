@@ -31,10 +31,10 @@ _SilphCo6FSilphWorkerF1HaveToMarryHimText::
 	done
 
 _SilphCo6FSilphWorkerF2TeamRocketConquerWorldText::
-	text "TEAM ROOST is"
-	line "trying to conquer"
-	cont "the world with"
-	cont "COCK!"
+	text "TEAM ROOST wants"
+	line "every COCK FIGHT"
+	cont "in the world to"
+	cont "pay out to them!"
 	done
 
 _SilphCo6FSilphWorkerF2TeamRocketRanText::
@@ -46,7 +46,7 @@ _SilphCo6FSilphWorkerM3TargetedSilphText::
 	text "They must have"
 	line "targeted SILPH"
 	cont "for our COCK"
-	cont "products."
+	cont "bloodlines."
 	done
 
 _SilphCo6FSilphWorkerM3WorkForSilphText::

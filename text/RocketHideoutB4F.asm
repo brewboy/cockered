@@ -1,6 +1,10 @@
 _RocketHideoutB4FGiovanniImpressedYouGotHereText::
-	text "So! I must say, I"
-	line "am impressed you"
+	text "So! You're the kid"
+	line "who's been costing"
+	cont "me money!"
+
+	para "I must say, I am"
+	line "impressed you"
 	cont "got here!"
 	done
 
@@ -14,10 +18,12 @@ _RocketHideoutB4FGiovanniHopeWeMeetAgainText::
 	line "raise COCK"
 	cont "with utmost care."
 
-	para "A child like you"
-	line "would never"
-	cont "understand what I"
-	cont "hope to achieve."
+	para "...And you still"
+	line "send them out to"
+	cont "fight for money."
+
+	para "We're not so"
+	line "different, kid."
 
 	para "I shall step"
 	line "aside this time!"
@@ -46,7 +52,7 @@ _RocketHideoutB4FRocket1AfterBattleText::
 _RocketHideoutB4FRocket2BattleText::
 	text "How can you not"
 	line "see the beauty of"
-	cont "our evil?"
+	cont "a fixed fight?"
 	done
 
 _RocketHideoutB4FRocket2EndBattleText::

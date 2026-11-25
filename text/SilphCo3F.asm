@@ -42,5 +42,5 @@ _SilphCo3FScientistAfterBattleText::
 	para "TEAM ROOST said"
 	line "that if I helped"
 	cont "them, they'd let"
-	cont "me study COCK!"
+	cont "me breed killers!"
 	done

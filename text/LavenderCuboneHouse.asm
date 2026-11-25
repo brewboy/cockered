@@ -9,9 +9,9 @@ _LavenderCuboneHouseBrunetteGirlPoorCubonesMotherText::
 	para "That poor"
 	line "CUESHELL's mother…"
 
-	para "It was killed"
-	line "trying to escape"
-	cont "from TEAM ROOST!"
+	para "It wouldn't throw"
+	line "a fight, so they"
+	cont "killed it!"
 	done
 
 _LavenderCuboneHouseBrunetteGirlGhostIsGoneText::

@@ -50,6 +50,12 @@ _GameCornerMiddleAgedMan1Text::
 	para "It's rumored that"
 	line "this place is run"
 	cont "by TEAM ROOST."
+
+	para "The slots are"
+	line "just for show."
+	cont "The real money's"
+	cont "in the fights"
+	cont "downstairs!"
 	done
 
 _GameCornerBeauty2Text::

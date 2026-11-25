@@ -48,8 +48,8 @@ _RocketHideoutB1FRocket3AfterBattleText::
 	done
 
 _RocketHideoutB1FRocket4BattleText::
-	text "Why did you come"
-	line "here?"
+	text "You here to place"
+	line "a bet, kid?"
 	done
 
 _RocketHideoutB1FRocket4EndBattleText::

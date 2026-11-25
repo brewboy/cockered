@@ -16,9 +16,9 @@ _MrFujisHouseLittleGirlThisIsMrFujisHouseText::
 
 	para "He's really kind!"
 
-	para "He looks after"
-	line "abandoned and"
-	cont "orphaned COCK!"
+	para "He takes in COCK"
+	line "too hurt to fight"
+	cont "any more!"
 	done
 
 _MrFujisHouseLittleGirlPokemonAreNiceToHugText::
