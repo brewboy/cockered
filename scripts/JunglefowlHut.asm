@@ -26,19 +26,11 @@ JunglefowlHutCastawayText:
 	ld hl, .WhatsARingText
 	call PrintText
 	SetEvent EVENT_CASTAWAY_HEARD_ABOUT_RING
+	call .GiveSailIfReady ; you may already have the other two parts
 	jr .offerBalls
 .heardAboutRing
-	CheckEvent EVENT_GOT_SAIL
-	jr nz, .notSail
-	CheckEvent EVENT_GOT_DRIFTWOOD
-	jr z, .notSail
-	CheckEvent EVENT_GOT_VINE_ROPE
-	jr z, .notSail
-	ld hl, .TakeTheSailText
-	call PrintText
-	SetEvent EVENT_GOT_SAIL
-	jr .offerBalls
-.notSail
+	call .GiveSailIfReady
+	jr nz, .offerBalls
 	CheckEvent EVENT_CASTAWAY_SAW_YOU_CATCH
 	jr nz, .hint
 	call .CaughtAJunglefowl
@@ -90,6 +82,23 @@ JunglefowlHutCastawayText:
 	ld hl, .BetterText
 	call PrintText
 	jp TextScriptEnd
+
+.GiveSailIfReady:
+; nz if he handed over the SAIL just now
+	CheckEvent EVENT_GOT_SAIL
+	jr nz, .noSail
+	CheckEvent EVENT_GOT_DRIFTWOOD
+	jr z, .noSail
+	CheckEvent EVENT_GOT_VINE_ROPE
+	jr z, .noSail
+	ld hl, .TakeTheSailText
+	call PrintText
+	SetEvent EVENT_GOT_SAIL
+	or 1
+	ret
+.noSail
+	xor a
+	ret
 
 .CaughtAJunglefowl:
 ; nz if DRATCHICK or DRAGONCOMB is registered as owned

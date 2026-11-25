@@ -134,6 +134,9 @@ JunglefowlIsland_TextPointers:
 	dw_const JunglefowlIslandCastawayText,      TEXT_JUNGLEFOWLISLAND_CASTAWAY
 	dw_const JunglefowlIslandDriftwoodText,     TEXT_JUNGLEFOWLISLAND_DRIFTWOOD
 	dw_const JunglefowlIslandWatcherText,       TEXT_JUNGLEFOWLISLAND_WATCHER
+	dw_const JunglefowlIslandStrutterText,      TEXT_JUNGLEFOWLISLAND_STRUTTER
+	dw_const JunglefowlIslandScratcherText,     TEXT_JUNGLEFOWLISLAND_SCRATCHER
+	dw_const JunglefowlIslandVineRopeText,      TEXT_JUNGLEFOWLISLAND_VINE_ROPE
 	dw_const JunglefowlIslandWashedAshoreText,  TEXT_JUNGLEFOWLISLAND_WASHED_ASHORE
 
 JunglefowlIslandCastawayText:
@@ -191,3 +194,65 @@ JunglefowlIslandWatcherRunMovement:
 	db NPC_MOVEMENT_UP
 	db NPC_MOVEMENT_UP
 	db -1 ; end
+
+JunglefowlIslandStrutterText:
+	text_asm
+	ld hl, .StruttingText
+	ld de, .NobodysText
+	jr JunglefowlIslandWandererCry
+
+.StruttingText:
+	text_far _JunglefowlIslandStrutterText
+	text_end
+
+.NobodysText:
+	text_far _JunglefowlIslandNobodysBirdText
+	text_end
+
+JunglefowlIslandScratcherText:
+	text_asm
+	ld hl, .ScratchingText
+	ld de, .DoesntCareText
+	; fallthrough
+
+JunglefowlIslandWandererCry:
+; a wild junglefowl on the path: you see it (hl), it crows, and it goes
+; about its business (de)
+	push de
+	call PrintText
+	ld a, DRATINI
+	call PlayCry
+	call WaitForSoundToFinish
+	pop hl
+	call PrintText
+	jp TextScriptEnd
+
+JunglefowlIslandScratcherText.ScratchingText:
+	text_far _JunglefowlIslandScratcherText
+	text_end
+
+JunglefowlIslandScratcherText.DoesntCareText:
+	text_far _JunglefowlIslandDoesntCareText
+	text_end
+
+JunglefowlIslandVineRopeText:
+	text_asm
+	SetEvent EVENT_GOT_VINE_ROPE
+	ld a, TOGGLE_JUNGLEFOWL_ISLAND_VINE_ROPE
+	ld [wToggleableObjectIndex], a
+	predef HideObject
+	ld hl, .FoundVineRopeText
+	call PrintText
+	jp TextScriptEnd
+
+.FoundVineRopeText:
+	text_far _JunglefowlIslandFoundVineRopeText
+	sound_get_item_1
+	text_far _JunglefowlIslandVineRopeToughText
+	text_end
+
+JunglefowlIslandRestoreBlackoutMap:
+; for the raft home: blackouts go back to wherever they went before the island
+	ld a, [wBlackoutMapBeforeIsland]
+	ld [wLastBlackoutMap], a
+	ret

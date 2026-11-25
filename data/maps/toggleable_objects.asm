@@ -422,6 +422,7 @@ ToggleableObjectStates:
 	toggle_object_state JUNGLEFOWLISLAND_CASTAWAY,  ON
 	toggle_object_state JUNGLEFOWLISLAND_DRIFTWOOD, ON
 	toggle_object_state JUNGLEFOWLISLAND_WATCHER,   ON
+	toggle_object_state JUNGLEFOWLISLAND_VINE_ROPE, ON
 
 	assert_table_length NUM_TOGGLEABLE_OBJECTS
 

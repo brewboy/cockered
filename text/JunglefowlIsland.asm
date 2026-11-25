@@ -41,3 +41,36 @@ _JunglefowlIslandWatcherRanText::
 	text "It ran off into"
 	line "the trees!"
 	done
+
+_JunglefowlIslandStrutterText::
+	text "A red junglefowl"
+	line "struts past you."
+	prompt
+
+_JunglefowlIslandNobodysBirdText::
+	text "It doesn't belong"
+	line "to anybody."
+	done
+
+_JunglefowlIslandScratcherText::
+	text "A red junglefowl"
+	line "is scratching at"
+	cont "the dirt."
+	prompt
+
+_JunglefowlIslandDoesntCareText::
+	text "It doesn't care"
+	line "about you at all."
+	done
+
+_JunglefowlIslandFoundVineRopeText::
+	text "<PLAYER> found"
+	line "a VINE ROPE!@"
+	text_end
+
+_JunglefowlIslandVineRopeToughText::
+	text_start
+
+	para "Long, tough vines"
+	line "twisted together."
+	done

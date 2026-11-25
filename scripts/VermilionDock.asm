@@ -63,6 +63,8 @@ VermilionDockWashedOverboardScript:
 	ld [wDestinationWarpID], a
 	ld a, VERMILION_CITY
 	ld [wLastMap], a
+	ld a, [wLastBlackoutMap]
+	ld [wBlackoutMapBeforeIsland], a
 	ld a, JUNGLEFOWL_HUT ; black out on the island and you wake in the hut
 	ld [wLastBlackoutMap], a
 	ld hl, wStatusFlags3
