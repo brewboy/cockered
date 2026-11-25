@@ -5,8 +5,8 @@ _JunglefowlIslandWashedAshoreText::
 
 _JunglefowlIslandCastawayText::
 	text "Well, I'll be!"
-	line "Another one washed"
-	cont "up!"
+	line "Another one's"
+	cont "washed up!"
 
 	para "Haven't seen a new"
 	line "face in... oh, a"
@@ -34,7 +34,7 @@ _JunglefowlIslandDriftwoodFloatsText::
 
 _JunglefowlIslandWatcherText::
 	text "A red junglefowl"
-	line "is watching you..."
+	line "is watching you."
 	prompt
 
 _JunglefowlIslandWatcherRanText::

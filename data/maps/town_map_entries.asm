@@ -77,6 +77,7 @@ InternalMapEntries:
 	indoor_map SEA_COTTAGE,        12,  0, SeaCottageName
 	indoor_map VERMILION_CITY,     10,  9, VermilionCityName
 	indoor_map SS_ANNE,             9, 10, SSAnneName
+	indoor_map JUNGLEFOWL_ISLAND,  15, 15, JunglefowlIslandName
 	indoor_map VICTORY_ROAD,        0,  4, VictoryRoadName
 	indoor_map POKEMON_LEAGUE,      0,  2, PokemonLeagueName
 	indoor_map UNDERGROUND_PATH,   10,  5, UndergroundPathName

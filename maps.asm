@@ -1227,3 +1227,8 @@ INCLUDE "data/maps/headers/JunglefowlIsland.asm"
 INCLUDE "scripts/JunglefowlIsland.asm"
 INCLUDE "data/maps/objects/JunglefowlIsland.asm"
 JunglefowlIsland_Blocks: INCBIN "maps/JunglefowlIsland.blk"
+
+INCLUDE "data/maps/headers/JunglefowlHut.asm"
+INCLUDE "scripts/JunglefowlHut.asm"
+INCLUDE "data/maps/objects/JunglefowlHut.asm"
+JunglefowlHut_Blocks: INCBIN "maps/JunglefowlHut.blk"

@@ -9,6 +9,7 @@ JunglefowlIsland_Object:
 	def_warp_events
 	; where you wash ashore; plain sand, so it never warps anywhere itself
 	warp_event  9, 47, VERMILION_CITY, 1
+	warp_event  3, 41, JUNGLEFOWL_HUT, 1
 
 	def_bg_events
 

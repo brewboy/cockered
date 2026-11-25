@@ -4,6 +4,9 @@ PrintBookshelfText::
 	cp SPRITE_FACING_UP
 	jr nz, .noMatch
 ; facing up
+	ld a, [wCurMap]
+	cp JUNGLEFOWL_HUT ; the castaway's shelf has its own text
+	jr z, .noMatch
 	ld a, [wCurMapTileset]
 	ld b, a
 	lda_coord 8, 7

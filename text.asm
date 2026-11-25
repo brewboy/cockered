@@ -281,3 +281,4 @@ INCLUDE "data/moves/names.asm"
 SECTION "Text Junglefowl Island", ROMX, BANK[$2D]
 
 INCLUDE "text/JunglefowlIsland.asm"
+INCLUDE "text/JunglefowlHut.asm"
