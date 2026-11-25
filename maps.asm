@@ -1219,3 +1219,11 @@ INCLUDE "data/maps/headers/AgathasRoom.asm"
 INCLUDE "scripts/AgathasRoom.asm"
 INCLUDE "data/maps/objects/AgathasRoom.asm"
 AgathasRoom_Blocks: INCBIN "maps/AgathasRoom.blk"
+
+
+SECTION "Maps Junglefowl Island", ROMX, BANK[$2D]
+
+INCLUDE "data/maps/headers/JunglefowlIsland.asm"
+INCLUDE "scripts/JunglefowlIsland.asm"
+INCLUDE "data/maps/objects/JunglefowlIsland.asm"
+JunglefowlIsland_Blocks: INCBIN "maps/JunglefowlIsland.blk"

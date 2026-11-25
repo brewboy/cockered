@@ -276,3 +276,8 @@ INCLUDE "data/pokemon/dex_text.asm"
 SECTION "Move Names", ROMX
 
 INCLUDE "data/moves/names.asm"
+
+
+SECTION "Text Junglefowl Island", ROMX, BANK[$2D]
+
+INCLUDE "text/JunglefowlIsland.asm"

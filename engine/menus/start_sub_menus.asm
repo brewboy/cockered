@@ -132,8 +132,12 @@ StartMenu_Pokemon::
 .fly
 	bit BIT_THUNDERBADGE, a
 	jp z, .newBadgeRequired
+	ld a, [wCurMap]
+	cp JUNGLEFOWL_ISLAND ; no flying off the island
+	jr z, .cannotFly
 	call CheckIfInOutsideMap
 	jr z, .canFly
+.cannotFly
 	ld a, [wWhichPokemon]
 	ld hl, wPartyMonNicks
 	call GetPartyMonName
@@ -203,8 +207,12 @@ StartMenu_Pokemon::
 	call GBPalWhiteOutWithDelay3
 	jp .goBackToMap
 .teleport
+	ld a, [wCurMap]
+	cp JUNGLEFOWL_ISLAND ; no teleporting off the island
+	jr z, .cannotTeleport
 	call CheckIfInOutsideMap
 	jr z, .canTeleport
+.cannotTeleport
 	ld a, [wWhichPokemon]
 	ld hl, wPartyMonNicks
 	call GetPartyMonName
