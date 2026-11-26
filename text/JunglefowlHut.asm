@@ -88,7 +88,7 @@ _JunglefowlHutTakeTheseText::
 
 _JunglefowlHutGotBallsText::
 	text "<PLAYER> got"
-	line "5 COCK BALLs!@"
+	line "5 GREAT BALLs!@"
 	text_end
 
 _JunglefowlHutRoundThingsText::

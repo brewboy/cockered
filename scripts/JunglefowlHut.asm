@@ -53,7 +53,7 @@ JunglefowlHutCastawayText:
 	jr nz, .rest
 	ld hl, .TakeTheseText
 	call PrintText
-	lb bc, POKE_BALL, 5
+	lb bc, GREAT_BALL, 5
 	call GiveItem
 	jr nc, .bagFull
 	SetEvent EVENT_GOT_CASTAWAY_BALLS
