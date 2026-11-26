@@ -58,6 +58,8 @@ GameCornerDefaultScript:
 ; your way out: he walks along the bottom row and tells you about the Pit.
 	CheckEvent EVENT_PIT_INVITED
 	ret nz
+	CheckEvent EVENT_BEAT_VIRIDIAN_GYM_GIOVANNI ; the Pit's open to all now
+	ret nz
 	ld a, [wPitSlotPulls]
 	cp PIT_SLOT_PULLS_FOR_INVITE
 	ret c
@@ -612,6 +614,9 @@ Has9990Coins:
 GameCornerRunnerText:
 ; the bookie's runner, who sends you to the Pit's back room
 	text_asm
+	ld hl, .LegitNowText
+	CheckEvent EVENT_BEAT_VIRIDIAN_GYM_GIOVANNI ; the Pit is a COCK RING venue
+	jr nz, .print
 	ld hl, .NextDoorText
 	CheckEvent EVENT_PIT_INVITED
 	jr nz, .print
@@ -627,4 +632,8 @@ GameCornerRunnerText:
 
 .NextDoorText:
 	text_far _GameCornerRunnerNextDoorText
+	text_end
+
+.LegitNowText:
+	text_far _GameCornerRunnerLegitNowText
 	text_end

@@ -18,6 +18,8 @@ PitBackRoomDefaultScript:
 	ret nz
 	CheckEvent EVENT_PIT_LET_IN
 	ret nz
+	CheckEvent EVENT_PIT_IS_RING_VENUE ; open to all now
+	ret nz
 	ld a, PAD_SELECT | PAD_START | PAD_CTRL_PAD
 	ld [wJoyIgnore], a
 	xor a
@@ -69,6 +71,9 @@ PitBackRoom_TextPointers:
 
 PitBackRoomDoormanText:
 	text_asm
+	ld hl, .RingBadgeText
+	CheckEvent EVENT_PIT_IS_RING_VENUE
+	jr nz, .print
 	ld hl, .NoTroubleText
 	CheckEvent EVENT_PIT_LET_IN
 	jr nz, .print
@@ -93,22 +98,39 @@ PitBackRoomDoormanText:
 	text_far _PitBackRoomDoormanNoTroubleText
 	text_end
 
+.RingBadgeText:
+	text_far _PitBackRoomDoormanRingBadgeText
+	text_end
+
 PitBackRoomStairsGuardText:
 	text_far _PitBackRoomStairsGuardText
 	text_end
 
 PitBackRoomLoserText:
+	pit_era_text .Text, .RingText
+.Text:
 	text_far _PitBackRoomLoserText
+	text_end
+.RingText:
+	text_far _PitBackRoomLoserRingText
 	text_end
 
 PitBackRoomRegularText:
+	pit_era_text .Text, .RingText
+.Text:
 	text_far _PitBackRoomRegularText
+	text_end
+.RingText:
+	text_far _PitBackRoomRegularRingText
 	text_end
 
 PitBackRoomBoardText:
 ; the chalkboard: tonight's fight and the odds
 	text_asm
 	call PitSetUpFight
+	ld hl, .SanctionedText
+	CheckEvent EVENT_PIT_IS_RING_VENUE
+	call nz, PrintText
 	xor a
 	call PitLoadBoardLine
 	ld hl, .FavText
@@ -118,6 +140,10 @@ PitBackRoomBoardText:
 	ld hl, .OutText
 	call PrintText
 	jp TextScriptEnd
+
+.SanctionedText:
+	text_far _PitBackRoomBoardSanctionedText
+	text_end
 
 .FavText:
 	text_far _PitBackRoomBoardFavText
@@ -130,6 +156,8 @@ PitBackRoomBoardText:
 PitBackRoomClerkText:
 ; the betting window
 	text_asm
+	CheckEvent EVENT_PIT_IS_RING_VENUE
+	jr nz, .open
 	CheckEvent EVENT_PIT_BEAT_OLD_IRON
 	jr z, .open
 	ld hl, .MoneyNoGoodText

@@ -1,5 +1,22 @@
 ; The Pit's birds, its card of fights and the betting window's sums.
 
+; Once Giovanni gives up TEAM ROOST at the Viridian Gym ("Why run a crooked
+; ring when the COCK RING pays the same, legally?"), the Pit reopens as a
+; COCK RING venue.
+DEF EVENT_PIT_IS_RING_VENUE EQU EVENT_BEAT_VIRIDIAN_GYM_GIOVANNI
+
+; a text that changes once the Pit is a RING venue
+MACRO pit_era_text
+	text_asm
+	ld hl, \1
+	CheckEvent EVENT_PIT_IS_RING_VENUE
+	jr z, .print\@
+	ld hl, \2
+.print\@
+	call PrintText
+	jp TextScriptEnd
+ENDM
+
 DEF PIT_BIRD_NAME_LENGTH EQU 8
 DEF PIT_ODDS_LENGTH EQU 8
 DEF PIT_NO_CONTEST_CHANCE EQU 16 ; out of 256: both birds down, the house keeps every bet

@@ -200,3 +200,50 @@ _PitBackRoomClerkMoneyNoGoodText::
 	line "money's no good"
 	cont "here, kid."
 	done
+
+_GameCornerRunnerLegitNowText::
+	text "It's all legit"
+	line "now, kid. RING"
+	cont "rules."
+
+	para "Last building on"
+	line "this row."
+	done
+
+_CeladonCityPitPaintedOverText::
+	text "The windows are"
+	line "painted over."
+	done
+
+_CeladonCityPitRingBannerText::
+	text "COCK RING"
+	line "CELADON VENUE"
+
+	para "Licensed fights"
+	line "nightly!"
+	done
+
+_PitBackRoomDoormanRingBadgeText::
+	text "See the badge?"
+	line "COCK RING. All"
+	cont "legal now."
+
+	para "Go on in, kid."
+	done
+
+_PitBackRoomBoardSanctionedText::
+	text "RING SANCTIONED"
+	prompt
+
+_PitBackRoomLoserRingText::
+	text "It's legal now."
+	line "I still lose the"
+	cont "rent."
+	done
+
+_PitBackRoomRegularRingText::
+	text "The RING sets the"
+	line "odds now."
+
+	para "Same odds."
+	done

@@ -320,6 +320,15 @@ ThePitBookieText:
 	text_asm
 	CheckEvent EVENT_PIT_MAIN_EVENT_DONE
 	jr z, .notDone
+	CheckEvent EVENT_PIT_IS_RING_VENUE
+	jr z, .notRingVenue
+	ld hl, .OldFriendText ; even if you cost him a fortune
+	call PrintText
+	ld hl, .NoHardFeelingsText
+	CheckEvent EVENT_PIT_BEAT_OLD_IRON
+	jr nz, .print
+	jp TextScriptEnd
+.notRingVenue
 	ld hl, .CostMeAFortuneText
 	CheckEvent EVENT_PIT_BEAT_OLD_IRON
 	jr nz, .print
@@ -330,6 +339,10 @@ ThePitBookieText:
 	jr .print
 .notDone
 	ld hl, .WhoLetYouInText
+	CheckEvent EVENT_PIT_IS_RING_VENUE
+	jr z, .gotGreeting
+	ld hl, .WelcomeToTheRingText
+.gotGreeting
 	CheckEvent EVENT_PIT_BOSS_SENT_FOR_YOU
 	jr z, .print
 	ld hl, .OfferText
@@ -377,6 +390,18 @@ ThePitBookieText:
 
 .WhoLetYouInText:
 	text_far _ThePitBookieWhoLetYouInText
+	text_end
+
+.WelcomeToTheRingText:
+	text_far _ThePitBookieWelcomeToTheRingText
+	text_end
+
+.OldFriendText:
+	text_far _ThePitBookieOldFriendText
+	text_end
+
+.NoHardFeelingsText:
+	text_far _ThePitBookieNoHardFeelingsText
 	text_end
 
 .OfferText:
@@ -439,5 +464,17 @@ ThePitBaldingGuyText:
 	text_end
 
 ThePitGamblerText:
+	text_asm
+	ld hl, .Text
+	CheckEvent EVENT_PIT_MAIN_EVENT_DONE
+	jr z, .print
+	ld hl, .RetiredText
+.print
+	call PrintText
+	jp TextScriptEnd
+.Text:
 	text_far _ThePitGamblerText
+	text_end
+.RetiredText:
+	text_far _ThePitGamblerRetiredText
 	text_end

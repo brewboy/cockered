@@ -271,3 +271,43 @@ _ThePitGamblerText::
 	para "Thirty fights."
 	line "Never lost."
 	done
+
+_ThePitBookieWelcomeToTheRingText::
+	text "Welcome to the"
+	line "COCK RING, kid!"
+
+	para "All legal now."
+	line "The RING takes a"
+	cont "cut, I take mine."
+
+	para "Same as before,"
+	line "really."
+	done
+
+_ThePitBookieOldFriendText::
+	text "Kid! Old friend!"
+	line "Sit, sit."
+
+	para "All legal now."
+	line "The RING takes a"
+	cont "cut, I take mine."
+
+	para "OLD IRON? I"
+	line "retired him."
+
+	para "Sent him to a"
+	line "farm out east."
+	prompt
+
+_ThePitBookieNoHardFeelingsText::
+	text "No hard feelings"
+	line "about him, eh?"
+	done
+
+_ThePitGamblerRetiredText::
+	text "They retired OLD"
+	line "IRON."
+
+	para "Shipped him off"
+	line "to some farm."
+	done
