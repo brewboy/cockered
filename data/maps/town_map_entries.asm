@@ -82,6 +82,8 @@ InternalMapEntries:
 	indoor_map VICTORY_ROAD,        0,  4, VictoryRoadName
 	indoor_map CELADON_CITY_3,      7,  5, CeladonCityName
 	indoor_map FUJI_FARM_AREA,     15,  5, FujiFarmName
+	indoor_map POKEMON_LEAGUE_LANCE, 0, 2, PokemonLeagueName
+	indoor_map BREEDING_LAB_AREA,   3, 15, Route20Name
 	indoor_map POKEMON_LEAGUE,      0,  2, PokemonLeagueName
 	indoor_map UNDERGROUND_PATH,   10,  5, UndergroundPathName
 	indoor_map POKEMON_LEAGUE_2,    0,  2, PokemonLeagueName

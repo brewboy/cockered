@@ -246,3 +246,13 @@ In-game names (in **bold**) are max 10 characters (`NAME_LENGTH - 1`) and live i
   - 11 flock slots (4 outside, 7 in the barn) appear as the number of retired breeds passes each slot's threshold in `FarmFlockSlots`. Each names one of your retired breeds, offset by `wFarmRotation`, which turns each visit.
 - **The ledger:** the board on the barn's back wall. It lists retired breeds with a new `SPECIESLISTMENU` list menu (species names, in `home/list_menu.asm`); picking one opens its Pokédex page.
 - The original game's unused hidden MAX ELIXER on map $6F is kept as `UNUSED_MAP_6F` (an alias for the barn, outside its bounds), so hidden item flags don't move.
+
+## Breeding Lab (Route 20)
+
+- An islet at the west end of Route 20, near Cinnabar, reached by SURF; it is drawn into `maps/Route20.blk` (no new outdoor map). The lab door is at (14,5) (Route 20 warp 3), the "PRIVATE ISLAND" sign at (11,7), and a jetty at (14–15,8–9). The swimmer that sat there moved to (15,12).
+- Two LAB-tileset rooms, `BREEDING_LAB` ($72) and `BREEDING_LAB_PENS` ($73), in their own indoor group `BREEDING_LAB_AREA` (which split Lance's room off as `POKEMON_LEAGUE_LANCE`). Code and text are in bank $2E with the farm. They play the Pokémon Mansion music.
+- The scientist (SCIENTIST team 14, DITTEGG and POULTRYGON) fights you before `EVENT_BEAT_VIRIDIAN_GYM_GIOVANNI` and only talks afterwards: two toggleable copies of him, swapped on map load with `FarmShowIf`. The wall chart's sponsor changes from TEAM ROOST to COCK RING at the same point.
+- Trainer flags follow object order, so the scientist is the second object (`def_trainers 2`) and MEWPEEP the third in the pens (`def_trainers 3`).
+- The pens have wild DITTEGG, GRIMEGG, MUKLUCK, CLUCKING and SQUAWKING (levels 30–38) anywhere on the floor.
+- MEWPEEP (level 50) sits in a glass case at the back of the pens. It's a one-time battle, like the legendary birds: `EVENT_BEAT_MEWPEEP` and `TOGGLE_MEWPEEP` hide it whether it is caught or not. It is the only way to get MEWPEEP.
+- Three diary pages (Nov. 3 and Jan. 20 on the lab desks, Oct. 8 on the pens' shelf, signed "F.") only hint at the Fuji link.

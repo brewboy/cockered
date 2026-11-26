@@ -114,8 +114,8 @@ WildDataPointers:
 	dw NothingWildMons
 	dw NothingWildMons
 	dw NothingWildMons
-	dw NothingWildMons
-	dw NothingWildMons
+	dw NothingWildMons         ; BREEDING_LAB
+	dw BreedingLabPensWildMons  ; BREEDING_LAB_PENS
 	dw NothingWildMons
 	dw NothingWildMons
 	dw NothingWildMons
@@ -308,6 +308,7 @@ INCLUDE "data/wild/maps/SeafoamIslandsB2F.asm"
 INCLUDE "data/wild/maps/SeafoamIslandsB3F.asm"
 INCLUDE "data/wild/maps/SeafoamIslandsB4F.asm"
 INCLUDE "data/wild/maps/PokemonMansion1F.asm"
+INCLUDE "data/wild/maps/BreedingLabPens.asm"
 INCLUDE "data/wild/maps/PokemonMansion2F.asm"
 INCLUDE "data/wild/maps/PokemonMansion3F.asm"
 INCLUDE "data/wild/maps/PokemonMansionB1F.asm"

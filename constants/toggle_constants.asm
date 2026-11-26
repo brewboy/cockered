@@ -418,4 +418,11 @@ ENDM
 	const TOGGLE_FUJI_FARM_BARN_FLOCK_6        ; F5
 	const TOGGLE_FUJI_FARM_BARN_FLOCK_7        ; F6
 
+	toggle_consts_for BREEDING_LAB
+	const TOGGLE_BREEDING_LAB_SCIENTIST        ; F7
+	const TOGGLE_BREEDING_LAB_RING_SCIENTIST   ; F8
+
+	toggle_consts_for BREEDING_LAB_PENS
+	const TOGGLE_MEWPEEP                       ; F9
+
 DEF NUM_TOGGLEABLE_OBJECTS EQU const_value

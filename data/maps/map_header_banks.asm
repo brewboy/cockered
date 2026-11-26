@@ -115,8 +115,8 @@ MapHeaderBanks::
 	db BANK(FujiFarmBarn_h) ; FUJI_FARM_BARN
 	db BANK(FujiFarmHouse_h) ; FUJI_FARM_HOUSE
 	db BANK(LancesRoom_h)
-	db $1D ; UNUSED_MAP_72
-	db $1D ; UNUSED_MAP_73
+	db BANK(BreedingLab_h) ; BREEDING_LAB
+	db BANK(BreedingLabPens_h) ; BREEDING_LAB_PENS
 	db $1D ; UNUSED_MAP_74
 	db $1D ; UNUSED_MAP_75
 	db BANK(HallOfFame_h)
