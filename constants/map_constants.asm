@@ -187,9 +187,15 @@ DEF FIRST_INDOOR_MAP EQU const_value
 	map_const THE_PIT,                       10,  8 ; $6D
 	end_indoor_group CELADON_CITY_3
 
-	map_const UNUSED_MAP_6E,                  0,  0 ; $6E
-	map_const UNUSED_MAP_6F,                  0,  0 ; $6F
-	map_const UNUSED_MAP_70,                  0,  0 ; $70
+	; outdoors, east of Lavender, but there are no spare outdoor map IDs
+	map_const FUJI_FARM,                     14,  9 ; $6E
+	map_const FUJI_FARM_BARN,                 6,  5 ; $6F
+	map_const FUJI_FARM_HOUSE,                4,  4 ; $70
+	end_indoor_group FUJI_FARM_AREA
+; The original game left a hidden MAX ELIXER on unused map $6F, out of the
+; barn's bounds; it keeps its hidden item flag.
+DEF UNUSED_MAP_6F EQU FUJI_FARM_BARN
+
 	map_const LANCES_ROOM,                   13, 13 ; $71
 	map_const UNUSED_MAP_72,                  0,  0 ; $72
 	map_const UNUSED_MAP_73,                  0,  0 ; $73

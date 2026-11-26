@@ -227,3 +227,22 @@ In-game names (in **bold**) are max 10 characters (`NAME_LENGTH - 1`) and live i
 - After the third win the bookie sends for you. In his office he offers ¥50000 to lose to OLD IRON (GENTLEMAN team 6, a level-35 SHAMONIX). Taking it sets `EVENT_PIT_THREW_FIGHT` with no battle; refusing starts the fight, and winning it sets `EVENT_PIT_BEAT_OLD_IRON` (¥20000 purse, and the betting window won't take your bets). `EVENT_PIT_MAIN_EVENT_DONE` covers all three endings, for the Retirement Farm.
 - Once Giovanni is beaten at the Viridian Gym (`EVENT_BEAT_VIRIDIAN_GYM_GIOVANNI`, aliased `EVENT_PIT_IS_RING_VENUE` in `data/events/pit_fights.asm`), the Pit reopens as a COCK RING venue: anyone can walk in, the runner stops recruiting, and the board, doorman, regulars and bookie have RING versions of their lines (the `pit_era_text` macro). The betting ban for beating OLD IRON lifts, and the bookie greets you as an old friend and says he sent OLD IRON to a farm out east. The wall by the door (44,19) reads "painted over" before and shows the COCK RING banner after.
 - New saved bytes come out of the spare `ds` at the end of `wGameProgressFlags`; an assert keeps that block at 200 bytes, because any change in its size stops existing saves loading.
+
+## Fuji Farm (east of Lavender)
+
+- MR.FUJI's farm, where birds go when nobody wants them. Lavender's east rock wall has a gap at (19,8–9), and `FUJI_FARM` joins on as a map connection. There were no spare outdoor map IDs, so the farm uses $6E, which is numbered like an indoor map. Because of that:
+  - `SetPal_Overworld` gives the farm and its buildings Lavender's palette.
+  - `InitMapSprites` clears `wSpriteSetID` on indoor-numbered maps, so walking back into Lavender reloads its sprite set.
+- The barn (`FUJI_FARM_BARN`, $6F) and farmhouse (`FUJI_FARM_HOUSE`, $70) use HOUSE tiles. All three maps are in their own indoor group, with code and text in bank $2E. They play the Pallet Town music.
+- Until `EVENT_RESCUED_MR_FUJI`, the farmhand turns you back one step in (like the Pit's doorman). Mr. Fuji mentions the farm when he gives you the flute.
+- **Retiring:** the farmer retires a party bird for good, using `RemovePokemon` like the day care.
+  - She won't take your last bird, or one that knows an HM.
+  - The breed is marked in `wFarmRetiredFlags`, one bit per Pokédex number.
+  - The bird's nickname and species wait by the gate (`wFarmNewcomerName`/`Species`).
+  - Every 5 different breeds earns a gift from `FarmGifts` (`wFarmGiftsGiven` counts them).
+- **Who's about:** `FarmSyncResidents` shows or hides the toggleable residents whenever you arrive. Arriving by warp sets the map-loaded flag; arriving on foot from Lavender sets `wFarmNeedsSync`, which Lavender's script sets every frame.
+  - OLD IRON appears after `EVENT_PIT_MAIN_EVENT_DONE`, with one story if you beat him and another if not.
+  - The BLACKBELT's PRIMEFOWL appears in the barn after `EVENT_PIT_BEAT_FIGHTER_3`.
+  - 11 flock slots (4 outside, 7 in the barn) appear as the number of retired breeds passes each slot's threshold in `FarmFlockSlots`. Each names one of your retired breeds, offset by `wFarmRotation`, which turns each visit.
+- **The ledger:** the board on the barn's back wall. It lists retired breeds with a new `SPECIESLISTMENU` list menu (species names, in `home/list_menu.asm`); picking one opens its Pokédex page.
+- The original game's unused hidden MAX ELIXER on map $6F is kept as `UNUSED_MAP_6F` (an alias for the barn, outside its bounds), so hidden item flags don't move.

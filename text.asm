@@ -289,3 +289,8 @@ SECTION "Text The Pit", ROMX, BANK[$2D]
 
 INCLUDE "text/PitBackRoom.asm"
 INCLUDE "text/ThePit.asm"
+
+
+SECTION "Text Fuji Farm", ROMX, BANK[$2E]
+
+INCLUDE "text/FujiFarm.asm"

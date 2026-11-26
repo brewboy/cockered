@@ -128,6 +128,8 @@ DisplayListMenuIDLoop::
 	ld a, [wListMenuID]
 	and a ; PCPOKEMONLISTMENU?
 	jr z, .pokemonList
+	cp SPECIESLISTMENU
+	jr z, .speciesList
 ; if it's an item menu
 	ASSERT wCurListMenuItem == wCurItem
 	push hl
@@ -157,6 +159,11 @@ DisplayListMenuIDLoop::
 .getPokemonName
 	ld a, [wWhichPokemon]
 	call GetPartyMonName
+	jr .storeChosenEntry
+.speciesList
+	ld a, [wCurListMenuItem]
+	ld [wNamedObjectIndex], a
+	call GetMonName
 .storeChosenEntry ; store the menu entry that the player chose and return
 	ld de, wNameBuffer
 	call CopyToStringBuffer
@@ -380,6 +387,8 @@ PrintListMenuEntries::
 	jr z, .pokemonPCMenu
 	cp MOVESLISTMENU
 	jr z, .movesMenu
+	cp SPECIESLISTMENU
+	jr z, .speciesMenu
 ; item menu
 	call GetItemName
 	jr .placeNameString
@@ -404,6 +413,9 @@ PrintListMenuEntries::
 	jr .placeNameString
 .movesMenu
 	call GetMoveName
+	jr .placeNameString
+.speciesMenu
+	call GetMonName
 .placeNameString
 	call PlaceString
 	pop de

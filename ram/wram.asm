@@ -2060,7 +2060,20 @@ wPitBetStake:: db
 wThePitCurScript:: db
 ; 0-2: the undercard fighters, 3: OLD IRON
 wPitCurFighter:: db
-	ds 61
+wFujiFarmCurScript:: db
+; which breeds (by Pokédex number) have been retired to the farm
+wFarmRetiredFlags:: flag_array NUM_POKEMON
+wFarmRetiredFlagsEnd::
+; how many of the farmer's gifts you've had (one per FARM_GIFT_EVERY breeds)
+wFarmGiftsGiven:: db
+; the last bird you retired, who waits by the gate
+wFarmNewcomerSpecies:: db
+wFarmNewcomerName:: ds NAME_LENGTH
+; turns each visit, so the flock shows different breeds
+wFarmRotation:: db
+; set by the maps next door, so the farm sorts out who's about when you walk in
+wFarmNeedsSync:: db
+	ds 26
 wGameProgressFlagsEnd::
 	assert wGameProgressFlagsEnd - wGameProgressFlags == 200, \
 		"wGameProgressFlags must stay 200 bytes, or saves stop loading"

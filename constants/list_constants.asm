@@ -5,6 +5,7 @@
 	const PRICEDITEMLISTMENU ; $02 ; Pokemart buy menu / Pokemart buy/sell choose quantity menu
 	const ITEMLISTMENU       ; $03 ; Start menu Item menu / Pokemart sell menu
 	const SPECIALLISTMENU    ; $04 ; list of special "items" e.g. floor list in elevators / list of badges
+	const SPECIESLISTMENU    ; $05 ; list of species (the farm's ledger of retired breeds)
 
 ; NamePointers indexes (see home/names2.asm)
 	const_def 1

@@ -427,6 +427,25 @@ ToggleableObjectStates:
 	toggleable_objects_for JUNGLEFOWL_ROOST
 	toggle_object_state JUNGLEFOWLROOST_LEADER,     ON
 
+	; the farm's residents come and go with what you've done (FarmSyncResidents)
+	toggleable_objects_for FUJI_FARM
+	toggle_object_state FUJIFARM_NEWCOMER,          OFF
+	toggle_object_state FUJIFARM_OLD_IRON,          OFF
+	toggle_object_state FUJIFARM_FLOCK_1,           OFF
+	toggle_object_state FUJIFARM_FLOCK_2,           OFF
+	toggle_object_state FUJIFARM_FLOCK_3,           OFF
+	toggle_object_state FUJIFARM_FLOCK_4,           OFF
+
+	toggleable_objects_for FUJI_FARM_BARN
+	toggle_object_state FUJIFARMBARN_PRIMEFOWL,     OFF
+	toggle_object_state FUJIFARMBARN_FLOCK_1,       OFF
+	toggle_object_state FUJIFARMBARN_FLOCK_2,       OFF
+	toggle_object_state FUJIFARMBARN_FLOCK_3,       OFF
+	toggle_object_state FUJIFARMBARN_FLOCK_4,       OFF
+	toggle_object_state FUJIFARMBARN_FLOCK_5,       OFF
+	toggle_object_state FUJIFARMBARN_FLOCK_6,       OFF
+	toggle_object_state FUJIFARMBARN_FLOCK_7,       OFF
+
 	assert_table_length NUM_TOGGLEABLE_OBJECTS
 
 	db -1, 1, ON ; end

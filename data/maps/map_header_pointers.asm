@@ -111,9 +111,9 @@ MapHeaderPointers::
 	dw PitBackRoom_h ; PIT_BACK_ROOM
 	dw VictoryRoad1F_h
 	dw ThePit_h ; THE_PIT
-	dw LancesRoom_h ; UNUSED_MAP_6E
-	dw LancesRoom_h ; UNUSED_MAP_6F
-	dw LancesRoom_h ; UNUSED_MAP_70
+	dw FujiFarm_h ; FUJI_FARM
+	dw FujiFarmBarn_h ; FUJI_FARM_BARN
+	dw FujiFarmHouse_h ; FUJI_FARM_HOUSE
 	dw LancesRoom_h
 	dw LancesRoom_h ; UNUSED_MAP_72
 	dw LancesRoom_h ; UNUSED_MAP_73

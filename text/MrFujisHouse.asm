@@ -65,6 +65,11 @@ _MrFujisHouseMrFujiPokeFluteExplanationText::
 
 	para "It works on all"
 	line "sleeping COCK."
+
+	para "My old birds are"
+	line "on my farm, east"
+	cont "of town. Do visit"
+	cont "them."
 	done
 
 _MrFujisHouseMrFujiPokeFluteNoRoomText::
@@ -75,6 +80,9 @@ _MrFujisHouseMrFujiPokeFluteNoRoomText::
 _MrFujisHouseMrFujiHasMyFluteHelpedYouText::
 	text "MR.FUJI: Has my"
 	line "FLUTE helped you?"
+
+	para "Have you been out"
+	line "to my farm?"
 	done
 
 _MrFujisHouseMrFujiPokedexText::

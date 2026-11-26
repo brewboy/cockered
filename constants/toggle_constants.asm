@@ -400,4 +400,22 @@ ENDM
 	toggle_consts_for JUNGLEFOWL_ROOST
 	const TOGGLE_JUNGLEFOWL_ROOST_LEADER       ; E8
 
+	toggle_consts_for FUJI_FARM
+	const TOGGLE_FUJI_FARM_NEWCOMER            ; E9
+	const TOGGLE_FUJI_FARM_OLD_IRON            ; EA
+	const TOGGLE_FUJI_FARM_FLOCK_1             ; EB
+	const TOGGLE_FUJI_FARM_FLOCK_2             ; EC
+	const TOGGLE_FUJI_FARM_FLOCK_3             ; ED
+	const TOGGLE_FUJI_FARM_FLOCK_4             ; EE
+
+	toggle_consts_for FUJI_FARM_BARN
+	const TOGGLE_FUJI_FARM_BARN_PRIMEFOWL      ; EF
+	const TOGGLE_FUJI_FARM_BARN_FLOCK_1        ; F0
+	const TOGGLE_FUJI_FARM_BARN_FLOCK_2        ; F1
+	const TOGGLE_FUJI_FARM_BARN_FLOCK_3        ; F2
+	const TOGGLE_FUJI_FARM_BARN_FLOCK_4        ; F3
+	const TOGGLE_FUJI_FARM_BARN_FLOCK_5        ; F4
+	const TOGGLE_FUJI_FARM_BARN_FLOCK_6        ; F5
+	const TOGGLE_FUJI_FARM_BARN_FLOCK_7        ; F6
+
 DEF NUM_TOGGLEABLE_OBJECTS EQU const_value
