@@ -43,10 +43,8 @@ _PitBackRoomDoormanNoTroubleText::
 	done
 
 _PitBackRoomStairsGuardText::
-	text "Downstairs is for"
-	line "fighters."
-
-	para "Not today, kid."
+	text "Fighters go down."
+	line "Bets stay up here."
 	done
 
 _PitBackRoomLoserText::
@@ -195,4 +193,10 @@ _PitBackRoomClerkNoContestText::
 	text "No contest. The"
 	line "house keeps the"
 	cont "bets."
+	done
+
+_PitBackRoomClerkMoneyNoGoodText::
+	text "Boss says your"
+	line "money's no good"
+	cont "here, kid."
 	done

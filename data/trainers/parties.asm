@@ -286,6 +286,8 @@ BikerData:
 	db 26, KOFFING, KOFFING, GRIMER, KOFFING, 0
 	db 28, GRIMER, GRIMER, KOFFING, 0
 	db 29, KOFFING, MUK, 0
+; The Pit
+	db 26, FEAROW, PRIMEAPE, 0
 
 BurglarData:
 ; Unused
@@ -415,6 +417,8 @@ RockerData:
 	db 20, VOLTORB, MAGNEMITE, VOLTORB, 0
 ; Route 12
 	db 29, VOLTORB, ELECTRODE, 0
+; The Pit
+	db 28, GROWLITHE, MACHOKE, 0
 
 JugglerData:
 ; Silph Co. 5F
@@ -483,6 +487,8 @@ BlackbeltData:
 	db 38, MACHOKE, MACHOP, MACHOKE, 0
 ; Victory Road 2F
 	db 43, MACHOKE, MACHOP, MACHOKE, 0
+; The Pit
+	db 31, PRIMEAPE, HITMONLEE, 0
 
 Rival1Data:
 	db 5, SQUIRTLE, 0
@@ -671,6 +677,8 @@ GentlemanData:
 	db 48, PRIMEAPE, 0
 ; SS Anne 2F Rooms
 	db 17, GROWLITHE, PONYTA, 0
+; The Pit: the bookie and OLD IRON
+	db 35, ONIX, 0
 
 Rival2Data:
 ; SS Anne 2F

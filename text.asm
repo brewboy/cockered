@@ -288,3 +288,4 @@ INCLUDE "text/JunglefowlRoost.asm"
 SECTION "Text The Pit", ROMX, BANK[$2D]
 
 INCLUDE "text/PitBackRoom.asm"
+INCLUDE "text/ThePit.asm"

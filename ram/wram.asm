@@ -2057,7 +2057,10 @@ wPitFavChance:: db
 wPitResult:: db
 wPitBetSide:: db
 wPitBetStake:: db
-	ds 63
+wThePitCurScript:: db
+; 0-2: the undercard fighters, 3: OLD IRON
+wPitCurFighter:: db
+	ds 61
 wGameProgressFlagsEnd::
 	assert wGameProgressFlagsEnd - wGameProgressFlags == 200, \
 		"wGameProgressFlags must stay 200 bytes, or saves stop loading"

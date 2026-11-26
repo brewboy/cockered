@@ -1148,6 +1148,22 @@ HandlePlayerBlackOut:
 	cp OAKS_LAB
 	ret z            ; starter battle in oak's lab: don't black out
 .notRival1Battle
+	ld a, [wCurMap]
+	cp THE_PIT
+	jr nz, .blackOut
+; losing in the Pit costs you the entry fee, not a blackout
+	hlcoord 0, 0
+	lb bc, 8, 21
+	call ClearScreenArea
+	call ScrollTrainerPicAfterBattle
+	ld c, 40
+	call DelayFrames
+	ld a, 1 ; lost
+	ld [wBattleResult], a
+	call PrintEndBattleText
+	xor a
+	ret
+.blackOut
 	ld b, SET_PAL_BATTLE_BLACK
 	call RunPaletteCommand
 	ld hl, PlayerBlackedOutText2

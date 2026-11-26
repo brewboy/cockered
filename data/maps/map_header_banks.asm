@@ -110,7 +110,7 @@ MapHeaderBanks::
 	db BANK(JunglefowlRoost_h) ; JUNGLEFOWL_ROOST
 	db BANK(PitBackRoom_h) ; PIT_BACK_ROOM
 	db BANK(VictoryRoad1F_h)
-	db $1D ; UNUSED_MAP_6D
+	db BANK(ThePit_h) ; THE_PIT
 	db $1D ; UNUSED_MAP_6E
 	db $1D ; UNUSED_MAP_6F
 	db $1D ; UNUSED_MAP_70

@@ -130,6 +130,12 @@ PitBackRoomBoardText:
 PitBackRoomClerkText:
 ; the betting window
 	text_asm
+	CheckEvent EVENT_PIT_BEAT_OLD_IRON
+	jr z, .open
+	ld hl, .MoneyNoGoodText
+	call PrintText
+	jp TextScriptEnd
+.open
 	call SaveScreenTilesToBuffer2
 	call PitSetUpFight
 	xor a
@@ -220,6 +226,10 @@ PitBackRoomClerkText:
 	ld hl, .SuitYourselfText
 	call PrintText
 	jp TextScriptEnd
+
+.MoneyNoGoodText:
+	text_far _PitBackRoomClerkMoneyNoGoodText
+	text_end
 
 .FavText:
 	text_far _PitBackRoomClerkFavText

@@ -11,6 +11,7 @@ PitBackRoom_Object:
 	def_warp_events
 	warp_event  4,  9, LAST_MAP, 9
 	warp_event  5,  9, LAST_MAP, 9
+	warp_event 10,  1, THE_PIT, 1
 
 	def_bg_events
 	bg_event  7,  0, TEXT_PITBACKROOM_BOARD
@@ -18,7 +19,7 @@ PitBackRoom_Object:
 	def_object_events
 	object_event  1,  1, SPRITE_GAMBLER, STAY, DOWN, TEXT_PITBACKROOM_CLERK
 	object_event  6,  7, SPRITE_ROCKER, STAY, LEFT, TEXT_PITBACKROOM_DOORMAN
-	object_event 10,  2, SPRITE_BIKER, STAY, DOWN, TEXT_PITBACKROOM_STAIRS_GUARD
+	object_event 11,  2, SPRITE_BIKER, STAY, LEFT, TEXT_PITBACKROOM_STAIRS_GUARD
 	object_event  9,  4, SPRITE_BALDING_GUY, STAY, DOWN, TEXT_PITBACKROOM_LOSER
 	object_event  2,  6, SPRITE_MIDDLE_AGED_MAN, STAY, DOWN, TEXT_PITBACKROOM_REGULAR
 

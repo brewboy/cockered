@@ -1245,3 +1245,8 @@ INCLUDE "data/maps/headers/PitBackRoom.asm"
 INCLUDE "scripts/PitBackRoom.asm"
 INCLUDE "data/maps/objects/PitBackRoom.asm"
 PitBackRoom_Blocks: INCBIN "maps/PitBackRoom.blk"
+
+INCLUDE "data/maps/headers/ThePit.asm"
+INCLUDE "scripts/ThePit.asm"
+INCLUDE "data/maps/objects/ThePit.asm"
+ThePit_Blocks: INCBIN "maps/ThePit.blk"
