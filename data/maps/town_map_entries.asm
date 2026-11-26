@@ -18,7 +18,7 @@ ExternalMapEntries:
 	outdoor_map  2, 15, CinnabarIslandName
 	outdoor_map  0,  2, IndigoPlateauName
 	outdoor_map 10,  5, SaffronCityName
-	outdoor_map  0,  0, PalletTownName ; unused
+	outdoor_map 15, 15, JunglefowlIslandName
 	outdoor_map  2, 10, Route1Name
 	outdoor_map  2,  6, Route2Name
 	outdoor_map  4,  3, Route3Name
@@ -77,6 +77,7 @@ InternalMapEntries:
 	indoor_map SEA_COTTAGE,        12,  0, SeaCottageName
 	indoor_map VERMILION_CITY,     10,  9, VermilionCityName
 	indoor_map SS_ANNE,             9, 10, SSAnneName
+	indoor_map JUNGLEFOWL_ISLAND,  15, 15, JunglefowlIslandName
 	indoor_map VICTORY_ROAD,        0,  4, VictoryRoadName
 	indoor_map POKEMON_LEAGUE,      0,  2, PokemonLeagueName
 	indoor_map UNDERGROUND_PATH,   10,  5, UndergroundPathName

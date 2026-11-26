@@ -37,6 +37,11 @@ ResetStatusAndHalveMoneyOnBlackout::
 	ld [wPlayerMoney + 2], a
 
 .lostmoney
+	ld a, [wLastBlackoutMap]
+	cp JUNGLEFOWL_HUT ; the castaway carries you to his hut
+	jr nz, .notOnIsland
+	SetEvent EVENT_CASTAWAY_CARRIED_YOU
+.notOnIsland
 	ld hl, wStatusFlags6
 	set BIT_FLY_OR_DUNGEON_WARP, [hl]
 	res BIT_FLY_WARP, [hl]

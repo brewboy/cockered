@@ -75,6 +75,7 @@ FlyWarpDataPtr:
 	fly_warp_spec SAFFRON_CITY,    .SaffronCity
 	fly_warp_spec ROUTE_4,         .Route4
 	fly_warp_spec ROUTE_10,        .Route10
+	fly_warp_spec JUNGLEFOWL_HUT,  .JunglefowlHut ; blacking out on the island
 
 .PalletTown:     fly_warp PALLET_TOWN,      5,  6
 .ViridianCity:   fly_warp VIRIDIAN_CITY,   23, 26
@@ -89,3 +90,4 @@ FlyWarpDataPtr:
 .SaffronCity:    fly_warp SAFFRON_CITY,     9, 30
 .Route4:         fly_warp ROUTE_4,         11,  6
 .Route10:        fly_warp ROUTE_10,        11, 20
+.JunglefowlHut:  fly_warp JUNGLEFOWL_HUT,   2,  5

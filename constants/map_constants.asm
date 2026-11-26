@@ -36,7 +36,7 @@ ENDM
 	map_const SAFFRON_CITY,                  20, 18 ; $0A
 DEF NUM_CITY_MAPS EQU const_value
 
-	map_const UNUSED_MAP_0B,                  0,  0 ; $0B
+	map_const JUNGLEFOWL_ISLAND,             10, 27 ; $0B
 
 DEF FIRST_ROUTE_MAP EQU const_value
 	map_const ROUTE_1,                       10, 18 ; $0C
@@ -174,8 +174,10 @@ DEF FIRST_INDOOR_MAP EQU const_value
 	map_const SS_ANNE_B1F_ROOMS,             12,  8 ; $68
 	end_indoor_group SS_ANNE
 
-	map_const UNUSED_MAP_69,                  0,  0 ; $69
-	map_const UNUSED_MAP_6A,                  0,  0 ; $6A
+	map_const JUNGLEFOWL_HUT,                 4,  4 ; $69
+	map_const JUNGLEFOWL_ROOST,              10, 10 ; $6A
+	end_indoor_group JUNGLEFOWL_ISLAND
+
 	map_const UNUSED_MAP_6B,                  0,  0 ; $6B
 	map_const VICTORY_ROAD_1F,               10,  9 ; $6C
 	end_indoor_group VICTORY_ROAD

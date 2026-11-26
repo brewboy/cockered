@@ -2038,7 +2038,13 @@ wSeafoamIslandsB3FCurScript:: db
 wRoute23CurScript:: db
 wSeafoamIslandsB4FCurScript:: db
 wRoute18Gate1FCurScript:: db
-	ds 78
+wJunglefowlIslandCurScript:: db
+; where blackouts took you before the island, put back once you leave it
+wBlackoutMapBeforeIsland:: db
+wJunglefowlRoostCurScript:: db
+; party + box size when the Roost leader fight starts, to spot a catch
+wMonCountBeforeRoostLeader:: db
+	ds 74
 wGameProgressFlagsEnd::
 
 	ds 56

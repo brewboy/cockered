@@ -418,6 +418,15 @@ ToggleableObjectStates:
 	toggle_object_state SEAFOAMISLANDSB4F_BOULDER2, OFF
 	toggle_object_state SEAFOAMISLANDSB4F_ARTICUNO, ON
 
+	toggleable_objects_for JUNGLEFOWL_ISLAND
+	toggle_object_state JUNGLEFOWLISLAND_CASTAWAY,  ON
+	toggle_object_state JUNGLEFOWLISLAND_DRIFTWOOD, ON
+	toggle_object_state JUNGLEFOWLISLAND_WATCHER,   ON
+	toggle_object_state JUNGLEFOWLISLAND_VINE_ROPE, ON
+
+	toggleable_objects_for JUNGLEFOWL_ROOST
+	toggle_object_state JUNGLEFOWLROOST_LEADER,     ON
+
 	assert_table_length NUM_TOGGLEABLE_OBJECTS
 
 	db -1, 1, ON ; end

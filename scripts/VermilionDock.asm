@@ -8,7 +8,7 @@ VermilionDock_Script:
 	cp $1
 	ret nz
 	CheckEventReuseHL EVENT_SS_ANNE_LEFT
-	jp z, VermilionDockSSAnneLeavesScript
+	jp z, VermilionDockWashedOverboardScript
 	SetEventReuseHL EVENT_STARTED_WALKING_OUT_OF_DOCK
 	call Delay3
 	ld hl, wStatusFlags5
@@ -36,7 +36,42 @@ VermilionDock_Script:
 	SetEventReuseHL EVENT_WALKED_OUT_OF_DOCK
 	ret
 
-VermilionDockSSAnneLeavesScript:
+VermilionDockWashedOverboardScript:
+; Rooster Edition: as you step off the gangway with CUT, the ship pulls away
+; early and a wave sweeps you into the sea. You wash up on JUNGLEFOWL ISLAND.
+	SetEventForceReuseHL EVENT_SS_ANNE_LEFT
+	SetEvent EVENT_WASHED_OVERBOARD
+	ld a, PAD_SELECT | PAD_START | PAD_CTRL_PAD
+	ld [wJoyIgnore], a
+	ld a, SFX_STOP_ALL_MUSIC
+	call PlaySound
+	ld a, SFX_SS_ANNE_HORN
+	call PlaySoundWaitForCurrent
+	call WaitForSoundToFinish
+	ld a, TEXT_VERMILIONDOCK_SHIP_LEAVING
+	ldh [hTextID], a
+	call DisplayTextID
+	ld a, SFX_PUSH_BOULDER
+	call PlaySoundWaitForCurrent
+	call WaitForSoundToFinish
+	ld a, TEXT_VERMILIONDOCK_SWEPT_AWAY
+	ldh [hTextID], a
+	call DisplayTextID
+	ld a, JUNGLEFOWL_ISLAND
+	ldh [hWarpDestinationMap], a
+	xor a ; where you wash ashore
+	ld [wDestinationWarpID], a
+	ld a, VERMILION_CITY
+	ld [wLastMap], a
+	ld a, [wLastBlackoutMap]
+	ld [wBlackoutMapBeforeIsland], a
+	ld a, JUNGLEFOWL_HUT ; black out on the island and you wake in the hut
+	ld [wLastBlackoutMap], a
+	ld hl, wStatusFlags3
+	set BIT_WARP_FROM_CUR_SCRIPT, [hl]
+	ret
+
+VermilionDockSSAnneLeavesScript: ; unused since the island replaced it
 	SetEventForceReuseHL EVENT_SS_ANNE_LEFT
 	ld a, SFX_STOP_ALL_MUSIC
 	ld [wJoyIgnore], a
@@ -211,7 +246,17 @@ VermilionDock_EraseSSAnne:
 VermilionDock_TextPointers:
 	def_text_pointers
 	dw_const VermilionDockUnusedText, TEXT_VERMILIONDOCK_UNUSED
+	dw_const VermilionDockShipLeavingText, TEXT_VERMILIONDOCK_SHIP_LEAVING
+	dw_const VermilionDockSweptAwayText, TEXT_VERMILIONDOCK_SWEPT_AWAY
 
 VermilionDockUnusedText:
 	text_far _VermilionDockUnusedText
+	text_end
+
+VermilionDockShipLeavingText:
+	text_far _VermilionDockShipLeavingText
+	text_end
+
+VermilionDockSweptAwayText:
+	text_far _VermilionDockSweptAwayText
 	text_end

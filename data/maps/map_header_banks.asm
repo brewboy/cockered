@@ -12,7 +12,7 @@ MapHeaderBanks::
 	db BANK(CinnabarIsland_h)
 	db BANK(IndigoPlateau_h)
 	db BANK(SaffronCity_h)
-	db $01 ; UNUSED_MAP_0B
+	db BANK(JunglefowlIsland_h)
 	db BANK(Route1_h)
 	db BANK(Route2_h)
 	db BANK(Route3_h)
@@ -106,8 +106,8 @@ MapHeaderBanks::
 	db BANK(SSAnne1FRooms_h)
 	db BANK(SSAnne2FRooms_h)
 	db BANK(SSAnneB1FRooms_h)
-	db $1D ; UNUSED_MAP_69
-	db $1D ; UNUSED_MAP_6A
+	db BANK(JunglefowlHut_h) ; JUNGLEFOWL_HUT
+	db BANK(JunglefowlRoost_h) ; JUNGLEFOWL_ROOST
 	db $1D ; UNUSED_MAP_6B
 	db BANK(VictoryRoad1F_h)
 	db $1D ; UNUSED_MAP_6D
