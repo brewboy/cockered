@@ -63,7 +63,7 @@ A fighting bird's life, from the wild to the ring and beyond. Where they are, an
 
 ## Play it
 
-Build the ROMs yourself (see [**INSTALL.md**](INSTALL.md) for the tools), then run `make`. You get `pokered.gbc` (Rhode Island Red) and `pokeblue.gbc` (Blue Wyandotte). Play them in any Game Boy Color emulator, or on the real thing.
+Build the ROMs yourself (see [**INSTALL.md**](INSTALL.md) for the tools), then run `make`. You get `rhodeislandred.gbc` and `bluewyandotte.gbc`. Play them in any Game Boy Color emulator, or on the real thing.
 
 Spoilers live in the pull requests and in [**CLAUDE.md**](CLAUDE.md), which lists every breed and how everything works. Play first.
 
