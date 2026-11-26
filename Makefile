@@ -1,7 +1,7 @@
 roms := \
-	pokered.gbc \
-	pokeblue.gbc \
-	pokeblue_debug.gbc
+	rhodeislandred.gbc \
+	bluewyandotte.gbc \
+	bluewyandotte_debug.gbc
 patches := \
 	pokered.patch \
 	pokeblue.patch
@@ -17,9 +17,10 @@ rom_obj := \
 	gfx/sprites.o \
 	gfx/tilesets.o
 
-pokered_obj        := $(rom_obj:.o=_red.o)
-pokeblue_obj       := $(rom_obj:.o=_blue.o)
-pokeblue_debug_obj := $(rom_obj:.o=_blue_debug.o)
+# Rooster Edition's ROMs: rhodeislandred.gbc (Red), bluewyandotte.gbc (Blue)
+rhodeislandred_obj      := $(rom_obj:.o=_red.o)
+bluewyandotte_obj       := $(rom_obj:.o=_blue.o)
+bluewyandotte_debug_obj := $(rom_obj:.o=_blue_debug.o)
 pokered_vc_obj     := $(rom_obj:.o=_red_vc.o)
 pokeblue_vc_obj    := $(rom_obj:.o=_blue_vc.o)
 
@@ -63,9 +64,9 @@ RGBGFXFLAGS  ?= -Weverything
 	tools
 
 all: $(roms)
-red:        pokered.gbc
-blue:       pokeblue.gbc
-blue_debug: pokeblue_debug.gbc
+red:        rhodeislandred.gbc
+blue:       bluewyandotte.gbc
+blue_debug: bluewyandotte_debug.gbc
 red_vc:     pokered.patch
 blue_vc:    pokeblue.patch
 
@@ -85,11 +86,11 @@ tidy:
 	      $(patches:.patch=_vc.sym) \
 	      $(patches:.patch=_vc.map) \
 	      $(patches:%.patch=vc/%.constants.sym) \
-	      $(pokered_obj) \
-	      $(pokeblue_obj) \
+	      $(rhodeislandred_obj) \
+	      $(bluewyandotte_obj) \
 	      $(pokered_vc_obj) \
 	      $(pokeblue_vc_obj) \
-	      $(pokeblue_debug_obj) \
+	      $(bluewyandotte_debug_obj) \
 	      rgbdscheck.o
 	$(MAKE) clean -C tools/
 
@@ -106,14 +107,17 @@ ifeq ($(DEBUG),1)
 RGBASMFLAGS += -E
 endif
 
-$(pokered_obj):        RGBASMFLAGS += -D _RED
-$(pokeblue_obj):       RGBASMFLAGS += -D _BLUE
-$(pokeblue_debug_obj): RGBASMFLAGS += -D _BLUE -D _DEBUG
+$(rhodeislandred_obj):      RGBASMFLAGS += -D _RED
+$(bluewyandotte_obj):       RGBASMFLAGS += -D _BLUE
+$(bluewyandotte_debug_obj): RGBASMFLAGS += -D _BLUE -D _DEBUG
 $(pokered_vc_obj):     RGBASMFLAGS += -D _RED -D _RED_VC
 $(pokeblue_vc_obj):    RGBASMFLAGS += -D _BLUE -D _BLUE_VC
 
-%.patch: %_vc.gbc %.gbc vc/%.patch.template
-	tools/make_patch $*_vc.sym $^ $@
+# The Virtual Console patches keep pret's names; each pairs with its renamed ROM.
+pokered.patch: pokered_vc.gbc rhodeislandred.gbc vc/pokered.patch.template
+	tools/make_patch pokered_vc.sym $^ $@
+pokeblue.patch: pokeblue_vc.gbc bluewyandotte.gbc vc/pokeblue.patch.template
+	tools/make_patch pokeblue_vc.sym $^ $@
 
 rgbdscheck.o: rgbdscheck.asm
 	$(RGBASM) -o $@ $<
@@ -134,9 +138,9 @@ $1: $2 $$(shell tools/scan_includes $2) $(preinclude_deps) | rgbdscheck.o
 endef
 
 # Dependencies for objects (drop _red and _blue from asm file basenames)
-$(foreach obj, $(pokered_obj), $(eval $(call DEP,$(obj),$(obj:_red.o=.asm))))
-$(foreach obj, $(pokeblue_obj), $(eval $(call DEP,$(obj),$(obj:_blue.o=.asm))))
-$(foreach obj, $(pokeblue_debug_obj), $(eval $(call DEP,$(obj),$(obj:_blue_debug.o=.asm))))
+$(foreach obj, $(rhodeislandred_obj), $(eval $(call DEP,$(obj),$(obj:_red.o=.asm))))
+$(foreach obj, $(bluewyandotte_obj), $(eval $(call DEP,$(obj),$(obj:_blue.o=.asm))))
+$(foreach obj, $(bluewyandotte_debug_obj), $(eval $(call DEP,$(obj),$(obj:_blue_debug.o=.asm))))
 $(foreach obj, $(pokered_vc_obj), $(eval $(call DEP,$(obj),$(obj:_red_vc.o=.asm))))
 $(foreach obj, $(pokeblue_vc_obj), $(eval $(call DEP,$(obj),$(obj:_blue_vc.o=.asm))))
 
@@ -144,16 +148,16 @@ endif
 
 
 RGBLINKFLAGS += -d
-pokered.gbc:        RGBLINKFLAGS += -p 0x00
-pokeblue.gbc:       RGBLINKFLAGS += -p 0x00
-pokeblue_debug.gbc: RGBLINKFLAGS += -p 0xff
+rhodeislandred.gbc:      RGBLINKFLAGS += -p 0x00
+bluewyandotte.gbc:       RGBLINKFLAGS += -p 0x00
+bluewyandotte_debug.gbc: RGBLINKFLAGS += -p 0xff
 pokered_vc.gbc:     RGBLINKFLAGS += -p 0x00
 pokeblue_vc.gbc:    RGBLINKFLAGS += -p 0x00
 
 RGBFIXFLAGS += -cjsv -n 0 -k 01 -l 0x33 -m MBC3+RAM+BATTERY -r 03
-pokered.gbc:        RGBFIXFLAGS += -p 0x00 -t "POKEMON RED"
-pokeblue.gbc:       RGBFIXFLAGS += -p 0x00 -t "POKEMON BLUE"
-pokeblue_debug.gbc: RGBFIXFLAGS += -p 0xff -t "POKEMON BLUE"
+rhodeislandred.gbc:      RGBFIXFLAGS += -p 0x00 -t "POKEMON RED"
+bluewyandotte.gbc:       RGBFIXFLAGS += -p 0x00 -t "POKEMON BLUE"
+bluewyandotte_debug.gbc: RGBFIXFLAGS += -p 0xff -t "POKEMON BLUE"
 pokered_vc.gbc:     RGBFIXFLAGS += -p 0x00 -t "POKEMON RED"
 pokeblue_vc.gbc:    RGBFIXFLAGS += -p 0x00 -t "POKEMON BLUE"
 

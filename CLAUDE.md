@@ -186,7 +186,7 @@ In-game names (in **bold**) are max 10 characters (`NAME_LENGTH - 1`) and live i
 - Drawn backs are rear views made by `tools/draw_rooster_backs.py` (`SPECIES` holds each breed's colours, stage and options; the comment above it lists them). It writes 32×32 gameboy, colour and colour_x4 versions under `gfx/rooster_src/back/`; run it before the importer. Every species except Farfetch'd has a drawn back.
 - Changing the back generator must not change existing backs by accident: regenerate into a scratch directory and compare against `gfx/rooster_src/back/` before writing into the repo.
 - Farfetch'd (#83) is skipped and keeps its original sprites. Mewtwo (#150) uses `150_lab_bred_goose.png`.
-- Each pics bank (`gfx/pics.asm`, "Pics 1"–"Pics 5") must stay within its ROM bank; check free space in `pokered.map` after big art changes.
+- Each pics bank (`gfx/pics.asm`, "Pics 1"–"Pics 5") must stay within its ROM bank; check free space in `rhodeislandred.map` after big art changes.
 
 ## Overworld sprites and party icons
 
