@@ -9,6 +9,8 @@ JunglefowlHut_Script:
 	ld [wLastMap], a
 	ld b, SET_PAL_OVERWORLD
 	call RunPaletteCommand
+	call UpdateSprites ; this runs on the first frame, before he's been drawn
+	call Delay3
 	ld a, TEXT_JUNGLEFOWLHUT_CARRIED_YOU
 	ldh [hTextID], a
 	jp DisplayTextID
