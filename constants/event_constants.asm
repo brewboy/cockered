@@ -122,7 +122,9 @@
 	const EVENT_GOT_TM48
 	const EVENT_GOT_TM49
 	const EVENT_GOT_TM18
-	const_skip 24
+	const EVENT_PIT_INVITED ; the bookie's runner told you about the back room
+	const EVENT_PIT_LET_IN  ; the doorman let you in
+	const_skip 22
 	const EVENT_GOT_TM21
 	const EVENT_BEAT_ERIKA
 	const EVENT_BEAT_CELADON_GYM_TRAINER_0

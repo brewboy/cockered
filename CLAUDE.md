@@ -216,3 +216,10 @@ In-game names (in **bold**) are max 10 characters (`NAME_LENGTH - 1`) and live i
 - The opening fight is CROWGAR (Black Sumatra, seen from behind; stands in for Gengar) against NIDOROOST on Red or SILKYPUFF on Blue (for Nidorino/Jigglypuff). `python3 tools/draw_rooster_intro.py` draws them and writes `gfx/intro/` (file names kept from the original) plus colour references in `gfx/rooster_src/intro/`; pass a folder to preview instead. Run `make` afterwards.
 - CROWGAR's three 56×56 poses are stored as unique tiles (tile 0 blank, tile 1 solid black, which the intro also uses for its black bars) with a 7×7 tilemap per pose; together they must stay within 108 tiles, which the script checks. The standing and wings-flared poses share their body, neck and head to save tiles.
 - The scene's palette (`PalPacket_NidorinoIntro` in `data/sgb/sgb_packets.asm`) is the opponent's species palette.
+
+## The Pit (Celadon)
+
+- The last building on the Game Corner's row has a door at (43,19), reusing Celadon's unused warp 9 (it pointed at CELADON_MART_5F). It leads to `PIT_BACK_ROOM` (map $6B, LOBBY tiles), which has its own indoor group (`CELADON_CITY_2`). Code and text are in bank $2D with the island.
+- Getting in: the slot machines count pulls in `wPitSlotPulls`. After 10, the bookie's runner (Game Corner, at 18,16) walks along the bottom row to the player and sets `EVENT_PIT_INVITED`; talking to him does the same. Without the invite, the doorman sends you back out; with it, he lets you in once (`EVENT_PIT_LET_IN`).
+- The betting window: the card, birds, odds, stakes (¥1000/¥5000/¥10000) and payouts are in `data/events/pit_fights.asm`. Each fight is settled before it is told, and there's a 1-in-16 no-contest where the house keeps every bet, so every bet loses about a tenth on average.
+- New saved bytes come out of the spare `ds` at the end of `wGameProgressFlags`; an assert keeps that block at 200 bytes, because any change in its size stops existing saves loading.

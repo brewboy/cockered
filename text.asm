@@ -283,3 +283,8 @@ SECTION "Text Junglefowl Island", ROMX, BANK[$2D]
 INCLUDE "text/JunglefowlIsland.asm"
 INCLUDE "text/JunglefowlHut.asm"
 INCLUDE "text/JunglefowlRoost.asm"
+
+
+SECTION "Text The Pit", ROMX, BANK[$2D]
+
+INCLUDE "text/PitBackRoom.asm"

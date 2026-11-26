@@ -178,7 +178,9 @@ DEF FIRST_INDOOR_MAP EQU const_value
 	map_const JUNGLEFOWL_ROOST,              10, 10 ; $6A
 	end_indoor_group JUNGLEFOWL_ISLAND
 
-	map_const UNUSED_MAP_6B,                  0,  0 ; $6B
+	map_const PIT_BACK_ROOM,                  6,  5 ; $6B
+	end_indoor_group CELADON_CITY_2
+
 	map_const VICTORY_ROAD_1F,               10,  9 ; $6C
 	end_indoor_group VICTORY_ROAD
 
