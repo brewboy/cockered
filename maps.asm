@@ -1268,3 +1268,16 @@ INCLUDE "data/maps/headers/FujiFarmHouse.asm"
 INCLUDE "scripts/FujiFarmHouse.asm"
 INCLUDE "data/maps/objects/FujiFarmHouse.asm"
 FujiFarmHouse_Blocks: INCBIN "maps/FujiFarmHouse.blk"
+
+
+SECTION "Maps Breeding Lab", ROMX, BANK[$2E]
+
+INCLUDE "data/maps/headers/BreedingLab.asm"
+INCLUDE "scripts/BreedingLab.asm"
+INCLUDE "data/maps/objects/BreedingLab.asm"
+BreedingLab_Blocks: INCBIN "maps/BreedingLab.blk"
+
+INCLUDE "data/maps/headers/BreedingLabPens.asm"
+INCLUDE "scripts/BreedingLabPens.asm"
+INCLUDE "data/maps/objects/BreedingLabPens.asm"
+BreedingLabPens_Blocks: INCBIN "maps/BreedingLabPens.blk"

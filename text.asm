@@ -294,3 +294,8 @@ INCLUDE "text/ThePit.asm"
 SECTION "Text Fuji Farm", ROMX, BANK[$2E]
 
 INCLUDE "text/FujiFarm.asm"
+
+
+SECTION "Text Breeding Lab", ROMX, BANK[$2E]
+
+INCLUDE "text/BreedingLab.asm"

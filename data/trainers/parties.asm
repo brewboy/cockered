@@ -538,6 +538,8 @@ ScientistData:
 	db 33, MAGNEMITE, MAGNETON, VOLTORB, 0
 ; Mansion B1F
 	db 34, MAGNEMITE, ELECTRODE, 0
+; Breeding Lab: "his best work"
+	db $FF, 40, DITTO, 42, PORYGON, 0
 
 GiovanniData:
 ; Rocket Hideout B4F

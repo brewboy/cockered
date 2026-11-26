@@ -2073,7 +2073,9 @@ wFarmNewcomerName:: ds NAME_LENGTH
 wFarmRotation:: db
 ; set by the maps next door, so the farm sorts out who's about when you walk in
 wFarmNeedsSync:: db
-	ds 26
+wBreedingLabCurScript:: db
+wBreedingLabPensCurScript:: db
+	ds 24
 wGameProgressFlagsEnd::
 	assert wGameProgressFlagsEnd - wGameProgressFlags == 200, \
 		"wGameProgressFlags must stay 200 bytes, or saves stop loading"

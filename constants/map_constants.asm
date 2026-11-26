@@ -197,8 +197,13 @@ DEF FIRST_INDOOR_MAP EQU const_value
 DEF UNUSED_MAP_6F EQU FUJI_FARM_BARN
 
 	map_const LANCES_ROOM,                   13, 13 ; $71
-	map_const UNUSED_MAP_72,                  0,  0 ; $72
-	map_const UNUSED_MAP_73,                  0,  0 ; $73
+	end_indoor_group POKEMON_LEAGUE_LANCE
+
+	; on an islet at the west end of Route 20
+	map_const BREEDING_LAB,                   6,  5 ; $72
+	map_const BREEDING_LAB_PENS,              6,  5 ; $73
+	end_indoor_group BREEDING_LAB_AREA
+
 	map_const UNUSED_MAP_74,                  0,  0 ; $74
 	map_const UNUSED_MAP_75,                  0,  0 ; $75
 	map_const HALL_OF_FAME,                   5,  4 ; $76

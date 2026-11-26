@@ -132,7 +132,9 @@
 	const EVENT_PIT_THREW_FIGHT     ; you took the bribe
 	const EVENT_PIT_BEAT_OLD_IRON   ; you refused it and won (neither: refused and lost)
 	const EVENT_FUJI_FARM_MET_FARMER
-	const_skip 14
+	const EVENT_BEAT_BREEDING_LAB_SCIENTIST
+	const EVENT_BEAT_MEWPEEP
+	const_skip 12
 	const EVENT_GOT_TM21
 	const EVENT_BEAT_ERIKA
 	const EVENT_BEAT_CELADON_GYM_TRAINER_0

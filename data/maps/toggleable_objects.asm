@@ -446,6 +446,14 @@ ToggleableObjectStates:
 	toggle_object_state FUJIFARMBARN_FLOCK_6,       OFF
 	toggle_object_state FUJIFARMBARN_FLOCK_7,       OFF
 
+	; one scientist or the other, by whether Giovanni has given up TEAM ROOST
+	toggleable_objects_for BREEDING_LAB
+	toggle_object_state BREEDINGLAB_SCIENTIST,      ON
+	toggle_object_state BREEDINGLAB_RING_SCIENTIST, OFF
+
+	toggleable_objects_for BREEDING_LAB_PENS
+	toggle_object_state BREEDINGLABPENS_MEWPEEP,    ON
+
 	assert_table_length NUM_TOGGLEABLE_OBJECTS
 
 	db -1, 1, ON ; end
