@@ -109,6 +109,11 @@ MainSlotMachineLoop:
 .skip1
 	call LoadScreenTilesFromBuffer1
 	call SlotMachine_SubtractBetFromPlayerCoins
+	ld hl, wPitSlotPulls ; the bookie's runner keeps count (see GameCorner.asm)
+	inc [hl]
+	jr nz, .counted
+	dec [hl]
+.counted
 	call SlotMachine_LightBalls
 	call SlotMachine_SetFlags
 	ld a, 4

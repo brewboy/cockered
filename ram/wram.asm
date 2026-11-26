@@ -2044,8 +2044,26 @@ wBlackoutMapBeforeIsland:: db
 wJunglefowlRoostCurScript:: db
 ; party + box size when the Roost leader fight starts, to spot a catch
 wMonCountBeforeRoostLeader:: db
-	ds 74
+wPitBackRoomCurScript:: db
+; slot machine pulls (stops at 255); after enough, the bookie's runner comes over
+wPitSlotPulls:: db
+; the next fight on the Pit's card
+wPitFight:: db
+; the fight being bet on: both birds (favourite first), their odds and the
+; favourite's chance out of 256, then the result and the player's bet
+wPitBirds:: ds 2
+wPitOdds:: ds 2
+wPitFavChance:: db
+wPitResult:: db
+wPitBetSide:: db
+wPitBetStake:: db
+wThePitCurScript:: db
+; 0-2: the undercard fighters, 3: OLD IRON
+wPitCurFighter:: db
+	ds 61
 wGameProgressFlagsEnd::
+	assert wGameProgressFlagsEnd - wGameProgressFlags == 200, \
+		"wGameProgressFlags must stay 200 bytes, or saves stop loading"
 
 	ds 56
 

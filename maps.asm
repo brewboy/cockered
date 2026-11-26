@@ -1237,3 +1237,16 @@ INCLUDE "data/maps/headers/JunglefowlRoost.asm"
 INCLUDE "scripts/JunglefowlRoost.asm"
 INCLUDE "data/maps/objects/JunglefowlRoost.asm"
 JunglefowlRoost_Blocks: INCBIN "maps/JunglefowlRoost.blk"
+
+
+SECTION "Maps The Pit", ROMX, BANK[$2D]
+
+INCLUDE "data/maps/headers/PitBackRoom.asm"
+INCLUDE "scripts/PitBackRoom.asm"
+INCLUDE "data/maps/objects/PitBackRoom.asm"
+PitBackRoom_Blocks: INCBIN "maps/PitBackRoom.blk"
+
+INCLUDE "data/maps/headers/ThePit.asm"
+INCLUDE "scripts/ThePit.asm"
+INCLUDE "data/maps/objects/ThePit.asm"
+ThePit_Blocks: INCBIN "maps/ThePit.blk"

@@ -122,7 +122,16 @@
 	const EVENT_GOT_TM48
 	const EVENT_GOT_TM49
 	const EVENT_GOT_TM18
-	const_skip 24
+	const EVENT_PIT_INVITED ; the bookie's runner told you about the back room
+	const EVENT_PIT_LET_IN  ; the doorman let you in
+	const EVENT_PIT_BEAT_FIGHTER_1
+	const EVENT_PIT_BEAT_FIGHTER_2
+	const EVENT_PIT_BEAT_FIGHTER_3
+	const EVENT_PIT_BOSS_SENT_FOR_YOU
+	const EVENT_PIT_MAIN_EVENT_DONE ; OLD IRON's fight is over, one way or another:
+	const EVENT_PIT_THREW_FIGHT     ; you took the bribe
+	const EVENT_PIT_BEAT_OLD_IRON   ; you refused it and won (neither: refused and lost)
+	const_skip 15
 	const EVENT_GOT_TM21
 	const EVENT_BEAT_ERIKA
 	const EVENT_BEAT_CELADON_GYM_TRAINER_0

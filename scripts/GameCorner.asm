@@ -47,8 +47,82 @@ GameCorner_ScriptPointers:
 	dw_const GameCornerDefaultScript,      SCRIPT_GAMECORNER_DEFAULT
 	dw_const GameCornerRocketBattleScript, SCRIPT_GAMECORNER_ROCKET_BATTLE
 	dw_const GameCornerRocketExitScript,   SCRIPT_GAMECORNER_ROCKET_EXIT
+	dw_const GameCornerRunnerArrivesScript, SCRIPT_GAMECORNER_RUNNER_ARRIVES
+
+DEF GAMECORNER_RUNNER_X EQU 18
+DEF GAMECORNER_RUNNER_Y EQU 16
+DEF PIT_SLOT_PULLS_FOR_INVITE EQU 10
 
 GameCornerDefaultScript:
+; Once you've played the slots a while, the bookie's runner catches you on
+; your way out: he walks along the bottom row and tells you about the Pit.
+	CheckEvent EVENT_PIT_INVITED
+	ret nz
+	CheckEvent EVENT_BEAT_VIRIDIAN_GYM_GIOVANNI ; the Pit's open to all now
+	ret nz
+	ld a, [wPitSlotPulls]
+	cp PIT_SLOT_PULLS_FOR_INVITE
+	ret c
+	ld a, [wXCoord]
+	cp GAMECORNER_RUNNER_X
+	ret nc
+	ld c, a
+	ld a, [wYCoord]
+	cp GAMECORNER_RUNNER_Y
+	ret c
+	; on his row: stand to your right; on the row below: stand above you
+	ld de, SPRITE_FACING_LEFT << 8 | SPRITE_FACING_RIGHT
+	jr z, .gotSpot
+	dec c
+	ld de, SPRITE_FACING_DOWN << 8 | SPRITE_FACING_UP
+.gotSpot
+	inc c ; where he stops
+	ld a, e
+	ld [wSpritePlayerStateData1FacingDirection], a
+	ld a, d
+	ld [wPitBetSide], a ; which way he faces when he gets there
+	ld a, PAD_BUTTONS | PAD_CTRL_PAD
+	ld [wJoyIgnore], a
+	xor a
+	ldh [hJoyHeld], a
+	ld a, SCRIPT_GAMECORNER_RUNNER_ARRIVES
+	ld [wGameCornerCurScript], a
+	ld a, c
+	cp GAMECORNER_RUNNER_X
+	ret z ; already next to you
+	ld b, 0
+	ld hl, GameCornerRunnerMovement
+	add hl, bc
+	ld d, h
+	ld e, l
+	ld a, GAMECORNER_RUNNER
+	ldh [hSpriteIndex], a
+	jp MoveSprite
+
+GameCornerRunnerMovement:
+	REPT GAMECORNER_RUNNER_X
+		db NPC_MOVEMENT_LEFT
+	ENDR
+	db -1 ; end
+
+GameCornerRunnerArrivesScript:
+	ld a, [wStatusFlags5]
+	bit BIT_SCRIPTED_NPC_MOVEMENT, a
+	ret nz
+	ld a, GAMECORNER_RUNNER
+	ldh [hSpriteIndex], a
+	ld a, [wPitBetSide]
+	ldh [hSpriteFacingDirection], a
+	call SetSpriteFacingDirectionAndDelay
+	ld a, PAD_SELECT | PAD_START | PAD_CTRL_PAD
+	ld [wJoyIgnore], a
+	ld a, TEXT_GAMECORNER_RUNNER
+	ldh [hTextID], a
+	call DisplayTextID
+	xor a
+	ld [wJoyIgnore], a
+	ld a, SCRIPT_GAMECORNER_DEFAULT
+	ld [wGameCornerCurScript], a
 	ret
 
 GameCornerRocketBattleScript:
@@ -130,6 +204,7 @@ GameCorner_TextPointers:
 	dw_const GameCornerClerk2Text,            TEXT_GAMECORNER_CLERK2
 	dw_const GameCornerGentlemanText,         TEXT_GAMECORNER_GENTLEMAN
 	dw_const GameCornerRocketText,            TEXT_GAMECORNER_ROCKET
+	dw_const GameCornerRunnerText,            TEXT_GAMECORNER_RUNNER
 	dw_const GameCornerPosterText,            TEXT_GAMECORNER_POSTER
 	dw_const GameCornerRocketAfterBattleText, TEXT_GAMECORNER_ROCKET_AFTER_BATTLE
 
@@ -535,3 +610,30 @@ Has9990Coins:
 	ld a, $90
 	ldh [hCoins + 1], a
 	jp HasEnoughCoins
+
+GameCornerRunnerText:
+; the bookie's runner, who sends you to the Pit's back room
+	text_asm
+	ld hl, .LegitNowText
+	CheckEvent EVENT_BEAT_VIRIDIAN_GYM_GIOVANNI ; the Pit is a COCK RING venue
+	jr nz, .print
+	ld hl, .NextDoorText
+	CheckEvent EVENT_PIT_INVITED
+	jr nz, .print
+	SetEvent EVENT_PIT_INVITED
+	ld hl, .InviteText
+.print
+	call PrintText
+	jp TextScriptEnd
+
+.InviteText:
+	text_far _GameCornerRunnerInviteText
+	text_end
+
+.NextDoorText:
+	text_far _GameCornerRunnerNextDoorText
+	text_end
+
+.LegitNowText:
+	text_far _GameCornerRunnerLegitNowText
+	text_end

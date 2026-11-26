@@ -24,6 +24,7 @@ CeladonCity_TextPointers:
 	dw_const CeladonCityTrainerTips2Text,      TEXT_CELADONCITY_TRAINER_TIPS2
 	dw_const CeladonCityPrizeExchangeSignText, TEXT_CELADONCITY_PRIZEEXCHANGE_SIGN
 	dw_const CeladonCityGameCornerSignText,    TEXT_CELADONCITY_GAMECORNER_SIGN
+	dw_const CeladonCityPitWallText,           TEXT_CELADONCITY_PIT_WALL
 
 CeladonCityLittleGirlText:
 	text_far _CeladonCityLittleGirlText
@@ -130,4 +131,23 @@ CeladonCityPrizeExchangeSignText:
 
 CeladonCityGameCornerSignText:
 	text_far _CeladonCityGameCornerSignText
+	text_end
+
+CeladonCityPitWallText:
+; the Pit's front: painted-over windows, then a COCK RING banner
+	text_asm
+	ld hl, .PaintedOverText
+	CheckEvent EVENT_BEAT_VIRIDIAN_GYM_GIOVANNI
+	jr z, .print
+	ld hl, .RingBannerText
+.print
+	call PrintText
+	jp TextScriptEnd
+
+.PaintedOverText:
+	text_far _CeladonCityPitPaintedOverText
+	text_end
+
+.RingBannerText:
+	text_far _CeladonCityPitRingBannerText
 	text_end

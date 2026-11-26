@@ -21,7 +21,7 @@ CeladonCity_Object:
 	warp_event 41,  9, CELADON_POKECENTER, 1
 	warp_event 12, 27, CELADON_GYM, 1
 	warp_event 28, 19, GAME_CORNER, 1
-	warp_event 39, 19, CELADON_MART_5F, 1 ; inaccessible
+	warp_event 43, 19, PIT_BACK_ROOM, 1 ; was an unused door to CELADON_MART_5F at 39,19
 	warp_event 33, 19, GAME_CORNER_PRIZE_ROOM, 1
 	warp_event 31, 27, CELADON_DINER, 1
 	warp_event 35, 27, CELADON_CHIEF_HOUSE, 1
@@ -37,6 +37,7 @@ CeladonCity_Object:
 	bg_event 39, 21, TEXT_CELADONCITY_TRAINER_TIPS2
 	bg_event 33, 21, TEXT_CELADONCITY_PRIZEEXCHANGE_SIGN
 	bg_event 27, 21, TEXT_CELADONCITY_GAMECORNER_SIGN
+	bg_event 44, 19, TEXT_CELADONCITY_PIT_WALL
 
 	def_object_events
 	object_event  8, 17, SPRITE_LITTLE_GIRL, WALK, ANY_DIR, TEXT_CELADONCITY_LITTLE_GIRL
