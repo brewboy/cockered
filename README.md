@@ -7,23 +7,12 @@ The full list of breeds, and notes on the art, maps and tools, are in [**CLAUDE.
 
 ## New areas
 
-Four new areas follow a fighting bird's life, from the wild to the ring to retirement.
+Four new places, for a fighting bird's life from the wild to the ring and beyond. Finding them is up to you.
 
-### Junglefowl Island
-
-When you leave the S.S. Anne, a wave sweeps you off the Vermilion gangway and onto an island that isn't on any map. A castaway asks you to leave the wild red junglefowl alone, but you can catch them anyway, and they're strong. At the Roost, the flock's leader is a one-time level-30 DRAGONCOMB. Find three raft parts to sail home to Vermilion; you can't come back.
-
-### The Pit (Celadon)
-
-Behind the Game Corner, a back room takes bets on illegal bird fights: ¥1000, ¥5000 or ¥10000 a time, and the house always wins in the end. Pull the slots often enough and the bookie's runner invites you in. Downstairs you can fight three undercard birds for prize money, then the bookie offers you ¥50000 to lose to OLD IRON. Once Giovanni breaks up TEAM ROOST, the Pit reopens under a COCK RING banner.
-
-### Fuji Farm (east of Lavender)
-
-After you rescue MR. FUJI, walk east out of Lavender to his farm, where birds go when nobody wants them. You can retire party birds there for good. Every five different breeds earns a gift, and the barn fills with your retired birds. The ledger on the barn wall lists every breed you've retired. OLD IRON ends up here too, and the story he tells depends on what you did in the Pit.
-
-### Breeding Lab (Route 20)
-
-A private island at the west end of Route 20, near Cinnabar, reached by SURF. Inside, a scientist bred birds to order for whoever paid, and his diaries are signed "F." The pens hold the failed experiments and, in a glass case at the back, the original MEWPEEP: a one-time level-50 battle and the only way to get one.
+- **Junglefowl Island:** somewhere no map shows, where the birds are still wild.
+- **The Pit:** where the real money changes hands, if you know who to ask.
+- **Fuji Farm:** where birds go when nobody wants them any more.
+- **Breeding Lab:** where somebody tried to build a better bird.
 
 
 ## Building
