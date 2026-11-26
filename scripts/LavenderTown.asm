@@ -1,4 +1,6 @@
 LavenderTown_Script:
+	ld a, 1 ; you may walk east onto the farm
+	ld [wFarmNeedsSync], a
 	jp EnableAutoTextBoxDrawing
 
 LavenderTown_TextPointers:

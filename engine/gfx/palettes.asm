@@ -145,6 +145,8 @@ SetPal_Overworld:
 	cp CAVERN
 	jr z, .caveOrBruno
 	ld a, [wCurMap]
+	cp FUJI_FARM ; outdoors, though numbered like an indoor map
+	jr z, .fujiFarm
 	cp FIRST_INDOOR_MAP
 	jr c, .townOrRoute
 	cp CERULEAN_CAVE_2F
@@ -157,6 +159,10 @@ SetPal_Overworld:
 	jr z, .caveOrBruno
 .normalDungeonOrBuilding
 	ld a, [wLastMap] ; town or route that current dungeon or building is located
+	cp FUJI_FARM
+	jr nz, .townOrRoute
+.fujiFarm
+	ld a, LAVENDER_TOWN
 .townOrRoute
 	cp NUM_CITY_MAPS
 	jr c, .town

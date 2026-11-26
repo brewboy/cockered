@@ -1250,3 +1250,21 @@ INCLUDE "data/maps/headers/ThePit.asm"
 INCLUDE "scripts/ThePit.asm"
 INCLUDE "data/maps/objects/ThePit.asm"
 ThePit_Blocks: INCBIN "maps/ThePit.blk"
+
+
+SECTION "Maps Fuji Farm", ROMX, BANK[$2E]
+
+INCLUDE "data/maps/headers/FujiFarm.asm"
+INCLUDE "scripts/FujiFarm.asm"
+INCLUDE "data/maps/objects/FujiFarm.asm"
+FujiFarm_Blocks: INCBIN "maps/FujiFarm.blk"
+
+INCLUDE "data/maps/headers/FujiFarmBarn.asm"
+INCLUDE "scripts/FujiFarmBarn.asm"
+INCLUDE "data/maps/objects/FujiFarmBarn.asm"
+FujiFarmBarn_Blocks: INCBIN "maps/FujiFarmBarn.blk"
+
+INCLUDE "data/maps/headers/FujiFarmHouse.asm"
+INCLUDE "scripts/FujiFarmHouse.asm"
+INCLUDE "data/maps/objects/FujiFarmHouse.asm"
+FujiFarmHouse_Blocks: INCBIN "maps/FujiFarmHouse.blk"

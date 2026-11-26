@@ -623,7 +623,7 @@ DrawTileLine:
 
 INCLUDE "data/pokemon/dex_entries.asm"
 
-PokedexToIndex:
+PokedexToIndex::
 	; converts the Pokédex number at [wPokedexNum] to an index
 	push bc
 	push hl

@@ -12,6 +12,9 @@ InitMapSprites::
 	call InitOutsideMapSprites
 	ret c ; return if the map is an outside map (already handled by above call)
 ; if the map is an inside map (i.e. mapID >= FIRST_INDOOR_MAP)
+; Forget the outside sprite set, so walking from the farm into Lavender loads it.
+	xor a
+	ld [wSpriteSetID], a
 	ld hl, wSpritePlayerStateData1PictureID
 	ld de, wSpritePlayerStateData2PictureID
 ; Loop to copy picture IDs from [x#SPRITESTATEDATA1_PICTUREID]
